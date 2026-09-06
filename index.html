@@ -10,9 +10,32 @@
     <meta property="og:title" content="Baja SAE Standings" />
     <meta property="og:description" content="Live scoring and season standings for the Baja SAE collegiate design series." />
     <meta property="og:type" content="website" />
+    <style>
+      /* Painted before any bundle loads. Without this the page has no
+         background of its own and falls through to the browser's canvas, which
+         in dark mode is black — so a failed script load renders as a black
+         void with no explanation. */
+      html, body { margin: 0; background: #0a0c10; color: #eef1f6;
+                   font: 15px/1.5 ui-sans-serif, system-ui, -apple-system, sans-serif; }
+      #boot { max-width: 32rem; margin: 18vh auto; padding: 0 1.5rem; text-align: center; }
+      #boot h1 { font-size: 1.05rem; font-weight: 600; margin: 0 0 .5rem; }
+      #boot p { color: #8b95a7; font-size: .875rem; margin: 0; }
+      #boot a { color: #4da3ff; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <!-- Replaced by React on mount. If it is still visible, the bundle did not
+         run — which is a diagnosable message rather than a blank screen. -->
+    <div id="root">
+      <div id="boot">
+        <h1>Loading Baja SAE Standings…</h1>
+        <p>
+          If this message stays on screen, the site failed to start. Please
+          <a href="https://github.com/ccrocker13/BajaSaeStandings/issues">report it</a>
+          with your browser and any console error.
+        </p>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

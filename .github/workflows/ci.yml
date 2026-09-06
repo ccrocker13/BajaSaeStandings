@@ -23,3 +23,14 @@ jobs:
       - run: npx tsc --noEmit
       - run: pnpm test
       - run: pnpm run build
+
+      # Load the built site in a real browser. A green build and passing unit
+      # tests are both compatible with a page that renders an empty document —
+      # which is exactly what shipped once — so the only reliable check is to
+      # open it.
+      - name: Browser smoke test
+        run: |
+          npx playwright install --with-deps chromium
+          npx vite preview --port 4173 --strictPort &
+          npx wait-on -t 60000 http://localhost:4173/bajasaestandings/
+          pnpm run smoke

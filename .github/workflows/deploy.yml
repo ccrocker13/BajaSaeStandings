@@ -37,6 +37,15 @@ jobs:
           # Empty until the Worker is deployed; the site degrades to history
           # only and says so on the Live tab rather than breaking.
           VITE_WORKER_URL: ${{ vars.VITE_WORKER_URL }}
+      # Never publish a site that does not render. This runs before the
+      # artifact is uploaded, so a blank build cannot reach production.
+      - name: Browser smoke test
+        run: |
+          npx playwright install --with-deps chromium
+          npx vite preview --port 4173 --strictPort &
+          npx wait-on -t 60000 http://localhost:4173/bajasaestandings/
+          pnpm run smoke
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
