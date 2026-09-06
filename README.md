@@ -49,12 +49,21 @@ hardcoded list.
 The site works as soon as Pages is enabled. The Worker is optional and only
 affects the live tab.
 
-### 1. Enable GitHub Pages — required
+### 1. GitHub Pages
 
-**Settings → Pages → Build and deployment → Source: GitHub Actions.**
+The deploy workflow enables Pages itself and points it at GitHub Actions, so
+normally there is nothing to do — push to `main` and the site publishes to
+`https://ccrocker13.github.io/bajasaestandings/`.
 
-The `Deploy site` workflow then publishes on every push to `main`. The site
-lands at `https://ccrocker13.github.io/bajasaestandings/`.
+If the URL returns *"There isn't a GitHub Pages site here"*, Pages is not
+serving. Set it by hand at **Settings → Pages → Build and deployment →
+Source: GitHub Actions**, then re-run the **Deploy site** workflow.
+
+Note that a green deploy job does not by itself prove the site is up:
+`deploy-pages` will create a deployment even when nothing is serving it. Run
+the **Probe published site** workflow to see what the URL actually returns —
+it reports the status, the body, and whether the served HTML is the built
+bundle or something else.
 
 ### 2. Deploy the Cloudflare Worker — optional, needed for live scoring
 
