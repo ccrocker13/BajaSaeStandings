@@ -8,6 +8,13 @@ name: Backfill archive
 
 on:
   workflow_dispatch:
+  # Also runs when the backfill code changes, which is how it is triggered
+  # from a feature branch — workflow_dispatch only reaches the default branch.
+  push:
+    paths:
+      - 'tools/build-data/**'
+      - 'packages/parser/src/**'
+      - '.github/workflows/backfill-archive.yml'
   schedule:
     # Mondays 06:00 UTC.
     - cron: '0 6 * * 1'
