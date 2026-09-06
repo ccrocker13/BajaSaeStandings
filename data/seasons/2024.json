@@ -1,0 +1,3706 @@
+{
+  "year": 2024,
+  "competitions": [
+    {
+      "id": "5344befe-f95c-4017-95d7-45836822794c",
+      "name": "Baja SAE California",
+      "startDate": null,
+      "endDate": null,
+      "location": null
+    },
+    {
+      "id": "dae00323-484b-417d-b48f-7cd15a235820",
+      "name": "Baja SAE Williamsport",
+      "startDate": null,
+      "endDate": null,
+      "location": null
+    },
+    {
+      "id": "d699778a-2071-460d-971e-a88d0a49cc50",
+      "name": "Baja SAE Michigan",
+      "startDate": null,
+      "endDate": null,
+      "location": null
+    }
+  ],
+  "standings": [
+    {
+      "schoolId": "ets",
+      "school": "Ecole de Technologie Superieure",
+      "teamName": "Baja ÉTS",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 927.16,
+          "overallRank": 2,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 915.06,
+          "overallRank": 1,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 983.89,
+          "overallRank": 1,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2826.1099999999997,
+      "eventsAttended": 3,
+      "rank": 1,
+      "provisional": false
+    },
+    {
+      "schoolId": "cornell",
+      "school": "Cornell Univ",
+      "teamName": "Cornell Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 954.07,
+          "overallRank": 1,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 895.72,
+          "overallRank": 2,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 940.1,
+          "overallRank": 2,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2789.89,
+      "eventsAttended": 3,
+      "rank": 2,
+      "provisional": false
+    },
+    {
+      "schoolId": "rit",
+      "school": "Rochester Institute of Technology",
+      "teamName": "RIOT RACING",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 889.64,
+          "overallRank": 3,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 839.09,
+          "overallRank": 4,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 890.37,
+          "overallRank": 5,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2619.1,
+      "eventsAttended": 3,
+      "rank": 3,
+      "provisional": false
+    },
+    {
+      "schoolId": "johns-hopkins-university",
+      "school": "Johns Hopkins Univ",
+      "teamName": "Blue Jay Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 788.81,
+          "overallRank": 6,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 76,
+          "overallRank": 53,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 808.43,
+          "overallRank": 5,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 818.15,
+          "overallRank": 9,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2491.39,
+      "eventsAttended": 4,
+      "rank": 4,
+      "provisional": false
+    },
+    {
+      "schoolId": "michigan",
+      "school": "Univ of Michigan - Ann Arbor",
+      "teamName": "Michigan Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 838.28,
+          "overallRank": 4,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 710.11,
+          "overallRank": 11,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 895.83,
+          "overallRank": 4,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2444.22,
+      "eventsAttended": 3,
+      "rank": 5,
+      "provisional": false
+    },
+    {
+      "schoolId": "case-western",
+      "school": "Case Western Reserve Univ",
+      "teamName": "CWRU Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 738.02,
+          "overallRank": 9,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 759.58,
+          "overallRank": 6,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 881.24,
+          "overallRank": 6,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2378.84,
+      "eventsAttended": 3,
+      "rank": 6,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-nevada-las-vegas",
+      "school": "Univ of Nevada - Las Vegas",
+      "teamName": "Rebel Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 702.13,
+          "overallRank": 11,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 715.3,
+          "overallRank": 9,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 752.37,
+          "overallRank": 11,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2169.7999999999997,
+      "eventsAttended": 3,
+      "rank": 7,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-maryland-baltimore-county",
+      "school": "Univ of Maryland - Baltimore County",
+      "teamName": "UMBC Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 790.69,
+          "overallRank": 5,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 704.5,
+          "overallRank": 12,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 650.99,
+          "overallRank": 21,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2146.1800000000003,
+      "eventsAttended": 3,
+      "rank": 8,
+      "provisional": false
+    },
+    {
+      "schoolId": "cal-poly-slo",
+      "school": "California Polytechnic State Univ-SLO",
+      "teamName": "Cal Poly Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 734.88,
+          "overallRank": 10,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 658.87,
+          "overallRank": 15,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 697.48,
+          "overallRank": 14,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2091.23,
+      "eventsAttended": 3,
+      "rank": 9,
+      "provisional": false
+    },
+    {
+      "schoolId": "virginia-tech",
+      "school": "Virginia Tech",
+      "teamName": "VT Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 863.48,
+          "overallRank": 3,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 909.71,
+          "overallRank": 3,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1773.19,
+      "eventsAttended": 2,
+      "rank": 10,
+      "provisional": false
+    },
+    {
+      "schoolId": "oregon-state",
+      "school": "Oregon State Univ",
+      "teamName": "Beaver Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 764.83,
+          "overallRank": 7,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 863.9,
+          "overallRank": 8,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1628.73,
+      "eventsAttended": 2,
+      "rank": 11,
+      "provisional": false
+    },
+    {
+      "schoolId": "mcmaster-university",
+      "school": "McMaster Univ",
+      "teamName": "McMaster Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 752.16,
+          "overallRank": 8,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 717.48,
+          "overallRank": 8,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1469.6399999999999,
+      "eventsAttended": 2,
+      "rank": 12,
+      "provisional": false
+    },
+    {
+      "schoolId": "purdue-university-w-lafayette",
+      "school": "Purdue Univ - W Lafayette",
+      "teamName": "Purdue Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 561.35,
+          "overallRank": 23,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 866.42,
+          "overallRank": 7,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1427.77,
+      "eventsAttended": 2,
+      "rank": 13,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-wisconsin-madison",
+      "school": "Univ of Wisconsin - Madison",
+      "teamName": "Badger Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 690.9,
+          "overallRank": 14,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 726.58,
+          "overallRank": 13,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1417.48,
+      "eventsAttended": 2,
+      "rank": 14,
+      "provisional": false
+    },
+    {
+      "schoolId": "georgia-institute-of-technology",
+      "school": "Georgia Institute of Technology",
+      "teamName": "GT Off Road",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 723.49,
+          "overallRank": 7,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 691.95,
+          "overallRank": 15,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1415.44,
+      "eventsAttended": 2,
+      "rank": 15,
+      "provisional": false
+    },
+    {
+      "schoolId": "universite-laval",
+      "school": "Université Laval",
+      "teamName": "Alérion",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 570.88,
+          "overallRank": 20,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 815.43,
+          "overallRank": 10,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1386.31,
+      "eventsAttended": 2,
+      "rank": 16,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-maryland-college-park",
+      "school": "Univ of Maryland - College Park",
+      "teamName": "Terps Racing Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 624.02,
+          "overallRank": 16,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 629.12,
+          "overallRank": 22,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1253.1399999999999,
+      "eventsAttended": 2,
+      "rank": 17,
+      "provisional": false
+    },
+    {
+      "schoolId": "michigan-state-university",
+      "school": "Michigan State University",
+      "teamName": "MSU Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 569.47,
+          "overallRank": 21,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 678.56,
+          "overallRank": 18,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1248.03,
+      "eventsAttended": 2,
+      "rank": 18,
+      "provisional": false
+    },
+    {
+      "schoolId": "pennsylvania-college-of-technology",
+      "school": "Pennsylvania College of Technology",
+      "teamName": "PCT Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 712.25,
+          "overallRank": 10,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 529.52,
+          "overallRank": 26,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1241.77,
+      "eventsAttended": 2,
+      "rank": 19,
+      "provisional": false
+    },
+    {
+      "schoolId": "northeastern-university",
+      "school": "Northeastern Univ",
+      "teamName": "Baja SAE Northeastern",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 578.03,
+          "overallRank": 19,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 659.72,
+          "overallRank": 19,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1237.75,
+      "eventsAttended": 2,
+      "rank": 20,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-calif-los-angeles",
+      "school": "Univ of Calif - Los Angeles",
+      "teamName": "Bruin Racing Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 671.46,
+          "overallRank": 13,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 552,
+          "overallRank": 24,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1223.46,
+      "eventsAttended": 2,
+      "rank": 21,
+      "provisional": false
+    },
+    {
+      "schoolId": "san-diego-state-university",
+      "school": "San Diego State Univ",
+      "teamName": "Aztec Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 509.57,
+          "overallRank": 19,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 655.78,
+          "overallRank": 20,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1165.35,
+      "eventsAttended": 2,
+      "rank": 22,
+      "provisional": false
+    },
+    {
+      "schoolId": "the-ohio-state-university",
+      "school": "The Ohio State University",
+      "teamName": "Baja Buckeyes",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 679.03,
+          "overallRank": 12,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 478.63,
+          "overallRank": 31,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1157.6599999999999,
+      "eventsAttended": 2,
+      "rank": 23,
+      "provisional": false
+    },
+    {
+      "schoolId": "iowa-state-university",
+      "school": "Iowa State Univ",
+      "teamName": "Cyclone Off-Road Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 463.97,
+          "overallRank": 34,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 681.28,
+          "overallRank": 17,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1145.25,
+      "eventsAttended": 2,
+      "rank": 24,
+      "provisional": false
+    },
+    {
+      "schoolId": "harding-university",
+      "school": "Harding Univ",
+      "teamName": "Bison Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 515.66,
+          "overallRank": 18,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 539.07,
+          "overallRank": 25,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1054.73,
+      "eventsAttended": 2,
+      "rank": 25,
+      "provisional": false
+    },
+    {
+      "schoolId": "youngstown-state-university",
+      "school": "Youngstown State Univ",
+      "teamName": "Penguin Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 403.14,
+          "overallRank": 22,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 489.31,
+          "overallRank": 30,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 89,
+          "overallRank": 62,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 981.45,
+      "eventsAttended": 3,
+      "rank": 26,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-illinois-urbana-champaign",
+      "school": "Univ of Illinois - Urbana Champaign",
+      "teamName": "Off-Road Illini",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 520.54,
+          "overallRank": 26,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 448.33,
+          "overallRank": 34,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 968.8699999999999,
+      "eventsAttended": 2,
+      "rank": 27,
+      "provisional": false
+    },
+    {
+      "schoolId": "western-university",
+      "school": "Western University",
+      "teamName": "Western Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 477.49,
+          "overallRank": 33,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 487.79,
+          "overallRank": 29,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 965.28,
+      "eventsAttended": 2,
+      "rank": 28,
+      "provisional": false
+    },
+    {
+      "schoolId": "purdue-university-northwest",
+      "school": "Purdue Univ - Northwest",
+      "teamName": "Purdue NW Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 153,
+          "overallRank": 39,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 353.94,
+          "overallRank": 50,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 415.67,
+          "overallRank": 38,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 922.61,
+      "eventsAttended": 3,
+      "rank": 29,
+      "provisional": false
+    },
+    {
+      "schoolId": "ohio-northern-university",
+      "school": "Ohio Northern Univ",
+      "teamName": "Polar Bear Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 399.87,
+          "overallRank": 45,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 510.66,
+          "overallRank": 28,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 910.53,
+      "eventsAttended": 2,
+      "rank": 30,
+      "provisional": false
+    },
+    {
+      "schoolId": "oklahoma-state-university",
+      "school": "Oklahoma State Univ",
+      "teamName": "Cowboy Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 455.12,
+          "overallRank": 21,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 438.66,
+          "overallRank": 36,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 893.78,
+      "eventsAttended": 2,
+      "rank": 31,
+      "provisional": false
+    },
+    {
+      "schoolId": "baylor-university",
+      "school": "Baylor Univ",
+      "teamName": "Baylor Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 343.38,
+          "overallRank": 52,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 546.38,
+          "overallRank": 24,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 889.76,
+      "eventsAttended": 2,
+      "rank": 32,
+      "provisional": false
+    },
+    {
+      "schoolId": "mcgill-university",
+      "school": "McGill Univ",
+      "teamName": "McGill Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 436.24,
+          "overallRank": 40,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 444.73,
+          "overallRank": 35,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 880.97,
+      "eventsAttended": 2,
+      "rank": 33,
+      "provisional": false
+    },
+    {
+      "schoolId": "new-mexico-institute-of-mining-and-tech",
+      "school": "New Mexico Inst of Mining & Tech",
+      "teamName": "Dirty Miners",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 398.49,
+          "overallRank": 23,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 476.81,
+          "overallRank": 31,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 875.3,
+      "eventsAttended": 2,
+      "rank": 34,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-akron",
+      "school": "Univ of Akron",
+      "teamName": "Zips Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 336.87,
+          "overallRank": 53,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 517.86,
+          "overallRank": 27,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 854.73,
+      "eventsAttended": 2,
+      "rank": 35,
+      "provisional": false
+    },
+    {
+      "schoolId": "suny-stony-brook",
+      "school": "SUNY - Stony Brook",
+      "teamName": "Stony Brook Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 290.95,
+          "overallRank": 31,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 548.53,
+          "overallRank": 25,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 839.48,
+      "eventsAttended": 2,
+      "rank": 36,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-central-florida",
+      "school": "Univ of Central Florida",
+      "teamName": "Knights Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 373.83,
+          "overallRank": 26,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 446.88,
+          "overallRank": 38,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 820.71,
+      "eventsAttended": 2,
+      "rank": 37,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-poly-university-pomona",
+      "school": "California State Poly Univ - Pomona",
+      "teamName": "Bronco Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 603.51,
+          "overallRank": 15,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 210,
+          "overallRank": 71,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 813.51,
+      "eventsAttended": 2,
+      "rank": 38,
+      "provisional": false
+    },
+    {
+      "schoolId": "north-carolina-a-and-t-state-university",
+      "school": "North Carolina A & T State Univ",
+      "teamName": "Aggie Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 147.67,
+          "overallRank": 40,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 203.01,
+          "overallRank": 74,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 449.09,
+          "overallRank": 33,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 799.77,
+      "eventsAttended": 3,
+      "rank": 39,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-manitoba",
+      "school": "Univ of Manitoba",
+      "teamName": "Red Lion Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 306.72,
+          "overallRank": 60,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 459.73,
+          "overallRank": 32,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 766.45,
+      "eventsAttended": 2,
+      "rank": 40,
+      "provisional": false
+    },
+    {
+      "schoolId": "ipn-upiita",
+      "school": "IPN - UPIITA",
+      "teamName": "Ocelot Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 751.05,
+          "overallRank": 12,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 751.05,
+      "eventsAttended": 1,
+      "rank": 41,
+      "provisional": false
+    },
+    {
+      "schoolId": "st-clair-county-community-college",
+      "school": "St Clair County Community College",
+      "teamName": "SC4 Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 314.72,
+          "overallRank": 57,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 426.6,
+          "overallRank": 37,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 741.32,
+      "eventsAttended": 2,
+      "rank": 42,
+      "provisional": false
+    },
+    {
+      "schoolId": "tennessee-tech-university",
+      "school": "Tennessee Tech Univ",
+      "teamName": "TN Tech Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 456.77,
+          "overallRank": 35,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 273.83,
+          "overallRank": 48,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 730.5999999999999,
+      "eventsAttended": 2,
+      "rank": 43,
+      "provisional": false
+    },
+    {
+      "schoolId": "cincinnati-state-technical-comm-college",
+      "school": "Cincinnati State Technical Comm College",
+      "teamName": "Cincy Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 354.74,
+          "overallRank": 49,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 352.93,
+          "overallRank": 42,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 707.6700000000001,
+      "eventsAttended": 2,
+      "rank": 44,
+      "provisional": false
+    },
+    {
+      "schoolId": "centro-universitario-da-fei",
+      "school": "Centro Universitario Da FEI",
+      "teamName": "FEI Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 698.9,
+          "overallRank": 13,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 698.9,
+      "eventsAttended": 1,
+      "rank": 45,
+      "provisional": false
+    },
+    {
+      "schoolId": "michigan-tech-university",
+      "school": "Michigan Tech Univ",
+      "teamName": "Blizzard Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 686.85,
+          "overallRank": 16,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 686.85,
+      "eventsAttended": 1,
+      "rank": 46,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-southern-indiana",
+      "school": "Univ of Southern Indiana",
+      "teamName": "Screaming Eagle Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 265.27,
+          "overallRank": 63,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 400.15,
+          "overallRank": 39,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 665.42,
+      "eventsAttended": 2,
+      "rank": 47,
+      "provisional": false
+    },
+    {
+      "schoolId": "new-jersey-institute-of-technology",
+      "school": "New Jersey Institute of Technology",
+      "teamName": "Highlander racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 166.49,
+          "overallRank": 38,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 411.77,
+          "overallRank": 44,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 72.04,
+          "overallRank": 68,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 650.3,
+      "eventsAttended": 3,
+      "rank": 48,
+      "provisional": false
+    },
+    {
+      "schoolId": "queens-university",
+      "school": "Queen's Univ",
+      "teamName": "Queen’s Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 81,
+          "overallRank": 52,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 568.72,
+          "overallRank": 22,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 649.72,
+      "eventsAttended": 2,
+      "rank": 49,
+      "provisional": false
+    },
+    {
+      "schoolId": "south-dakota-school-of-mines-and-tech",
+      "school": "South Dakota School of Mines & Tech",
+      "teamName": "Hardrocker Gold",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 621.18,
+          "overallRank": 17,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 621.18,
+      "eventsAttended": 1,
+      "rank": 50,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-de-la-salle-bajio",
+      "school": "Universidad De La Salle Bajio",
+      "teamName": "Felinos",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 620.85,
+          "overallRank": 14,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 620.85,
+      "eventsAttended": 1,
+      "rank": 51,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-san-diego",
+      "school": "Univ of San Diego",
+      "teamName": "Torero Club Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 391.76,
+          "overallRank": 24,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 221.12,
+          "overallRank": 35,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 612.88,
+      "eventsAttended": 2,
+      "rank": 52,
+      "provisional": false
+    },
+    {
+      "schoolId": "southern-illinois-university-edwardville",
+      "school": "Southern Illinois Univ - Edwardville",
+      "teamName": "Cougar Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 331.87,
+          "overallRank": 54,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 279.36,
+          "overallRank": 47,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 611.23,
+      "eventsAttended": 2,
+      "rank": 53,
+      "provisional": false
+    },
+    {
+      "schoolId": "british-columbia-institute-of-tech",
+      "school": "British Columbia Inst of Tech",
+      "teamName": "BCIT Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 247.6,
+          "overallRank": 32,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 363.05,
+          "overallRank": 41,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 610.65,
+      "eventsAttended": 2,
+      "rank": 54,
+      "provisional": false
+    },
+    {
+      "schoolId": "texas-a-and-m-university",
+      "school": "Texas A&M Univ",
+      "teamName": "Fightin' Texas Aggie Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 599.33,
+          "overallRank": 18,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 599.33,
+      "eventsAttended": 1,
+      "rank": 55,
+      "provisional": false
+    },
+    {
+      "schoolId": "itesm-campus-guadalajara",
+      "school": "ITESM - Campus Guadalajara",
+      "teamName": "Mad Rams",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 596.72,
+          "overallRank": 16,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 596.72,
+      "eventsAttended": 1,
+      "rank": 56,
+      "provisional": false
+    },
+    {
+      "schoolId": "suny-farmingdale",
+      "school": "SUNY- Farmingdale",
+      "teamName": "RAM Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 565.35,
+          "overallRank": 23,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 565.35,
+      "eventsAttended": 1,
+      "rank": 57,
+      "provisional": false
+    },
+    {
+      "schoolId": "oregon-institute-of-tech",
+      "school": "Oregon Inst of Tech",
+      "teamName": "Oregon Tech Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 557.71,
+          "overallRank": 17,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 557.71,
+      "eventsAttended": 1,
+      "rank": 58,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-tennessee",
+      "school": "Univ of Tennessee",
+      "teamName": "UTK Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 233.13,
+          "overallRank": 68,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 304.11,
+          "overallRank": 46,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 537.24,
+      "eventsAttended": 2,
+      "rank": 59,
+      "provisional": false
+    },
+    {
+      "schoolId": "clarkson-university",
+      "school": "Clarkson University",
+      "teamName": "Golden Knights Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 505.45,
+          "overallRank": 27,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 505.45,
+      "eventsAttended": 1,
+      "rank": 60,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-cincinnati",
+      "school": "Univ of Cincinnati",
+      "teamName": "Bearcat Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 187.25,
+          "overallRank": 76,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 317.65,
+          "overallRank": 45,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 504.9,
+      "eventsAttended": 2,
+      "rank": 61,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-mount-union",
+      "school": "University of Mount Union",
+      "teamName": "Raider Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 139.91,
+          "overallRank": 82,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 363.89,
+          "overallRank": 40,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 503.79999999999995,
+      "eventsAttended": 2,
+      "rank": 62,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-oklahoma",
+      "school": "Univ of Oklahoma",
+      "teamName": "Sooner Off-Road",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 498.32,
+          "overallRank": 28,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 498.32,
+      "eventsAttended": 1,
+      "rank": 63,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-federal-do-rio-grande-do-norte",
+      "school": "Univ Federal do Rio Grande do Norte",
+      "teamName": "Car-Kará Baja Tecnoferr",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 496.82,
+          "overallRank": 29,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 496.82,
+      "eventsAttended": 1,
+      "rank": 64,
+      "provisional": false
+    },
+    {
+      "schoolId": "kettering-university",
+      "school": "Kettering Univ",
+      "teamName": "Kettering BAJA Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 485.66,
+          "overallRank": 30,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 485.66,
+      "eventsAttended": 1,
+      "rank": 65,
+      "provisional": false
+    },
+    {
+      "schoolId": "central-michigan-university",
+      "school": "Central Michigan Univ",
+      "teamName": "Chippewa Performance",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 225.49,
+          "overallRank": 69,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 257.56,
+          "overallRank": 51,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 483.05,
+      "eventsAttended": 2,
+      "rank": 66,
+      "provisional": false
+    },
+    {
+      "schoolId": "georgia-southern-university",
+      "school": "Georgia Southern Univ",
+      "teamName": "Eagle Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 477.64,
+          "overallRank": 32,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 477.64,
+      "eventsAttended": 1,
+      "rank": 67,
+      "provisional": false
+    },
+    {
+      "schoolId": "seattle-pacific-university",
+      "school": "Seattle Pacific Univ",
+      "teamName": "Falcon Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 476.66,
+          "overallRank": 20,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 476.66,
+      "eventsAttended": 1,
+      "rank": 68,
+      "provisional": false
+    },
+    {
+      "schoolId": "grove-city-college",
+      "school": "Grove City College",
+      "teamName": "Grove City Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 455.22,
+          "overallRank": 36,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 455.22,
+      "eventsAttended": 1,
+      "rank": 69,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-calgary",
+      "school": "Univ of Calgary",
+      "teamName": "Schulich Offroad",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 193.3,
+          "overallRank": 36,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 256.32,
+          "overallRank": 65,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 449.62,
+      "eventsAttended": 2,
+      "rank": 70,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-arizona",
+      "school": "Univ of Arizona",
+      "teamName": "Baja Wildcat Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 449.58,
+          "overallRank": 37,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 449.58,
+      "eventsAttended": 1,
+      "rank": 71,
+      "provisional": false
+    },
+    {
+      "schoolId": "north-carolina-state-university-raleigh",
+      "school": "North Carolina State Univ - Raleigh",
+      "teamName": "Pack Motorsports Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 446.13,
+          "overallRank": 39,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 446.13,
+      "eventsAttended": 1,
+      "rank": 72,
+      "provisional": false
+    },
+    {
+      "schoolId": "missouri-university-of-science-and-tech",
+      "school": "Missouri University of Science and Tech",
+      "teamName": "Miner Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 432.94,
+          "overallRank": 41,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 432.94,
+      "eventsAttended": 1,
+      "rank": 73,
+      "provisional": false
+    },
+    {
+      "schoolId": "letourneau-university",
+      "school": "LeTourneau Univ",
+      "teamName": "LETU Renegade Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 428.35,
+          "overallRank": 42,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 428.35,
+      "eventsAttended": 1,
+      "rank": 74,
+      "provisional": false
+    },
+    {
+      "schoolId": "fairfield-university",
+      "school": "Fairfield Univ",
+      "teamName": "Fairfield University Offroad Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 415.01,
+          "overallRank": 43,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 415.01,
+      "eventsAttended": 1,
+      "rank": 75,
+      "provisional": false
+    },
+    {
+      "schoolId": "universite-de-sherbrooke",
+      "school": "Universite de Sherbrooke",
+      "teamName": "Universite de Sherbrooke",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 334.58,
+          "overallRank": 29,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 57.58,
+          "overallRank": 72,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 392.15999999999997,
+      "eventsAttended": 2,
+      "rank": 76,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-nevada-reno",
+      "school": "Univ of Nevada - Reno",
+      "teamName": "Wolf Pack Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 391.64,
+          "overallRank": 25,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 391.64,
+      "eventsAttended": 1,
+      "rank": 77,
+      "provisional": false
+    },
+    {
+      "schoolId": "college-of-new-jersey",
+      "school": "College of New Jersey",
+      "teamName": "TCNJ Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 378.47,
+          "overallRank": 46,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 378.47,
+      "eventsAttended": 1,
+      "rank": 78,
+      "provisional": false
+    },
+    {
+      "schoolId": "utah-state-university",
+      "school": "Utah State University",
+      "teamName": "USU Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 371.36,
+          "overallRank": 27,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 371.36,
+      "eventsAttended": 1,
+      "rank": 79,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-missouri-kansas-city",
+      "school": "Univ of Missouri - Kansas City",
+      "teamName": "Roo Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 370.83,
+          "overallRank": 28,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 370.83,
+      "eventsAttended": 1,
+      "rank": 80,
+      "provisional": false
+    },
+    {
+      "schoolId": "south-dakota-state-university",
+      "school": "South Dakota State Univ",
+      "teamName": "Desert Hare Off-road",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 360.95,
+          "overallRank": 47,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 360.95,
+      "eventsAttended": 1,
+      "rank": 81,
+      "provisional": false
+    },
+    {
+      "schoolId": "kansas-state-university",
+      "school": "Kansas State Univ",
+      "teamName": "Wildcat Offroad",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 360.19,
+          "overallRank": 48,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 360.19,
+      "eventsAttended": 1,
+      "rank": 82,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-dayton",
+      "school": "Univ of Dayton",
+      "teamName": "UD Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 352.6,
+          "overallRank": 43,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 352.6,
+      "eventsAttended": 1,
+      "rank": 83,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-st-thomas",
+      "school": "Univ of St Thomas",
+      "teamName": "Tommie Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 343.79,
+          "overallRank": 44,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 343.79,
+      "eventsAttended": 1,
+      "rank": 84,
+      "provisional": false
+    },
+    {
+      "schoolId": "george-washington-university",
+      "school": "George Washington Univ",
+      "teamName": "GW Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 270.6,
+          "overallRank": 62,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 66.64,
+          "overallRank": 70,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 337.24,
+      "eventsAttended": 2,
+      "rank": 85,
+      "provisional": false
+    },
+    {
+      "schoolId": "milwaukee-school-of-engrg",
+      "school": "Milwaukee School of Engrg",
+      "teamName": "MSOE BAJA",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 255.06,
+          "overallRank": 66,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 77.82,
+          "overallRank": 64,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 332.88,
+      "eventsAttended": 2,
+      "rank": 86,
+      "provisional": false
+    },
+    {
+      "schoolId": "syracuse-university",
+      "school": "Syracuse Univ",
+      "teamName": "Cuse Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 71.99,
+          "overallRank": 93,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 256.14,
+          "overallRank": 52,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 328.13,
+      "eventsAttended": 2,
+      "rank": 87,
+      "provisional": false
+    },
+    {
+      "schoolId": "western-new-england-university",
+      "school": "Western New England University",
+      "teamName": "Golden Bear Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 326.27,
+          "overallRank": 55,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 326.27,
+      "eventsAttended": 1,
+      "rank": 88,
+      "provisional": false
+    },
+    {
+      "schoolId": "union-college",
+      "school": "Union College",
+      "teamName": "Union College BAJA Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 326.14,
+          "overallRank": 56,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 326.14,
+      "eventsAttended": 1,
+      "rank": 89,
+      "provisional": false
+    },
+    {
+      "schoolId": "binghamton-university",
+      "school": "Binghamton Univ",
+      "teamName": "Binghamton Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 66.14,
+          "overallRank": 95,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 258.2,
+          "overallRank": 50,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 324.34,
+      "eventsAttended": 2,
+      "rank": 90,
+      "provisional": false
+    },
+    {
+      "schoolId": "northwestern-university",
+      "school": "Northwestern Univ",
+      "teamName": "NU MotorCats",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 312.96,
+          "overallRank": 58,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 312.96,
+      "eventsAttended": 1,
+      "rank": 91,
+      "provisional": false
+    },
+    {
+      "schoolId": "stevens-institute-of-technology",
+      "school": "Stevens Institute of Technology",
+      "teamName": "Stevens Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 308.21,
+          "overallRank": 59,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 308.21,
+      "eventsAttended": 1,
+      "rank": 92,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-calif-irvine",
+      "school": "Univ of Calif - Irvine",
+      "teamName": "Anteater Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 306.71,
+          "overallRank": 30,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 306.71,
+      "eventsAttended": 1,
+      "rank": 93,
+      "provisional": false
+    },
+    {
+      "schoolId": "lawrence-technological-university",
+      "school": "Lawrence Technological Univ",
+      "teamName": "2024 LTU Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 106.57,
+          "overallRank": 87,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 199.25,
+          "overallRank": 56,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 305.82,
+      "eventsAttended": 2,
+      "rank": 94,
+      "provisional": false
+    },
+    {
+      "schoolId": "west-virginia-university",
+      "school": "West Virginia Univ",
+      "teamName": "Mountaineers",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 292.7,
+          "overallRank": 61,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 292.7,
+      "eventsAttended": 1,
+      "rank": 95,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-waterloo",
+      "school": "Univ of Waterloo",
+      "teamName": "University of Waterloo Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 266.48,
+          "overallRank": 49,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 266.48,
+      "eventsAttended": 1,
+      "rank": 96,
+      "provisional": false
+    },
+    {
+      "schoolId": "rowan-university",
+      "school": "Rowan Univ",
+      "teamName": "Rowan Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 261.39,
+          "overallRank": 64,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 261.39,
+      "eventsAttended": 1,
+      "rank": 97,
+      "provisional": false
+    },
+    {
+      "schoolId": "western-michigan-university",
+      "school": "Western Michigan Univ",
+      "teamName": "Bronco Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 101.34,
+          "overallRank": 88,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 140.21,
+          "overallRank": 59,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 241.55,
+      "eventsAttended": 2,
+      "rank": 98,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-alabama-tuscaloosa",
+      "school": "Univ of Alabama - Tuscaloosa",
+      "teamName": "Bama Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 238.55,
+          "overallRank": 67,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 238.55,
+      "eventsAttended": 1,
+      "rank": 99,
+      "provisional": false
+    },
+    {
+      "schoolId": "northern-arizona-university",
+      "school": "Northern Arizona Univ",
+      "teamName": "Lumberjack Motorsports Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 228.41,
+          "overallRank": 33,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 228.41,
+      "eventsAttended": 1,
+      "rank": 100,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-university-los-angeles",
+      "school": "California State Univ - Los Angeles",
+      "teamName": "Rugged Eagle Mortorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 223.7,
+          "overallRank": 34,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 223.7,
+      "eventsAttended": 1,
+      "rank": 101,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-wisconsin-platteville",
+      "school": "Univ of Wisconsin - Platteville",
+      "teamName": "Pioneer Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 220.25,
+          "overallRank": 53,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 220.25,
+      "eventsAttended": 1,
+      "rank": 102,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-rochester",
+      "school": "Univ of Rochester",
+      "teamName": "Yellowjacket Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 219.69,
+          "overallRank": 70,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 219.69,
+      "eventsAttended": 1,
+      "rank": 103,
+      "provisional": false
+    },
+    {
+      "schoolId": "penn-state-university-altoona",
+      "school": "Penn State Univ - Altoona",
+      "teamName": "Penn State Altoona Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 219.44,
+          "overallRank": 54,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 219.44,
+      "eventsAttended": 1,
+      "rank": 104,
+      "provisional": false
+    },
+    {
+      "schoolId": "shippensburg-university",
+      "school": "Shippensburg University",
+      "teamName": "SHIP BAJA",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 218.68,
+          "overallRank": 55,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 218.68,
+      "eventsAttended": 1,
+      "rank": 105,
+      "provisional": false
+    },
+    {
+      "schoolId": "bucknell-university",
+      "school": "Bucknell Univ",
+      "teamName": "Bucknell Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 208.87,
+          "overallRank": 72,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 208.87,
+      "eventsAttended": 1,
+      "rank": 106,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-colorado-boulder",
+      "school": "Univ of Colorado - Boulder",
+      "teamName": "CU Boulder Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 203.02,
+          "overallRank": 73,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 203.02,
+      "eventsAttended": 1,
+      "rank": 107,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-iowa",
+      "school": "Univ of Iowa",
+      "teamName": "Iowa Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 199.85,
+          "overallRank": 75,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 199.85,
+      "eventsAttended": 1,
+      "rank": 108,
+      "provisional": false
+    },
+    {
+      "schoolId": "uqtr-drummondville",
+      "school": "UQTR Drummondville",
+      "teamName": "RÉID Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 188.69,
+          "overallRank": 57,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 188.69,
+      "eventsAttended": 1,
+      "rank": 109,
+      "provisional": false
+    },
+    {
+      "schoolId": "suny-buffalo",
+      "school": "SUNY - Buffalo",
+      "teamName": "UB Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 185.02,
+          "overallRank": 37,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 185.02,
+      "eventsAttended": 1,
+      "rank": 110,
+      "provisional": false
+    },
+    {
+      "schoolId": "boston-university",
+      "school": "Boston Univ",
+      "teamName": "BU Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 173.33,
+          "overallRank": 77,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 173.33,
+      "eventsAttended": 1,
+      "rank": 111,
+      "provisional": false
+    },
+    {
+      "schoolId": "virginia-military-institute",
+      "school": "Virginia Military Inst",
+      "teamName": "VMI Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 157.71,
+          "overallRank": 78,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 157.71,
+      "eventsAttended": 1,
+      "rank": 112,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-tennessee-chattanooga",
+      "school": "Univ of Tennessee -Chattanooga",
+      "teamName": "UTC Racing Mocs",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 157.36,
+          "overallRank": 79,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 157.36,
+      "eventsAttended": 1,
+      "rank": 113,
+      "provisional": false
+    },
+    {
+      "schoolId": "louisiana-tech-university",
+      "school": "Louisiana Tech Univ",
+      "teamName": "Louisiana Tech",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 152.58,
+          "overallRank": 58,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 152.58,
+      "eventsAttended": 1,
+      "rank": 114,
+      "provisional": false
+    },
+    {
+      "schoolId": "oklahoma-christian-university",
+      "school": "Oklahoma Christian Univ",
+      "teamName": "8-Mile",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 148.49,
+          "overallRank": 80,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 148.49,
+      "eventsAttended": 1,
+      "rank": 115,
+      "provisional": false
+    },
+    {
+      "schoolId": "cetys-universidad",
+      "school": "Cetys Universidad",
+      "teamName": "CMB Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 143.75,
+          "overallRank": 41,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 143.75,
+      "eventsAttended": 1,
+      "rank": 116,
+      "provisional": false
+    },
+    {
+      "schoolId": "montana-state-university-bozeman",
+      "school": "Montana State Univ - Bozeman",
+      "teamName": "Bobcat Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 142.86,
+          "overallRank": 81,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 142.86,
+      "eventsAttended": 1,
+      "rank": 117,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-autonoma-estado-mexico",
+      "school": "Universidad Autonoma Estado Mexico",
+      "teamName": "Sara Juana RT",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 138.27,
+          "overallRank": 42,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 138.27,
+      "eventsAttended": 1,
+      "rank": 118,
+      "provisional": false
+    },
+    {
+      "schoolId": "western-colorado-university",
+      "school": "Western Colorado Univ",
+      "teamName": "Mad Jack Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 132.88,
+          "overallRank": 43,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 132.88,
+      "eventsAttended": 1,
+      "rank": 119,
+      "provisional": false
+    },
+    {
+      "schoolId": "fr-c-rodrigues-institute-technology",
+      "school": "Fr C Rodrigues Institute Technology",
+      "teamName": "Team Kaiser Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 132.76,
+          "overallRank": 44,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 132.76,
+      "eventsAttended": 1,
+      "rank": 120,
+      "provisional": false
+    },
+    {
+      "schoolId": "auburn-university",
+      "school": "Auburn Univ",
+      "teamName": "Auburn Off-Road",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 131.97,
+          "overallRank": 83,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 131.97,
+      "eventsAttended": 1,
+      "rank": 121,
+      "provisional": false
+    },
+    {
+      "schoolId": "san-jose-state-university",
+      "school": "San Jose State University",
+      "teamName": "Spartan Racing Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 131.18,
+          "overallRank": 45,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 131.18,
+      "eventsAttended": 1,
+      "rank": 122,
+      "provisional": false
+    },
+    {
+      "schoolId": "instituto-tecnologico-de-chihuahua",
+      "school": "Instituto Tecnologico de Chihuahua",
+      "teamName": "Panteras Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 130.07,
+          "overallRank": 46,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 130.07,
+      "eventsAttended": 1,
+      "rank": 123,
+      "provisional": false
+    },
+    {
+      "schoolId": "northern-michigan-university",
+      "school": "Northern Michigan Univ",
+      "teamName": "Wildcat Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 124.61,
+          "overallRank": 60,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 124.61,
+      "eventsAttended": 1,
+      "rank": 124,
+      "provisional": false
+    },
+    {
+      "schoolId": "arkansas-state-university",
+      "school": "Arkansas State Univ",
+      "teamName": "Red Wolf Racers",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 124.13,
+          "overallRank": 84,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 124.13,
+      "eventsAttended": 1,
+      "rank": 125,
+      "provisional": false
+    },
+    {
+      "schoolId": "new-york-university",
+      "school": "New York University",
+      "teamName": "NYU Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 118.53,
+          "overallRank": 85,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 118.53,
+      "eventsAttended": 1,
+      "rank": 126,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-pittsburgh-johnstown",
+      "school": "Univ of Pittsburgh - Johnstown",
+      "teamName": "Steel Panther Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 115.2,
+          "overallRank": 86,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 115.2,
+      "eventsAttended": 1,
+      "rank": 127,
+      "provisional": false
+    },
+    {
+      "schoolId": "angelo-state-university",
+      "school": "Angelo State Univ",
+      "teamName": "Ram Racing Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 111.17,
+          "overallRank": 47,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 111.17,
+      "eventsAttended": 1,
+      "rank": 128,
+      "provisional": false
+    },
+    {
+      "schoolId": "cleveland-state-university",
+      "school": "Cleveland State Univ",
+      "teamName": "Vikings Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 55,
+          "overallRank": 96,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 55,
+          "overallRank": 76,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 110,
+      "eventsAttended": 2,
+      "rank": 129,
+      "provisional": false
+    },
+    {
+      "schoolId": "christian-brothers-university",
+      "school": "Christian Brothers Univ",
+      "teamName": "Dust Brothers Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 97.98,
+          "overallRank": 89,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 97.98,
+      "eventsAttended": 1,
+      "rank": 130,
+      "provisional": false
+    },
+    {
+      "schoolId": "pittsburg-state-university",
+      "school": "Pittsburg State University",
+      "teamName": "PSU Gorilla Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 96.86,
+          "overallRank": 90,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 96.86,
+      "eventsAttended": 1,
+      "rank": 131,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-illinois-chicago",
+      "school": "Univ of Illinois - Chicago",
+      "teamName": "SAE @ UIC",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 96.4,
+          "overallRank": 61,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 96.4,
+      "eventsAttended": 1,
+      "rank": 132,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-university-long-beach",
+      "school": "California State Univ - Long Beach",
+      "teamName": "Elbee Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 94.7,
+          "overallRank": 48,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 94.7,
+      "eventsAttended": 1,
+      "rank": 133,
+      "provisional": false
+    },
+    {
+      "schoolId": "embry-riddle-aero-university-daytona-beach",
+      "school": "Embry-Riddle Aero Univ - Daytona Beach",
+      "teamName": "ERAU Women's Baja SAE Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 94.51,
+          "overallRank": 91,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 94.51,
+      "eventsAttended": 1,
+      "rank": 134,
+      "provisional": false
+    },
+    {
+      "schoolId": "new-mexico-state-university",
+      "school": "New Mexico State Univ",
+      "teamName": "SAE NMSU Mini Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 89.98,
+          "overallRank": 49,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 89.98,
+      "eventsAttended": 1,
+      "rank": 135,
+      "provisional": false
+    },
+    {
+      "schoolId": "southern-utah-university",
+      "school": "Southern Utah Univ",
+      "teamName": "SUU Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 87.7,
+          "overallRank": 50,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 87.7,
+      "eventsAttended": 1,
+      "rank": 136,
+      "provisional": false
+    },
+    {
+      "schoolId": "dunwoody-college-of-technology",
+      "school": "Dunwoody College of Technology",
+      "teamName": "Dunwoody Hawks Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 84.75,
+          "overallRank": 51,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 84.75,
+      "eventsAttended": 1,
+      "rank": 137,
+      "provisional": false
+    },
+    {
+      "schoolId": "clemson-university",
+      "school": "Clemson Univ",
+      "teamName": "Tiger Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 67.43,
+          "overallRank": 94,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 16,
+          "overallRank": 85,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 83.43,
+      "eventsAttended": 2,
+      "rank": 138,
+      "provisional": false
+    },
+    {
+      "schoolId": "taibah-university",
+      "school": "Taibah University",
+      "teamName": "Taibah University Baja team - 2024",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 81.63,
+          "overallRank": 63,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 81.63,
+      "eventsAttended": 1,
+      "rank": 139,
+      "provisional": false
+    },
+    {
+      "schoolId": "liberty-university",
+      "school": "Liberty Univ",
+      "teamName": "Liberty Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 79,
+          "overallRank": 92,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 79,
+      "eventsAttended": 1,
+      "rank": 140,
+      "provisional": false
+    },
+    {
+      "schoolId": "olin-college-of-engineering",
+      "school": "Olin College of Engineering",
+      "teamName": "Olin Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 73.57,
+          "overallRank": 65,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 73.57,
+      "eventsAttended": 1,
+      "rank": 141,
+      "provisional": false
+    },
+    {
+      "schoolId": "itesm-queretaro",
+      "school": "ITESM - Queretaro",
+      "teamName": "Exergia Racing Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 73.45,
+          "overallRank": 66,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 73.45,
+      "eventsAttended": 1,
+      "rank": 142,
+      "provisional": false
+    },
+    {
+      "schoolId": "nust-school-of-mechanical-and-mfg-engrg",
+      "school": "NUST-School of Mechanical & Mfg Engrg",
+      "teamName": "Markhor Motors",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 73.08,
+          "overallRank": 78,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 73.08,
+      "eventsAttended": 1,
+      "rank": 143,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-university-chico",
+      "school": "California State Univ- Chico",
+      "teamName": "Wildcat racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 73,
+          "overallRank": 54,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 73,
+      "eventsAttended": 1,
+      "rank": 144,
+      "provisional": false
+    },
+    {
+      "schoolId": "olivet-nazarene-university",
+      "school": "Olivet Nazarene Univ",
+      "teamName": "ONU Tiger Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 37,
+          "overallRank": 102,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 35,
+          "overallRank": 79,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 72,
+      "eventsAttended": 2,
+      "rank": 145,
+      "provisional": false
+    },
+    {
+      "schoolId": "union-university",
+      "school": "Union Univ",
+      "teamName": "Bulldog Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 71.23,
+          "overallRank": 69,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 71.23,
+      "eventsAttended": 1,
+      "rank": 146,
+      "provisional": false
+    },
+    {
+      "schoolId": "wichita-state-university",
+      "school": "Wichita State Univ",
+      "teamName": "Shocker Racing Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 63.17,
+          "overallRank": 71,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 63.17,
+      "eventsAttended": 1,
+      "rank": 147,
+      "provisional": false
+    },
+    {
+      "schoolId": "texas-a-and-m-kingsville",
+      "school": "Texas A&M - Kingsville",
+      "teamName": "Los Javelinos Cochinos",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 61.07,
+          "overallRank": 55,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 61.07,
+      "eventsAttended": 1,
+      "rank": 148,
+      "provisional": false
+    },
+    {
+      "schoolId": "fime-uanl",
+      "school": "FIME - UANL",
+      "teamName": "UANL Racing Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 56.65,
+          "overallRank": 73,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 56.65,
+      "eventsAttended": 1,
+      "rank": 149,
+      "provisional": false
+    },
+    {
+      "schoolId": "city-college-of-new-york",
+      "school": "City College of New York",
+      "teamName": "CCNY Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 56.27,
+          "overallRank": 74,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 56.27,
+      "eventsAttended": 1,
+      "rank": 150,
+      "provisional": false
+    },
+    {
+      "schoolId": "won-kwang-university",
+      "school": "Won Kwang Univ",
+      "teamName": "Mechanism international racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 55.32,
+          "overallRank": 75,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 55.32,
+      "eventsAttended": 1,
+      "rank": 151,
+      "provisional": false
+    },
+    {
+      "schoolId": "toronto-metropolitan-university",
+      "school": "Toronto Metropolitan University",
+      "teamName": "Toronto Metropolitan Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 53.31,
+          "overallRank": 77,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 53.31,
+      "eventsAttended": 1,
+      "rank": 152,
+      "provisional": false
+    },
+    {
+      "schoolId": "alfred-state-college",
+      "school": "Alfred State College",
+      "teamName": "Alfred State Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 52,
+          "overallRank": 97,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 52,
+      "eventsAttended": 1,
+      "rank": 153,
+      "provisional": false
+    },
+    {
+      "schoolId": "laurentian-university",
+      "school": "Laurentian Univ",
+      "teamName": "Big Stack Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 51,
+          "overallRank": 98,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 51,
+      "eventsAttended": 1,
+      "rank": 154,
+      "provisional": false
+    },
+    {
+      "schoolId": "lehigh-university",
+      "school": "Lehigh Univ",
+      "teamName": "Lehigh University",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 46,
+          "overallRank": 99,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 46,
+      "eventsAttended": 1,
+      "rank": 155,
+      "provisional": false
+    },
+    {
+      "schoolId": "manhattan-college",
+      "school": "Manhattan College",
+      "teamName": "Jasper Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 44,
+          "overallRank": 100,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 44,
+      "eventsAttended": 1,
+      "rank": 156,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-tennessee-martin",
+      "school": "Univ of Tennessee - Martin",
+      "teamName": "UTM Skyhawk Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 43,
+          "overallRank": 56,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 43,
+      "eventsAttended": 1,
+      "rank": 157,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-university-fullerton",
+      "school": "California State Univ - Fullerton",
+      "teamName": "Titan Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 41,
+          "overallRank": 57,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 41,
+      "eventsAttended": 1,
+      "rank": 158,
+      "provisional": false
+    },
+    {
+      "schoolId": "lipscomb-university",
+      "school": "Lipscomb Univ",
+      "teamName": "Lipscomb Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 39.43,
+          "overallRank": 101,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 39.43,
+      "eventsAttended": 1,
+      "rank": 159,
+      "provisional": false
+    },
+    {
+      "schoolId": "loyola-marymount-university",
+      "school": "Loyola Marymount Univ",
+      "teamName": "Baja Lions Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 37.7,
+          "overallRank": 58,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 37.7,
+      "eventsAttended": 1,
+      "rank": 160,
+      "provisional": false
+    },
+    {
+      "schoolId": "wentworth-institute-of-tech",
+      "school": "Wentworth Inst of Tech",
+      "teamName": "Leopard Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 35,
+          "overallRank": 80,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 35,
+      "eventsAttended": 1,
+      "rank": 161,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-ottawa",
+      "school": "Univ of Ottawa",
+      "teamName": "Rough Riders Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 34,
+          "overallRank": 81,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 34,
+      "eventsAttended": 1,
+      "rank": 162,
+      "provisional": false
+    },
+    {
+      "schoolId": "mississippi-state-university",
+      "school": "Mississippi State Univ",
+      "teamName": "Mud Dawg Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 31,
+          "overallRank": 82,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 31,
+      "eventsAttended": 1,
+      "rank": 163,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-nebraska-lincoln",
+      "school": "Univ of Nebraska - Lincoln",
+      "teamName": "Husker Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 30.29,
+          "overallRank": 103,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 30.29,
+      "eventsAttended": 1,
+      "rank": 164,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-massachusetts-dartmouth",
+      "school": "University of Massachusetts - Dartmouth",
+      "teamName": "Corsair Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 30,
+          "overallRank": 59,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 30,
+      "eventsAttended": 1,
+      "rank": 165,
+      "provisional": false
+    },
+    {
+      "schoolId": "buffalo-state-college",
+      "school": "Buffalo State College",
+      "teamName": "Buffalo State Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 28,
+          "overallRank": 83,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 28,
+      "eventsAttended": 1,
+      "rank": 166,
+      "provisional": false
+    },
+    {
+      "schoolId": "northern-kentucky-university",
+      "school": "Northern Kentucky Univ",
+      "teamName": "Norse Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 25,
+          "overallRank": 104,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 25,
+      "eventsAttended": 1,
+      "rank": 167,
+      "provisional": false
+    },
+    {
+      "schoolId": "southwestern-college",
+      "school": "Southwestern College",
+      "teamName": "Jag Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 23,
+          "overallRank": 60,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 23,
+      "eventsAttended": 1,
+      "rank": 168,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-autonoma-de-nuevo-leon",
+      "school": "Universidad Autonoma De Nuevo Leon",
+      "teamName": "TigreMotors UANL",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 23,
+          "overallRank": 84,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 23,
+      "eventsAttended": 1,
+      "rank": 168,
+      "provisional": false
+    },
+    {
+      "schoolId": "eastern-michigan-university",
+      "school": "Eastern Michigan Univ",
+      "teamName": "EMU Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 18,
+          "overallRank": 105,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 18,
+      "eventsAttended": 1,
+      "rank": 170,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-texas-el-paso",
+      "school": "Univ of Texas - El Paso",
+      "teamName": "MADPICK MOTORSPORTS",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 17,
+          "overallRank": 61,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 17,
+      "eventsAttended": 1,
+      "rank": 171,
+      "provisional": false
+    },
+    {
+      "schoolId": "middle-tennessee-state-university",
+      "school": "Middle Tennessee State Univ",
+      "teamName": "MTSU motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 15,
+          "overallRank": 86,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 15,
+      "eventsAttended": 1,
+      "rank": 172,
+      "provisional": false
+    },
+    {
+      "schoolId": "old-dominion-university",
+      "school": "Old Dominion Univ",
+      "teamName": "Whiskey Throttle Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 14,
+          "overallRank": 106,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 14,
+      "eventsAttended": 1,
+      "rank": 173,
+      "provisional": false
+    },
+    {
+      "schoolId": "colorado-state-university",
+      "school": "Colorado State University",
+      "teamName": "Aggies Offroad Racing and Development",
+      "results": [
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 9,
+          "overallRank": 107,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 9,
+      "eventsAttended": 1,
+      "rank": 174,
+      "provisional": false
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-09-06T18:41:44.776Z",
+  "seasons": [
+    {
+      "year": 2026,
+      "competitions": 2,
+      "teams": 149
+    },
+    {
+      "year": 2025,
+      "competitions": 3,
+      "teams": 165
+    },
+    {
+      "year": 2024,
+      "competitions": 3,
+      "teams": 174
+    },
+    {
+      "year": 2023,
+      "competitions": 3,
+      "teams": 174
+    },
+    {
+      "year": 2022,
+      "competitions": 3,
+      "teams": 157
+    },
+    {
+      "year": 2021,
+      "competitions": 3,
+      "teams": 154
+    },
+    {
+      "year": 2020,
+      "competitions": 3,
+      "teams": 247
+    },
+    {
+      "year": 2019,
+      "competitions": 3,
+      "teams": 213
+    },
+    {
+      "year": 2018,
+      "competitions": 3,
+      "teams": 208
+    },
+    {
+      "year": 2017,
+      "competitions": 3,
+      "teams": 226
+    },
+    {
+      "year": 2016,
+      "competitions": 3,
+      "teams": 212
+    }
+  ],
+  "warnings": []
+}
