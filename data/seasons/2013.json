@@ -1,0 +1,4452 @@
+{
+  "year": 2013,
+  "competitions": [
+    {
+      "id": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+      "name": "Baja SAE Tennessee Tech",
+      "startDate": null,
+      "endDate": null,
+      "location": null
+    },
+    {
+      "id": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+      "name": "Baja SAE Washington",
+      "startDate": null,
+      "endDate": null,
+      "location": null
+    },
+    {
+      "id": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+      "name": "Baja SAE Rochester",
+      "startDate": null,
+      "endDate": null,
+      "location": null
+    }
+  ],
+  "standings": [
+    {
+      "schoolId": "michigan",
+      "school": "Univ of Michigan - Ann Arbor",
+      "teamName": "Maize",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 795.49,
+          "overallRank": 6,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 874.43,
+          "overallRank": 1,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 840.74,
+          "overallRank": 4,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2510.66,
+      "eventsAttended": 3,
+      "rank": 1,
+      "provisional": false
+    },
+    {
+      "schoolId": "ets",
+      "school": "Ecole De Technologie Superieure",
+      "teamName": "ÉTS Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 822.84,
+          "overallRank": 4,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 813.73,
+          "overallRank": 4,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 829.19,
+          "overallRank": 6,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2465.76,
+      "eventsAttended": 3,
+      "rank": 2,
+      "provisional": false
+    },
+    {
+      "schoolId": "ohio-northern-university",
+      "school": "Ohio Northern Univ",
+      "teamName": "Polar Bear Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 843.33,
+          "overallRank": 2,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 784.16,
+          "overallRank": 7,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 808.17,
+          "overallRank": 9,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2435.66,
+      "eventsAttended": 3,
+      "rank": 3,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-louisville",
+      "school": "Univ of Louisville",
+      "teamName": "Speed Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 767.75,
+          "overallRank": 8,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 788.25,
+          "overallRank": 5,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 849.83,
+          "overallRank": 2,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2405.83,
+      "eventsAttended": 3,
+      "rank": 4,
+      "provisional": false
+    },
+    {
+      "schoolId": "rit",
+      "school": "Rochester Institute of Technology",
+      "teamName": "RIOT Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 750.52,
+          "overallRank": 9,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 753.32,
+          "overallRank": 10,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 842.99,
+          "overallRank": 3,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2346.83,
+      "eventsAttended": 3,
+      "rank": 5,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-maryland-baltimore-county",
+      "school": "Univ of Maryland - Baltimore County",
+      "teamName": "UMBC Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 422.88,
+          "overallRank": 49,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 763.01,
+          "overallRank": 8,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 817.82,
+          "overallRank": 7,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2003.71,
+      "eventsAttended": 3,
+      "rank": 6,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-tennessee-chattanooga",
+      "school": "Univ of Tennessee -Chattanooga",
+      "teamName": "Racing Mocs",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 735.01,
+          "overallRank": 10,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 492.28,
+          "overallRank": 33,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 623.42,
+          "overallRank": 32,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1850.71,
+      "eventsAttended": 3,
+      "rank": 7,
+      "provisional": false
+    },
+    {
+      "schoolId": "mcgill-university",
+      "school": "McGill Univ",
+      "teamName": "McGill Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 753.42,
+          "overallRank": 9,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 886.16,
+          "overallRank": 1,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1639.58,
+      "eventsAttended": 2,
+      "rank": 8,
+      "provisional": false
+    },
+    {
+      "schoolId": "cornell",
+      "school": "Cornell Univ",
+      "teamName": "Big Red Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 845.62,
+          "overallRank": 1,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 758.29,
+          "overallRank": 14,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1603.9099999999999,
+      "eventsAttended": 2,
+      "rank": 9,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-nebraska-lincoln",
+      "school": "Univ of Nebraska - Lincoln",
+      "teamName": "Husker Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 839.17,
+          "overallRank": 3,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 736.58,
+          "overallRank": 17,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1575.75,
+      "eventsAttended": 2,
+      "rank": 10,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-poly-university-pomona",
+      "school": "California State Poly Univ - Pomona",
+      "teamName": "Bronco Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 731.5,
+          "overallRank": 11,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 785.91,
+          "overallRank": 6,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1517.4099999999999,
+      "eventsAttended": 2,
+      "rank": 11,
+      "provisional": false
+    },
+    {
+      "schoolId": "ecole-polytechnique-de-montreal",
+      "school": "Ecole Polytechnique De Montreal",
+      "teamName": "EPM Mudbees",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 739.38,
+          "overallRank": 11,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 761.91,
+          "overallRank": 13,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1501.29,
+      "eventsAttended": 2,
+      "rank": 12,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-wisconsin-madison",
+      "school": "Univ of Wisconsin - Madison",
+      "teamName": "UW Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 666.46,
+          "overallRank": 17,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 817.29,
+          "overallRank": 8,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1483.75,
+      "eventsAttended": 2,
+      "rank": 13,
+      "provisional": false
+    },
+    {
+      "schoolId": "northeastern-university",
+      "school": "Northeastern Univ",
+      "teamName": "Skunkworks",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 838.28,
+          "overallRank": 3,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 643.46,
+          "overallRank": 30,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1481.74,
+      "eventsAttended": 2,
+      "rank": 14,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-cincinnati",
+      "school": "Univ of Cincinnati",
+      "teamName": "Bearcats Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 728.84,
+          "overallRank": 12,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 699.43,
+          "overallRank": 22,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1428.27,
+      "eventsAttended": 2,
+      "rank": 15,
+      "provisional": false
+    },
+    {
+      "schoolId": "north-carolina-state-university-raleigh",
+      "school": "North Carolina State Univ - Raleigh",
+      "teamName": "Wolfpack Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 629.27,
+          "overallRank": 24,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 788.32,
+          "overallRank": 11,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1417.5900000000001,
+      "eventsAttended": 2,
+      "rank": 16,
+      "provisional": false
+    },
+    {
+      "schoolId": "georgia-southern-university",
+      "school": "Georgia Southern Univ",
+      "teamName": "Eagle Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 636.06,
+          "overallRank": 22,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 753.15,
+          "overallRank": 16,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1389.21,
+      "eventsAttended": 2,
+      "rank": 17,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-regina",
+      "school": "Univ of Regina",
+      "teamName": "Cougar Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 696.79,
+          "overallRank": 14,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 674.32,
+          "overallRank": 26,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1371.1100000000001,
+      "eventsAttended": 2,
+      "rank": 18,
+      "provisional": false
+    },
+    {
+      "schoolId": "universite-laval",
+      "school": "Universite Laval",
+      "teamName": "Alerion",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 562.65,
+          "overallRank": 23,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 755.67,
+          "overallRank": 15,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1318.32,
+      "eventsAttended": 2,
+      "rank": 19,
+      "provisional": false
+    },
+    {
+      "schoolId": "tennessee-tech-university",
+      "school": "Tennessee Tech Univ",
+      "teamName": "TTU Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 621.05,
+          "overallRank": 25,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 691.94,
+          "overallRank": 23,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1312.99,
+      "eventsAttended": 2,
+      "rank": 20,
+      "provisional": false
+    },
+    {
+      "schoolId": "harding-university",
+      "school": "Harding Univ",
+      "teamName": "Harding University Baja Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 618.51,
+          "overallRank": 26,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 675.21,
+          "overallRank": 25,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1293.72,
+      "eventsAttended": 2,
+      "rank": 21,
+      "provisional": false
+    },
+    {
+      "schoolId": "universite-de-sherbrooke",
+      "school": "Universite de Sherbrooke",
+      "teamName": "Sherbrooke Racing Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 551.02,
+          "overallRank": 34,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 730.76,
+          "overallRank": 18,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1281.78,
+      "eventsAttended": 2,
+      "rank": 22,
+      "provisional": false
+    },
+    {
+      "schoolId": "iowa-state-university",
+      "school": "Iowa State Univ",
+      "teamName": "Cyclone Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 449.32,
+          "overallRank": 38,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 788.62,
+          "overallRank": 10,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1237.94,
+      "eventsAttended": 2,
+      "rank": 23,
+      "provisional": false
+    },
+    {
+      "schoolId": "virginia-western-comm-college",
+      "school": "Virginia Western Comm Coll",
+      "teamName": "VWCC Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 514.67,
+          "overallRank": 37,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 714.98,
+          "overallRank": 19,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1229.65,
+      "eventsAttended": 2,
+      "rank": 24,
+      "provisional": false
+    },
+    {
+      "schoolId": "queens-university-ontario-canada",
+      "school": "Queen's Univ - Ontario Canada",
+      "teamName": "Queen's Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 265.76,
+          "overallRank": 67,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 342.19,
+          "overallRank": 50,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 591.46,
+          "overallRank": 35,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1199.41,
+      "eventsAttended": 3,
+      "rank": 25,
+      "provisional": false
+    },
+    {
+      "schoolId": "clarkson-university",
+      "school": "Clarkson University",
+      "teamName": "Golden Knights Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 634,
+          "overallRank": 23,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 526.97,
+          "overallRank": 42,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1160.97,
+      "eventsAttended": 2,
+      "rank": 26,
+      "provisional": false
+    },
+    {
+      "schoolId": "pittsburg-state-university",
+      "school": "Pittsburg State University",
+      "teamName": "Gorilla One",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 703.53,
+          "overallRank": 14,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 457.29,
+          "overallRank": 37,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1160.82,
+      "eventsAttended": 2,
+      "rank": 27,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-arkansas-fayetteville",
+      "school": "Univ of Arkansas - Fayetteville",
+      "teamName": "Racing Razorbacks",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 613.13,
+          "overallRank": 27,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 502.28,
+          "overallRank": 44,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1115.4099999999999,
+      "eventsAttended": 2,
+      "rank": 28,
+      "provisional": false
+    },
+    {
+      "schoolId": "franklin-w-olin-college-of-engineering",
+      "school": "Franklin W Olin College of Engineering",
+      "teamName": "Phoenix Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 453.02,
+          "overallRank": 44,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 601.12,
+          "overallRank": 33,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1054.1399999999999,
+      "eventsAttended": 2,
+      "rank": 29,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-illinois-urbana-champaign",
+      "school": "Univ of Illinois - Urbana Champaign",
+      "teamName": "Off-Road Illini",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 480.57,
+          "overallRank": 42,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 572.9,
+          "overallRank": 21,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1053.47,
+      "eventsAttended": 2,
+      "rank": 30,
+      "provisional": false
+    },
+    {
+      "schoolId": "michigan-state-university",
+      "school": "Michigan State Univ",
+      "teamName": "Michigan State Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 384.13,
+          "overallRank": 52,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 338.11,
+          "overallRank": 51,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 303.68,
+          "overallRank": 63,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1025.92,
+      "eventsAttended": 3,
+      "rank": 31,
+      "provisional": false
+    },
+    {
+      "schoolId": "north-carolina-a-and-t-state-university",
+      "school": "North Carolina A & T State Univ",
+      "teamName": "Aggie Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 552.85,
+          "overallRank": 33,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 467.52,
+          "overallRank": 35,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1020.37,
+      "eventsAttended": 2,
+      "rank": 32,
+      "provisional": false
+    },
+    {
+      "schoolId": "johns-hopkins-university",
+      "school": "Johns Hopkins Univ",
+      "teamName": "Hopkins Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 342.23,
+          "overallRank": 59,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 560.99,
+          "overallRank": 39,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 903.22,
+      "eventsAttended": 2,
+      "rank": 33,
+      "provisional": false
+    },
+    {
+      "schoolId": "penn-state-university-altoona",
+      "school": "Penn State Univ - Altoona",
+      "teamName": "Penn State Altoona Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 362.49,
+          "overallRank": 57,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 511.08,
+          "overallRank": 43,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 873.5699999999999,
+      "eventsAttended": 2,
+      "rank": 34,
+      "provisional": false
+    },
+    {
+      "schoolId": "oregon-state",
+      "school": "Oregon State Univ",
+      "teamName": "Beaver Racing Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 848.51,
+          "overallRank": 2,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 848.51,
+      "eventsAttended": 1,
+      "rank": 35,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidade-federal-de-minas-gerais",
+      "school": "Universidade Federal de Minas Gerais",
+      "teamName": "Baja UFMG",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 835.48,
+          "overallRank": 5,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 835.48,
+      "eventsAttended": 1,
+      "rank": 36,
+      "provisional": false
+    },
+    {
+      "schoolId": "letourneau-university",
+      "school": "LeTourneau Univ",
+      "teamName": "Renegade Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 802.83,
+          "overallRank": 5,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 802.83,
+      "eventsAttended": 1,
+      "rank": 37,
+      "provisional": false
+    },
+    {
+      "schoolId": "monroe-community-college",
+      "school": "Monroe Community College",
+      "teamName": "Tribune Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 370.25,
+          "overallRank": 54,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 425.14,
+          "overallRank": 56,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 795.39,
+      "eventsAttended": 2,
+      "rank": 38,
+      "provisional": false
+    },
+    {
+      "schoolId": "centro-universitario-da-fei",
+      "school": "Centro Universitario Da FEI",
+      "teamName": "FEI Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 782.26,
+          "overallRank": 12,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 782.26,
+      "eventsAttended": 1,
+      "rank": 39,
+      "provisional": false
+    },
+    {
+      "schoolId": "cegep-de-sherbrooke",
+      "school": "Cegep de Sherbrooke",
+      "teamName": "Cegep de Sherbrooke",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 778.57,
+          "overallRank": 7,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 778.57,
+      "eventsAttended": 1,
+      "rank": 40,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-maryland-college-park",
+      "school": "Univ of Maryland - College Park",
+      "teamName": "Terps Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 719.1,
+          "overallRank": 13,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 719.1,
+      "eventsAttended": 1,
+      "rank": 41,
+      "provisional": false
+    },
+    {
+      "schoolId": "cal-poly-slo",
+      "school": "California Polytechnic State Univ-SLO",
+      "teamName": "Cal Poly Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 717.29,
+          "overallRank": 12,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 717.29,
+      "eventsAttended": 1,
+      "rank": 42,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-manitoba",
+      "school": "Univ of Manitoba",
+      "teamName": "Red Lion Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 716.54,
+          "overallRank": 13,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 716.54,
+      "eventsAttended": 1,
+      "rank": 43,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidade-federal-de-santa-catarina",
+      "school": "Universidade Federal de Santa Catarina",
+      "teamName": "UFSC PUMA",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 710.92,
+          "overallRank": 20,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 710.92,
+      "eventsAttended": 1,
+      "rank": 44,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-calgary",
+      "school": "Univ of Calgary",
+      "teamName": "Schulich Off-Road",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 699.99,
+          "overallRank": 21,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 699.99,
+      "eventsAttended": 1,
+      "rank": 45,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-wisconsin-platteville",
+      "school": "Univ of Wisconsin - Platteville",
+      "teamName": "Pioneer Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 686.63,
+          "overallRank": 24,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 686.63,
+      "eventsAttended": 1,
+      "rank": 46,
+      "provisional": false
+    },
+    {
+      "schoolId": "kansas-state-university",
+      "school": "Kansas State Univ",
+      "teamName": "Wildcat Offroad",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 680.4,
+          "overallRank": 15,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 680.4,
+      "eventsAttended": 1,
+      "rank": 47,
+      "provisional": false
+    },
+    {
+      "schoolId": "virginia-tech",
+      "school": "Virginia Tech",
+      "teamName": "VT Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 674.45,
+          "overallRank": 16,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 674.45,
+      "eventsAttended": 1,
+      "rank": 48,
+      "provisional": false
+    },
+    {
+      "schoolId": "auburn-university",
+      "school": "Auburn Univ",
+      "teamName": "War Eagle Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 197.15,
+          "overallRank": 74,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 471.06,
+          "overallRank": 49,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 668.21,
+      "eventsAttended": 2,
+      "rank": 49,
+      "provisional": false
+    },
+    {
+      "schoolId": "wichita-state-university",
+      "school": "Wichita State Univ",
+      "teamName": "Shocker Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 4,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 309.43,
+          "overallRank": 52,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 352.29,
+          "overallRank": 61,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 665.72,
+      "eventsAttended": 3,
+      "rank": 50,
+      "provisional": false
+    },
+    {
+      "schoolId": "purdue-university-w-lafayette",
+      "school": "Purdue Univ - W Lafayette",
+      "teamName": "Team Marauder Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 660.24,
+          "overallRank": 27,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 660.24,
+      "eventsAttended": 1,
+      "rank": 51,
+      "provisional": false
+    },
+    {
+      "schoolId": "kansas-state-university-salina",
+      "school": "Kansas State Univ - Salina",
+      "teamName": "Baja Salina",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 648.54,
+          "overallRank": 18,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 10,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 658.54,
+      "eventsAttended": 2,
+      "rank": 52,
+      "provisional": false
+    },
+    {
+      "schoolId": "south-dakota-sch-of-mines-and-tech",
+      "school": "South Dakota Sch of Mines & Tech",
+      "teamName": "Hardrocker Racing Gold",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 657.15,
+          "overallRank": 16,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 657.15,
+      "eventsAttended": 1,
+      "rank": 53,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-windsor",
+      "school": "Univ of Windsor",
+      "teamName": "Lancer Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 650.25,
+          "overallRank": 28,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 650.25,
+      "eventsAttended": 1,
+      "rank": 54,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-pretoria",
+      "school": "Univ of Pretoria",
+      "teamName": "TUKS Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 645.48,
+          "overallRank": 19,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 645.48,
+      "eventsAttended": 1,
+      "rank": 55,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-texas-pan-american",
+      "school": "Univ of Texas - Pan American",
+      "teamName": "UTPA Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 645.36,
+          "overallRank": 20,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 645.36,
+      "eventsAttended": 1,
+      "rank": 56,
+      "provisional": false
+    },
+    {
+      "schoolId": "arizona-state-university-polytechnic",
+      "school": "Arizona State Univ - Polytechnic",
+      "teamName": "Sun Devil Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 644.86,
+          "overallRank": 17,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 644.86,
+      "eventsAttended": 1,
+      "rank": 57,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-la-salle",
+      "school": "Universidad La Salle",
+      "teamName": "Aguilas",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 643.67,
+          "overallRank": 29,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 643.67,
+      "eventsAttended": 1,
+      "rank": 58,
+      "provisional": false
+    },
+    {
+      "schoolId": "geneva-college",
+      "school": "Geneva College",
+      "teamName": "GT2 Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 637.99,
+          "overallRank": 21,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 637.99,
+      "eventsAttended": 1,
+      "rank": 59,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-de-la-salle-bajio",
+      "school": "Universidad De La Salle Bajio",
+      "teamName": "Bajio 1",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 629.31,
+          "overallRank": 31,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 629.31,
+      "eventsAttended": 1,
+      "rank": 60,
+      "provisional": false
+    },
+    {
+      "schoolId": "pennsylvania-college-of-technology",
+      "school": "Pennsylvania College of Technology",
+      "teamName": "Wildcats",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 605.52,
+          "overallRank": 28,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 605.52,
+      "eventsAttended": 1,
+      "rank": 61,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-calif-los-angeles",
+      "school": "Univ of Calif - Los Angeles",
+      "teamName": "UCLA Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 600.64,
+          "overallRank": 18,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 600.64,
+      "eventsAttended": 1,
+      "rank": 62,
+      "provisional": false
+    },
+    {
+      "schoolId": "northern-michigan-university",
+      "school": "Northern Michigan Univ",
+      "teamName": "Wildcat Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 597.2,
+          "overallRank": 34,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 597.2,
+      "eventsAttended": 1,
+      "rank": 63,
+      "provisional": false
+    },
+    {
+      "schoolId": "suny-stony-brook",
+      "school": "SUNY - Stony Brook",
+      "teamName": "Stony Brook Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 590.13,
+          "overallRank": 36,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 590.13,
+      "eventsAttended": 1,
+      "rank": 64,
+      "provisional": false
+    },
+    {
+      "schoolId": "central-michigan-university",
+      "school": "Central Michigan Univ",
+      "teamName": "Chippewa Performance",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 580.8,
+          "overallRank": 29,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 580.8,
+      "eventsAttended": 1,
+      "rank": 65,
+      "provisional": false
+    },
+    {
+      "schoolId": "ipn-upiita",
+      "school": "IPN - UPIITA",
+      "teamName": "RCS",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 580.73,
+          "overallRank": 37,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 580.73,
+      "eventsAttended": 1,
+      "rank": 66,
+      "provisional": false
+    },
+    {
+      "schoolId": "colorado-school-of-mines",
+      "school": "Colorado School of Mines",
+      "teamName": "Baja Blasters",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 579.1,
+          "overallRank": 20,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 579.1,
+      "eventsAttended": 1,
+      "rank": 67,
+      "provisional": false
+    },
+    {
+      "schoolId": "memorial-university-of-newfoundland",
+      "school": "Memorial Univ of Newfoundland",
+      "teamName": "Memorial Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 578.89,
+          "overallRank": 38,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 578.89,
+      "eventsAttended": 1,
+      "rank": 68,
+      "provisional": false
+    },
+    {
+      "schoolId": "lamar-university",
+      "school": "Lamar Univ",
+      "teamName": "Cardinal Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 575.03,
+          "overallRank": 30,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 575.03,
+      "eventsAttended": 1,
+      "rank": 69,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-university-chico",
+      "school": "California State Univ - Chico",
+      "teamName": "Chico State Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 571.98,
+          "overallRank": 22,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 571.98,
+      "eventsAttended": 1,
+      "rank": 70,
+      "provisional": false
+    },
+    {
+      "schoolId": "college-of-new-jersey",
+      "school": "College of New Jersey",
+      "teamName": "TCNJ Motor Sports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 559.63,
+          "overallRank": 31,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 559.63,
+      "eventsAttended": 1,
+      "rank": 71,
+      "provisional": false
+    },
+    {
+      "schoolId": "michigan-tech-university",
+      "school": "Michigan Tech Univ",
+      "teamName": "Blizzard Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 557.55,
+          "overallRank": 32,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 557.55,
+      "eventsAttended": 1,
+      "rank": 72,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-university-los-angeles",
+      "school": "California State Univ - Los Angeles",
+      "teamName": "Golden Eagles",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 554.91,
+          "overallRank": 24,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 554.91,
+      "eventsAttended": 1,
+      "rank": 73,
+      "provisional": false
+    },
+    {
+      "schoolId": "louisiana-state-university",
+      "school": "Louisiana State Univ",
+      "teamName": "Baja Bengals",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 544.6,
+          "overallRank": 35,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 544.6,
+      "eventsAttended": 1,
+      "rank": 74,
+      "provisional": false
+    },
+    {
+      "schoolId": "western-washington-university",
+      "school": "Western Washington Univ",
+      "teamName": "WWU Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 542.95,
+          "overallRank": 25,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 542.95,
+      "eventsAttended": 1,
+      "rank": 75,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-akron",
+      "school": "Univ of Akron",
+      "teamName": "Zips Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 236.59,
+          "overallRank": 70,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 297.52,
+          "overallRank": 65,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 534.11,
+      "eventsAttended": 2,
+      "rank": 76,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-missouri-kansas-city",
+      "school": "Univ of Missouri - Kansas City",
+      "teamName": "UMKC Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 269.83,
+          "overallRank": 66,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 263.88,
+          "overallRank": 69,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 533.71,
+      "eventsAttended": 2,
+      "rank": 77,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-british-columbia",
+      "school": "Univ of British Columbia",
+      "teamName": "UBC Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 531.6,
+          "overallRank": 26,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 531.6,
+      "eventsAttended": 1,
+      "rank": 78,
+      "provisional": false
+    },
+    {
+      "schoolId": "clemson-university",
+      "school": "Clemson Univ",
+      "teamName": "CU Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 531.59,
+          "overallRank": 40,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 531.59,
+      "eventsAttended": 1,
+      "rank": 79,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-pittsburgh-johnstown",
+      "school": "Univ of Pittsburgh - Johnstown",
+      "teamName": "Steel Panther Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 530.72,
+          "overallRank": 41,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 530.72,
+      "eventsAttended": 1,
+      "rank": 80,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-arizona",
+      "school": "Univ of Arizona",
+      "teamName": "UA Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 527.63,
+          "overallRank": 27,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 527.63,
+      "eventsAttended": 1,
+      "rank": 81,
+      "provisional": false
+    },
+    {
+      "schoolId": "keimyung-university",
+      "school": "Keimyung University",
+      "teamName": "Speed Limit",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 524.34,
+          "overallRank": 36,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 524.34,
+      "eventsAttended": 1,
+      "rank": 82,
+      "provisional": false
+    },
+    {
+      "schoolId": "northern-illinois-university",
+      "school": "Northern Illinois Univ",
+      "teamName": "NIU Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 514.23,
+          "overallRank": 28,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 514.23,
+      "eventsAttended": 1,
+      "rank": 83,
+      "provisional": false
+    },
+    {
+      "schoolId": "north-dakota-state-university",
+      "school": "North Dakota State Univ",
+      "teamName": "NDSU Bison Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 511.29,
+          "overallRank": 29,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 511.29,
+      "eventsAttended": 1,
+      "rank": 84,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-southern-indiana",
+      "school": "Univ of Southern Indiana",
+      "teamName": "Screaming Eagles",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 509.94,
+          "overallRank": 38,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 509.94,
+      "eventsAttended": 1,
+      "rank": 85,
+      "provisional": false
+    },
+    {
+      "schoolId": "southern-illinois-university-carbondale",
+      "school": "Southern Illinois Univ - Carbondale",
+      "teamName": "Saluki Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 509.68,
+          "overallRank": 39,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 509.68,
+      "eventsAttended": 1,
+      "rank": 86,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-tulsa",
+      "school": "Univ of Tulsa",
+      "teamName": "Hurricane Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 508.13,
+          "overallRank": 40,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 508.13,
+      "eventsAttended": 1,
+      "rank": 87,
+      "provisional": false
+    },
+    {
+      "schoolId": "san-diego-state-university",
+      "school": "San Diego State Univ",
+      "teamName": "Aztec Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 503.33,
+          "overallRank": 31,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 503.33,
+      "eventsAttended": 1,
+      "rank": 88,
+      "provisional": false
+    },
+    {
+      "schoolId": "suny-buffalo",
+      "school": "SUNY - Buffalo",
+      "teamName": "UB Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 13,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 487.69,
+          "overallRank": 47,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 500.69,
+      "eventsAttended": 2,
+      "rank": 89,
+      "provisional": false
+    },
+    {
+      "schoolId": "grove-city-college",
+      "school": "Grove City College",
+      "teamName": "Grove City College Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 500.59,
+          "overallRank": 45,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 500.59,
+      "eventsAttended": 1,
+      "rank": 90,
+      "provisional": false
+    },
+    {
+      "schoolId": "manhattan-college",
+      "school": "Manhattan College",
+      "teamName": "Jasper Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 498.86,
+          "overallRank": 46,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 498.86,
+      "eventsAttended": 1,
+      "rank": 91,
+      "provisional": false
+    },
+    {
+      "schoolId": "lawrence-technological-university",
+      "school": "Lawrence Technological Univ",
+      "teamName": "Blue Devil Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 497.89,
+          "overallRank": 41,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 497.89,
+      "eventsAttended": 1,
+      "rank": 92,
+      "provisional": false
+    },
+    {
+      "schoolId": "new-mexico-state-university",
+      "school": "New Mexico State Univ",
+      "teamName": "Haulin' Aggies",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 495.34,
+          "overallRank": 32,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 495.34,
+      "eventsAttended": 1,
+      "rank": 93,
+      "provisional": false
+    },
+    {
+      "schoolId": "universite-du-quebec-a-trois-rivieres",
+      "school": "Universite Du Quebec a Trois-Rivieres",
+      "teamName": "BAJA SAE UQTR",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 476.92,
+          "overallRank": 48,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 476.92,
+      "eventsAttended": 1,
+      "rank": 94,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-rhode-island",
+      "school": "Univ of Rhode Island",
+      "teamName": "URI Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 474.22,
+          "overallRank": 43,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 474.22,
+      "eventsAttended": 1,
+      "rank": 95,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-iowa",
+      "school": "Univ of Iowa",
+      "teamName": "Hawkeye Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 471.82,
+          "overallRank": 34,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 471.82,
+      "eventsAttended": 1,
+      "rank": 96,
+      "provisional": false
+    },
+    {
+      "schoolId": "concordia-university",
+      "school": "Concordia University",
+      "teamName": "Concordia SAE Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 470.61,
+          "overallRank": 50,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 470.61,
+      "eventsAttended": 1,
+      "rank": 97,
+      "provisional": false
+    },
+    {
+      "schoolId": "itesm-campus-qro",
+      "school": "ITESM - Campus QRO",
+      "teamName": "Exergia Racing Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 463.4,
+          "overallRank": 36,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 463.4,
+      "eventsAttended": 1,
+      "rank": 98,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-memphis",
+      "school": "Univ of Memphis",
+      "teamName": "Tiger Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 453.37,
+          "overallRank": 51,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 453.37,
+      "eventsAttended": 1,
+      "rank": 99,
+      "provisional": false
+    },
+    {
+      "schoolId": "northwestern-michigan-college",
+      "school": "Northwestern Michigan College",
+      "teamName": "NMC BAJA",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 444.32,
+          "overallRank": 39,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 444.32,
+      "eventsAttended": 1,
+      "rank": 100,
+      "provisional": false
+    },
+    {
+      "schoolId": "sanilac-career-center",
+      "school": "Sanilac Career Center",
+      "teamName": "SCC Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 442.71,
+          "overallRank": 45,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 442.71,
+      "eventsAttended": 1,
+      "rank": 101,
+      "provisional": false
+    },
+    {
+      "schoolId": "old-dominion-university",
+      "school": "Old Dominion Univ",
+      "teamName": "ODU BAJA",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 441.4,
+          "overallRank": 52,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 441.4,
+      "eventsAttended": 1,
+      "rank": 102,
+      "provisional": false
+    },
+    {
+      "schoolId": "ohio-state-university",
+      "school": "Ohio State Univ",
+      "teamName": "Baja Buckeyes",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 440.71,
+          "overallRank": 53,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 440.71,
+      "eventsAttended": 1,
+      "rank": 103,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-north-carolina-charlotte",
+      "school": "Univ of North Carolina - Charlotte",
+      "teamName": "49ers",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 437.92,
+          "overallRank": 46,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 437.92,
+      "eventsAttended": 1,
+      "rank": 104,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-notre-dame",
+      "school": "Univ of Notre Dame",
+      "teamName": "University of Notre Dame Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 435.95,
+          "overallRank": 54,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 435.95,
+      "eventsAttended": 1,
+      "rank": 105,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-wisconsin-milwaukee",
+      "school": "Univ of Wisconsin - Milwaukee",
+      "teamName": "UW Milwaukee Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 432.63,
+          "overallRank": 55,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 432.63,
+      "eventsAttended": 1,
+      "rank": 106,
+      "provisional": false
+    },
+    {
+      "schoolId": "texas-a-and-m-kingsville",
+      "school": "Texas A & M - Kingsville",
+      "teamName": "Ba-Hawgs",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 428.02,
+          "overallRank": 40,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 428.02,
+      "eventsAttended": 1,
+      "rank": 107,
+      "provisional": false
+    },
+    {
+      "schoolId": "blue-ridge-community-college",
+      "school": "Blue Ridge Community College",
+      "teamName": "BRCC Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 424.05,
+          "overallRank": 47,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 424.05,
+      "eventsAttended": 1,
+      "rank": 108,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-wisconsin-stout",
+      "school": "Univ of Wisconsin - Stout",
+      "teamName": "Stout Blue Devils",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 423.21,
+          "overallRank": 48,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 423.21,
+      "eventsAttended": 1,
+      "rank": 109,
+      "provisional": false
+    },
+    {
+      "schoolId": "rowan-university",
+      "school": "Rowan Univ",
+      "teamName": "Rowan Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 420.32,
+          "overallRank": 50,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 420.32,
+      "eventsAttended": 1,
+      "rank": 110,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-wyoming",
+      "school": "Univ of Wyoming",
+      "teamName": "Steel Cage",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 419.32,
+          "overallRank": 41,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 419.32,
+      "eventsAttended": 1,
+      "rank": 111,
+      "provisional": false
+    },
+    {
+      "schoolId": "northern-kentucky-university",
+      "school": "Northern Kentucky Univ",
+      "teamName": "Norse Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 418.22,
+          "overallRank": 57,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 418.22,
+      "eventsAttended": 1,
+      "rank": 112,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-alaska-anchorage",
+      "school": "Univ of Alaska - Anchorage",
+      "teamName": "Seawolf Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 413.09,
+          "overallRank": 42,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 413.09,
+      "eventsAttended": 1,
+      "rank": 113,
+      "provisional": false
+    },
+    {
+      "schoolId": "oklahoma-state-university",
+      "school": "Oklahoma State Univ",
+      "teamName": "Cowboy Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 406.48,
+          "overallRank": 43,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 406.48,
+      "eventsAttended": 1,
+      "rank": 114,
+      "provisional": false
+    },
+    {
+      "schoolId": "arizona-state-university-tempe",
+      "school": "Arizona State Univ - Tempe",
+      "teamName": "Baja Sun Devils",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 404.98,
+          "overallRank": 44,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 404.98,
+      "eventsAttended": 1,
+      "rank": 115,
+      "provisional": false
+    },
+    {
+      "schoolId": "purdue-university-calumet",
+      "school": "Purdue Univ - Calumet",
+      "teamName": "PUC Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 187.91,
+          "overallRank": 75,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 215.3,
+          "overallRank": 59,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 403.21000000000004,
+      "eventsAttended": 2,
+      "rank": 116,
+      "provisional": false
+    },
+    {
+      "schoolId": "case-western",
+      "school": "Case Western Reserve Univ",
+      "teamName": "Bingham's Best Brand Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 394.24,
+          "overallRank": 58,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 394.24,
+      "eventsAttended": 1,
+      "rank": 117,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-catolica-andres-bello",
+      "school": "Universidad Catolica Andres Bello",
+      "teamName": "BAJA SAE UCAB",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 393.03,
+          "overallRank": 51,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 393.03,
+      "eventsAttended": 1,
+      "rank": 118,
+      "provisional": false
+    },
+    {
+      "schoolId": "georgia-institute-of-technology",
+      "school": "Georgia Institute of Technology",
+      "teamName": "GT OFFROAD",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 373.36,
+          "overallRank": 53,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 14,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 387.36,
+      "eventsAttended": 2,
+      "rank": 119,
+      "provisional": false
+    },
+    {
+      "schoolId": "buffalo-state-college",
+      "school": "Buffalo State College",
+      "teamName": "Baja Buffalo State",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 385.74,
+          "overallRank": 59,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 385.74,
+      "eventsAttended": 1,
+      "rank": 120,
+      "provisional": false
+    },
+    {
+      "schoolId": "brigham-young-university",
+      "school": "Brigham Young Univ",
+      "teamName": "BYU Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 383.96,
+          "overallRank": 46,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 383.96,
+      "eventsAttended": 1,
+      "rank": 121,
+      "provisional": false
+    },
+    {
+      "schoolId": "esia-tlalnepantla",
+      "school": "ESIA Tlalnepantla",
+      "teamName": "CEDVA",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 381.38,
+          "overallRank": 47,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 381.38,
+      "eventsAttended": 1,
+      "rank": 122,
+      "provisional": false
+    },
+    {
+      "schoolId": "ferris-state-university",
+      "school": "Ferris State University",
+      "teamName": "Brutus",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 366.64,
+          "overallRank": 55,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 366.64,
+      "eventsAttended": 1,
+      "rank": 123,
+      "provisional": false
+    },
+    {
+      "schoolId": "kettering-university",
+      "school": "Kettering Univ",
+      "teamName": "Kettering University BAJA team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 365.54,
+          "overallRank": 56,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 365.54,
+      "eventsAttended": 1,
+      "rank": 124,
+      "provisional": false
+    },
+    {
+      "schoolId": "laurentian-university",
+      "school": "Laurentian Univ",
+      "teamName": "Voyageur Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 365.01,
+          "overallRank": 60,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 365.01,
+      "eventsAttended": 1,
+      "rank": 125,
+      "provisional": false
+    },
+    {
+      "schoolId": "new-mexico-institute-of-mining-and-tech",
+      "school": "New Mexico Inst of Mining & Tech",
+      "teamName": "Dirty Miners",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 362.82,
+          "overallRank": 48,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 362.82,
+      "eventsAttended": 1,
+      "rank": 126,
+      "provisional": false
+    },
+    {
+      "schoolId": "lipscomb-university",
+      "school": "Lipscomb Univ",
+      "teamName": "Libscomb Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 358.38,
+          "overallRank": 58,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 358.38,
+      "eventsAttended": 1,
+      "rank": 127,
+      "provisional": false
+    },
+    {
+      "schoolId": "san-jose-state-university",
+      "school": "San Jose State University",
+      "teamName": "Spartan Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 349.33,
+          "overallRank": 62,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 349.33,
+      "eventsAttended": 1,
+      "rank": 128,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-maritime-academy",
+      "school": "California Maritime Academy",
+      "teamName": "Cal Maritime Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 346.63,
+          "overallRank": 49,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 346.63,
+      "eventsAttended": 1,
+      "rank": 129,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-rochester",
+      "school": "Univ of Rochester",
+      "teamName": "Yellowjackets",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 324.29,
+          "overallRank": 60,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 324.29,
+      "eventsAttended": 1,
+      "rank": 130,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-alabama-tuscaloosa",
+      "school": "Univ of Alabama - Tuscaloosa",
+      "teamName": "Bama Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 319.32,
+          "overallRank": 61,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 319.32,
+      "eventsAttended": 1,
+      "rank": 131,
+      "provisional": false
+    },
+    {
+      "schoolId": "northwestern-university",
+      "school": "Northwestern Univ",
+      "teamName": "Northwestern Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 311.85,
+          "overallRank": 62,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 311.85,
+      "eventsAttended": 1,
+      "rank": 132,
+      "provisional": false
+    },
+    {
+      "schoolId": "west-virginia-university",
+      "school": "West Virginia Univ",
+      "teamName": "Mountaineers",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 309.41,
+          "overallRank": 63,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 309.41,
+      "eventsAttended": 1,
+      "rank": 133,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-university-long-beach",
+      "school": "California State Univ - Long Beach",
+      "teamName": "CSULB Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 308.52,
+          "overallRank": 53,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 308.52,
+      "eventsAttended": 1,
+      "rank": 134,
+      "provisional": false
+    },
+    {
+      "schoolId": "baylor-university",
+      "school": "Baylor Univ",
+      "teamName": "Baylor Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 303.49,
+          "overallRank": 54,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 303.49,
+      "eventsAttended": 1,
+      "rank": 135,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-illinois-chicago",
+      "school": "Univ of Illinois - Chicago",
+      "teamName": "UIC Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 302.97,
+          "overallRank": 64,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 302.97,
+      "eventsAttended": 1,
+      "rank": 136,
+      "provisional": false
+    },
+    {
+      "schoolId": "instituto-tecnologico-de-queretaro",
+      "school": "Instituto Tecnologico de Queretaro",
+      "teamName": "Baja SAE ITQ",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 301.96,
+          "overallRank": 64,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 301.96,
+      "eventsAttended": 1,
+      "rank": 137,
+      "provisional": false
+    },
+    {
+      "schoolId": "turabo-university",
+      "school": "Turabo Univ",
+      "teamName": "UT Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 287.5,
+          "overallRank": 66,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 287.5,
+      "eventsAttended": 1,
+      "rank": 138,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-tennessee-martin",
+      "school": "Univ of Tennessee - Martin",
+      "teamName": "UTM Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 282.96,
+          "overallRank": 65,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 282.96,
+      "eventsAttended": 1,
+      "rank": 139,
+      "provisional": false
+    },
+    {
+      "schoolId": "cetys-universidad",
+      "school": "Cetys Universidad",
+      "teamName": "Z7 Zorro Racing Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 272.78,
+          "overallRank": 56,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 272.78,
+      "eventsAttended": 1,
+      "rank": 140,
+      "provisional": false
+    },
+    {
+      "schoolId": "union-college",
+      "school": "Union College",
+      "teamName": "Union College Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 270.91,
+          "overallRank": 67,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 270.91,
+      "eventsAttended": 1,
+      "rank": 141,
+      "provisional": false
+    },
+    {
+      "schoolId": "suny-institute-of-technology",
+      "school": "SUNY - Inst of Technology",
+      "teamName": "Wildcat Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 270.5,
+          "overallRank": 68,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 270.5,
+      "eventsAttended": 1,
+      "rank": 142,
+      "provisional": false
+    },
+    {
+      "schoolId": "dalhousie-university",
+      "school": "Dalhousie Univ",
+      "teamName": "Dalhousie Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 263.84,
+          "overallRank": 70,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 263.84,
+      "eventsAttended": 1,
+      "rank": 143,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-south-carolina",
+      "school": "Univ of South Carolina",
+      "teamName": "Gamecock Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 258.29,
+          "overallRank": 68,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 258.29,
+      "eventsAttended": 1,
+      "rank": 144,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-nacion-autonoma-de-mexico",
+      "school": "Universidad Nacion Autonoma De Mexico",
+      "teamName": "Puma Off-Road Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 255.36,
+          "overallRank": 57,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 255.36,
+      "eventsAttended": 1,
+      "rank": 145,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-oklahoma",
+      "school": "Univ of Oklahoma",
+      "teamName": "Sooner Off-Road",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 253.53,
+          "overallRank": 69,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 253.53,
+      "eventsAttended": 1,
+      "rank": 146,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-colorado-denver",
+      "school": "Univ of Colorado - Denver",
+      "teamName": "Lynx Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 242.82,
+          "overallRank": 71,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 242.82,
+      "eventsAttended": 1,
+      "rank": 147,
+      "provisional": false
+    },
+    {
+      "schoolId": "conestoga-college",
+      "school": "Conestoga College",
+      "teamName": "COBRA",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 241.12,
+          "overallRank": 72,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 241.12,
+      "eventsAttended": 1,
+      "rank": 148,
+      "provisional": false
+    },
+    {
+      "schoolId": "khalifa-university",
+      "school": "Khalifa University",
+      "teamName": "Kustar Racers",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 236.99,
+          "overallRank": 58,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 236.99,
+      "eventsAttended": 1,
+      "rank": 149,
+      "provisional": false
+    },
+    {
+      "schoolId": "virginia-military-institute",
+      "school": "Virginia Military Inst",
+      "teamName": "Keydets",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 236.56,
+          "overallRank": 71,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 236.56,
+      "eventsAttended": 1,
+      "rank": 150,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-puerto-rico-mayaguez-camp",
+      "school": "Univ of Puerto Rico - Mayaguez Camp",
+      "teamName": "RUM Racing Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 233.66,
+          "overallRank": 73,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 233.66,
+      "eventsAttended": 1,
+      "rank": 151,
+      "provisional": false
+    },
+    {
+      "schoolId": "vellore-institute-of-technology",
+      "school": "Vellore Institute of Technology",
+      "teamName": "KSHATRIYA International",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 224.7,
+          "overallRank": 74,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 224.7,
+      "eventsAttended": 1,
+      "rank": 152,
+      "provisional": false
+    },
+    {
+      "schoolId": "florida-a-and-m-university-florida-state-university",
+      "school": "Florida A&M Univ/Florida State Univ",
+      "teamName": "F-Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 224.46,
+          "overallRank": 75,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 224.46,
+      "eventsAttended": 1,
+      "rank": 153,
+      "provisional": false
+    },
+    {
+      "schoolId": "alfred-university",
+      "school": "Alfred Univ",
+      "teamName": "Saxon Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 223.57,
+          "overallRank": 72,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 223.57,
+      "eventsAttended": 1,
+      "rank": 154,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-central-florida",
+      "school": "Univ of Central Florida",
+      "teamName": "Knights Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 212.23,
+          "overallRank": 73,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 10,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 222.23,
+      "eventsAttended": 2,
+      "rank": 155,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-simon-bolivar",
+      "school": "Universidad Simon Bolivar",
+      "teamName": "Baja SAE USB",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 217.89,
+          "overallRank": 76,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 217.89,
+      "eventsAttended": 1,
+      "rank": 156,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-nevada-las-vegas",
+      "school": "Univ of Nevada - Las Vegas",
+      "teamName": "Rebel Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 211.08,
+          "overallRank": 60,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 211.08,
+      "eventsAttended": 1,
+      "rank": 157,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-calif-davis",
+      "school": "Univ of Calif - Davis",
+      "teamName": "Davis Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 197.17,
+          "overallRank": 61,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 197.17,
+      "eventsAttended": 1,
+      "rank": 158,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-waterloo",
+      "school": "Univ of Waterloo",
+      "teamName": "University of Waterloo Baja Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 182.51,
+          "overallRank": 77,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 182.51,
+      "eventsAttended": 1,
+      "rank": 159,
+      "provisional": false
+    },
+    {
+      "schoolId": "ryerson-university",
+      "school": "Ryerson Univ",
+      "teamName": "Ryerson Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 173.81,
+          "overallRank": 78,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 173.81,
+      "eventsAttended": 1,
+      "rank": 160,
+      "provisional": false
+    },
+    {
+      "schoolId": "mcmaster-university",
+      "school": "McMaster Univ",
+      "teamName": "McMaster Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 134,
+          "overallRank": 79,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 134,
+      "eventsAttended": 1,
+      "rank": 161,
+      "provisional": false
+    },
+    {
+      "schoolId": "vellore-institute-of-technology-chenna",
+      "school": "Vellore Institute of Technology Chenna",
+      "teamName": "TEAM SAKSHAM INTERNATIONAL",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 131.15,
+          "overallRank": 76,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 131.15,
+      "eventsAttended": 1,
+      "rank": 162,
+      "provisional": false
+    },
+    {
+      "schoolId": "itesm-campus-chihuahua",
+      "school": "ITESM - Campus Chihuahua",
+      "teamName": "Borregos Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 129.3,
+          "overallRank": 62,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 129.3,
+      "eventsAttended": 1,
+      "rank": 163,
+      "provisional": false
+    },
+    {
+      "schoolId": "youngstown-state-university",
+      "school": "Youngstown State Univ",
+      "teamName": "Penguin Power Sports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 124.97,
+          "overallRank": 80,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 124.97,
+      "eventsAttended": 1,
+      "rank": 164,
+      "provisional": false
+    },
+    {
+      "schoolId": "louisiana-tech-university",
+      "school": "Louisiana Tech Univ",
+      "teamName": "Mud Dawgs",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 121.32,
+          "overallRank": 77,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 121.32,
+      "eventsAttended": 1,
+      "rank": 165,
+      "provisional": false
+    },
+    {
+      "schoolId": "west-virginia-university-institute-of-tech",
+      "school": "West Virginia Univ Inst of Tech",
+      "teamName": "Golden Bear Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 119.31,
+          "overallRank": 81,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 119.31,
+      "eventsAttended": 1,
+      "rank": 166,
+      "provisional": false
+    },
+    {
+      "schoolId": "fairmont-state-university",
+      "school": "Fairmont State Univ",
+      "teamName": "Falcon Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 116.69,
+          "overallRank": 78,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 116.69,
+      "eventsAttended": 1,
+      "rank": 167,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-autonoma-de-ciudad-juarez",
+      "school": "Universidad Autonoma de Ciudad Juarez",
+      "teamName": "indios baja sae",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 95,
+          "overallRank": 82,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 95,
+      "eventsAttended": 1,
+      "rank": 168,
+      "provisional": false
+    },
+    {
+      "schoolId": "guru-nanak-dev-engineering-college",
+      "school": "Guru Nanak Dev Engineering College",
+      "teamName": "Enggenco",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 94,
+          "overallRank": 63,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 94,
+      "eventsAttended": 1,
+      "rank": 169,
+      "provisional": false
+    },
+    {
+      "schoolId": "middle-tennessee-state-university",
+      "school": "Middle Tennessee State Univ",
+      "teamName": "Blue Raider Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 80.96,
+          "overallRank": 79,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 80.96,
+      "eventsAttended": 1,
+      "rank": 170,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-western-ontario",
+      "school": "Univ of Western Ontario",
+      "teamName": "Western Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 77.5,
+          "overallRank": 64,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 77.5,
+      "eventsAttended": 1,
+      "rank": 171,
+      "provisional": false
+    },
+    {
+      "schoolId": "missouri-university-of-science-and-tech",
+      "school": "Missouri University of Science and Tech",
+      "teamName": "Miner Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 70.77,
+          "overallRank": 80,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 70.77,
+      "eventsAttended": 1,
+      "rank": 172,
+      "provisional": false
+    },
+    {
+      "schoolId": "boise-state-university",
+      "school": "Boise State Univ",
+      "teamName": "Boise State Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 66,
+          "overallRank": 65,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 66,
+      "eventsAttended": 1,
+      "rank": 173,
+      "provisional": false
+    },
+    {
+      "schoolId": "marquette-university",
+      "school": "Marquette Univ",
+      "teamName": "Eagle Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 61.71,
+          "overallRank": 66,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 61.71,
+      "eventsAttended": 1,
+      "rank": 174,
+      "provisional": false
+    },
+    {
+      "schoolId": "hindustan-university",
+      "school": "Hindustan University",
+      "teamName": "STALWARTZ",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 61,
+          "overallRank": 81,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 61,
+      "eventsAttended": 1,
+      "rank": 175,
+      "provisional": false
+    },
+    {
+      "schoolId": "itasca-community-college",
+      "school": "Itasca Community College",
+      "teamName": "ICC Mini Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 55,
+          "overallRank": 83,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 55,
+      "eventsAttended": 1,
+      "rank": 176,
+      "provisional": false
+    },
+    {
+      "schoolId": "christian-brothers-university",
+      "school": "Christian Brothers University",
+      "teamName": "Mud Bucs",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 49.37,
+          "overallRank": 82,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 49.37,
+      "eventsAttended": 1,
+      "rank": 177,
+      "provisional": false
+    },
+    {
+      "schoolId": "western-michigan-university",
+      "school": "Western Michigan Univ",
+      "teamName": "WMU Bronco Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 45,
+          "overallRank": 84,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 45,
+      "eventsAttended": 1,
+      "rank": 178,
+      "provisional": false
+    },
+    {
+      "schoolId": "montana-tech",
+      "school": "Montana Tech",
+      "teamName": "Montana Tech Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 39.21,
+          "overallRank": 67,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 39.21,
+      "eventsAttended": 1,
+      "rank": 179,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-arkansas-fort-smith",
+      "school": "Univ of Arkansas - Fort Smith",
+      "teamName": "UAFS",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 38.56,
+          "overallRank": 83,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 38.56,
+      "eventsAttended": 1,
+      "rank": 180,
+      "provisional": false
+    },
+    {
+      "schoolId": "suny-farmingdale",
+      "school": "SUNY - Farmingdale",
+      "teamName": "RAM Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 37,
+          "overallRank": 85,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 37,
+      "eventsAttended": 1,
+      "rank": 181,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-texas-el-paso",
+      "school": "Univ of Texas - El Paso",
+      "teamName": "Mad Pete Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 36,
+          "overallRank": 68,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 36,
+      "eventsAttended": 1,
+      "rank": 182,
+      "provisional": false
+    },
+    {
+      "schoolId": "bits-pilani-dubai",
+      "school": "Bits Pilani-Dubai",
+      "teamName": "Xtreme Addiction",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 30,
+          "overallRank": 84,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 30,
+      "eventsAttended": 1,
+      "rank": 183,
+      "provisional": false
+    },
+    {
+      "schoolId": "yeungnam-college-of-science-and-tech",
+      "school": "Yeungnam College of Science & Tech",
+      "teamName": "Baja Expedition",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 24,
+          "overallRank": 69,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 24,
+      "eventsAttended": 1,
+      "rank": 184,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-alabama-birmingham",
+      "school": "Univ of Alabama - Birmingham",
+      "teamName": "Blazer Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 9,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 10,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 19,
+      "eventsAttended": 2,
+      "rank": 185,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-new-hampshire",
+      "school": "Univ of New Hampshire",
+      "teamName": "UNH Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 15,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 15,
+      "eventsAttended": 1,
+      "rank": 186,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-virginia",
+      "school": "Univ of Virginia",
+      "teamName": "Virginia Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 15,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 15,
+      "eventsAttended": 1,
+      "rank": 186,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-colorado-colorado-springs",
+      "school": "Univ of Colorado - Colorado Springs",
+      "teamName": "Rocky Mountain Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 14,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 14,
+      "eventsAttended": 1,
+      "rank": 188,
+      "provisional": false
+    },
+    {
+      "schoolId": "us-military-academy",
+      "school": "US Military Academy",
+      "teamName": "USMA Mini Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 14,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 14,
+      "eventsAttended": 1,
+      "rank": 188,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-autonoma-estado-mexico",
+      "school": "Universidad Autonoma Estado Mexico",
+      "teamName": "Sarajuana Racing Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 12,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 12,
+      "eventsAttended": 1,
+      "rank": 190,
+      "provisional": false
+    },
+    {
+      "schoolId": "ecole-national-daerotechnique",
+      "school": "Ecole National D'Aerotechnique",
+      "teamName": "ENA Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 11.11,
+          "overallRank": 86,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 11.11,
+      "eventsAttended": 1,
+      "rank": 191,
+      "provisional": false
+    },
+    {
+      "schoolId": "southern-alberta-institute-of-tech",
+      "school": "Southern Alberta Inst of Tech",
+      "teamName": "Sait Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 11,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 11,
+      "eventsAttended": 1,
+      "rank": 192,
+      "provisional": false
+    },
+    {
+      "schoolId": "the-petroleum-insitutie",
+      "school": "The Petroleum Insitutie",
+      "teamName": "PI Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 11,
+          "overallRank": 87,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 11,
+      "eventsAttended": 1,
+      "rank": 192,
+      "provisional": false
+    },
+    {
+      "schoolId": "bucknell-university",
+      "school": "Bucknell Univ",
+      "teamName": "Bucknell University",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 10,
+          "overallRank": 85,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 10,
+      "eventsAttended": 1,
+      "rank": 194,
+      "provisional": false
+    },
+    {
+      "schoolId": "george-washington-university",
+      "school": "George Washington Univ",
+      "teamName": "The Mauve Avenger",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 10,
+          "overallRank": 85,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 10,
+      "eventsAttended": 1,
+      "rank": 194,
+      "provisional": false
+    },
+    {
+      "schoolId": "milwaukee-school-of-engrg",
+      "school": "Milwaukee School of Engrg",
+      "teamName": "RAIDER RACING",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 10,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 10,
+      "eventsAttended": 1,
+      "rank": 194,
+      "provisional": false
+    },
+    {
+      "schoolId": "olivet-nazarene-university",
+      "school": "Olivet Nazarene Univ",
+      "teamName": "Tiger Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 7,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 7,
+      "eventsAttended": 1,
+      "rank": 197,
+      "provisional": false
+    },
+    {
+      "schoolId": "cleveland-state-university",
+      "school": "Cleveland State Univ",
+      "teamName": "Cleveland State Viking Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 6,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 6,
+      "eventsAttended": 1,
+      "rank": 198,
+      "provisional": false
+    },
+    {
+      "schoolId": "manipal-institute-of-tech",
+      "school": "Manipal Institute of Tech",
+      "teamName": "Team Manipal Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 5,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 5,
+      "eventsAttended": 1,
+      "rank": 199,
+      "provisional": false
+    },
+    {
+      "schoolId": "veer-surendra-sai-university",
+      "school": "Veer Surendra Sai University",
+      "teamName": "VEERss",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 3,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 3,
+      "eventsAttended": 1,
+      "rank": 200,
+      "provisional": false
+    },
+    {
+      "schoolId": "andrews-university",
+      "school": "Andrews Univ",
+      "teamName": "AU Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 0,
+          "overallRank": 87,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "embry-riddle-aero-university-daytona-beach",
+      "school": "Embry-Riddle Aero Univ - Daytona Beach",
+      "teamName": "Lady Eagles",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "florida-institute-of-tech",
+      "school": "Florida Inst of Tech",
+      "teamName": "Baja Panther",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "idaho-state-university",
+      "school": "Idaho State Univ",
+      "teamName": "Bengal Bandits",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 0,
+          "overallRank": 71,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "instituto-tecnologico-de-chihuahua",
+      "school": "Instituto Tecnologico de Chihuahua",
+      "teamName": "Panteras Racing Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "instituto-tecnologico-de-pachuca",
+      "school": "Instituto Tecnologico de Pachuca",
+      "teamName": "Tuzo Racing Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 0,
+          "overallRank": 71,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "isat",
+      "school": "ISAT",
+      "teamName": "Isat Mini Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "itesm-campus-ciudad-de-mexico",
+      "school": "ITESM - Campus Ciudad De Mexico",
+      "teamName": "Escuderia Borregos CCM",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "jaypee-university-of-engrg-tech",
+      "school": "Jaypee University of Engrg Tech",
+      "teamName": "Acriolis Power Sports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "lakshmi-narain-college-of-technology",
+      "school": "Lakshmi Narain College of Technology",
+      "teamName": "LNCruiserz",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "lehigh-university",
+      "school": "Lehigh Univ",
+      "teamName": "Mountain Hawk Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "manav-rachna-international-university",
+      "school": "Manav Rachna International University",
+      "teamName": "COOL RUNNINGS",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "mount-union-college",
+      "school": "Mount Union College",
+      "teamName": "UMU Purple Raiders",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "penn-state-university-berks",
+      "school": "Penn State Univ - Berks",
+      "teamName": "Penn State Berks Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "royal-military-college-of-canada",
+      "school": "Royal Military College of Canada",
+      "teamName": "RMCC",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "rv-college-of-engrg",
+      "school": "Rv College of Engrg",
+      "teamName": "Team Helios Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-louisiana-lafayette",
+      "school": "Univ of Louisiana - Lafayette",
+      "teamName": "Ragin Cajun Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-new-brunswick",
+      "school": "Univ of New Brunswick",
+      "teamName": "UNB BAJA",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-tennessee-knoxville",
+      "school": "Univ of Tennessee - Knoxville",
+      "teamName": "Team Tennessee",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-utah",
+      "school": "Univ of Utah",
+      "teamName": "Swoop Buggy",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-central-de-venezuela",
+      "school": "Universidad Central de Venezuela",
+      "teamName": "Ultimate Competition Vehicle",
+      "results": [
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 0,
+          "overallRank": 88,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-la-salle-cuernavaca",
+      "school": "Universidad La Salle Cuernavaca",
+      "teamName": "GALLOS ULSAC",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-tecnologica-de-ciudad-juarez",
+      "school": "Universidad Tecnologica de Ciudad Juarez",
+      "teamName": "UTCJ",
+      "results": [
+        {
+          "competitionName": "Baja SAE Washington",
+          "competitionId": "https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "miami-university",
+      "school": "Miami Univ",
+      "teamName": "Redhawk Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Tennessee Tech",
+          "competitionId": "https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Rochester",
+          "competitionId": "https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 2,
+      "rank": 201,
+      "provisional": false
+    }
+  ]
+}

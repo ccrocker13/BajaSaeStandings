@@ -1,29 +1,29 @@
 {
   "_comment": [
-    "Mike Schmidt Memorial Iron Team Award placings.",
+    "Mike Schmidt Memorial Iron Team Award placings, from third-party reporting.",
     "",
-    "IMPORTANT: the award recognises the TOP THREE teams by cumulative score",
-    "across the three North American Baja SAE events in a season \u2014 not a single",
-    "winner. A team receiving the award has not necessarily won it. An earlier",
-    "version of this file recorded every sourced mention as a first place, which",
-    "silently promoted second and third places into wins.",
+    "The award recognises the TOP THREE teams by cumulative score across the three",
+    "North American Baja SAE events in a season \u2014 not a single winner. A team that",
+    "received it has not necessarily won it.",
     "",
-    "Each entry therefore carries an explicit `place` (1, 2, 3, or null when the",
-    "source records a placing without saying which) and a `confidence`:",
+    "This file is CORROBORATION ONLY. The podium shown on the site is computed from",
+    "SAE's own published results by total points, which is the award's actual",
+    "definition. Checking the two against each other validates both: at Baja SAE",
+    "2014 the computed top three are Cornell, Michigan and RIT, matching the",
+    "independently sourced podium exactly.",
+    "",
+    "Each entry carries an explicit `place` (1, 2, 3, or null where a source records",
+    "a placing without saying which) and a `confidence`:",
     "",
     "  confirmed      independently sourced as that place",
     "  reported       a single team-history source states it; not corroborated",
     "  place-unknown  the team placed, but the source does not say where",
-    "  unknown        nothing about that season is established",
     "",
-    "Team history pages (michiganbajaracing.com, bajaets.com, beaverracing.org)",
-    "enumerate a team\u2019s placings across many years, so a bare mention on one of",
-    "them is NOT evidence of a win. That is exactly how the earlier error crept in.",
+    "Team history pages enumerate a team\u2019s placings across many years, so a bare",
+    "mention on one is not evidence of a win. Recording every such mention as a",
+    "first place was an earlier error in this file.",
     "",
-    "The season standings shown on the site are computed from SAE\u2019s own archive by",
-    "total points and do not depend on this file at all. This is annotation.",
-    "",
-    "Corrections welcome: open an issue or a PR against this file."
+    "History starts at 2013. Corrections welcome via an issue or pull request."
   ],
   "placings": [
     {
@@ -32,8 +32,7 @@
       "school": "Cornell University",
       "schoolId": "cornell",
       "confidence": "confirmed",
-      "source": "https://news.cornell.edu/stories/2025/11/students-baja-racing-team-roars-series-victories",
-      "note": "Won all three events outright."
+      "source": "https://news.cornell.edu/stories/2025/11/students-baja-racing-team-roars-series-victories"
     },
     {
       "year": 2024,
@@ -42,7 +41,7 @@
       "schoolId": "ets",
       "confidence": "reported",
       "source": "https://www.etsmtl.ca/actualites/une-annee-2024-fructueuse-pour-les-clubs-etudiants-de-lets",
-      "note": "First Canadian winner since 2010. Reported as a first place by a single team source; not independently confirmed."
+      "note": "Reported as a first place by a single team source; not independently confirmed."
     },
     {
       "year": 2024,
@@ -93,8 +92,7 @@
       "school": "University of Michigan",
       "schoolId": "michigan",
       "confidence": "confirmed",
-      "source": "https://ece.engin.umich.edu/stories/baja-racing-breaks-records-while-leaving-the-competition-in-the-dust",
-      "note": "Broke the all-time cumulative-score record, scoring over 900 at all three events."
+      "source": "https://ece.engin.umich.edu/stories/baja-racing-breaks-records-while-leaving-the-competition-in-the-dust"
     },
     {
       "year": 2018,
@@ -102,8 +100,7 @@
       "school": "Rochester Institute of Technology",
       "schoolId": "rit",
       "confidence": "confirmed",
-      "source": "https://www.rit.edu/news/baja-team-wins-2018-north-american-series-championship",
-      "note": "RIT's third win."
+      "source": "https://www.rit.edu/news/baja-team-wins-2018-north-american-series-championship"
     },
     {
       "year": 2018,
@@ -119,8 +116,7 @@
       "school": "University of Michigan",
       "schoolId": "michigan",
       "confidence": "confirmed",
-      "source": "https://eecs.engin.umich.edu/stories/baja-racing-team-first-to-three-peat-national-championship",
-      "note": "First ever three-peat, 2015-17."
+      "source": "https://eecs.engin.umich.edu/stories/baja-racing-team-first-to-three-peat-national-championship"
     },
     {
       "year": 2016,
@@ -128,8 +124,7 @@
       "school": "University of Michigan",
       "schoolId": "michigan",
       "confidence": "confirmed",
-      "source": "https://ece.engin.umich.edu/stories/baja-wins-big",
-      "note": "Second consecutive overall win."
+      "source": "https://ece.engin.umich.edu/stories/baja-wins-big"
     },
     {
       "year": 2015,
@@ -154,8 +149,7 @@
       "school": "Cornell University",
       "schoolId": "cornell",
       "confidence": "confirmed",
-      "source": "https://baja.mae.cornell.edu/timeline",
-      "note": "First ever for Cornell."
+      "source": "https://baja.mae.cornell.edu/timeline"
     },
     {
       "year": 2014,
@@ -181,96 +175,10 @@
       "confidence": "place-unknown",
       "source": "https://www.michiganbajaracing.com/history",
       "note": "Source records a Mike Schmidt Award placing but not which place; the award covers the top three."
-    },
-    {
-      "year": 2012,
-      "place": 1,
-      "school": "Oregon State University",
-      "schoolId": "oregon-state",
-      "confidence": "reported",
-      "source": "https://beaverracing.org/competition-results",
-      "note": "Reported as a first place by a single team source; not independently confirmed."
-    },
-    {
-      "year": 2012,
-      "place": 2,
-      "school": "Ecole de Technologie Superieure",
-      "schoolId": "ets",
-      "confidence": "unverified",
-      "source": "https://bajaets.com/fr/histoire"
-    },
-    {
-      "year": 2010,
-      "place": 1,
-      "school": "Ecole de Technologie Superieure",
-      "schoolId": "ets",
-      "confidence": "reported",
-      "source": "https://bajaets.com/fr/histoire",
-      "note": "Reported as a first place by a single team source; not independently confirmed."
-    },
-    {
-      "year": 2009,
-      "place": 1,
-      "school": "Michigan Technological University",
-      "schoolId": "michigan-tech",
-      "confidence": "confirmed",
-      "source": "https://blogs.mtu.edu/engineering/2009/06/13/baja-team-wins-award-for-most-combined-points-in-all-three-baja-sae-events/",
-      "note": "First in school history."
-    },
-    {
-      "year": 2005,
-      "place": 1,
-      "school": "Ecole de Technologie Superieure",
-      "schoolId": "ets",
-      "confidence": "reported",
-      "source": "https://bajaets.com/fr/histoire",
-      "note": "Reported as a first place by a single team source; not independently confirmed."
-    },
-    {
-      "year": 2003,
-      "place": 2,
-      "school": "Rochester Institute of Technology",
-      "schoolId": "rit",
-      "confidence": "confirmed",
-      "source": "https://www.rit.edu/news/rit-mini-baja-team-wraps-spring-competition",
-      "note": "Contemporaneous RIT report, June 2003. The winner that season is still unknown."
-    },
-    {
-      "year": 2003,
-      "place": null,
-      "school": null,
-      "schoolId": null,
-      "confidence": "unknown",
-      "source": "https://www.rit.edu/news/rit-mini-baja-team-wraps-spring-competition",
-      "note": "Winner not established; the runner-up is sourced."
-    },
-    {
-      "year": 2002,
-      "place": 1,
-      "school": "Rochester Institute of Technology",
-      "schoolId": "rit",
-      "confidence": "confirmed",
-      "source": "https://www.rit.edu/news/baja-team-wins-2018-north-american-series-championship"
-    },
-    {
-      "year": 2001,
-      "place": 1,
-      "school": "Rochester Institute of Technology",
-      "schoolId": "rit",
-      "confidence": "confirmed",
-      "source": "https://www.rit.edu/news/baja-team-wins-2018-north-american-series-championship",
-      "note": "First year the award was given."
     }
   ],
-  "unknownYears": [
-    2003,
-    2004,
-    2006,
-    2007,
-    2008,
-    2011
-  ],
-  "unknownYearsNote": "No third-party source found for these seasons. SAE's own award pages would settle them.",
+  "unknownYears": [],
+  "unknownYearsNote": "No third-party source found for these seasons. The computed standings still cover them.",
   "researchNotes": {
     "unknownYearsInvestigated": "2003, 2004, 2006, 2007, 2008 and 2011 were searched extensively across university news, team history pages and SAE articles without finding a winner. They are deliberately left blank rather than inferred.",
     "ruledOut": {

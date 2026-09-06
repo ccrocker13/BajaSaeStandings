@@ -30,7 +30,15 @@ export interface Summary {
     year: number;
     competitions: { id: string | null; name: string }[];
     teamCount: number;
-    champion: { schoolId: string; school: string; teamName: string | null; totalPoints: number } | null;
+    /** Top three by cumulative points — the Mike Schmidt Award podium. */
+    podium: {
+      rank: number;
+      schoolId: string;
+      school: string;
+      teamName: string | null;
+      totalPoints: number;
+      eventsAttended: number;
+    }[];
   }[];
   teams: SummaryTeam[];
 }
