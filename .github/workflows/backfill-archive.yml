@@ -38,6 +38,15 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build:data
+
+      # Validate before publishing. Because a commit pushed from here cannot
+      # trigger CI, this job is the only thing standing between a malformed
+      # scrape and the live site — so it runs the same checks CI would.
+      - name: Verify the scraped data builds and passes tests
+        run: |
+          pnpm test
+          pnpm run build
+
       - name: Commit data
         run: |
           git config user.name  'github-actions[bot]'
@@ -47,12 +56,13 @@ jobs:
             echo 'Archive unchanged.'
             exit 0
           fi
-          # This job is triggered by its own code changing, not by data/, so CI
-          # can safely run on the commit it produces.
-          # Note: never write the CI-skip token into these commit messages.
-          # GitHub scans the whole message body, so even mentioning it in prose
-          # suppresses every workflow for the resulting commit.
-          git commit -m 'Refresh season data from archive'
+          # The generated commits carry the CI-skip marker deliberately.
+          # GitHub does not run workflows for commits pushed with GITHUB_TOKEN
+          # (a recursion guard), so these commits cannot be CI-verified from
+          # here whatever the message says — without the marker they merely
+          # land the pull request in a permanent "action required" state.
+          # Verification therefore happens in this job, above, before the push.
+          git commit -m 'Refresh season data from archive [skip ci]'
           # The branch can move while this job runs — a push landing mid-capture
           # would otherwise reject this one as non-fast-forward. Rebase onto
           # whatever arrived and retry; the commit only touches generated files,

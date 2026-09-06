@@ -29,13 +29,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: pnpm
 
-      - name: Install digest dependency
-        run: npm install --no-save --no-package-lock node-html-parser@6
+      # Installs node-html-parser for the digest script and the parser's own
+      # test dependencies for the drift check further down.
+      - run: pnpm install --frozen-lockfile
 
       - name: Fetch pages
         env:
@@ -114,6 +116,15 @@ jobs:
           path: packages/parser/fixtures/
           retention-days: 30
 
+      # Run the parser against what was just captured. The fixtures are the
+      # parser's test corpus, so this turns every capture into an upstream-drift
+      # detector: if SAE changes the markup, this job goes red immediately
+      # instead of the site quietly rendering empty tables weeks later.
+      - name: Check the parser still understands the captured markup
+        id: verify
+        continue-on-error: true
+        run: pnpm test
+
       - name: Commit fixtures
         run: |
           git config user.name  'github-actions[bot]'
@@ -123,13 +134,13 @@ jobs:
             echo 'No fixture changes.'
             exit 0
           fi
-          # The paths filter above already stops a fixtures-only commit from
-          # retriggering this workflow, so the commit is left un-skipped and CI
-          # runs on it — the branch head is never without checks.
-          # Note: never write the CI-skip token into these commit messages.
-          # GitHub scans the whole message body, so even mentioning it in prose
-          # suppresses every workflow for the resulting commit.
-          git commit -m 'Capture upstream results fixtures'
+          # The generated commits carry the CI-skip marker deliberately.
+          # GitHub does not run workflows for commits pushed with GITHUB_TOKEN
+          # (a recursion guard), so these commits cannot be CI-verified from
+          # here whatever the message says — without the marker they merely
+          # land the pull request in a permanent "action required" state.
+          # Verification therefore happens in this job, above, before the push.
+          git commit -m 'Capture upstream results fixtures [skip ci]'
           # The branch can move while this job runs — a push landing mid-capture
           # would otherwise reject this one as non-fast-forward. Rebase onto
           # whatever arrived and retry; the commit only touches generated files,
@@ -147,4 +158,12 @@ jobs:
             }
           done
           echo "::error::could not push after 3 attempts"
+          exit 1
+
+      # Fail the job *after* publishing, so drifted fixtures are committed and
+      # reviewable rather than discarded along with the failure.
+      - name: Fail if the parser no longer matches upstream
+        if: steps.verify.outcome == 'failure'
+        run: |
+          echo "::error::Parser tests failed against freshly captured markup — upstream has probably changed. The new fixtures have been committed; inspect the diff."
           exit 1
