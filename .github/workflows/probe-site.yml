@@ -2,8 +2,8 @@
 #
 # The development environment cannot reach ccrocker13.github.io (egress policy),
 # so when the live site misbehaves there is no way to inspect it from there.
-# A runner can. This prints the real response — status, headers and body — so a
-# diagnosis is based on the served bytes rather than on inference.
+# A runner can. This prints the real response so a diagnosis rests on the served
+# bytes rather than on inference.
 name: Probe published site
 
 on:
@@ -23,56 +23,71 @@ jobs:
         env:
           SITE: https://ccrocker13.github.io/bajasaestandings/
         run: |
+          # No `set -e`: this job's whole purpose is to report a broken site,
+          # so a failing request must be described, not abort the run. Body is
+          # written to a file rather than piped into head, because head closing
+          # the pipe early makes curl exit 23 and takes the step down with it.
           set -uo pipefail
+
+          code=$(curl -sSL --max-time 30 -o /tmp/body.html -w '%{http_code}' "$SITE" || echo 000)
+          size=$(wc -c < /tmp/body.html | tr -d ' ')
+
           {
-            echo '## Probe of '"$SITE"
+            echo "## Probe of $SITE"
             echo
-            echo '### Response headers'
-            echo '```'
-            curl -sSIL --max-time 30 "$SITE" | sed 's/^/  /'
-            echo '```'
-
-            echo '### Body'
-            echo '```html'
-            curl -sSL --max-time 30 "$SITE" | head -c 4000
+            echo "HTTP **$code**, ${size} bytes"
             echo
-            echo '```'
-
-            body=$(curl -sSL --max-time 30 "$SITE")
 
             echo '### What is being served'
-            if printf '%s' "$body" | grep -q 'src="/src/main.tsx"'; then
-              echo '- **This is the Vite source template, not the built site.**'
-              echo '  Pages is serving the repository root rather than the Actions artifact.'
-              echo '  Fix: Settings -> Pages -> Source = GitHub Actions.'
-            elif printf '%s' "$body" | grep -q '/assets/index-'; then
-              echo '- Built bundle referenced. This is the Actions artifact.'
+            if [ "$code" = "404" ] && grep -q "isn't a GitHub Pages site here" /tmp/body.html; then
+              echo "- **No Pages site.** GitHub is serving its own 404 — nothing is published at this URL."
+              echo '  Fix: Settings -> Pages -> Build and deployment -> Source: GitHub Actions.'
+            elif grep -q 'src="/src/main.tsx"' /tmp/body.html; then
+              echo '- **Vite source template, not the built site.** Pages is serving the repository'
+              echo '  root rather than the Actions artifact.'
+            elif grep -q '/assets/index-' /tmp/body.html; then
+              echo '- Built bundle referenced — this is the Actions artifact.'
             else
               echo '- Neither a built bundle nor the source template was found.'
             fi
 
-            if printf '%s' "$body" | grep -q 'Loading Baja SAE Standings'; then
-              echo '- Boot fallback present (the hardened index.html is deployed).'
+            if grep -q 'Loading Baja SAE Standings' /tmp/body.html; then
+              echo '- Boot fallback present, so the hardened index.html is live.'
             else
-              echo '- Boot fallback ABSENT — this predates the hardening commit.'
+              echo '- Boot fallback absent — the deployed build predates the hardening.'
             fi
 
             echo
             echo '### Referenced assets'
             echo '```'
-            for path in $(printf '%s' "$body" | grep -o '/bajasaestandings/[^"]*' | sort -u); do
-              code=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "https://ccrocker13.github.io${path}")
-              echo "  $code  $path"
+            grep -o '/bajasaestandings/[^"]*' /tmp/body.html | sort -u | while read -r path; do
+              a=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "https://ccrocker13.github.io${path}" || echo 000)
+              echo "  $a  $path"
             done
             echo '```'
 
             echo '### Data payload'
             echo '```'
-            curl -sS -o /dev/null -w '  summary.json: %{http_code}, %{size_download} bytes\n' \
-              --max-time 30 "${SITE}data/summary.json"
+            curl -sS -o /dev/null -w '  summary.json: HTTP %{http_code}, %{size_download} bytes\n' \
+              --max-time 30 "${SITE}data/summary.json" || echo '  summary.json: request failed'
+            echo '```'
+
+            echo '### First 2 KB of body'
+            echo '```html'
+            head -c 2000 /tmp/body.html
+            echo
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
-          # Repeat to the job log so it is readable via the API too.
-          echo '--- body ---'
-          curl -sSL --max-time 30 "$SITE" | head -c 3000
+          echo "HTTP $code, $size bytes"
+          echo '--- first 1.5 KB ---'
+          head -c 1500 /tmp/body.html
+          echo
+
+          # Fail only when the site genuinely is not serving the built app.
+          if grep -q '/assets/index-' /tmp/body.html; then
+            echo "PROBE OK: the built site is being served."
+          else
+            echo "::error::The published URL is not serving the built site (HTTP $code)."
+            exit 1
+          fi
