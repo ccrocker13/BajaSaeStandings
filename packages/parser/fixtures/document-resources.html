@@ -1,0 +1,1417 @@
+
+
+<!DOCTYPE html>
+<html>
+<head id="ctl00_Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	Baja SAE
+</title>
+        <!-- ## DATADOG ## -->
+        <script 
+            type="text/javascript" 
+            src="https://www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js">
+        </script>
+        <script>
+            window.DD_LOGS && window.DD_LOGS.init({
+                clientToken: 'pub2b998a9408da81e2b93d28713ea65e93',
+                site: 'datadoghq.com',
+                forwardErrorsToLogs: true,
+                forwardConsoleLogs: 'all', // ['log', 'debug', 'info', 'warn', 'error']
+                sessionSampleRate: 100,
+                silentMultipleInit: false,
+                trackingConsent: 'granted', // 'not-granted'
+                telemetrySampleRate: 0,
+                storeContextsAcrossPages: false,
+                allowUntrustedEvents: false,
+                service: 'bajasae_north_america',
+                env: 'production',
+                version: '2.1.26.8121',
+                beforeSend: (log) => {
+                    // discard 404 network errors
+                    if (log.http && log.http.status_code === 404) {
+                        return false;
+                    }
+
+                    // remove email from view url
+                    log.view.url = log.view.url.replace(/email=[^&]*/, "email=REDACTED");
+                }
+            });
+
+            //window.DD_LOGS && window.DD_LOGS.setContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.logger.setLevel('error');
+            window.DD_LOGS && window.DD_LOGS.logger.setHandler(['http', 'console']); //'http' | 'console' | 'silent'
+            //window.DD_LOGS && window.DD_LOGS.logger.setHandler('silent');
+            //window.DD_LOGS && window.DD_LOGS.setTrackingConsent('granted');
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#global-context
+            //window.DD_LOGS && window.DD_LOGS.getInternalContext();
+            //window.DD_LOGS && window.DD_LOGS.setGlobalContext({ env: 'staging' });
+            window.DD_LOGS && window.DD_LOGS.setGlobalContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging', referrer: ...}
+            //window.DD_LOGS && window.DD_LOGS.removeGlobalContextProperty('referrer');
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging'}
+            //window.DD_LOGS && window.DD_LOGS.clearGlobalContext();
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {}
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#user-context
+            //window.DD_LOGS && window.DD_LOGS.setUserProperty('type', 'customer');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com', type: 'customer'}
+            //window.DD_LOGS && window.DD_LOGS.removeUserProperty('type');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com'}
+            //window.DD_LOGS && window.DD_LOGS.clearUser();
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {}
+
+            window.DD_LOGS && window.DD_LOGS.setUser({
+                id: '',
+                un: ''
+            });
+        </script>
+        <!-- ## DATADOG ## -->
+    
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/jquery-1.11.2.min.js"></script>
+    <script src="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+
+    
+        <!-- New DataTables -->
+        <link rel="stylesheet" type="text/css" href="/cdsweb/SharedComponents/public_assets/data-tables/src/datatables.min.css" />
+        <script src="/cdsweb/SharedComponents/public_assets/data-tables/src/dataTables.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/moment.min.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/datetime-moment.js" type="text/javascript"></script>
+    <link href="/Main_Responsive.css" rel="stylesheet" type="text/css" /><link href="/panels.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" /><link href="/cdsweb/SharedComponents/public_assets/CdsWeb.css" rel="stylesheet" type="text/css" /><link href="/Overrides.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/CdsWeb.js"></script>
+
+    
+</head>
+
+<body>
+    
+    <link href="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.css" rel="stylesheet" />
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.js"></script>
+    <div id="dateTimePopup"></div>
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.js"></script>
+    
+
+    <div id="header">
+        <div id="logo">
+            <a id="ctl00_aHome" href="/">
+                <img src="/cdsweb/SharedComponents/bajasae.net/img/CdsWeb-BAJA-Header-Logo-Max65pxH.png" />
+            </a>
+        </div>
+        <div id="header-sae" class="hidden-xs pull-right">
+            <a href="http://www.sae.org/">
+                <img src="/cdsweb/SharedComponents/public_assets/img/sae_vrt_blk_rgb_pos_l.png"" style="width:120px" />
+            </a>
+        </div>
+
+        <button type="button" class="pull-right navbar-toggle btn btn-default btn-lg" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+
+<style>
+    #testVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, #f4d308 0 8px, black 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #testVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+
+    #prodVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, red 0 8px, white 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #prodVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+</style>
+
+
+    <form name="aspnetForm" method="post" action="./DocumentResources.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3F6D7889" />
+        <nav class="navbar" role="navigation">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    
+                    
+
+                    
+                    <li><a href="/">Home</a></li>
+
+                    
+                    
+
+                    
+                    <li class="dropdown hidden">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jump To Activity&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            
+                        </ul>
+                    </li>
+
+                    
+                    <li><a href="/cdsweb/app/news.aspx">News</a></li>
+
+                    
+                    <li><a href="/cdsweb/reg/UpcomingCompList.aspx">Competitions & Workshops</a></li>
+
+                    
+                    <li><a href="/Deadlines.aspx?seriesCode=BAJA">Deadlines</a></li>
+
+                    
+                    <li><a href="/app/CompetitionResources.aspx" target="_blank">Competition Resources</a></li>
+
+                    
+                    <li><a href="/cdsweb/gen/DocumentResources.aspx">Series Resources</a></li>
+
+                    
+                    <li><a href="/res/ResultsLanding.aspx">Results</a></li>
+
+                    
+                    <li><a href="/Page.aspx?pageid=02d6642f-e37d-4f69-9b1e-c60ea76dcc41">Membership</a></li>
+                    
+                    
+                    <li><a href="/Page.aspx?pageid=4d4e29a9-e7fc-4394-bae2-51080f4adf04">Media</a></li>
+
+                    
+                    <li><a href="/go/signup">Create an Account</a></li>
+
+                    
+                    
+
+                    
+                    <li><a href="https://www.bajasae.net/Login.aspx">Login</a></li>
+
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content-wrapper">
+            <div id="content" class='container min-height'>
+                
+
+                
+<div id="dismissableAlert" style="display: none;" class="alert alert-danger">
+    <div id="errorDetails"></div>
+
+    <p>Click the button to view more details of the error.</p>
+    <button type="button" class="btn btn-danger" onclick="ShowTheError()">Click here to see what went wrong</button>
+    <button type="button" class="btn btn-secondary" id="AlertCloseButon">Dismiss</button>
+</div>
+
+<script>
+    var htmlResponse = "";
+    var errorPopupDetails = "";
+
+    function ShowTheError() {
+        window.open('').document.body.innerHTML = htmlResponse;
+        $("#dismissableAlert").hide();
+    }
+
+    $(document).ready(function () {
+        $("#AlertCloseButon").click(function () {
+            $("#dismissableAlert").hide();
+        });
+    });
+
+    function PopulateErrorMessage(messageHtml){
+        htmlResponse = messageHtml;
+        //htmlResponse = htmlResponse.replace("<b>Source Error:</b>", "<b>Source Error:</b>" + , window.location.href)
+        var beginIndex = htmlResponse.indexOf("<h2> <i>");
+        var endIndex = htmlResponse.indexOf("<b>Stack Trace:</b>");
+        errorPopupDetails = htmlResponse.substring(beginIndex, endIndex);
+
+        $("#dismissableAlert").show();
+        document.getElementById("errorDetails").innerHTML = errorPopupDetails;
+
+        window.scrollTo(0, 0); // values are x,y-offset
+    }
+</script>
+
+                
+    <h3>Series Resources</h3>
+    
+
+
+<link href="/cdsweb/sharedcomponents/gen/assets/DocumentResourcesTree.css" rel="stylesheet" />
+
+
+<style>
+    
+    .welcome-text {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .career-banner {
+        /*background-color: #23c1ef;*/
+        background-image: linear-gradient(to bottom, #0d92b8, #23c1ef) !important;
+        padding: 20px 25px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+
+        .career-banner .banner-body {
+            flex: 1;
+        }
+
+            .career-banner .banner-body h4 {
+                margin: 0 0 8px;
+                font-size: 18px;
+                font-weight: 700;
+                color: #fff;
+            }
+
+            .career-banner .banner-body p {
+                margin: 0;
+                font-size: 13px;
+                color: #fff;
+                line-height: 1.5;
+            }
+
+                .career-banner .banner-body p strong {
+                    font-weight: 700;
+                }
+
+        .career-banner .btn-banner {
+            background-color: #fff;
+            color: #29abe2;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 18px;
+            font-weight: 700;
+            font-size: 13px;
+            white-space: nowrap;
+            min-width: 130px;
+            text-align: center;
+        }
+
+            .career-banner .btn-banner:hover {
+                background-color: #e8f7fd;
+                color: #1a8cbf;
+            }
+</style>
+
+
+
+<div class="row">
+    <div class="col-xs-12">
+        
+            <table id="document-resources" class="tree-table table table-responsive table-hover">
+                <thead>
+                    <tr>
+                        <th>Publisher / Title</th>
+                        <th>Version</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        
+        
+    </div>
+</div>
+
+<script src="/cdsweb/sharedcomponents/gen/assets/DocumentResourcesTree.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var documents = [];
+
+        
+                documents.push({
+                    type: 'document', 
+                    id: 'f37166e7-ee6a-4994-8fe1-203d3ce51e57', 
+                    title: '2026 Baja SAE® Ruleset ', 
+                    publisher: 'Ruleset & Rules Resources', 
+                    version: 'REV B ', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '5/26/2026 7:18:30 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'e8ccf325-a220-4699-8d34-802e985d8d8b', 
+                    title: '2025 General Notice- Tracked Vehicles', 
+                    publisher: 'Ruleset & Rules Resources', 
+                    version: 'REV A', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '3/5/2025 3:58:20 PM', 
+                    folder: 'General Notices', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '043edde8-26d2-48b8-800c-802193939a7d', 
+                    title: 'SAE International Design Standards', 
+                    publisher: 'Ruleset & Rules Resources', 
+                    version: '2/21/2024', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '2/26/2024 9:19:48 AM', 
+                    folder: 'Resources', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'b5106e1d-38f0-48c0-b221-d3e59caa1667', 
+                    title: 'Baja SAE® Trailer Signing Document', 
+                    publisher: 'SAE Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '8/31/2026 2:28:30 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '2a5c7caf-924c-4048-8d71-ce5dafe71899', 
+                    title: 'Collegiate Chapter Finance', 
+                    publisher: 'SAE Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/18/2024 11:33:55 AM', 
+                    folder: 'SAE Collegiate Chapters Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'dc131d9d-5ae0-4832-ab34-a58fac6b2eaf', 
+                    title: 'Finance', 
+                    publisher: 'SAE Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/18/2024 11:32:04 AM', 
+                    folder: 'SAE Collegiate Chapters Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '662a57fe-00ad-4929-8890-898f2b06c6f3', 
+                    title: 'New Chapter Application', 
+                    publisher: 'SAE Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/18/2024 11:37:51 AM', 
+                    folder: 'SAE Collegiate Chapters Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '382aaba5-c10a-43eb-a538-43790fb70a82', 
+                    title: 'SAE International Collegiate Chapter Manual', 
+                    publisher: 'SAE Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/18/2024 11:31:05 AM', 
+                    folder: 'SAE Collegiate Chapters Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '3a20dff1-868c-4e94-ac0b-eb71dcbdc2fc', 
+                    title: 'SAE Student Officer Form', 
+                    publisher: 'SAE Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/18/2024 11:28:30 AM', 
+                    folder: 'SAE Collegiate Chapters Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '64061e0e-3466-4a64-80e8-fc33d8f9a92e', 
+                    title: '2026 Registration Resources', 
+                    publisher: 'Team Operations Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/16/2025 12:20:13 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'URL'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '4f5b8794-8b32-4d84-ab6a-a04dfb469ba1', 
+                    title: 'Staying Informed About Competition News', 
+                    publisher: 'Team Operations Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '11/11/2020 11:08:37 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'URL'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'c5ff5da4-d235-4b27-b626-e61f5dec2279', 
+                    title: '2026 Baja SAE® Design Comparison Template', 
+                    publisher: 'Design Event Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '4/1/2026 7:14:26 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '79f341e6-5c9c-47fd-9b1a-a5a9513989d7', 
+                    title: '2026 Baja SAE® Design Evaluation Procedures', 
+                    publisher: 'Design Event Resources', 
+                    version: '2', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '5/22/2026 6:56:11 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'e59d0635-c0aa-418a-9fc0-cdfc5ec338bc', 
+                    title: '2026 Baja SAE® Design Finals Procedures', 
+                    publisher: 'Design Event Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '3/31/2026 6:16:03 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '7044ac7d-d89b-4b81-b5eb-9a9a7bbec5d4', 
+                    title: '2026 Baja SAE® Design Review Briefing Template', 
+                    publisher: 'Design Event Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '2/26/2026 7:31:49 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '21b2fcf4-b946-4ae5-95cc-ac0c5883acfe', 
+                    title: '2026 Baja SAE® Design Score Sheet with subsystems scores (150pts)', 
+                    publisher: 'Design Event Resources', 
+                    version: '2', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '5/22/2026 6:57:05 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '3ad46d80-f9f8-4dba-9cf9-80d628e9f172', 
+                    title: '2026 Baja SAE® Roll Cage Documentation Package', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '1/15/2026 5:34:55 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '90f526cd-acf1-4c55-b030-0aad6c9ad71c', 
+                    title: '2026 Baja SAE® Roll Cage Spec Sheet', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '1/15/2026 5:33:56 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '9dba679c-1cde-40c3-85ce-85f28c4e445c', 
+                    title: '2026 Baja SAE® Technical Inspection Sheet ', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: 'REV C', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '5/27/2026 4:31:18 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '56154054-5f34-49f8-8e1f-1e13614d9244', 
+                    title: ' A Guide to Successful Baja SAE® Technical Inspection', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/30/2019 3:06:45 PM', 
+                    folder: 'Additional Technical Inspection Resources', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'ac868204-2922-4ead-9222-285851ebec96', 
+                    title: '2023 Baja SAE® Hydraulic Spec Sheet', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/20/2022 10:30:17 AM', 
+                    folder: 'Additional Technical Inspection Resources', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '6b5bd23c-e2d3-45e3-ae8f-3c11265cd3bb', 
+                    title: 'Baja SAE® - Guidance on Tube Bending Defects', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '1/6/2020 12:51:06 PM', 
+                    folder: 'Additional Technical Inspection Resources', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '4ad2bbfc-529b-449e-9b14-2234ef5b813c', 
+                    title: 'National Technical Inspection Objective', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '11/28/2017 6:11:49 PM', 
+                    folder: 'Additional Technical Inspection Resources', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '7f627d04-f476-4e4a-91fe-be0d8acd56ec', 
+                    title: 'Technical Inspection Number Assignment Procedure ', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '12/12/2022 11:11:05 AM', 
+                    folder: 'Additional Technical Inspection Resources', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '1b406dc2-30ca-4c2a-9c33-329e8fbe0c23', 
+                    title: 'Transponder Purchase', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '11/28/2017 6:13:40 PM', 
+                    folder: 'Additional Technical Inspection Resources', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '28d344a4-2ada-4bda-8653-7b0630e9e034', 
+                    title: 'Weld Testing Clarification Sheet', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '11/28/2017 6:14:04 PM', 
+                    folder: 'Additional Technical Inspection Resources', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'aa0d0a8b-8401-4cbf-9f91-f1a59c058efa', 
+                    title: '2022 Baja SAE® Arizona Scores with Kohler Test Cars', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '10/17/2022 3:15:20 PM', 
+                    folder: 'Engine Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '01b8d4ab-7c87-431d-bfe3-bfa8b246f392', 
+                    title: 'Baja SAE® Charging System', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '11/17/2022 9:14:17 AM', 
+                    folder: 'Engine Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'e56eafca-dae9-446b-a9b0-027a88656d35', 
+                    title: 'Baja SAE® Conversion Overview', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: 'Rev 1', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '4/13/2023 9:54:42 AM', 
+                    folder: 'Engine Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '96937576-d00f-4aed-a04c-5c52b4743cc2', 
+                    title: 'Baja SAE® Kill Switch Wiring', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: 'Rev. 2', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '11/16/2022 9:28:08 AM', 
+                    folder: 'Engine Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '9082f2ad-4e66-4409-a430-bb8eb09246d2', 
+                    title: 'Baja SAE® Throttle Options', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: 'Rev 2', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '5/16/2023 11:01:43 AM', 
+                    folder: 'Engine Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'b250342f-ea19-46c2-95ea-6deb728ddb7a', 
+                    title: 'Kohler Baja SAE® Engine Performance', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: 'v.1', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/9/2022 12:37:56 PM', 
+                    folder: 'Engine Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '18b1a1fc-ea1c-4052-9c8d-64f9af28b4e9', 
+                    title: 'Kohler CH440 Engine Color Images (zip)', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/15/2022 3:39:02 PM', 
+                    folder: 'Engine Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '4e9a47d1-1786-4050-838b-78c5bbf45ab0', 
+                    title: 'Kohler CH440 PA-D22-077 Reduced CAD files', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/22/2022 10:27:20 AM', 
+                    folder: 'Engine Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '81d4ef61-a0b3-475a-9e2e-c62b91197132', 
+                    title: 'Kohler Lessons Learned ', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '5/16/2023 10:57:16 AM', 
+                    folder: 'Engine Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '222f382e-f6b7-44c0-b629-a15c136bbbba', 
+                    title: 'Kohler-Baja SAE® Engine Files (zip)', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: 'v.2', 
+                    notes: 'CAD neutral format to import on various software', 
+                    status: 'Published', 
+                    createdAt: '11/28/2023 10:18:18 AM', 
+                    folder: 'Engine Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'c5bcc5ba-f43b-44ef-b201-420307cddbad', 
+                    title: 'Spare Parts Catalog', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/15/2022 5:41:45 PM', 
+                    folder: 'Engine Documents', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'e5be6c79-101b-467d-80cf-3397628407c7', 
+                    title: '2026 Baja SAE® Technical Inspection Bulletin', 
+                    publisher: 'Technical Inspection Resources', 
+                    version: '1', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '5/26/2026 7:21:18 AM', 
+                    folder: 'Technical Bulletins', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '5a7c7c96-fc14-4451-a8b8-c28367dfdf61', 
+                    title: ' Cost Report Submission Guide – Version 2', 
+                    publisher: 'Cost Event Resources', 
+                    version: 'V2', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '3/17/2022 2:03:54 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'fa63959f-e573-45c0-b3ae-a1f75917dd30', 
+                    title: '2023 Cost Event Description to Series Resources – Cost Event Resources', 
+                    publisher: 'Cost Event Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '1/25/2023 3:07:00 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'f8f745c5-8db5-4721-9f2e-c4feaf4cde5c', 
+                    title: 'Cost Reduction Report Judging Score Sheet', 
+                    publisher: 'Cost Event Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '10/19/2020 5:16:49 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'a9c919ef-e730-4d6b-ae56-4a8961628e6b', 
+                    title: 'Creating a BOM', 
+                    publisher: 'Cost Event Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '2/10/2020 10:52:21 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'f6ba1769-e65b-45b5-921a-c498549c0a84', 
+                    title: '2026 Baja SAE® Business Presentation Presenter Form ', 
+                    publisher: 'Business Presentation Event Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '1/27/2026 10:30:24 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '90a2e1db-3a67-44e2-92ea-2da8491f8a31', 
+                    title: '2026 Baja SAE® Business Presentation RFP Guidance Document', 
+                    publisher: 'Business Presentation Event Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '11/3/2025 11:12:27 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '1f202ad4-d6b6-441d-9ac2-c0807fef7087', 
+                    title: '2026 Baja SAE® Business Presentation Virtual Presentation Teams ', 
+                    publisher: 'Business Presentation Event Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '1/16/2026 6:59:07 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '67259091-04ff-40e4-bbd1-8da54270f63e', 
+                    title: '2026 Baja SAE® Virtual Business Presentation Schedule', 
+                    publisher: 'Business Presentation Event Resources', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '1/27/2026 9:42:56 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '4c44c788-8b8d-4c8e-8ff8-ac9d2ccc1bba', 
+                    title: 'Rehlko Engine Check Checklist', 
+                    publisher: 'Rehlko Engine Check ', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '8/6/2026 8:03:34 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '25991df9-9ac3-4941-b134-ad994dd4c82c', 
+                    title: 'Mini Baja Preliminary Inspection Sheet', 
+                    publisher: 'Mini Baja', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/24/2025 9:52:36 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '14fae888-aad4-4fcd-aae9-8954d04a44ef', 
+                    title: 'Mini Baja Ruleset.', 
+                    publisher: 'Mini Baja', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '4/1/2026 9:57:19 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '8f24cc18-b24c-4754-bc34-64dcc3984b92', 
+                    title: 'Mini Baja Starter Pack', 
+                    publisher: 'Mini Baja', 
+                    version: '', 
+                    notes: 'New to Mini Baja? Here are some tips to get you ', 
+                    status: 'Published', 
+                    createdAt: '8/28/2025 8:45:21 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '09041bc1-869b-4f66-ac19-94f3d4d81845', 
+                    title: 'AWIM Curriculum Challenge Overviews', 
+                    publisher: 'LearnTwice $2,500 Team Stipend', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '4/29/2026 12:57:22 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '724d6714-ac24-4d8f-8d77-0203ccb7f90a', 
+                    title: 'AWIM Flyer', 
+                    publisher: 'LearnTwice $2,500 Team Stipend', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '4/29/2026 12:57:46 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '99df3941-b530-4da1-9d77-3c8a74a8c394', 
+                    title: 'AWIM Volunteer Guide', 
+                    publisher: 'LearnTwice $2,500 Team Stipend', 
+                    version: '11/09/2021', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '10/3/2022 2:09:47 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'fa67e25b-60c5-4845-933e-505cf0720437', 
+                    title: 'Earn More for In-Classroom STEM Mentoring ', 
+                    publisher: 'LearnTwice $2,500 Team Stipend', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '10/30/2024 12:29:14 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '4023e8fb-0397-4706-a0df-414a52585c5c', 
+                    title: 'LearnTwice Overview ', 
+                    publisher: 'LearnTwice $2,500 Team Stipend', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '10/30/2024 11:40:00 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'a0c1dfdc-bfab-45fe-ad2a-cdde6058314d', 
+                    title: '2026 GM Excellence in Technical Innovation Award', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '2/3/2026 11:55:03 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'c0049e1f-8023-4626-aeb9-98cc637e054d', 
+                    title: 'AERIM Summer Research Opportunity', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '2/1/2023 3:21:59 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '6ff0fcd7-f86d-4777-87ce-2b3880899873', 
+                    title: 'Momentum Editorial Opportunities', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: 'V.2', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '10/10/2023 3:45:40 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'fa99feb9-9e4c-409e-bb9a-473d7bd266b1', 
+                    title: 'Noise and Vibration Student Paper Competition', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '3/6/2024 9:59:12 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '58a08aea-e2c0-46df-bf37-ccf22a8418c7', 
+                    title: 'SAE SoCal Student Workshop', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '11/14/2022 3:01:56 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'URL'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'c9a23d9f-aafe-4540-b14b-16dad6089683', 
+                    title: 'SAE SoCal Student Workshop Flyer', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '11/14/2022 3:10:57 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'ed255a00-c90f-43c9-ac3b-2f2c4e5cea9b', 
+                    title: 'SAE Student Officer Form 2024 - 2025 ', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: 'v2', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '8/21/2024 11:01:22 AM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'c8766806-380c-4241-b434-57b791954451', 
+                    title: 'Small Powertrain and Energy Systems Technology Conference', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: '', 
+                    notes: 'Call for Papers/Presentations', 
+                    status: 'Published', 
+                    createdAt: '5/15/2023 2:47:00 PM', 
+                    folder: '', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'd83fb3de-555f-454b-b07d-61e9efbfdcb2', 
+                    title: 'CDS Photography Portal', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '11/9/2021 2:07:11 PM', 
+                    folder: 'SAE Resources', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'URL'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'f76021c4-9fbc-4e63-9dae-3817ec803b1d', 
+                    title: 'Competition Resources', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '11/9/2021 2:08:34 PM', 
+                    folder: 'SAE Resources', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'URL'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: 'a8296273-969e-416a-9d1b-69d11e5f9e0f', 
+                    title: 'SAE Foundation Awards and Scholarships Flyer', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '9/9/2023 8:24:57 AM', 
+                    folder: 'SAE Resources', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '87752a1b-c5fa-4901-8523-a645845d72b1', 
+                    title: 'SAE Student Officer Form', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '10/27/2023 3:01:37 PM', 
+                    folder: 'SAE Resources', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '72f2a69e-e20f-44d3-b385-0e8f4b98db8a', 
+                    title: 'University Pavilion Contract', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '3/8/2023 11:19:59 AM', 
+                    folder: 'University Pavilion at WCX', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+            
+                documents.push({
+                    type: 'document', 
+                    id: '5556dc59-4e80-4f08-b88d-96c6005bc9db', 
+                    title: 'University Programs at WCX', 
+                    publisher: 'Other SAE Opportunities ', 
+                    version: '', 
+                    notes: '', 
+                    status: 'Published', 
+                    createdAt: '3/8/2023 11:27:32 AM', 
+                    folder: 'University Pavilion at WCX', 
+                    subfolder: '', 
+                    ndaReq: 'None',
+                    doctype: 'File'
+                });
+               
+        
+        var renderDocumentColumns = function (document) {
+            var notes = '';
+            if (document.notes.length > 0)
+                notes = '<div><span class="label label-default">' + document.notes + '</span></div>';
+
+            var downloadBtn = '<a class="btn btn-primary" href="/cdsweb/gen/DownloadDocument.aspx?DocumentID=' + document.id + '">Download</a>';
+
+            if (document.doctype == 'URL')
+                downloadBtn = '<a target="_blank" class="btn btn-primary" href="/cdsweb/gen/DownloadDocument.aspx?DocumentID=' + document.id + '">Launch</a>';
+
+            return [
+                document.title + notes,
+                document.version,
+                downloadBtn
+            ];
+        };
+
+        DocumentResourcesTreeInit(documents, renderDocumentColumns, false);
+    });
+</script>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                
+
+            </div>
+
+
+            <a class="sae-privacy-policy" href="https://www.sae.org/privacy" target="_blank">SAE International Privacy Policy</a>
+        </div>
+    </form>
+</body>
+</html>

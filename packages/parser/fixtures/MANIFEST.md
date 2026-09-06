@@ -1,7 +1,7 @@
 # Capture manifest
 
-Captured: 2026-09-06T18:18:50Z
-Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34051304994
+Captured: 2026-09-06T18:24:01Z
+Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34051573860
 
 | name | status | type | bytes | url |
 |---|---|---|---|---|
@@ -26,3 +26,12 @@ Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34051304994
 | results-landing | 200 | text/html | 25434 | https://www.bajasae.net/res/ResultsLanding.aspx |
 | res-event-results | 500 | text/html | 5773 | https://www.bajasae.net/res/EventResults.aspx |
 | upcoming-comps | 200 | text/html | 21241 | https://www.bajasae.net/cdsweb/reg/Upcomingcomplist.aspx |
+| comp-oregon-2026 | 200 | text/html | 28073 | https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d |
+| comp-newyork-2026 | 200 | text/html | 28301 | https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0 |
+| comp-ohio-upcoming | 200 | text/html | 28212 | https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=0b93e7a4-d6c1-4c9e-99b5-d10d9650bf75 |
+| comp-rochester-2019 | 200 | text/html | 28413 | https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6 |
+| competition-resources | 200 | text/html | 36351 | https://www.bajasae.net/app/CompetitionResources.aspx |
+| document-resources | 200 | text/html | 74444 | https://www.bajasae.net/cdsweb/gen/DocumentResources.aspx |
+| legacy-results | 403 | text/html | 118 | http://students.sae.org/competitions/bajasae/results/ |
+| black-flags | 200 | text/html | 172943 | https://results.bajasae.net/BlackFlags.aspx |
+| tech-line-assigns | 200 | text/html | 106059 | https://results.bajasae.net/TechLineAssigns.aspx |
