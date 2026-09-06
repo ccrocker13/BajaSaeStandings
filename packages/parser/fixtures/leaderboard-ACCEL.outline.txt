@@ -1,0 +1,47 @@
+SOURCE: https://results.bajasae.net/Leaderboard.aspx?Event=ACCEL
+BYTES: 63924
+TITLE: Event Leaderboard
+META REFRESH: none
+__VIEWSTATE: present (15612 chars)
+__EVENTTARGET: absent
+__doPostBack refs: 0
+FORM: id=Form1 method=post action=./Leaderboard.aspx?Event=ACCEL
+
+TABLES: 1
+
+--- table[0] id=MainContent_GridViewDynamicResults class=table table-condensed rows=80
+    col counts (first 20 rows): 5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
+    row[0]: ["Pos.","Car No.","School / Team Name","Status","Time"]
+    row[1]: ["1","15","California Polytechnic State Univ-SLO Cal Poly Racing","OK","3.814"]
+    row[2]: ["2","6","Johns Hopkins Univ Blue Jay Racing","OK","3.828"]
+    row[3]: ["3","3","Ecole de Technologie Superieure Baja ÉTS","OK","3.831"]
+
+ELEMENT IDS (172): Head1, Form1, lblEventTitle, bs-example-navbar-collapse-1, MainContent_ctlTimer, MainContent_pnlUpdate, MainContent_DropDownListEvents, MainContent_ButtonLookupEvent, MainContent_PanelDynamicResults, MainContent_GridViewDynamicResults, MainContent_GridViewDynamicResults_Label1_0, MainContent_GridViewDynamicResults_Label2_0, MainContent_GridViewDynamicResults_Label1_1, MainContent_GridViewDynamicResults_Label2_1, MainContent_GridViewDynamicResults_Label1_2, MainContent_GridViewDynamicResults_Label2_2, MainContent_GridViewDynamicResults_Label1_3, MainContent_GridViewDynamicResults_Label2_3, MainContent_GridViewDynamicResults_Label1_4, MainContent_GridViewDynamicResults_Label2_4, MainContent_GridViewDynamicResults_Label1_5, MainContent_GridViewDynamicResults_Label2_5, MainContent_GridViewDynamicResults_Label1_6, MainContent_GridViewDynamicResults_Label2_6, MainContent_GridViewDynamicResults_Label1_7, MainContent_GridViewDynamicResults_Label2_7, MainContent_GridViewDynamicResults_Label1_8, MainContent_GridViewDynamicResults_Label2_8, MainContent_GridViewDynamicResults_Label1_9, MainContent_GridViewDynamicResults_Label2_9, MainContent_GridViewDynamicResults_Label1_10, MainContent_GridViewDynamicResults_Label2_10, MainContent_GridViewDynamicResults_Label1_11, MainContent_GridViewDynamicResults_Label2_11, MainContent_GridViewDynamicResults_Label1_12, MainContent_GridViewDynamicResults_Label2_12, MainContent_GridViewDynamicResults_Label1_13, MainContent_GridViewDynamicResults_Label2_13, MainContent_GridViewDynamicResults_Label1_14, MainContent_GridViewDynamicResults_Label2_14, MainContent_GridViewDynamicResults_Label1_15, MainContent_GridViewDynamicResults_Label2_15, MainContent_GridViewDynamicResults_Label1_16, MainContent_GridViewDynamicResults_Label2_16, MainContent_GridViewDynamicResults_Label1_17, MainContent_GridViewDynamicResults_Label2_17, MainContent_GridViewDynamicResults_Label1_18, MainContent_GridViewDynamicResults_Label2_18, MainContent_GridViewDynamicResults_Label1_19, MainContent_GridViewDynamicResults_Label2_19, MainContent_GridViewDynamicResults_Label1_20, MainContent_GridViewDynamicResults_Label2_20, MainContent_GridViewDynamicResults_Label1_21, MainContent_GridViewDynamicResults_Label2_21, MainContent_GridViewDynamicResults_Label1_22, MainContent_GridViewDynamicResults_Label2_22, MainContent_GridViewDynamicResults_Label1_23, MainContent_GridViewDynamicResults_Label2_23, MainContent_GridViewDynamicResults_Label1_24, MainContent_GridViewDynamicResults_Label2_24, MainContent_GridViewDynamicResults_Label1_25, MainContent_GridViewDynamicResults_Label2_25, MainContent_GridViewDynamicResults_Label1_26, MainContent_GridViewDynamicResults_Label2_26, MainContent_GridViewDynamicResults_Label1_27, MainContent_GridViewDynamicResults_Label2_27, MainContent_GridViewDynamicResults_Label1_28, MainContent_GridViewDynamicResults_Label2_28, MainContent_GridViewDynamicResults_Label1_29, MainContent_GridViewDynamicResults_Label2_29, MainContent_GridViewDynamicResults_Label1_30, MainContent_GridViewDynamicResults_Label2_30, MainContent_GridViewDynamicResults_Label1_31, MainContent_GridViewDynamicResults_Label2_31, MainContent_GridViewDynamicResults_Label1_32, MainContent_GridViewDynamicResults_Label2_32, MainContent_GridViewDynamicResults_Label1_33, MainContent_GridViewDynamicResults_Label2_33, MainContent_GridViewDynamicResults_Label1_34, MainContent_GridViewDynamicResults_Label2_34, MainContent_GridViewDynamicResults_Label1_35, MainContent_GridViewDynamicResults_Label2_35, MainContent_GridViewDynamicResults_Label1_36, MainContent_GridViewDynamicResults_Label2_36, MainContent_GridViewDynamicResults_Label1_37, MainContent_GridViewDynamicResults_Label2_37, MainContent_GridViewDynamicResults_Label1_38, MainContent_GridViewDynamicResults_Label2_38, MainContent_GridViewDynamicResults_Label1_39, MainContent_GridViewDynamicResults_Label2_39, MainContent_GridViewDynamicResults_Label1_40, MainContent_GridViewDynamicResults_Label2_40, MainContent_GridViewDynamicResults_Label1_41, MainContent_GridViewDynamicResults_Label2_41, MainContent_GridViewDynamicResults_Label1_42, MainContent_GridViewDynamicResults_Label2_42, MainContent_GridViewDynamicResults_Label1_43, MainContent_GridViewDynamicResults_Label2_43, MainContent_GridViewDynamicResults_Label1_44, MainContent_GridViewDynamicResults_Label2_44, MainContent_GridViewDynamicResults_Label1_45, MainContent_GridViewDynamicResults_Label2_45, MainContent_GridViewDynamicResults_Label1_46, MainContent_GridViewDynamicResults_Label2_46, MainContent_GridViewDynamicResults_Label1_47, MainContent_GridViewDynamicResults_Label2_47, MainContent_GridViewDynamicResults_Label1_48, MainContent_GridViewDynamicResults_Label2_48, MainContent_GridViewDynamicResults_Label1_49, MainContent_GridViewDynamicResults_Label2_49, MainContent_GridViewDynamicResults_Label1_50, MainContent_GridViewDynamicResults_Label2_50, MainContent_GridViewDynamicResults_Label1_51, MainContent_GridViewDynamicResults_Label2_51, MainContent_GridViewDynamicResults_Label1_52, MainContent_GridViewDynamicResults_Label2_52, MainContent_GridViewDynamicResults_Label1_53, MainContent_GridViewDynamicResults_Label2_53, MainContent_GridViewDynamicResults_Label1_54, MainContent_GridViewDynamicResults_Label2_54
+
+CLASSES (29): header, img-responsive, center-block, navbar, container, navbar-header, navbar-toggle, sr-only, collapse, navbar-collapse, nav, navbar-nav, content, text-center, row, col-xs-12, spacing-bottom, col-sm-6, col-md-4, form-control, btn, btn-primary, spacing-top-bottom, table-responsive, table, table-condensed, SiteLocation, SiteLocationUpdate, Version
+
+LINKS (10):
+   -> /
+  Home -> /
+  Leaderboards -> /Leaderboard.aspx
+  Results by Car -> /MyResults.aspx
+  Results by Event -> /EventResults.aspx
+  Tech Line Num Assignments -> /TechLineAssigns.aspx
+  Current Tech Line Number -> /TechLineNumber.aspx
+  Live Endurance Grid -> /EnduranceGrid.aspx
+  Endurance Black Flags -> /BlackFlags.aspx
+  Check Problem Report Status -> /ProblemReportStatus.aspx
+
+SELECT id=MainContent_DropDownListEvents name=ctl00$MainContent$DropDownListEvents options=8
+  ec599a4b-a621-4769-9106-8f92797839fe=Business Presentation
+  ccfca872-cff3-497c-891c-4ac7ab4bbb6c=Cost Event
+  08622a35-3f67-4379-8712-28e09c5f3c8f=Design
+  cba2aa57-0431-4dcb-b1a8-f719be0b3f6c=Acceleration
+  c683e17c-9422-41c7-b587-98f0d04ca9f6=Hill Climb
+  ede3030b-a8fb-485b-a94f-97063f330748=Maneuverability
+  37dcf682-eede-482a-b062-2bc6af292230=Suspension & Traction
+  2fb7ec42-eb08-46b1-bbc6-1d1d86180b5a=Endurance
+
+SCRIPT SRCS: /assets/jquery/jquery-1.11.2.min.js, /assets/bootstrap-3-3-4/js/bootstrap.min.js, /ScriptResource.axd?d=Y3vj9bmOwMrcbMS62LboZUAFrwoHQjYwubJnAzohghvN8JQEK6v6CNuNFiKbSV-afQPe6lt-soDSgAN-0D0tabMcHO_hD9FQn5OLN5UiGnemobzmB-wmIyvKz6bDrn5zm86fCVbOXgylzmB9TLIsjEXw803yPYSGa4ebb2BB8xU1&t=ffffffffbec1863d, /ScriptResource.axd?d=snmW4er0ctMos7CQ5wWn2E7oUMPZkZpMMTtLEyv6Vdy5Ey-3R4adn8aN3pghhrK-fRGqm0gA-2r85fqhTbbj7Y0G4_JuUasAj3Z7n-dQn4dQmx2U_X8H1j1URg2XJThoPUlSaXwhnjB0gzOvMq22XaSOZxCADQAZVMw5R079EUE1&t=ffffffffbec1863d
+ENDPOINT HINTS: none
+AJAX/REFRESH HINTS: ScriptResource

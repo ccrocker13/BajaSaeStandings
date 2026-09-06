@@ -1,0 +1,69 @@
+SOURCE: https://www.bajasae.net/res/ResultsLanding.aspx
+BYTES: 25434
+TITLE: Baja SAE
+META REFRESH: none
+__VIEWSTATE: present (4440 chars)
+__EVENTTARGET: absent
+__doPostBack refs: 0
+FORM: id=aspnetForm method=post action=./ResultsLanding.aspx
+
+TABLES: 0
+
+ELEMENT IDS (15): ctl00_Head1, dateTimePopup, header, logo, ctl00_aHome, header-sae, aspnetForm, navbar, content-wrapper, content, dismissableAlert, errorDetails, AlertCloseButon, ctl00_main_ibBottom, footer
+
+CLASSES (31): hidden-xs, pull-right, navbar-toggle, btn, btn-default, btn-lg, sr-only, icon-bar, navbar, navbar-collapse, collapse, nav, navbar-nav, dropdown, hidden, dropdown-toggle, caret, dropdown-menu, container, min-height, alert, alert-danger, btn-danger, btn-secondary, banner, img-responsive, results-history, label, label-success, InfoBlock, sae-privacy-policy
+
+LINKS (49):
+   -> /
+   -> http://www.sae.org/
+  Home -> /
+  Jump To Activity -> #
+  News -> /cdsweb/app/news.aspx
+  Competitions & Workshops -> /cdsweb/reg/UpcomingCompList.aspx
+  Deadlines -> /Deadlines.aspx?seriesCode=BAJA
+  Competition Resources -> /app/CompetitionResources.aspx
+  Series Resources -> /cdsweb/gen/DocumentResources.aspx
+  Results -> /res/ResultsLanding.aspx
+  Membership -> /Page.aspx?pageid=02d6642f-e37d-4f69-9b1e-c60ea76dcc41
+  Media -> /Page.aspx?pageid=4d4e29a9-e7fc-4394-bae2-51080f4adf04
+  Create an Account -> /go/signup
+  Login -> https://www.bajasae.net/Login.aspx
+  Baja SAE Oregon -> /res/CompetitionResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d
+  Baja SAE New York -> /res/CompetitionResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0
+  Baja SAE Arizona -> /res/CompetitionResults.aspx?competitionid=831723b7-8cdc-47d6-ab26-886f8b0d7a9f
+  Baja SAE Maryland -> /res/CompetitionResults.aspx?competitionid=992027db-75df-441e-8d54-82df0514e484
+  Baja SAE Carolina -> /res/CompetitionResults.aspx?competitionid=7351b7c2-c517-4581-820d-cb1eb6cff3bc
+  Baja SAE California -> /res/CompetitionResults.aspx?competitionid=5344befe-f95c-4017-95d7-45836822794c
+  Baja SAE Williamsport -> /res/CompetitionResults.aspx?competitionid=dae00323-484b-417d-b48f-7cd15a235820
+  Baja SAE Michigan -> /res/CompetitionResults.aspx?competitionid=d699778a-2071-460d-971e-a88d0a49cc50
+  Baja SAE Oshkosh -> /res/CompetitionResults.aspx?competitionid=71bab167-42b3-4b90-847e-f2f9e44aea25
+  Baja SAE Oregon -> /res/CompetitionResults.aspx?competitionid=9e449a5d-e709-42e7-91ee-3b5af2eaf60c
+  Baja SAE Ohio -> /res/CompetitionResults.aspx?competitionid=0b93e7a4-d6c1-4c9e-99b5-d10d9650bf75
+  Baja SAE Tennessee Tech -> /res/CompetitionResults.aspx?competitionid=4d37bf6b-b20b-4133-8045-86d7d0e25489
+  Baja SAE Rochester -> /res/CompetitionResults.aspx?competitionid=c0746db7-ec23-459c-942c-894f5e4e981c
+  Baja SAE Arizona -> /res/CompetitionResults.aspx?competitionid=8d2dd1e0-a0e8-49c5-8aad-832a52154c23
+  Baja SAE Knowledge -> /res/CompetitionResults.aspx?competitionid=02d6e1cf-d291-4a4e-993f-512abc95d340
+  Baja Validation Event AZ -> /res/CompetitionResults.aspx?competitionid=59471865-e02d-48af-b42b-896bf1af94c8
+  Baja Louisville - Validation Event -> /res/CompetitionResults.aspx?competitionid=78097d49-c603-449b-a117-37a8e5026dfd
+  Baja SAE Arizona -> /res/CompetitionResults.aspx?competitionid=58bac15a-15d9-4896-8916-9c62fc6beee2
+  Baja SAE Louisville -> /res/CompetitionResults.aspx?competitionid=f0120840-0858-4b98-838b-db4f8c72d2bd
+  Baja SAE Illinois -> /res/CompetitionResults.aspx?competitionid=ff9dc5e4-8f1a-4ffa-a9a0-aa96a57b9616
+  Baja SAE Tennessee Tech 2019 -> /res/CompetitionResults.aspx?competitionid=09bafb4a-baf7-4c4d-a974-2aa0ac22ba9d
+  Baja SAE California 2019 -> /res/CompetitionResults.aspx?competitionid=a4ae23dc-975b-4d08-a040-225dafb75b31
+  Baja SAE Rochester 2019 -> /res/CompetitionResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6
+  Baja SAE Maryland 2018 -> /res/CompetitionResults.aspx?competitionid=5108e3e9-cf27-4ca6-88cf-fea31c6b7ac2
+  Baja SAE Kansas 2018 -> /res/CompetitionResults.aspx?competitionid=6bf956b9-4796-4b39-a8e7-8caeb55d5d73
+  Baja SAE Oregon 2018 -> /res/CompetitionResults.aspx?competitionid=a8d3752f-aee1-4492-94e7-7cf021a11a65
+  Baja SAE California 2017 -> /res/CompetitionResults.aspx?competitionid=a59bd740-f7f4-46ee-b3a2-6b7d672ccf1e
+  Baja SAE Kansas 2017 -> /res/CompetitionResults.aspx?competitionid=47889761-684f-4fa2-b057-7abb55c8bbde
+  Baja SAE Illinois 2017 -> /res/CompetitionResults.aspx?competitionid=6548e906-200b-4e58-91ad-1bcda47091eb
+  Baja SAE Tennessee Tech 2016 -> /res/CompetitionResults.aspx?competitionid=5a13d57d-8d58-41cd-803a-514f15b7a2c0
+  Baja SAE California 2016 -> /res/CompetitionResults.aspx?competitionid=625a80e2-fdb4-4854-bffe-c5d62ab2d492
+  Baja SAE Rochester 2016 -> /res/CompetitionResults.aspx?competitionid=ddc22524-5b18-49a0-a416-22c310821c42
+  Recent Competition Results -> https://www.bajasae.net/page.aspx?pageid=2d2a2ef4-55fe-40e3-a67b-91dd0ca1a6ec
+  Results Archives -> http://students.sae.org/competitions/bajasae/results/
+  SAE International Privacy Policy -> https://www.sae.org/privacy
+
+SCRIPT SRCS: https://www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js, /cdsweb/SharedComponents/public_assets/jquery-1.11.2.min.js, /cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.js, /cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/js/bootstrap.min.js, /cdsweb/SharedComponents/public_assets/data-tables/src/dataTables.js, /cdsweb/SharedComponents/public_assets/moment/moment.min.js, /cdsweb/SharedComponents/public_assets/moment/datetime-moment.js, /cdsweb/SharedComponents/public_assets/CdsWeb.js, /cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.js, /cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.js
+ENDPOINT HINTS: none
+AJAX/REFRESH HINTS: none

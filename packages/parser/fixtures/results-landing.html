@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<html>
+<head id="ctl00_Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	Baja SAE
+</title>
+        <!-- ## DATADOG ## -->
+        <script 
+            type="text/javascript" 
+            src="https://www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js">
+        </script>
+        <script>
+            window.DD_LOGS && window.DD_LOGS.init({
+                clientToken: 'pub2b998a9408da81e2b93d28713ea65e93',
+                site: 'datadoghq.com',
+                forwardErrorsToLogs: true,
+                forwardConsoleLogs: 'all', // ['log', 'debug', 'info', 'warn', 'error']
+                sessionSampleRate: 100,
+                silentMultipleInit: false,
+                trackingConsent: 'granted', // 'not-granted'
+                telemetrySampleRate: 0,
+                storeContextsAcrossPages: false,
+                allowUntrustedEvents: false,
+                service: 'bajasae_north_america',
+                env: 'production',
+                version: '2.1.26.8121',
+                beforeSend: (log) => {
+                    // discard 404 network errors
+                    if (log.http && log.http.status_code === 404) {
+                        return false;
+                    }
+
+                    // remove email from view url
+                    log.view.url = log.view.url.replace(/email=[^&]*/, "email=REDACTED");
+                }
+            });
+
+            //window.DD_LOGS && window.DD_LOGS.setContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.logger.setLevel('error');
+            window.DD_LOGS && window.DD_LOGS.logger.setHandler(['http', 'console']); //'http' | 'console' | 'silent'
+            //window.DD_LOGS && window.DD_LOGS.logger.setHandler('silent');
+            //window.DD_LOGS && window.DD_LOGS.setTrackingConsent('granted');
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#global-context
+            //window.DD_LOGS && window.DD_LOGS.getInternalContext();
+            //window.DD_LOGS && window.DD_LOGS.setGlobalContext({ env: 'staging' });
+            window.DD_LOGS && window.DD_LOGS.setGlobalContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging', referrer: ...}
+            //window.DD_LOGS && window.DD_LOGS.removeGlobalContextProperty('referrer');
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging'}
+            //window.DD_LOGS && window.DD_LOGS.clearGlobalContext();
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {}
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#user-context
+            //window.DD_LOGS && window.DD_LOGS.setUserProperty('type', 'customer');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com', type: 'customer'}
+            //window.DD_LOGS && window.DD_LOGS.removeUserProperty('type');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com'}
+            //window.DD_LOGS && window.DD_LOGS.clearUser();
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {}
+
+            window.DD_LOGS && window.DD_LOGS.setUser({
+                id: '',
+                un: ''
+            });
+        </script>
+        <!-- ## DATADOG ## -->
+    
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/jquery-1.11.2.min.js"></script>
+    <script src="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+
+    
+        <!-- New DataTables -->
+        <link rel="stylesheet" type="text/css" href="/cdsweb/SharedComponents/public_assets/data-tables/src/datatables.min.css" />
+        <script src="/cdsweb/SharedComponents/public_assets/data-tables/src/dataTables.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/moment.min.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/datetime-moment.js" type="text/javascript"></script>
+    <link href="/Main_Responsive.css" rel="stylesheet" type="text/css" /><link href="/panels.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" /><link href="/cdsweb/SharedComponents/public_assets/CdsWeb.css" rel="stylesheet" type="text/css" /><link href="/Overrides.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/CdsWeb.js"></script>
+
+    
+</head>
+
+<body>
+    
+    <link href="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.css" rel="stylesheet" />
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.js"></script>
+    <div id="dateTimePopup"></div>
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.js"></script>
+    
+
+    <div id="header">
+        <div id="logo">
+            <a id="ctl00_aHome" href="/">
+                <img src="/cdsweb/SharedComponents/bajasae.net/img/CdsWeb-BAJA-Header-Logo-Max65pxH.png" />
+            </a>
+        </div>
+        <div id="header-sae" class="hidden-xs pull-right">
+            <a href="http://www.sae.org/">
+                <img src="/cdsweb/SharedComponents/public_assets/img/sae_vrt_blk_rgb_pos_l.png"" style="width:120px" />
+            </a>
+        </div>
+
+        <button type="button" class="pull-right navbar-toggle btn btn-default btn-lg" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+
+<style>
+    #testVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, #f4d308 0 8px, black 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #testVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+
+    #prodVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, red 0 8px, white 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #prodVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+</style>
+
+
+    <form name="aspnetForm" method="post" action="./ResultsLanding.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="YDedsFoPur42xbyYXqOoI5Fiu5lKKlxswAr0+4mtm3E1tPliV9olOv0GcnolVskW5meFXXSgHb1nzvHHroLdU9/dVynMZbpARcakOkuyL5t4GV1SltCYqsrpRZpEfif2K+eEQMJmT8uzWDdgDizhYV8q0oLMYYoFPQQh6aXqDQgLMFR2rszAbc5hI08+0mYxFw0C3iTHRxSqFDCUIuOtZlIy9HRFcf6ZLF1aKHz6plz1cE6NP5oO8+vYVGg5c/QiSM1scsIacxX4RlcqQGTVRWiP0H9iCF3/Uo4nlpA8namkSQVWLxORJ6joyWtQbxGB3n0norMZLzVXUfx35sdfKXyzkB8kaOaMQZaygeLmvEnxPyQ8I8GwdQB60SGaFpKHp6elZD7rh/rXtCVx13nlPd0tCJ18zDnGBJWXI2RYwCvRoCHXB1N9AVsRelDacrBDMKoSfWT6j/zujMzomDJ4TDJsYQP5rN9M3QP+5GfsPfdHL1DGu5wtOExEY28JqAw6iFwAOLNVSML9O8yRw8VsGSHfwB4OnbAodvBzDLVFRaFPxgUgYPaV0QTZ4GmWYf7ci9HYrPkUYQ1fX4upZzeKthdDjjg8kNvhqeAD4BYGAvbohxoN1UBH9IwiqzwkDVmycwIfsP/qK7Z79F43a8dd47YQ3YFK5ErchMwCPwmSPl5P+YfO1MOBwzyPK/o2OYP508Nm+/dSuq1Kz4wqQf2GVnWKGS8c7YAa9+jh0jqBWpDvRy2EJmLPZDt08egosXsHfj+q6kkjIz7ElsT7hqq8ZdixogtJUH6PsjxRWXH66LLD26HrSvy4CtSA6ztgUX5yJIFRzHEF75/4hVtnvDNJN6a30A6Vk4b5etxrnq+woX3Xxc9FcGAc/yU8Of0HXia+HUcb1omc59Nw3O53l1DfgxJU482Ev89R4xXZMFyo47q2tUcP+NxJNFcu2X260Co0JDhOOXMmWG5TYZqVsIUhzEYrr5LKJPRBi2zDNFdkIOtfDh6vocS1FWIyH/znQe58fMPMNUkpmmUP9Ai515ldgiW9f4uO26mpMbMjA6d3AnkLhWG/ulE1pi62t9gxkEZY80pHPZEzOZJQ8R48ikfBMoRAc2CSrpM5AMvToTprT1A8zF2joT++DG/TGuZS+PdjXYhzLZSTsjENK6hpOXu+w7b9I8dQcsg5k72Jgw8nXvfhspnz04jy2cus6AzhbyMbjUOyYfrXnSdVjYf3kBUVoFD00PWfZ3qLnYSfqhEtrBcj6usPY1VtI48D5njX2AqoukiHVf0C+xbAjudhQn1e0wURGBEsE+8kdAqFGuSbJM9UweKcUJ2jtCQLtVJJGTATmq4AU/4LXHe74duHnsrZaIruheRDAH+fLFYPTSF5uuHHpVjcBJEiw9PeCVSCyIil3S9qxTs3TzdJNR6zcKhiV/F+28SDbF8AueskEkX672AS3okFT1Mu6qJ+wgjYpNKqQAUAScO8LHjgQt3X0ZB5/pmoSNVhJq3O3Ub2AV1kd0oRrq3zilzawJBE+pixiQjf8Qf6f3zjG7PIA5gwe88I7vL8IuGfT2TkXasobLqI6dio0odX1AMzxdUlM6G75iW1NXX7stCIoRNVmsAGdbkUuPJbZ03d1yIfZovxAOpBpJbm4JfygDsp/sRTriS2yqZXNVBT/lSc24qn4nZ7zbnbBpp1GvD9qt2gN5P4dJBD8TJvv/+XiEIZo1tGTMC60x+yYzfANr+npAbhiIcgVGdYnexWGeYvrFayDszU/f9LkVn9FrXSD6jWNONaVOGzdGCVt5thHogwR1IrnzVkV78DK+q1GaniHVg7nMSEnE0RV88cuz6cgs1HlxbLMHkxzz0GoCXyuC0Ze6mcbEdJ8crraS6lM/QZJu9zBQrCKuqY7pdhVkVxtBOUrC2XE/O7V4CNJ5SeMDylUm2NEo+2/pZR+Zev2fBT/Qz7JsGmz0rGfbBMc3xvCERUg4TLE0o3+Ddpre+akzBEBIXW0euDJKRi14ziu+6frPsyrl9deJOiXsItO5AynJsckKN4u+wDxue4oma3FIH+oCb8hyXw+4O16ahhZ6xyuGG2fQle2XQhD+6xgUaOwlTY7PWuTzyBCGRlWTpgUCttIxHGDtca4eC7kw+I3Kwz2ZWpMnnMYb1tUIkVfXDSFoGQku6Is1kDfXQOLeMjt7vzXAtSnynmSQwGwPTV3H+rDjudIpdReR/ha5Y1S16TFJ819Jn8mYgitGRA6dwFTNydF5HwNWluXwkqLSTysQI//dsl2Cz2oO4itZM/baDfUl7QbZgAgVwBdTu4kGn3F/Pj2t04sBmk+iX4tXMeyqV/LD+W5CkCQK1vNQQITKOBlV3PQZQfhzaZag94Df+96e1jTFmLdZi8YzVGQC/Hc4OHW5KwLsYnTPfplNoAr9Igf+t+dkigKlIzba0JLLstKkwXtPf0ZQlLhcRwgON86YLbPqnO4oHzpe/K2ymw4NMfSdMRTuJdDMC4hU7wINEZtFLGWHESzzEAOhv5cuTqqzqJRcjdLX5VqmPyMbvy1zszIB5xFKB1ihGGBTBYtUyFT4id/dyIZxwjELyp1mWEKKhZ+e4bluqwi4EgeGmjxgMml+btk4UaGFUEKhXWJsG05tpDBWD6Ss+W/a/tuXZG/XLPPe4RbYZ/OUFTarDORtoNaaLW+Lqmhv6iHnyOerEmKm8Vv/HVp6P4q1rQbTVIvKu74Qk8jTK5kz7cnrzmhtoxxdLEMITnG21wKzhgYXOIibtZBn3v5ibSPMSQcfSDOSwLwu/XzDTyowq4tafuBsegStjOcaVCxmsKYP+qJEmdLXwaooV0KHPnwhedTtEbXU4BTXyUZCNic0gUcIBI+ora3ncqu206loWv9HFjav8mc0+gshbBxnRHmvQAZvhgn3KqP/fw9KhfBJAHUcfAgcRrgDDqfNdxIgHULFB2pwFPu3LycJ1b+Y9/oc/TV+Dpsuxk+qfF8uUGbQFAnnJ9vMTTcV9wISi5wYqAhPdNV7dOwElzoxcs497xl6DcLT99iqxO3d/KsYPRIPwcI1KyRx2ZNyliHmhpi/ekX1G8voN/Tf3teBoCRGOqR6lb7VwsvL7dQDo/zSbEidE0NYtSSCWtLsgzwOOPNx5eAhdzbEnQJH51Pr91pJLCQQUFd0fi/QgMud1sy5Ae1vFlKyUK8CpRIjsvzH3J2bnqFWqK6Jz1980inR36M7fuuqYoTtm5mSXhnAr2Iew/s3zRorMzB1mygXk14Ran7UjL9vx62XIAjTyKo4hPqTr1h11zCWbuDeACSqoZsrlrbnQfByd7jcC/nfCA4WKEjZtjGo32NMEIB8xZkImyggDkDf521BmQxbnLJXHdvPDqHxdngNg/ABa6cL9XiiyBzmoOZXNwZsQYhc/IrOdYxuA0k2g6kI0jcaVa7zC/qzW/phvbkYKlNjxNuah6ifJsrWJAfXwrNkFfQlGywid+zKbPstUXQjb/0Km8qTyMLk0pDe+sH3qvO/ZdaVVIMMdjTQH73D614h+cBHfaUp0Y8RlsIxp2dQjtkoqM6yNMr+SxzX8VN2a156S8S3oWcb8ON0ArE8xRIGhQDGdrI2+QriCcGmUI7/dcxJv9SLzvU9VZvFM9PP/AV5jCycY6py9c/TRsxE/8zVXCP7O6yz5imI7265jKT6NB7AXWG8o0Eo3X1HEZtyIxd7qVxiNlwIGeTr3GKTAoWN2sb5F9BCd2ImdHiwBZ4CuYHcuovXs9s0uUiYQa3a3SIBtp5EiRRm3KOlD/vB1kdwKtTfcanR9YTCyv/kUugM+04+fRlll1ycqwXGf9e9tXj/2Xc7dRITn6H3oDDj973DMNjmvwG7VftX5P/BtHsDesM3WECJqk2qvdTyu3v6bcekZYkDSQ7UEKZuCV4i0wra9dRJhhZjf83PDbWydw/P1YC+usQ1UfqhydA8P//re1NzQem+GpD8beFpWVkWmKB1I6dnQ9W7YK+M0S9DZ9zF2EunLIdPjG1VNQdeudp/3R42IfYoa4InAqVDR2pmMChntBqR+f/lkPFbems+G7ld/BNQ067TnKFN4nVbA+btOwG4IyjFg0dhHWouUf3LpXbUWV/OyHLWinszEdM7IVE1C+BY9aYb9cFkH8ULfDK8Gy1wT9dY1+cn6FQmTjjLAlR7H/oBWfHna4G2Xmv5YRL62WxJHCecH0452FfBqsW470WpwCNshdN+iqyW8IromWdXe+bvbLOyTGrqLc11DhryUuDwB4l8kvC6InO5uaOBHJFq87LF9BiHdM35JYyoK641jor18vs28d4k7ZSdtyG8a63jj3o6fGsLKGHNa8HcggNs4wECxOAKZksRmIpQgeyl1hdqPHCxhz8yTHUxJB5HaGs+ildJvRRORiQYqzFuvMM04swc0LcipH37WyHiAoHx3J8DDfEdutn13UkXwrMQ==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5E7FEF17" />
+        <nav class="navbar" role="navigation">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    
+                    
+
+                    
+                    <li><a href="/">Home</a></li>
+
+                    
+                    
+
+                    
+                    <li class="dropdown hidden">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jump To Activity&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            
+                        </ul>
+                    </li>
+
+                    
+                    <li><a href="/cdsweb/app/news.aspx">News</a></li>
+
+                    
+                    <li><a href="/cdsweb/reg/UpcomingCompList.aspx">Competitions & Workshops</a></li>
+
+                    
+                    <li><a href="/Deadlines.aspx?seriesCode=BAJA">Deadlines</a></li>
+
+                    
+                    <li><a href="/app/CompetitionResources.aspx" target="_blank">Competition Resources</a></li>
+
+                    
+                    <li><a href="/cdsweb/gen/DocumentResources.aspx">Series Resources</a></li>
+
+                    
+                    <li><a href="/res/ResultsLanding.aspx">Results</a></li>
+
+                    
+                    <li><a href="/Page.aspx?pageid=02d6642f-e37d-4f69-9b1e-c60ea76dcc41">Membership</a></li>
+                    
+                    
+                    <li><a href="/Page.aspx?pageid=4d4e29a9-e7fc-4394-bae2-51080f4adf04">Media</a></li>
+
+                    
+                    <li><a href="/go/signup">Create an Account</a></li>
+
+                    
+                    
+
+                    
+                    <li><a href="https://www.bajasae.net/Login.aspx">Login</a></li>
+
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content-wrapper">
+            <div id="content" class='container min-height'>
+                
+
+                
+<div id="dismissableAlert" style="display: none;" class="alert alert-danger">
+    <div id="errorDetails"></div>
+
+    <p>Click the button to view more details of the error.</p>
+    <button type="button" class="btn btn-danger" onclick="ShowTheError()">Click here to see what went wrong</button>
+    <button type="button" class="btn btn-secondary" id="AlertCloseButon">Dismiss</button>
+</div>
+
+<script>
+    var htmlResponse = "";
+    var errorPopupDetails = "";
+
+    function ShowTheError() {
+        window.open('').document.body.innerHTML = htmlResponse;
+        $("#dismissableAlert").hide();
+    }
+
+    $(document).ready(function () {
+        $("#AlertCloseButon").click(function () {
+            $("#dismissableAlert").hide();
+        });
+    });
+
+    function PopulateErrorMessage(messageHtml){
+        htmlResponse = messageHtml;
+        //htmlResponse = htmlResponse.replace("<b>Source Error:</b>", "<b>Source Error:</b>" + , window.location.href)
+        var beginIndex = htmlResponse.indexOf("<h2> <i>");
+        var endIndex = htmlResponse.indexOf("<b>Stack Trace:</b>");
+        errorPopupDetails = htmlResponse.substring(beginIndex, endIndex);
+
+        $("#dismissableAlert").show();
+        document.getElementById("errorDetails").innerHTML = errorPopupDetails;
+
+        window.scrollTo(0, 0); // values are x,y-offset
+    }
+</script>
+
+                
+    
+
+<style>
+    .btn { margin-bottom: 4px; }
+    #content { font-size: 16px; }
+    .results-history > ul > li { margin-top: 8px; }
+    .label { margin-left: 8px; vertical-align: middle; display: inline-block; }
+    .banner { margin-bottom: 40px; }
+</style>
+
+<h2>Scores & Results</h2>
+
+<div class="banner">
+    
+        <img alt="Trophies" class="img-responsive" src="/cdsweb/SharedComponents/public_assets/img/trophies.jpg" />
+    
+</div>
+
+<div class="results-history">
+    
+            <h3>2026 Competitions</h3>
+            <ul>
+                
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d'>Baja SAE Oregon</a> (5/7/2026)<span class="label label-success">v1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0'>Baja SAE New York</a> (6/11/2026)<span class="label label-success">v1</span></li>
+                    
+            </ul>
+        
+            <h3>2025 Competitions</h3>
+            <ul>
+                
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=831723b7-8cdc-47d6-ab26-886f8b0d7a9f'>Baja SAE Arizona</a> (5/1/2025)<span class="label label-success">v1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=992027db-75df-441e-8d54-82df0514e484'>Baja SAE Maryland</a> (6/12/2025)<span class="label label-success">v1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=7351b7c2-c517-4581-820d-cb1eb6cff3bc'>Baja SAE Carolina</a> (10/2/2025)<span class="label label-success">v2 - Overall updated</span></li>
+                    
+            </ul>
+        
+            <h3>2024 Competitions</h3>
+            <ul>
+                
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=5344befe-f95c-4017-95d7-45836822794c'>Baja SAE California</a> (4/25/2024)<span class="label label-success">v2</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=dae00323-484b-417d-b48f-7cd15a235820'>Baja SAE Williamsport</a> (5/16/2024)<span class="label label-success">v2</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=d699778a-2071-460d-971e-a88d0a49cc50'>Baja SAE Michigan</a> (9/12/2024)<span class="label label-success">v1</span></li>
+                    
+            </ul>
+        
+            <h3>2023 Competitions</h3>
+            <ul>
+                
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=71bab167-42b3-4b90-847e-f2f9e44aea25'>Baja SAE Oshkosh</a> (5/4/2023)<span class="label label-success">Rev2</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=9e449a5d-e709-42e7-91ee-3b5af2eaf60c'>Baja SAE Oregon</a> (5/31/2023)<span class="label label-success">v1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=0b93e7a4-d6c1-4c9e-99b5-d10d9650bf75'>Baja SAE Ohio</a> (9/6/2023)<span class="label label-success">v1</span></li>
+                    
+            </ul>
+        
+            <h3>2022 Competitions</h3>
+            <ul>
+                
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=4d37bf6b-b20b-4133-8045-86d7d0e25489'>Baja SAE Tennessee Tech</a> (5/12/2022)<span class="label label-success">Rev 1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=c0746db7-ec23-459c-942c-894f5e4e981c'>Baja SAE Rochester</a> (6/2/2022)<span class="label label-success">v2</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=8d2dd1e0-a0e8-49c5-8aad-832a52154c23'>Baja SAE Arizona</a> (9/29/2022)<span class="label label-success">Rev1</span></li>
+                    
+            </ul>
+        
+            <h3>2021 Competitions</h3>
+            <ul>
+                
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=02d6e1cf-d291-4a4e-993f-512abc95d340'>Baja SAE Knowledge</a> (3/18/2021)<span class="label label-success">v1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=59471865-e02d-48af-b42b-896bf1af94c8'>Baja Validation Event AZ</a> (4/29/2021)<span class="label label-success">v1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=78097d49-c603-449b-a117-37a8e5026dfd'>Baja Louisville - Validation Event </a> (5/20/2021)<span class="label label-success">v1</span></li>
+                    
+            </ul>
+        
+            <h3>2020 Competitions</h3>
+            <ul>
+                
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=58bac15a-15d9-4896-8916-9c62fc6beee2'>Baja SAE Arizona</a> (4/16/2020)<span class="label label-success">4WD Points</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=f0120840-0858-4b98-838b-db4f8c72d2bd'>Baja SAE Louisville</a> (5/14/2020)<span class="label label-success">Updated Car 95</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=ff9dc5e4-8f1a-4ffa-a9a0-aa96a57b9616'>Baja SAE Illinois</a> (6/3/2020)<span class="label label-success">Updated Car 23</span></li>
+                    
+            </ul>
+        
+            <h3>2019 Competitions</h3>
+            <ul>
+                
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=09bafb4a-baf7-4c4d-a974-2aa0ac22ba9d'>Baja SAE Tennessee Tech 2019</a> (4/11/2019)<span class="label label-success">Rev 1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=a4ae23dc-975b-4d08-a040-225dafb75b31'>Baja SAE California 2019</a> (5/16/2019)<span class="label label-success">Rev 1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6'>Baja SAE Rochester 2019</a> (6/6/2019)<span class="label label-success">Rev 1</span></li>
+                    
+            </ul>
+        
+            <h3>2018 Competitions</h3>
+            <ul>
+                
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=5108e3e9-cf27-4ca6-88cf-fea31c6b7ac2'>Baja SAE Maryland 2018</a> (4/19/2018)<span class="label label-success">Rev 1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=6bf956b9-4796-4b39-a8e7-8caeb55d5d73'>Baja SAE Kansas 2018</a> (5/17/2018)<span class="label label-success">Rev 2- Car 171 Updated</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=a8d3752f-aee1-4492-94e7-7cf021a11a65'>Baja SAE Oregon 2018</a> (5/30/2018)<span class="label label-success">Rev 1</span></li>
+                    
+            </ul>
+        
+            <h3>2017 Competitions</h3>
+            <ul>
+                
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=a59bd740-f7f4-46ee-b3a2-6b7d672ccf1e'>Baja SAE California 2017</a> (4/27/2017)<span class="label label-success">Rev 1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=47889761-684f-4fa2-b057-7abb55c8bbde'>Baja SAE Kansas 2017</a> (5/25/2017)<span class="label label-success">Rev 1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=6548e906-200b-4e58-91ad-1bcda47091eb'>Baja SAE Illinois 2017</a> (6/7/2017)<span class="label label-success">Rev 2</span></li>
+                    
+            </ul>
+        
+            <h3>2016 Competitions</h3>
+            <ul>
+                
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=5a13d57d-8d58-41cd-803a-514f15b7a2c0'>Baja SAE Tennessee Tech 2016</a> (4/14/2016)<span class="label label-success">Rev 1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=625a80e2-fdb4-4854-bffe-c5d62ab2d492'>Baja SAE California 2016</a> (5/19/2016)<span class="label label-success">Rev 1</span></li>
+                    
+                        <li><a href='/res/CompetitionResults.aspx?competitionid=ddc22524-5b18-49a0-a416-22c310821c42'>Baja SAE Rochester 2016</a> (6/9/2016)<span class="label label-success">Rev 1</span></li>
+                    
+            </ul>
+        
+    
+    <h3>Previous Years</h3>
+    <ul style="list-style-type:none">
+        <li><a href="https://www.bajasae.net/page.aspx?pageid=2d2a2ef4-55fe-40e3-a67b-91dd0ca1a6ec">Recent Competition Results</a> can be found here</li>
+        <li><a href="http://students.sae.org/competitions/bajasae/results/">Results Archives</a> can be found here</li>
+    </ul>
+</div>
+    <span id="ctl00_main_ibBottom" class="InfoBlock"></span>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                
+
+            </div>
+
+
+            <a class="sae-privacy-policy" href="https://www.sae.org/privacy" target="_blank">SAE International Privacy Policy</a>
+        </div>
+    </form>
+</body>
+</html>

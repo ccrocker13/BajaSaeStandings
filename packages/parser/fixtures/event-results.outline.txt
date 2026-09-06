@@ -1,0 +1,41 @@
+SOURCE: https://results.bajasae.net/EventResults.aspx
+BYTES: 8384
+TITLE: Results By Event
+META REFRESH: none
+__VIEWSTATE: present (1376 chars)
+__EVENTTARGET: absent
+__doPostBack refs: 1
+FORM: id=Form1 method=post action=./EventResults.aspx
+
+TABLES: 0
+
+ELEMENT IDS (12): Head1, Form1, lblEventTitle, bs-example-navbar-collapse-1, MainContent_ctlTimer, MainContent_pnlUpdate, MainContent_DropDownListEvents, MainContent_ButtonLookupEvent, footer, lblSiteLocation, lblSiteLocationUpdate, lblVersion
+
+CLASSES (25): header, img-responsive, center-block, navbar, container, navbar-header, navbar-toggle, sr-only, collapse, navbar-collapse, nav, navbar-nav, content, text-center, row, col-xs-12, spacing-bottom, col-sm-6, col-md-4, form-control, btn, btn-primary, SiteLocation, SiteLocationUpdate, Version
+
+LINKS (11):
+   -> /
+  Home -> /
+  Leaderboards -> /Leaderboard.aspx
+  Results by Car -> /MyResults.aspx
+  Results by Event -> /EventResults.aspx
+  Tech Line Num Assignments -> /TechLineAssigns.aspx
+  Current Tech Line Number -> /TechLineNumber.aspx
+  Live Endurance Grid -> /EnduranceGrid.aspx
+  Endurance Black Flags -> /BlackFlags.aspx
+  Check Problem Report Status -> /ProblemReportStatus.aspx
+  Show Most Recent Results -> javascript:__doPostBack('ctl00$MainContent$ButtonLookupEvent','')
+
+SELECT id=MainContent_DropDownListEvents name=ctl00$MainContent$DropDownListEvents options=8
+  ec599a4b-a621-4769-9106-8f92797839fe=Business Presentation
+  ccfca872-cff3-497c-891c-4ac7ab4bbb6c=Cost Event
+  08622a35-3f67-4379-8712-28e09c5f3c8f=Design
+  cba2aa57-0431-4dcb-b1a8-f719be0b3f6c=Acceleration
+  c683e17c-9422-41c7-b587-98f0d04ca9f6=Hill Climb
+  ede3030b-a8fb-485b-a94f-97063f330748=Maneuverability
+  37dcf682-eede-482a-b062-2bc6af292230=Suspension & Traction
+  2fb7ec42-eb08-46b1-bbc6-1d1d86180b5a=Endurance
+
+SCRIPT SRCS: /assets/jquery/jquery-1.11.2.min.js, /assets/bootstrap-3-3-4/js/bootstrap.min.js, /ScriptResource.axd?d=Y3vj9bmOwMrcbMS62LboZUAFrwoHQjYwubJnAzohghvN8JQEK6v6CNuNFiKbSV-afQPe6lt-soDSgAN-0D0tabMcHO_hD9FQn5OLN5UiGnemobzmB-wmIyvKz6bDrn5zm86fCVbOXgylzmB9TLIsjEXw803yPYSGa4ebb2BB8xU1&t=ffffffffbec1863d, /ScriptResource.axd?d=snmW4er0ctMos7CQ5wWn2E7oUMPZkZpMMTtLEyv6Vdy5Ey-3R4adn8aN3pghhrK-fRGqm0gA-2r85fqhTbbj7Y0G4_JuUasAj3Z7n-dQn4dQmx2U_X8H1j1URg2XJThoPUlSaXwhnjB0gzOvMq22XaSOZxCADQAZVMw5R079EUE1&t=ffffffffbec1863d
+ENDPOINT HINTS: none
+AJAX/REFRESH HINTS: ScriptResource
