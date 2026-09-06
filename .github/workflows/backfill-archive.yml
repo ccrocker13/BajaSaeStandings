@@ -47,7 +47,9 @@ jobs:
             echo 'Archive unchanged.'
             exit 0
           fi
-          git commit -m 'Refresh season data from archive [skip ci]'
+          # No [skip ci]: this job is triggered by its own code changing, not by
+          # data/, so CI can safely run on the commit it produces.
+          git commit -m 'Refresh season data from archive'
           # The branch can move while this job runs — a push landing mid-capture
           # would otherwise reject this one as non-fast-forward. Rebase onto
           # whatever arrived and retry; the commit only touches generated files,

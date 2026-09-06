@@ -123,9 +123,10 @@ jobs:
             echo 'No fixture changes.'
             exit 0
           fi
-          # [skip ci] is belt-and-braces; the paths filter above already means a
-          # fixtures-only commit cannot retrigger this workflow.
-          git commit -m 'Capture upstream results fixtures [skip ci]'
+          # No [skip ci]: the paths filter above already stops a fixtures-only
+          # commit retriggering this workflow, and letting CI run means the
+          # branch head is never left without checks.
+          git commit -m 'Capture upstream results fixtures'
           # The branch can move while this job runs — a push landing mid-capture
           # would otherwise reject this one as non-fast-forward. Rebase onto
           # whatever arrived and retry; the commit only touches generated files,
