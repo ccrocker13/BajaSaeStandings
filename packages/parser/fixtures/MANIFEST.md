@@ -1,7 +1,7 @@
 # Capture manifest
 
-Captured: 2026-09-06T18:26:56Z
-Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34051732773
+Captured: 2026-09-06T18:43:33Z
+Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34052614764
 
 | name | status | type | bytes | url |
 |---|---|---|---|---|
@@ -28,7 +28,7 @@ Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34051732773
 | upcoming-comps | 200 | text/html | 21241 | https://www.bajasae.net/cdsweb/reg/Upcomingcomplist.aspx |
 | comp-oregon-2026 | 200 | text/html | 28073 | https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d |
 | comp-newyork-2026 | 200 | text/html | 28301 | https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0 |
-| comp-ohio-upcoming | 200 | text/html | 28212 | https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=0b93e7a4-d6c1-4c9e-99b5-d10d9650bf75 |
+| comp-ohio-2023 | 200 | text/html | 28212 | https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=0b93e7a4-d6c1-4c9e-99b5-d10d9650bf75 |
 | comp-rochester-2019 | 200 | text/html | 28413 | https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6 |
 | competition-resources | 200 | text/html | 36351 | https://www.bajasae.net/app/CompetitionResources.aspx |
 | document-resources | 200 | text/html | 74444 | https://www.bajasae.net/cdsweb/gen/DocumentResources.aspx |
@@ -54,3 +54,4 @@ Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34051732773
 | res-or2026-SPEC | 200 | text/html | 71189 | https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=SPEC |
 | res-or2026-ENDUR | 200 | text/html | 47361 | https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ENDUR |
 | res-rochester2019-OVR | 200 | text/html | 97635 | https://www.bajasae.net/res/EventResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=OVR |
+| previous-years | 200 | text/html | 18130 | https://www.bajasae.net/page.aspx?pageid=2d2a2ef4-55fe-40e3-a67b-91dd0ca1a6ec |
