@@ -11,7 +11,8 @@
     "build": "pnpm run build:summary && vite build",
     "preview": "vite preview",
     "build:summary": "tsx tools/build-data/summarize.ts",
-    "smoke": "node tools/smoke/browser-smoke.mjs"
+    "smoke": "node tools/smoke/browser-smoke.mjs",
+    "verify:worker": "node tools/verify/worker.mjs"
   },
   "devDependencies": {
     "@types/node": "^22.20.1",

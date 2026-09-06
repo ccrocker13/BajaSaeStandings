@@ -59,20 +59,62 @@ lands at `https://ccrocker13.github.io/bajasaestandings/`.
 ### 2. Deploy the Cloudflare Worker — optional, needed for live scoring
 
 A browser cannot call `results.bajasae.net` directly: it sends no CORS headers.
-The Worker fetches and parses on the site's behalf, and caches so that upstream
-sees one request no matter how many people are watching.
+The Worker fetches and parses on the site's behalf, and caches so upstream sees
+one request no matter how many people are watching.
+
+This needs a browser for the login step, so it has to be run by you.
+
+**1. Log in.** From the repository root:
 
 ```bash
 cd worker
-npx wrangler login      # free account, no card required
+npx wrangler login
+```
+
+A browser tab opens asking you to authorise Wrangler. A free Cloudflare account
+is enough — no card, no paid plan. Expect `Successfully logged in.`
+
+**2. Deploy.**
+
+```bash
 npx wrangler deploy
 ```
 
-Copy the printed `https://baja-standings-api.<subdomain>.workers.dev` URL, then
-add it in **Settings → Secrets and variables → Actions → Variables** as
-`VITE_WORKER_URL`, and re-run the deploy workflow.
+Expect output ending in something like:
 
-Without it the live tab explains that it is not connected; everything
+```
+Uploaded baja-standings-api (1.2 sec)
+Published baja-standings-api (0.5 sec)
+  https://baja-standings-api.<your-subdomain>.workers.dev
+```
+
+Copy that URL.
+
+**3. Check it actually works** — deploying and working are different claims:
+
+```bash
+cd ..
+pnpm run verify:worker https://baja-standings-api.<your-subdomain>.workers.dev
+```
+
+It checks `/health` and `/live`, asserts the CORS and cache headers, and prints
+the competition name and current leader. Outside a competition the standings
+will be empty; the script says so rather than reporting a failure, because the
+results site only publishes grids while an event is running.
+
+**4. Wire it into the site.** Repository **Settings → Secrets and variables →
+Actions → Variables → New repository variable**:
+
+- Name: `VITE_WORKER_URL`
+- Value: the `https://...workers.dev` URL, no trailing slash
+
+A *variable*, not a secret — it is baked into a public build and is not
+sensitive, and secrets are not readable by the build in the way this needs.
+
+**5. Rebuild.** Actions → **Deploy site** → *Run workflow*, or just push to
+`main`. The Live tab stops saying it is not connected.
+
+Without the Worker the live tab explains that it is not connected; everything
 historical works regardless.
 
 ### 3. Race weekend — optional backup
@@ -113,7 +155,16 @@ pnpm install
 pnpm test          # parser and scoring tests, against the committed fixtures
 pnpm run build     # generates the site's data payloads, then builds
 pnpm dev
+
+# Loads every route in a real browser and fails if any renders nothing.
+# Expects `npx vite preview --port 4173` to be running.
+pnpm run smoke
 ```
+
+`pnpm run smoke` exists because a green type check, passing unit tests and a
+successful deploy are all compatible with a page that renders an empty
+document — which is exactly what shipped once. It gates CI and the deploy job,
+so a blank build cannot reach production.
 
 ## Politeness
 
@@ -133,11 +184,19 @@ If SAE would prefer this not to run, open an issue and it stops.
 The Mike Schmidt Award winners in `data/schmidt-award.json` come from
 third-party reporting; SAE's own award pages were unreachable when it was
 compiled. Entries carry an explicit `confidence`, and anything not `confirmed`
-is badged as unverified in the UI. Six seasons (2003, 2004, 2006–2008, 2011)
-have no source at all yet.
+is badged as unverified in the UI. Where a runner-up or third place is known it
+is recorded too, including for 2003, whose winner is still unidentified.
 
-Corrections and additions are very welcome — open an issue or a PR against that
-file.
+**Six seasons have no winner on record: 2003, 2004, 2006, 2007, 2008 and 2011.**
+They are deliberately blank rather than inferred. The `researchNotes` block in
+that file records what has already been ruled out — RIT won exactly three times,
+Cornell only in 2014 and 2025, and Michigan Tech's 2009 win was its first — so
+nobody has to repeat that search, and it names the sources most likely to close
+the remaining gaps.
+
+A team's own records, banners or newsletters are likely a better source than any
+amount of searching. Corrections and additions are very welcome — open an issue
+or a pull request against that file.
 
 ## Disclaimer
 
