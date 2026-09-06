@@ -1,0 +1,78 @@
+# Fetches the published site and reports exactly what is being served.
+#
+# The development environment cannot reach ccrocker13.github.io (egress policy),
+# so when the live site misbehaves there is no way to inspect it from there.
+# A runner can. This prints the real response — status, headers and body — so a
+# diagnosis is based on the served bytes rather than on inference.
+name: Probe published site
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/probe-site.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch the published site
+        env:
+          SITE: https://ccrocker13.github.io/bajasaestandings/
+        run: |
+          set -uo pipefail
+          {
+            echo '## Probe of '"$SITE"
+            echo
+            echo '### Response headers'
+            echo '```'
+            curl -sSIL --max-time 30 "$SITE" | sed 's/^/  /'
+            echo '```'
+
+            echo '### Body'
+            echo '```html'
+            curl -sSL --max-time 30 "$SITE" | head -c 4000
+            echo
+            echo '```'
+
+            body=$(curl -sSL --max-time 30 "$SITE")
+
+            echo '### What is being served'
+            if printf '%s' "$body" | grep -q 'src="/src/main.tsx"'; then
+              echo '- **This is the Vite source template, not the built site.**'
+              echo '  Pages is serving the repository root rather than the Actions artifact.'
+              echo '  Fix: Settings -> Pages -> Source = GitHub Actions.'
+            elif printf '%s' "$body" | grep -q '/assets/index-'; then
+              echo '- Built bundle referenced. This is the Actions artifact.'
+            else
+              echo '- Neither a built bundle nor the source template was found.'
+            fi
+
+            if printf '%s' "$body" | grep -q 'Loading Baja SAE Standings'; then
+              echo '- Boot fallback present (the hardened index.html is deployed).'
+            else
+              echo '- Boot fallback ABSENT — this predates the hardening commit.'
+            fi
+
+            echo
+            echo '### Referenced assets'
+            echo '```'
+            for path in $(printf '%s' "$body" | grep -o '/bajasaestandings/[^"]*' | sort -u); do
+              code=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "https://ccrocker13.github.io${path}")
+              echo "  $code  $path"
+            done
+            echo '```'
+
+            echo '### Data payload'
+            echo '```'
+            curl -sS -o /dev/null -w '  summary.json: %{http_code}, %{size_download} bytes\n' \
+              --max-time 30 "${SITE}data/summary.json"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          # Repeat to the job log so it is readable via the API too.
+          echo '--- body ---'
+          curl -sSL --max-time 30 "$SITE" | head -c 3000
