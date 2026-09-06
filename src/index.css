@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html, body, #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-ink-950 text-ink-100 antialiased;
+    font-feature-settings: 'tnum' 1, 'cv05' 1;
+  }
+
+  /* Every figure in this app is compared against the figure above it, so all
+     numerals are tabular. Proportional digits make a leaderboard jitter as
+     scores tick over. */
+  .nums {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum' 1;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-ink-800 bg-ink-900;
+  }
+
+  .th {
+    @apply sticky top-0 z-10 bg-ink-850/95 px-3 py-2.5 text-left text-[11px] font-semibold
+           uppercase tracking-wider text-ink-400 backdrop-blur;
+  }
+
+  .td {
+    @apply whitespace-nowrap px-3 py-2 text-sm;
+  }
+
+  .row {
+    @apply border-t border-ink-800/70 transition-colors hover:bg-ink-850/60;
+  }
+
+  .tab {
+    @apply rounded-lg px-3 py-1.5 text-sm font-medium text-ink-400 transition-colors
+           hover:bg-ink-850 hover:text-ink-100;
+  }
+
+  .tab-active {
+    @apply bg-ink-800 text-ink-100;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium;
+  }
+}
+
+/* Respect a reduced-motion preference: the rank-change flash is decorative. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes flash-up {
+  from { background-color: rgb(61 220 132 / 0.22); }
+  to   { background-color: transparent; }
+}
+
+.flash-up {
+  animation: flash-up 2.4s ease-out;
+}
