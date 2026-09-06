@@ -19,8 +19,6 @@ function spaFallback(): Plugin {
   };
 }
 
-// Served from https://ccrocker13.github.io/bajasaestandings/, so assets need
-// the repo name as a base path.
 /**
  * Emits a service worker that keeps the site usable on bad signal.
  *
@@ -121,7 +119,17 @@ self.addEventListener('fetch', (event) => {
   };
 }
 
-const BASE = '/bajasaestandings/';
+/**
+ * Base path for GitHub Pages project sites: https://<user>.github.io/<repo>/.
+ *
+ * Derived from the repository name rather than written by hand, because that
+ * path is case-sensitive and the hand-written lowercase version did not match
+ * the repository's actual casing. The result was an index.html that loaded
+ * while every asset under it 404'd — a page with no stylesheet and no script,
+ * which renders as a black screen in dark mode and gives no clue why.
+ */
+const REPO = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'BajaSaeStandings';
+const BASE = `/${REPO}/`;
 
 export default defineConfig({
   base: BASE,

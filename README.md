@@ -53,7 +53,7 @@ affects the live tab.
 
 The deploy workflow enables Pages itself and points it at GitHub Actions, so
 normally there is nothing to do — push to `main` and the site publishes to
-`https://ccrocker13.github.io/bajasaestandings/`.
+`https://ccrocker13.github.io/BajaSaeStandings/`.
 
 If the URL returns *"There isn't a GitHub Pages site here"*, Pages is not
 serving. Set it by hand at **Settings → Pages → Build and deployment →

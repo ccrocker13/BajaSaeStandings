@@ -31,6 +31,9 @@ jobs:
       - name: Browser smoke test
         run: |
           npx playwright install --with-deps chromium
+          # The base path is the repository name and is case-sensitive, so it
+          # is taken from the checkout rather than written out again here.
+          BASE="/${GITHUB_REPOSITORY#*/}/"
           npx vite preview --port 4173 --strictPort &
-          npx wait-on -t 60000 http://localhost:4173/bajasaestandings/
-          pnpm run smoke
+          npx wait-on -t 60000 "http://localhost:4173${BASE}"
+          SMOKE_BASE="http://localhost:4173${BASE%/}" pnpm run smoke
