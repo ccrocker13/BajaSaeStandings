@@ -59,6 +59,30 @@ const explains = txt2.includes('failed to start');
 console.log(`${painted && explains ? 'PASS' : 'FAIL'} no-JS   bg=${bg} explains=${explains}`);
 if (!(painted && explains)) failures++;
 
+// 3. Offline: the service worker must keep the shell and the historical data
+//    readable with no network at all. People read this standing at a track.
+const ctx = await browser.newContext({ viewport: { width: 1100, height: 800 } });
+const p3 = await ctx.newPage();
+await p3.goto(base + '/season', { waitUntil: 'networkidle' });
+const controlled = await p3
+  .waitForFunction(() => navigator.serviceWorker.controller !== null, null, { timeout: 20000 })
+  .then(() => true)
+  .catch(() => false);
+// One more online load now that the worker is controlling. On the very first
+// visit the page is not yet controlled, so its data fetches bypass the worker
+// and are never cached — only a returning visitor has a populated cache, and
+// that is the case worth testing.
+await p3.reload({ waitUntil: 'networkidle' });
+await p3.waitForTimeout(1200);
+
+await ctx.setOffline(true);
+await p3.reload({ waitUntil: 'domcontentloaded' }).catch(() => {});
+await p3.waitForTimeout(2500);
+const offlineTxt = (await p3.evaluate(() => document.body.innerText)).replace(/\s+/g, ' ').trim();
+const offlineOk = controlled && offlineTxt.includes('season');
+console.log(`${offlineOk ? 'PASS' : 'FAIL'} offline controlled=${controlled} len=${offlineTxt.length}`);
+if (!offlineOk) failures++;
+
 console.log(failures === 0 ? '\nALL CHECKS PASSED' : `\n${failures} CHECK(S) FAILED`);
 await browser.close();
 process.exit(failures === 0 ? 0 : 1);
