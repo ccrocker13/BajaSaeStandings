@@ -36,8 +36,11 @@ upcoming-comps	https://www.bajasae.net/cdsweb/reg/Upcomingcomplist.aspx
 # the 2026 season; comp-rochester-2019 is an older shape to check for drift.
 comp-oregon-2026	https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d
 comp-newyork-2026	https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0
-comp-ohio-upcoming	https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=0b93e7a4-d6c1-4c9e-99b5-d10d9650bf75
+comp-ohio-2023	https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=0b93e7a4-d6c1-4c9e-99b5-d10d9650bf75
 comp-rochester-2019	https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6
+# NB: 0b93e7a4 is Baja SAE Ohio *2023*, not the upcoming 2026 event — the
+# archive groups by year and 2026 Ohio has not happened yet, so it has no
+# archive entry. Kept as an older-shape sample.
 # The live leaderboards publish raw times and laps but NOT points for dynamic
 # events, so scoring formulas must come from the rulebook. These two pages link
 # to it; the PDF itself gets fetched once we know its URL.
@@ -73,3 +76,4 @@ res-or2026-MANU	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91
 res-or2026-SPEC	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=SPEC
 res-or2026-ENDUR	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ENDUR
 res-rochester2019-OVR	https://www.bajasae.net/res/EventResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=OVR
+previous-years	https://www.bajasae.net/page.aspx?pageid=2d2a2ef4-55fe-40e3-a67b-91dd0ca1a6ec

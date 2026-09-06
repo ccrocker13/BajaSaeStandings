@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parseArchiveEventMenu, parseLeaderboard, parseNumber, parseDuration } from './parse.js';
 import { parseArchiveTable } from './archive.js';
+import { parseResultsLanding } from './landing.js';
 
 const FIXTURES = join(import.meta.dirname, '..', 'fixtures');
 const fixture = (name: string) => readFileSync(join(FIXTURES, `${name}.html`), 'utf8');
@@ -184,5 +185,38 @@ describe('archive overall results', () => {
   it('carries penalties through as negative adjustments', () => {
     const mcmaster = data.rows.find((r) => r.schoolId === 'mcmaster-university');
     expect(mcmaster?.numbers['adjustments']).toBe(-75);
+  });
+});
+
+describe('archive landing page', () => {
+  const { data, warnings } = parseResultsLanding(
+    fixture('results-landing'),
+    'https://www.bajasae.net/res/ResultsLanding.aspx',
+  );
+
+  it('parses without warnings', () => {
+    expect(warnings).toEqual([]);
+    expect(data.length).toBeGreaterThan(25);
+  });
+
+  it('takes the year from the section heading, not the link text', () => {
+    // Recent links omit the year entirely; older ones embed it. Only the
+    // heading is reliable for both.
+    const oregon2026 = data.find((c) => c.year === 2026 && c.name === 'Baja SAE Oregon');
+    expect(oregon2026?.id).toBe('6b91e195-df0f-4baf-a4d6-116c03aa704d');
+
+    const oregon2018 = data.find((c) => c.year === 2018 && c.name === 'Baja SAE Oregon');
+    expect(oregon2018?.id).toBe('a8d3752f-aee1-4492-94e7-7cf021a11a65');
+  });
+
+  it('covers every season the archive lists', () => {
+    const years = [...new Set(data.map((c) => c.year))].sort((a, b) => a - b);
+    expect(years[0]).toBe(2016);
+    expect(years.at(-1)).toBe(2026);
+  });
+
+  it('lists only two competitions for 2026, the third being unraced', () => {
+    // Ohio 2026 runs 24-27 September and has no archive entry yet.
+    expect(data.filter((c) => c.year === 2026)).toHaveLength(2);
   });
 });
