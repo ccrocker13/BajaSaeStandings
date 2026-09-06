@@ -1,7 +1,7 @@
 # Capture manifest
 
-Captured: 2026-09-06T18:24:01Z
-Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34051573860
+Captured: 2026-09-06T18:26:56Z
+Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34051732773
 
 | name | status | type | bytes | url |
 |---|---|---|---|---|
@@ -35,3 +35,22 @@ Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34051573860
 | legacy-results | 403 | text/html | 118 | http://students.sae.org/competitions/bajasae/results/ |
 | black-flags | 200 | text/html | 172943 | https://results.bajasae.net/BlackFlags.aspx |
 | tech-line-assigns | 200 | text/html | 106059 | https://results.bajasae.net/TechLineAssigns.aspx |
+| res-ny2026-OVR | 200 | text/html | 101950 | https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=OVR |
+| res-ny2026-PRES | 200 | text/html | 51928 | https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=PRES |
+| res-ny2026-COST | 200 | text/html | 55029 | https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=COST |
+| res-ny2026-DESN | 200 | text/html | 63252 | https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=DESN |
+| res-ny2026-ACCEL | 200 | text/html | 54722 | https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=ACCEL |
+| res-ny2026-TRAC | 200 | text/html | 67186 | https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=TRAC |
+| res-ny2026-MANU | 200 | text/html | 70000 | https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=MANU |
+| res-ny2026-SPEC | 200 | text/html | 89386 | https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=SPEC |
+| res-ny2026-ENDUR | 200 | text/html | 57633 | https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=ENDUR |
+| res-or2026-OVR | 200 | text/html | 80885 | https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=OVR |
+| res-or2026-PRES | 200 | text/html | 43146 | https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=PRES |
+| res-or2026-COST | 200 | text/html | 46203 | https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=COST |
+| res-or2026-DESN | 200 | text/html | 51057 | https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=DESN |
+| res-or2026-ACCEL | 200 | text/html | 45308 | https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ACCEL |
+| res-or2026-TRAC | 200 | text/html | 54551 | https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=TRAC |
+| res-or2026-MANU | 200 | text/html | 57190 | https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=MANU |
+| res-or2026-SPEC | 200 | text/html | 71189 | https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=SPEC |
+| res-or2026-ENDUR | 200 | text/html | 47361 | https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ENDUR |
+| res-rochester2019-OVR | 200 | text/html | 97635 | https://www.bajasae.net/res/EventResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=OVR |

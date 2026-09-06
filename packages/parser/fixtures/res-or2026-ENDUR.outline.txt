@@ -1,0 +1,52 @@
+SOURCE: https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ENDUR
+BYTES: 47359
+TITLE: Baja SAE
+META REFRESH: none
+__VIEWSTATE: present (19160 chars)
+__EVENTTARGET: absent
+__doPostBack refs: 0
+FORM: id=aspnetForm method=post action=./EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ENDUR
+
+TABLES: 1
+
+--- table[0] id=ctl00_main_EventResults1_GridViewEnduranceResults class=results-table rows=77
+    col counts (first 20 rows): 8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+    row[0]: ["Rank","Car #","School","Team","Laps","Points (400)","Diff To Leader","Gap To Next"]
+    row[1]: ["1","5","Purdue Univ - W Lafayette","Purdue Baja Racing","53.00000","400.00000","",""]
+    row[2]: ["2","29","Universite de Sherbrooke","Baja UdeS","52.00000","392.30769","1 Lap","1 Lap"]
+    row[3]: ["3","6","Johns Hopkins Univ","Blue Jay Racing","51.00000","384.61539","2 Laps","1 Lap"]
+
+ELEMENT IDS (16): ctl00_Head1, dateTimePopup, header, logo, ctl00_aHome, header-sae, aspnetForm, navbar, content-wrapper, content, dismissableAlert, errorDetails, AlertCloseButon, ctl00_main_EventResults1_PanelEnduranceResults, ctl00_main_EventResults1_GridViewEnduranceResults, footer
+
+CLASSES (32): hidden-xs, pull-right, navbar-toggle, btn, btn-default, btn-lg, sr-only, icon-bar, navbar, navbar-collapse, collapse, nav, navbar-nav, dropdown, hidden, dropdown-toggle, caret, dropdown-menu, container-fluid, min-height, alert, alert-danger, btn-danger, btn-secondary, nav-pills, spacing-bottom, active, results-table, filterable, exact, container, sae-privacy-policy
+
+LINKS (25):
+   -> /
+   -> http://www.sae.org/
+  Home -> /
+  Jump To Activity -> #
+  News -> /cdsweb/app/news.aspx
+  Competitions & Workshops -> /cdsweb/reg/UpcomingCompList.aspx
+  Deadlines -> /Deadlines.aspx?seriesCode=BAJA
+  Competition Resources -> /app/CompetitionResources.aspx
+  Series Resources -> /cdsweb/gen/DocumentResources.aspx
+  Results -> /res/ResultsLanding.aspx
+  Membership -> /Page.aspx?pageid=02d6642f-e37d-4f69-9b1e-c60ea76dcc41
+  Media -> /Page.aspx?pageid=4d4e29a9-e7fc-4394-bae2-51080f4adf04
+  Create an Account -> /go/signup
+  Login -> https://www.bajasae.net/Login.aspx
+  Back To Competition Results -> /res/CompetitionResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d
+  Overall -> ?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=OVR
+  Business Presentation -> ?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=PRES
+  Cost Event -> ?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=COST
+  Design -> ?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=DESN
+  Acceleration -> ?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ACCEL
+  Hill Climb -> ?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=TRAC
+  Maneuverability -> ?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=MANU
+  Rock Crawl -> ?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=SPEC
+  Endurance -> ?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ENDUR
+  SAE International Privacy Policy -> https://www.sae.org/privacy
+
+SCRIPT SRCS: https://www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js, /cdsweb/SharedComponents/public_assets/jquery-1.11.2.min.js, /cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.js, /cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/js/bootstrap.min.js, /cdsweb/SharedComponents/public_assets/data-tables/src/dataTables.js, /cdsweb/SharedComponents/public_assets/moment/moment.min.js, /cdsweb/SharedComponents/public_assets/moment/datetime-moment.js, /cdsweb/SharedComponents/public_assets/CdsWeb.js, /cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.js, /cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.js
+ENDPOINT HINTS: none
+AJAX/REFRESH HINTS: none

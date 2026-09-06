@@ -1,0 +1,562 @@
+
+
+<!DOCTYPE html>
+<html>
+<head id="ctl00_Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	Baja SAE
+</title>
+        <!-- ## DATADOG ## -->
+        <script 
+            type="text/javascript" 
+            src="https://www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js">
+        </script>
+        <script>
+            window.DD_LOGS && window.DD_LOGS.init({
+                clientToken: 'pub2b998a9408da81e2b93d28713ea65e93',
+                site: 'datadoghq.com',
+                forwardErrorsToLogs: true,
+                forwardConsoleLogs: 'all', // ['log', 'debug', 'info', 'warn', 'error']
+                sessionSampleRate: 100,
+                silentMultipleInit: false,
+                trackingConsent: 'granted', // 'not-granted'
+                telemetrySampleRate: 0,
+                storeContextsAcrossPages: false,
+                allowUntrustedEvents: false,
+                service: 'bajasae_north_america',
+                env: 'production',
+                version: '2.1.26.8121',
+                beforeSend: (log) => {
+                    // discard 404 network errors
+                    if (log.http && log.http.status_code === 404) {
+                        return false;
+                    }
+
+                    // remove email from view url
+                    log.view.url = log.view.url.replace(/email=[^&]*/, "email=REDACTED");
+                }
+            });
+
+            //window.DD_LOGS && window.DD_LOGS.setContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.logger.setLevel('error');
+            window.DD_LOGS && window.DD_LOGS.logger.setHandler(['http', 'console']); //'http' | 'console' | 'silent'
+            //window.DD_LOGS && window.DD_LOGS.logger.setHandler('silent');
+            //window.DD_LOGS && window.DD_LOGS.setTrackingConsent('granted');
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#global-context
+            //window.DD_LOGS && window.DD_LOGS.getInternalContext();
+            //window.DD_LOGS && window.DD_LOGS.setGlobalContext({ env: 'staging' });
+            window.DD_LOGS && window.DD_LOGS.setGlobalContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging', referrer: ...}
+            //window.DD_LOGS && window.DD_LOGS.removeGlobalContextProperty('referrer');
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging'}
+            //window.DD_LOGS && window.DD_LOGS.clearGlobalContext();
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {}
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#user-context
+            //window.DD_LOGS && window.DD_LOGS.setUserProperty('type', 'customer');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com', type: 'customer'}
+            //window.DD_LOGS && window.DD_LOGS.removeUserProperty('type');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com'}
+            //window.DD_LOGS && window.DD_LOGS.clearUser();
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {}
+
+            window.DD_LOGS && window.DD_LOGS.setUser({
+                id: '',
+                un: ''
+            });
+        </script>
+        <!-- ## DATADOG ## -->
+    
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/jquery-1.11.2.min.js"></script>
+    <script src="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+
+    
+        <!-- New DataTables -->
+        <link rel="stylesheet" type="text/css" href="/cdsweb/SharedComponents/public_assets/data-tables/src/datatables.min.css" />
+        <script src="/cdsweb/SharedComponents/public_assets/data-tables/src/dataTables.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/moment.min.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/datetime-moment.js" type="text/javascript"></script>
+    <link href="/Main_Responsive.css" rel="stylesheet" type="text/css" /><link href="/panels.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" /><link href="/cdsweb/SharedComponents/public_assets/CdsWeb.css" rel="stylesheet" type="text/css" /><link href="/Overrides.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/CdsWeb.js"></script>
+
+    
+</head>
+
+<body>
+    
+    <link href="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.css" rel="stylesheet" />
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.js"></script>
+    <div id="dateTimePopup"></div>
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.js"></script>
+    
+
+    <div id="header">
+        <div id="logo">
+            <a id="ctl00_aHome" href="/">
+                <img src="/cdsweb/SharedComponents/bajasae.net/img/CdsWeb-BAJA-Header-Logo-Max65pxH.png" />
+            </a>
+        </div>
+        <div id="header-sae" class="hidden-xs pull-right">
+            <a href="http://www.sae.org/">
+                <img src="/cdsweb/SharedComponents/public_assets/img/sae_vrt_blk_rgb_pos_l.png"" style="width:120px" />
+            </a>
+        </div>
+
+        <button type="button" class="pull-right navbar-toggle btn btn-default btn-lg" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+
+<style>
+    #testVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, #f4d308 0 8px, black 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #testVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+
+    #prodVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, red 0 8px, white 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #prodVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+</style>
+
+
+    <form name="aspnetForm" method="post" action="./EventResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&amp;eventkey=OVR" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6E3EFC2B" />
+        <nav class="navbar" role="navigation">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    
+                    
+
+                    
+                    <li><a href="/">Home</a></li>
+
+                    
+                    
+
+                    
+                    <li class="dropdown hidden">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jump To Activity&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            
+                        </ul>
+                    </li>
+
+                    
+                    <li><a href="/cdsweb/app/news.aspx">News</a></li>
+
+                    
+                    <li><a href="/cdsweb/reg/UpcomingCompList.aspx">Competitions & Workshops</a></li>
+
+                    
+                    <li><a href="/Deadlines.aspx?seriesCode=BAJA">Deadlines</a></li>
+
+                    
+                    <li><a href="/app/CompetitionResources.aspx" target="_blank">Competition Resources</a></li>
+
+                    
+                    <li><a href="/cdsweb/gen/DocumentResources.aspx">Series Resources</a></li>
+
+                    
+                    <li><a href="/res/ResultsLanding.aspx">Results</a></li>
+
+                    
+                    <li><a href="/Page.aspx?pageid=02d6642f-e37d-4f69-9b1e-c60ea76dcc41">Membership</a></li>
+                    
+                    
+                    <li><a href="/Page.aspx?pageid=4d4e29a9-e7fc-4394-bae2-51080f4adf04">Media</a></li>
+
+                    
+                    <li><a href="/go/signup">Create an Account</a></li>
+
+                    
+                    
+
+                    
+                    <li><a href="https://www.bajasae.net/Login.aspx">Login</a></li>
+
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content-wrapper">
+            <div id="content" class='container-fluid min-height'>
+                
+
+                
+<div id="dismissableAlert" style="display: none;" class="alert alert-danger">
+    <div id="errorDetails"></div>
+
+    <p>Click the button to view more details of the error.</p>
+    <button type="button" class="btn btn-danger" onclick="ShowTheError()">Click here to see what went wrong</button>
+    <button type="button" class="btn btn-secondary" id="AlertCloseButon">Dismiss</button>
+</div>
+
+<script>
+    var htmlResponse = "";
+    var errorPopupDetails = "";
+
+    function ShowTheError() {
+        window.open('').document.body.innerHTML = htmlResponse;
+        $("#dismissableAlert").hide();
+    }
+
+    $(document).ready(function () {
+        $("#AlertCloseButon").click(function () {
+            $("#dismissableAlert").hide();
+        });
+    });
+
+    function PopulateErrorMessage(messageHtml){
+        htmlResponse = messageHtml;
+        //htmlResponse = htmlResponse.replace("<b>Source Error:</b>", "<b>Source Error:</b>" + , window.location.href)
+        var beginIndex = htmlResponse.indexOf("<h2> <i>");
+        var endIndex = htmlResponse.indexOf("<b>Stack Trace:</b>");
+        errorPopupDetails = htmlResponse.substring(beginIndex, endIndex);
+
+        $("#dismissableAlert").show();
+        document.getElementById("errorDetails").innerHTML = errorPopupDetails;
+
+        window.scrollTo(0, 0); // values are x,y-offset
+    }
+</script>
+
+                
+    
+
+<script type="text/javascript">
+    var rankToNum = function (rank) {
+        rank = parseFloat(rank);
+        return rank ? rank : 99999999;
+    };
+
+    jQuery.fn.dataTableExt.oSort['rank-asc'] = function (x, y) {
+        x = rankToNum(x);
+        y = rankToNum(y);
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    };
+
+    jQuery.fn.dataTableExt.oSort['rank-desc'] = function (x, y) {
+        x = rankToNum(x);
+        y = rankToNum(y);
+        return ((x < y) ? 1 : ((x > y) ? -1 : 0));
+    };
+</script>
+
+<style>
+    .nav-pills > li { margin-top: 2px; }
+    .results-table { background: #fff; }
+    .results-table th, .results-table td { font-size: 12px; }
+    .results-table tr.even { background: #f6f6f6; }
+    .filter-box { width: 60px; margin-left: 4px; font-size: 12px; }
+</style>
+
+<a href="/res/CompetitionResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6">Back To Competition Results</a>
+
+<h2>Event Results – Baja SAE Rochester 2019</h2>
+<ul class="nav nav-pills spacing-bottom">
+    <li class=" active"><a href="?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=OVR">Overall</a></li>
+    
+            <li class=''><a href="?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=PRES">Sales Presentation</a></li>
+        
+            <li class=''><a href="?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=COST">Cost Event</a></li>
+        
+            <li class=''><a href="?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=DESN">Design</a></li>
+        
+            <li class=''><a href="?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=ACCEL">Acceleration</a></li>
+        
+            <li class=''><a href="?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=TRAC">Hill Climb</a></li>
+        
+            <li class=''><a href="?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=MANU">Maneuverability</a></li>
+        
+            <li class=''><a href="?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=SPEC">Suspension</a></li>
+        
+            <li class=''><a href="?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=ENDUR">Endurance</a></li>
+        
+</ul>
+
+
+
+
+
+
+<div id="ctl00_main_EventResults1_PanelOverallResults">
+	
+    <div>
+		<table class="results-table" cellspacing="0" border="0" id="ctl00_main_EventResults1_GridViewOverallResults">
+			<thead>
+				<tr>
+					<th scope="col">Rank</th><th class="filterable exact" scope="col">Car #</th><th class="filterable" scope="col">School</th><th class="filterable" scope="col">Team</th><th scope="col">Overall (1000)</th><th scope="col">Overall Dynamic (300)</th><th scope="col">Overall Static (300)</th><th scope="col">Cost Event (100)</th><th scope="col">Design (150)</th><th scope="col">Sales Presentation (50)</th><th scope="col">Acceleration (75)</th><th scope="col">Maneuverability (75)</th><th scope="col">Hill Climb (75)</th><th scope="col">Suspension (75)</th><th scope="col">Endurance (400)</th><th scope="col">Adjustments</th><th scope="col">Registered</th><th scope="col">Passed Tech</th><th scope="col">Passed Tech On Time</th><th scope="col">Public Comments</th>
+				</tr>
+			</thead><tbody>
+				<tr>
+					<td>1</td><td>2</td><td>Univ of Michigan - Ann Arbor</td><td>Michigan Baja Racing</td><td>941.49</td><td>266.63</td><td>274.86</td><td>91.86</td><td>135.00</td><td>48.00</td><td>74.64</td><td>75.00</td><td>72.78</td><td>44.21</td><td>400.00</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>2</td><td>5</td><td>Ecole de Technologie Superieure</td><td>BAJA ETS</td><td>906.60</td><td>239.28</td><td>283.00</td><td>100.00</td><td>138.00</td><td>45.00</td><td>68.99</td><td>71.88</td><td>58.78</td><td>39.63</td><td>384.31</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>3</td><td>78</td><td>San Diego State Univ</td><td>Aztec Baja</td><td>895.70</td><td>255.00</td><td>264.23</td><td>81.23</td><td>130.00</td><td>53.00</td><td>64.61</td><td>55.74</td><td>64.43</td><td>70.22</td><td>376.47</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>4</td><td>3</td><td>Cornell Univ</td><td>Cornell Baja</td><td>841.45</td><td>274.64</td><td>245.24</td><td>78.24</td><td>134.00</td><td>33.00</td><td>72.39</td><td>68.24</td><td>63.17</td><td>70.84</td><td>321.57</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>5</td><td>105</td><td>Universit&#233; Laval</td><td>Al&#233;rion</td><td>809.84</td><td>261.16</td><td>172.21</td><td>88.21</td><td>50.00</td><td>34.00</td><td>64.09</td><td>72.67</td><td>63.02</td><td>61.38</td><td>376.47</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>6</td><td>163</td><td>Escola de Engenharia de Sao Carlos</td><td>EESC USP BAJA</td><td>798.67</td><td>246.79</td><td>198.94</td><td>32.94</td><td>130.00</td><td>36.00</td><td>67.69</td><td>73.99</td><td>65.48</td><td>39.63</td><td>352.94</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>7</td><td>168</td><td>Universidade Federal Rural do Semi&#225;rido</td><td>Cactus Baja SAE</td><td>790.74</td><td>240.01</td><td>221.32</td><td>72.32</td><td>120.00</td><td>29.00</td><td>60.70</td><td>71.36</td><td>63.59</td><td>44.37</td><td>329.41</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>8</td><td>27</td><td>Univ of Calgary</td><td>Schulich Off-Road</td><td>784.86</td><td>218.78</td><td>205.30</td><td>60.30</td><td>120.00</td><td>25.00</td><td>63.11</td><td>55.00</td><td>61.05</td><td>39.63</td><td>360.78</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>9</td><td>6</td><td>Univ of Akron</td><td>Zips Baja</td><td>774.18</td><td>245.53</td><td>214.93</td><td>77.93</td><td>90.00</td><td>47.00</td><td>67.61</td><td>64.30</td><td>54.88</td><td>58.74</td><td>313.73</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>10</td><td>1</td><td>Rochester Institute of Technology</td><td>RIOT RACING</td><td>766.88</td><td>292.54</td><td>246.89</td><td>81.89</td><td>110.00</td><td>55.00</td><td>72.83</td><td>69.71</td><td>75.00</td><td>75.00</td><td>227.45</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>11</td><td>88</td><td>Case Western Reserve Univ</td><td>CWRU Motorsports</td><td>763.31</td><td>242.39</td><td>215.03</td><td>71.03</td><td>100.00</td><td>44.00</td><td>75.00</td><td>55.51</td><td>72.26</td><td>39.63</td><td>305.88</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>12</td><td>9</td><td>Univ of Maryland - Baltimore County</td><td>UMBC Racing</td><td>762.03</td><td>242.48</td><td>260.73</td><td>98.73</td><td>120.00</td><td>42.00</td><td>70.57</td><td>63.97</td><td>62.70</td><td>45.23</td><td>258.82</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>13</td><td>87</td><td>California Polytechnic State Univ-SLO</td><td>Cal Poly Racing </td><td>730.86</td><td>256.05</td><td>231.67</td><td>76.67</td><td>120.00</td><td>35.00</td><td>65.16</td><td>73.71</td><td>72.50</td><td>44.68</td><td>243.14</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>14</td><td>80</td><td>Ohio Northern Univ</td><td>Polar Bear Racing</td><td>723.96</td><td>219.89</td><td>190.34</td><td>65.34</td><td>90.00</td><td>35.00</td><td>66.31</td><td>60.68</td><td>61.96</td><td>30.95</td><td>313.73</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>15</td><td>16</td><td>Pennsylvania College of Technology</td><td>PCTBaja</td><td>722.46</td><td>238.61</td><td>146.59</td><td>59.59</td><td>70.00</td><td>17.00</td><td>66.50</td><td>62.84</td><td>54.58</td><td>54.69</td><td>337.25</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>16</td><td>58</td><td>Georgia Southern Univ</td><td>Eagle Motorsports</td><td>720.77</td><td>240.52</td><td>158.68</td><td>68.68</td><td>60.00</td><td>30.00</td><td>54.57</td><td>71.02</td><td>70.87</td><td>44.05</td><td>321.57</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>17</td><td>34</td><td>Youngstown State Univ</td><td>YSU Baja</td><td>717.79</td><td>228.47</td><td>191.28</td><td>45.28</td><td>100.00</td><td>46.00</td><td>50.50</td><td>67.26</td><td>55.46</td><td>55.25</td><td>298.04</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>18</td><td>97</td><td>Tennessee Tech Univ</td><td>TTU Baja</td><td>695.93</td><td>228.22</td><td>122.61</td><td>55.61</td><td>40.00</td><td>27.00</td><td>55.68</td><td>63.07</td><td>60.45</td><td>49.03</td><td>345.10</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>19</td><td>8</td><td>Univ of Nebraska - Lincoln</td><td>Husker Racing</td><td>682.67</td><td>204.09</td><td>227.60</td><td>70.60</td><td>120.00</td><td>37.00</td><td>39.20</td><td>51.37</td><td>56.82</td><td>56.69</td><td>250.98</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>20</td><td>93</td><td>Univ of Nevada - Las Vegas</td><td>Rebel Racing</td><td>681.48</td><td>217.85</td><td>204.81</td><td>61.81</td><td>100.00</td><td>43.00</td><td>60.77</td><td>70.33</td><td>62.59</td><td>24.16</td><td>258.82</td><td>&nbsp;</td><td>True</td><td>False</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>21</td><td>69</td><td>Univ of Wisconsin - Platteville</td><td>Pioneer Racing</td><td>679.28</td><td>201.27</td><td>156.44</td><td>51.44</td><td>80.00</td><td>25.00</td><td>54.89</td><td>45.13</td><td>61.62</td><td>39.63</td><td>321.57</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>22</td><td>15</td><td>Instituto Tecnologico de Toluca</td><td>Escuderia Halcon</td><td>664.61</td><td>200.17</td><td>189.93</td><td>82.93</td><td>90.00</td><td>17.00</td><td>51.01</td><td>61.98</td><td>44.54</td><td>42.63</td><td>274.51</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>23</td><td>169</td><td>Escola Polit&#233;cnica da USP</td><td>Poli-USP Baja</td><td>659.25</td><td>221.75</td><td>178.68</td><td>33.68</td><td>100.00</td><td>45.00</td><td>60.02</td><td>70.29</td><td>47.07</td><td>44.37</td><td>258.82</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>24</td><td>17</td><td>RV College of Engineering</td><td>Team Helios Racing</td><td>658.77</td><td>213.46</td><td>210.02</td><td>68.02</td><td>110.00</td><td>32.00</td><td>70.97</td><td>35.46</td><td>68.35</td><td>38.68</td><td>235.29</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>25</td><td>85</td><td>Univ of Central Florida</td><td>Knights Racing</td><td>646.68</td><td>228.51</td><td>253.46</td><td>80.46</td><td>130.00</td><td>43.00</td><td>67.29</td><td>61.17</td><td>62.70</td><td>37.34</td><td>164.71</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>26</td><td>25</td><td>McGill Univ</td><td>McGill Baja Racing</td><td>642.84</td><td>232.18</td><td>222.43</td><td>62.43</td><td>120.00</td><td>40.00</td><td>65.52</td><td>62.57</td><td>65.88</td><td>38.21</td><td>188.24</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>27</td><td>111</td><td>Arizona State Univ Polytechnic</td><td>Sun Devil Racing</td><td>628.10</td><td>220.06</td><td>188.43</td><td>90.43</td><td>80.00</td><td>18.00</td><td>68.24</td><td>52.05</td><td>60.14</td><td>39.63</td><td>219.61</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>28</td><td>70</td><td>Michigan State Univ</td><td>MSU Baja</td><td>626.41</td><td>202.73</td><td>196.23</td><td>69.23</td><td>100.00</td><td>27.00</td><td>65.63</td><td>33.54</td><td>66.22</td><td>37.34</td><td>227.45</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>29</td><td>82</td><td>Univ of Illinois - Urbana Champaign</td><td>Off-Road Illini</td><td>624.90</td><td>175.64</td><td>206.12</td><td>53.12</td><td>110.00</td><td>43.00</td><td>53.62</td><td>67.43</td><td>8.81</td><td>45.79</td><td>243.14</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>30</td><td>44</td><td>Queen&#39;s Univ</td><td>Queen&#39;s Baja</td><td>624.88</td><td>236.44</td><td>208.04</td><td>62.04</td><td>100.00</td><td>46.00</td><td>64.41</td><td>66.88</td><td>62.52</td><td>42.63</td><td>180.39</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>31</td><td>75</td><td>Universidad La Salle</td><td>&#193;guilas </td><td>620.50</td><td>159.79</td><td>186.20</td><td>85.20</td><td>80.00</td><td>21.00</td><td>56.66</td><td>0.00</td><td>48.57</td><td>54.56</td><td>274.51</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>32</td><td>36</td><td>Old Dominion Univ</td><td>Whiskey Throttle Racing </td><td>606.80</td><td>215.38</td><td>156.13</td><td>58.13</td><td>50.00</td><td>48.00</td><td>43.55</td><td>63.63</td><td>61.46</td><td>46.73</td><td>235.29</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>33</td><td>31</td><td>Dr. D.Y. Patil Institute of Technology</td><td>TEAM DURGAYANS</td><td>598.80</td><td>203.19</td><td>176.00</td><td>15.00</td><td>110.00</td><td>51.00</td><td>72.87</td><td>61.97</td><td>68.35</td><td>0.00</td><td>219.61</td><td>0.00</td><td>True</td><td>True</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>34</td><td>50</td><td>California State Univ - Los Angeles</td><td>Rugged Eagle Motorsports</td><td>592.63</td><td>214.57</td><td>158.45</td><td>62.45</td><td>60.00</td><td>36.00</td><td>55.04</td><td>65.84</td><td>62.03</td><td>31.66</td><td>219.61</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>35</td><td>22</td><td>Pimpri Chinchwad College of Engineering</td><td>Team Red Baron</td><td>587.15</td><td>232.80</td><td>189.64</td><td>71.64</td><td>80.00</td><td>38.00</td><td>65.91</td><td>58.84</td><td>70.00</td><td>38.05</td><td>164.71</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>36</td><td>121</td><td>Clarkson University</td><td>Golden Knights Racing</td><td>576.56</td><td>254.78</td><td>196.29</td><td>77.29</td><td>90.00</td><td>29.00</td><td>71.01</td><td>67.46</td><td>71.16</td><td>45.16</td><td>125.49</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>37</td><td>60</td><td>Marquette Univ</td><td>Eagle Racing</td><td>566.32</td><td>171.40</td><td>128.26</td><td>66.26</td><td>40.00</td><td>22.00</td><td>39.12</td><td>45.77</td><td>61.01</td><td>25.50</td><td>266.67</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>38</td><td>7</td><td>Northeastern Univ</td><td>Skunkworks </td><td>563.41</td><td>211.95</td><td>210.28</td><td>65.28</td><td>110.00</td><td>35.00</td><td>48.25</td><td>63.17</td><td>56.56</td><td>43.97</td><td>141.18</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>39</td><td>91</td><td>Univ of Missouri - Kansas City</td><td>UMKC Baja Racing</td><td>549.13</td><td>201.13</td><td>246.04</td><td>94.04</td><td>110.00</td><td>42.00</td><td>50.66</td><td>61.93</td><td>44.25</td><td>44.29</td><td>101.96</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>40</td><td>76</td><td>Johns Hopkins Univ</td><td>Blue Jay Racing</td><td>545.24</td><td>212.58</td><td>199.33</td><td>65.33</td><td>90.00</td><td>44.00</td><td>61.84</td><td>59.44</td><td>47.25</td><td>44.05</td><td>133.33</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>41</td><td>33</td><td>Univ of British Columbia</td><td>UBC Baja</td><td>543.33</td><td>148.44</td><td>175.28</td><td>38.28</td><td>100.00</td><td>37.00</td><td>49.35</td><td>0.00</td><td>54.88</td><td>44.21</td><td>219.61</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>42</td><td>52</td><td>New Jersey Institute of Technology</td><td>Highlander Racing</td><td>518.78</td><td>181.27</td><td>149.28</td><td>78.28</td><td>30.00</td><td>41.00</td><td>54.65</td><td>61.03</td><td>47.04</td><td>18.55</td><td>188.24</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>43</td><td>14</td><td>SUNY - Stony Brook</td><td>Stony Brook Motorsports</td><td>516.29</td><td>216.68</td><td>103.53</td><td>38.53</td><td>50.00</td><td>15.00</td><td>61.13</td><td>47.11</td><td>51.10</td><td>57.34</td><td>196.08</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>44</td><td>24</td><td>Lehigh Univ</td><td>Lehigh Engineers</td><td>509.08</td><td>140.09</td><td>157.23</td><td>56.23</td><td>80.00</td><td>21.00</td><td>62.39</td><td>0.00</td><td>58.27</td><td>19.42</td><td>211.76</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>45</td><td>72</td><td>Univ of Wisconsin - Milwaukee</td><td>UW MKE Baja</td><td>500.18</td><td>144.28</td><td>144.14</td><td>61.14</td><td>50.00</td><td>33.00</td><td>13.28</td><td>48.82</td><td>45.55</td><td>36.63</td><td>211.76</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>46</td><td>42</td><td>Virginia Tech</td><td>VT Baja</td><td>486.62</td><td>173.55</td><td>179.74</td><td>79.74</td><td>70.00</td><td>30.00</td><td>56.66</td><td>47.15</td><td>32.55</td><td>37.18</td><td>133.33</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>47</td><td>55</td><td>Universite Du Quebec at Rimouski</td><td>Nordic Wolf</td><td>479.63</td><td>192.16</td><td>154.13</td><td>65.13</td><td>50.00</td><td>39.00</td><td>51.33</td><td>48.42</td><td>47.89</td><td>44.52</td><td>133.33</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>48</td><td>53</td><td>Univ of Puerto Rico-Mayaquez</td><td>Rum Racing Baja</td><td>476.28</td><td>204.42</td><td>162.06</td><td>58.06</td><td>70.00</td><td>34.00</td><td>58.52</td><td>50.52</td><td>58.19</td><td>37.18</td><td>109.80</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>49</td><td>123</td><td>Michigan Tech Univ</td><td>Blizzard Baja</td><td>473.92</td><td>195.19</td><td>98.34</td><td>57.34</td><td>30.00</td><td>11.00</td><td>47.26</td><td>60.68</td><td>47.62</td><td>39.63</td><td>180.39</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>50</td><td>83</td><td>Univ of San Diego</td><td>Torero Racing</td><td>451.96</td><td>128.96</td><td>134.76</td><td>52.76</td><td>50.00</td><td>32.00</td><td>40.74</td><td>0.00</td><td>51.04</td><td>37.18</td><td>188.24</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>51</td><td>65</td><td>Penn State Univ - Altoona</td><td>Penn State Altoona</td><td>448.30</td><td>199.07</td><td>61.00</td><td>15.00</td><td>20.00</td><td>26.00</td><td>49.47</td><td>54.31</td><td>57.15</td><td>38.13</td><td>188.24</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>52</td><td>45</td><td>Kansas State Univ</td><td>Wildcat Offroad</td><td>443.74</td><td>194.78</td><td>99.94</td><td>33.94</td><td>50.00</td><td>16.00</td><td>44.34</td><td>61.04</td><td>44.56</td><td>44.84</td><td>149.02</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>53</td><td>61</td><td>Cleveland State Univ</td><td>Vikings Racing</td><td>442.62</td><td>185.52</td><td>155.14</td><td>81.14</td><td>50.00</td><td>24.00</td><td>54.45</td><td>57.36</td><td>56.73</td><td>16.97</td><td>101.96</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>54</td><td>81</td><td>Univ of Manitoba</td><td>University of Manitoba</td><td>442.03</td><td>102.52</td><td>65.00</td><td>15.00</td><td>30.00</td><td>20.00</td><td>41.45</td><td>0.00</td><td>44.09</td><td>16.97</td><td>274.51</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>55</td><td>84</td><td>McMaster Univ</td><td>McMaster Baja Racing </td><td>433.74</td><td>204.74</td><td>189.78</td><td>68.78</td><td>90.00</td><td>31.00</td><td>57.61</td><td>58.21</td><td>51.65</td><td>37.26</td><td>39.22</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>56</td><td>120</td><td>Alfred Univ</td><td>Saxon Racing </td><td>426.82</td><td>177.21</td><td>124.12</td><td>66.12</td><td>30.00</td><td>28.00</td><td>50.26</td><td>42.11</td><td>51.21</td><td>33.63</td><td>125.49</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>113</td><td>Western New England University</td><td>Golden Bear Racing</td><td>425.86</td><td>184.57</td><td>147.17</td><td>54.17</td><td>70.00</td><td>23.00</td><td>33.83</td><td>59.56</td><td>45.95</td><td>45.23</td><td>94.12</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>58</td><td>119</td><td>Olin College of Engineering</td><td>Olin Baja</td><td>423.25</td><td>190.78</td><td>154.04</td><td>66.04</td><td>50.00</td><td>38.00</td><td>52.24</td><td>51.59</td><td>48.82</td><td>38.13</td><td>78.43</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>59</td><td>66</td><td>North Carolina State Univ - Raleigh</td><td>Pack Motorsports</td><td>420.14</td><td>137.48</td><td>165.01</td><td>48.01</td><td>70.00</td><td>47.00</td><td>32.88</td><td>52.47</td><td>33.27</td><td>18.87</td><td>117.65</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>60</td><td>48</td><td>Grove City College</td><td>Grove City Racing</td><td>419.54</td><td>204.93</td><td>144.02</td><td>63.02</td><td>60.00</td><td>21.00</td><td>65.20</td><td>44.68</td><td>56.44</td><td>38.60</td><td>70.59</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>61</td><td>26</td><td>Iowa State Univ</td><td>Cyclone Racing </td><td>404.28</td><td>190.69</td><td>127.32</td><td>54.32</td><td>60.00</td><td>13.00</td><td>51.77</td><td>47.72</td><td>51.57</td><td>39.63</td><td>86.27</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>62</td><td>96</td><td>University of Mount Union</td><td>Raider Racing</td><td>399.00</td><td>145.45</td><td>81.00</td><td>0.00</td><td>70.00</td><td>11.00</td><td>36.31</td><td>59.11</td><td>31.31</td><td>18.71</td><td>172.55</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>63</td><td>79</td><td>York College of Pennsylvania</td><td>Baja Blast</td><td>394.29</td><td>156.51</td><td>182.88</td><td>75.88</td><td>90.00</td><td>17.00</td><td>56.03</td><td>0.00</td><td>56.27</td><td>44.21</td><td>54.90</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>64</td><td>89</td><td>Univ of Maryland - College Park</td><td>Terps Racing Baja</td><td>390.99</td><td>101.91</td><td>242.02</td><td>91.02</td><td>110.00</td><td>41.00</td><td>59.19</td><td>0.00</td><td>42.72</td><td>0.00</td><td>47.06</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>65</td><td>67</td><td>The Ohio State University</td><td>Baja Buckeyes</td><td>390.60</td><td>182.47</td><td>145.38</td><td>56.38</td><td>70.00</td><td>19.00</td><td>52.56</td><td>50.96</td><td>39.33</td><td>39.63</td><td>62.75</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>66</td><td>64</td><td>Univ of Nevada - Reno</td><td>Wolf Pack Racing</td><td>377.73</td><td>148.02</td><td>104.22</td><td>54.22</td><td>40.00</td><td>10.00</td><td>52.95</td><td>0.00</td><td>55.44</td><td>39.63</td><td>125.49</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>67</td><td>74</td><td>Univ of Waterloo</td><td>UW Baja SAE</td><td>347.09</td><td>215.07</td><td>69.27</td><td>24.27</td><td>30.00</td><td>15.00</td><td>65.24</td><td>56.04</td><td>61.67</td><td>32.13</td><td>62.75</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>68</td><td>92</td><td>Union College</td><td>Union Baja Racing</td><td>344.41</td><td>170.00</td><td>95.98</td><td>31.98</td><td>50.00</td><td>14.00</td><td>42.12</td><td>45.61</td><td>45.01</td><td>37.26</td><td>78.43</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>69</td><td>86</td><td>Memorial Univ of Newfoundland</td><td>Memorial Baja </td><td>339.53</td><td>170.82</td><td>113.81</td><td>31.81</td><td>60.00</td><td>22.00</td><td>41.61</td><td>42.27</td><td>53.46</td><td>33.47</td><td>54.90</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>70</td><td>38</td><td>Purdue Univ - W Lafayette</td><td>Purdue Baja Racing</td><td>332.36</td><td>142.25</td><td>158.73</td><td>69.73</td><td>50.00</td><td>39.00</td><td>59.55</td><td>29.26</td><td>34.10</td><td>19.34</td><td>31.37</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>71</td><td>115</td><td>Northern Kentucky Univ</td><td>Norse Baja</td><td>327.49</td><td>79.40</td><td>146.13</td><td>78.13</td><td>40.00</td><td>28.00</td><td>0.00</td><td>29.98</td><td>43.18</td><td>6.24</td><td>101.96</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>72</td><td>90</td><td>University of Prince Edward Island</td><td>Not Bad Racing</td><td>326.59</td><td>189.29</td><td>129.45</td><td>59.45</td><td>30.00</td><td>40.00</td><td>41.37</td><td>57.86</td><td>52.87</td><td>37.18</td><td>7.84</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>73</td><td>106</td><td>Concordia University</td><td>Concordia Baja Racing</td><td>289.10</td><td>155.17</td><td>133.93</td><td>37.93</td><td>50.00</td><td>46.00</td><td>24.38</td><td>49.84</td><td>62.48</td><td>18.47</td><td>0.00</td><td>&nbsp;</td><td>True</td><td>False</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>74</td><td>35</td><td>Buffalo State College</td><td>Buffalo State Motorsports</td><td>275.57</td><td>96.61</td><td>77.00</td><td>15.00</td><td>40.00</td><td>22.00</td><td>42.72</td><td>0.00</td><td>35.26</td><td>18.63</td><td>101.96</td><td>0.00</td><td>True</td><td>True</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>75</td><td>18</td><td>City College of New York</td><td>CCNY</td><td>269.14</td><td>38.60</td><td>81.52</td><td>38.52</td><td>30.00</td><td>13.00</td><td>5.85</td><td>2.02</td><td>30.73</td><td>0.00</td><td>149.02</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>76</td><td>110</td><td>Univ of Illinois - Chicago</td><td>UIC Motorsports</td><td>251.91</td><td>109.04</td><td>127.19</td><td>75.19</td><td>40.00</td><td>12.00</td><td>32.01</td><td>44.59</td><td>32.44</td><td>0.00</td><td>15.69</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>77</td><td>77</td><td>Wentworth Inst of Tech </td><td>Wentworth Institute of Technology</td><td>246.40</td><td>93.28</td><td>59.00</td><td>15.00</td><td>30.00</td><td>14.00</td><td>45.64</td><td>0.00</td><td>47.64</td><td>0.00</td><td>94.12</td><td>0.00</td><td>True</td><td>True</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>78</td><td>47</td><td>Stevens Institute of Technology</td><td>Dirty Ducks Racing</td><td>241.79</td><td>79.27</td><td>123.31</td><td>60.31</td><td>50.00</td><td>13.00</td><td>4.31</td><td>17.02</td><td>39.23</td><td>18.71</td><td>39.22</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>79</td><td>29</td><td>New York University</td><td>NYU Tandon Motorsports</td><td>232.51</td><td>0.00</td><td>177.61</td><td>64.61</td><td>90.00</td><td>23.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>54.90</td><td>&nbsp;</td><td>True</td><td>False</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>80</td><td>68</td><td>Ryerson Univ</td><td>Ryerson Baja SAE</td><td>223.79</td><td>88.99</td><td>25.00</td><td>15.00</td><td>0.00</td><td>10.00</td><td>42.28</td><td>0.00</td><td>46.71</td><td>0.00</td><td>109.80</td><td>0.00</td><td>True</td><td>True</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>81</td><td>49</td><td>Purdue Univ - Northwest</td><td>PNW Motorsports</td><td>215.48</td><td>90.47</td><td>93.64</td><td>21.64</td><td>60.00</td><td>12.00</td><td>33.79</td><td>0.00</td><td>38.05</td><td>18.63</td><td>31.37</td><td>0.00</td><td>True</td><td>True</td><td>True</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>82</td><td>23</td><td>College of New Jersey</td><td>TCNJ MotorLions</td><td>197.91</td><td>90.91</td><td>107.00</td><td>15.00</td><td>60.00</td><td>32.00</td><td>48.52</td><td>0.00</td><td>42.39</td><td>0.00</td><td>0.00</td><td>0.00</td><td>True</td><td>True</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>83</td><td>19</td><td>K.J.Somaiya College of Engineering</td><td>RedShift Racing India</td><td>112.00</td><td>0.00</td><td>112.00</td><td>15.00</td><td>70.00</td><td>27.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>&nbsp;</td><td>True</td><td>False</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>84</td><td>30</td><td>Vellore Institute of Technology</td><td>KI Racing</td><td>109.00</td><td>0.00</td><td>109.00</td><td>15.00</td><td>70.00</td><td>24.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>&nbsp;</td><td>True</td><td>False</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>85</td><td>71</td><td>Universidad Simon Bolivar</td><td>Team Baja SAE USB</td><td>105.00</td><td>0.00</td><td>105.00</td><td>15.00</td><td>70.00</td><td>20.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>&nbsp;</td><td>True</td><td>False</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>86</td><td>108</td><td>Universidad Nacional Aut&#243;noma de M&#233;xico</td><td>Puma Off-Road Team</td><td>96.00</td><td>0.00</td><td>96.00</td><td>15.00</td><td>50.00</td><td>31.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>&nbsp;</td><td>True</td><td>False</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>87</td><td>41</td><td>Univ of Michigan - Flint</td><td>UM-Flint Baja</td><td>95.85</td><td>39.16</td><td>41.00</td><td>15.00</td><td>10.00</td><td>16.00</td><td>39.16</td><td>0.00</td><td>0.00</td><td>0.00</td><td>15.69</td><td>0.00</td><td>True</td><td>True</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>88</td><td>32</td><td>Bradley Univ</td><td>BU</td><td>93.00</td><td>0.00</td><td>93.00</td><td>15.00</td><td>50.00</td><td>28.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>True</td><td>True</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>89</td><td>114</td><td>SUNY Inst of Tech - Utica</td><td>Wildcat Motorsports </td><td>62.84</td><td>0.00</td><td>55.00</td><td>15.00</td><td>40.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>7.84</td><td>0.00</td><td>True</td><td>True</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>90</td><td>21</td><td>George Mason Univ</td><td>Mason Baja</td><td>56.00</td><td>0.00</td><td>56.00</td><td>0.00</td><td>30.00</td><td>26.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>&nbsp;</td><td>True</td><td>False</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>91</td><td>54</td><td>British Columbia Inst of Tech </td><td>BCIT Racing</td><td>54.00</td><td>0.00</td><td>54.00</td><td>15.00</td><td>0.00</td><td>39.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>True</td><td>True</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>92</td><td>62</td><td>Univ of Missouri</td><td>Mizzou Baja Racing</td><td>54.00</td><td>0.00</td><td>54.00</td><td>15.00</td><td>20.00</td><td>19.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>True</td><td>True</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>93</td><td>104</td><td>Univ of Tennessee -Chattanooga</td><td>UTC Racing Mocs</td><td>50.00</td><td>0.00</td><td>50.00</td><td>0.00</td><td>50.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>&nbsp;</td><td>True</td><td>False</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>94</td><td>117</td><td>Millersville Univ of PA</td><td>Millersville Baja</td><td>50.00</td><td>0.00</td><td>50.00</td><td>0.00</td><td>50.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>&nbsp;</td><td>True</td><td>False</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>95</td><td>103</td><td>Syracuse Univ</td><td>Cuse Baja</td><td>40.00</td><td>0.00</td><td>40.00</td><td>0.00</td><td>30.00</td><td>10.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>&nbsp;</td><td>True</td><td>False</td><td>False</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>96</td><td>40</td><td>Government College of Engg Aurangabad</td><td>Team Aryans</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>&nbsp;</td><td>True</td><td>False</td><td>False</td><td>&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.results-table th.filterable').each(function () {
+            $(this).html($(this).html() + '<input type="text" class="filter-box" placeholder="Filter" />');
+        });
+
+        var table = $('.results-table').DataTable({
+            paging: false, info: false, dom: '',
+            columnDefs: [{ targets: 0, type: 'rank'}] // special sort logic for "rank" col
+        });
+
+        // Column filtering
+        table.columns().eq(0).each(function (index) {
+            var col = table.column(index);
+
+            $('input', col.header()).on('keyup change', function () {
+                if (col.search() !== this.value) {
+                    if ($(this).parent().hasClass('exact') && this.value.length > 0) {
+                        col.search('^' + this.value + '$', true, false).draw();
+                    } else {
+                        col.search(this.value, false, true).draw();
+                    }
+                }
+            }).on('click', function (e) { e.stopPropagation(); });
+        });
+    });
+</script>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                
+
+            </div>
+
+
+            <a class="sae-privacy-policy" href="https://www.sae.org/privacy" target="_blank">SAE International Privacy Policy</a>
+        </div>
+    </form>
+</body>
+</html>
