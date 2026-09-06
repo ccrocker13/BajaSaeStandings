@@ -67,6 +67,18 @@ export interface LivePayload {
 /** Set at build time; empty until the Worker is deployed. */
 const WORKER_URL = (import.meta.env.VITE_WORKER_URL as string | undefined)?.replace(/\/$/, '') ?? '';
 
+/**
+ * Fallback feed, published by the live-poll workflow. Slower than the Worker —
+ * raw.githubusercontent caches for a few minutes — but it means race weekend
+ * does not hinge on a single component.
+ */
+const FALLBACK_URL =
+  'https://raw.githubusercontent.com/ccrocker13/BajaSaeStandings/live-feed/live.json';
+
+const SOURCES = [WORKER_URL ? `${WORKER_URL}/live` : null, FALLBACK_URL].filter(
+  (u): u is string => u !== null,
+);
+
 const BASE_INTERVAL_MS = 15_000;
 const MAX_BACKOFF_MS = 120_000;
 
@@ -77,6 +89,8 @@ export type LiveState = {
   updatedAt: number | null;
   configured: boolean;
   loading: boolean;
+  /** Which feed answered, so the UI can say when it is on the slower one. */
+  source: 'worker' | 'fallback' | null;
 };
 
 export function useLive(): LiveState {
@@ -84,14 +98,15 @@ export function useLive(): LiveState {
     data: null,
     error: null,
     updatedAt: null,
-    configured: WORKER_URL !== '',
-    loading: WORKER_URL !== '',
+    configured: SOURCES.length > 0,
+    loading: SOURCES.length > 0,
+    source: null,
   });
   const failures = useRef(0);
   const timer = useRef<number | null>(null);
 
   useEffect(() => {
-    if (!WORKER_URL) return;
+    if (SOURCES.length === 0) return;
     let cancelled = false;
 
     const schedule = (ms: number) => {
@@ -104,21 +119,34 @@ export function useLive(): LiveState {
       // Nothing to show while hidden; check back when the tab returns.
       if (document.hidden) return schedule(BASE_INTERVAL_MS);
 
-      try {
-        const res = await fetch(`${WORKER_URL}/live`, { headers: { Accept: 'application/json' } });
-        if (!res.ok) throw new Error(`feed returned ${res.status}`);
-        const data = (await res.json()) as LivePayload;
-        if (cancelled) return;
-        failures.current = 0;
-        setState({ data, error: null, updatedAt: Date.now(), configured: true, loading: false });
-        schedule(BASE_INTERVAL_MS);
-      } catch (err) {
-        if (cancelled) return;
-        failures.current += 1;
-        // Keep the last good payload on screen; the freshness badge shows age.
-        setState((prev) => ({ ...prev, error: (err as Error).message, loading: false }));
-        schedule(Math.min(BASE_INTERVAL_MS * 2 ** failures.current, MAX_BACKOFF_MS));
+      // Try each feed in turn; the Worker first when it is configured.
+      let lastError = 'no feed available';
+      for (const [i, url] of SOURCES.entries()) {
+        try {
+          const res = await fetch(url, { headers: { Accept: 'application/json' } });
+          if (!res.ok) throw new Error(`feed returned ${res.status}`);
+          const data = (await res.json()) as LivePayload;
+          if (cancelled) return;
+          failures.current = 0;
+          setState({
+            data,
+            error: null,
+            updatedAt: Date.now(),
+            configured: true,
+            loading: false,
+            source: WORKER_URL && i === 0 ? 'worker' : 'fallback',
+          });
+          return schedule(BASE_INTERVAL_MS);
+        } catch (err) {
+          lastError = (err as Error).message;
+        }
       }
+
+      if (cancelled) return;
+      failures.current += 1;
+      // Keep the last good payload on screen; the freshness badge shows its age.
+      setState((prev) => ({ ...prev, error: lastError, loading: false }));
+      schedule(Math.min(BASE_INTERVAL_MS * 2 ** failures.current, MAX_BACKOFF_MS));
     };
 
     const onVisible = () => {
@@ -139,4 +167,4 @@ export function useLive(): LiveState {
   return state;
 }
 
-export const WORKER_CONFIGURED = WORKER_URL !== '';
+export const LIVE_CONFIGURED = SOURCES.length > 0;

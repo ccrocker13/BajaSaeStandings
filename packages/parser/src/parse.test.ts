@@ -170,11 +170,11 @@ describe('archive overall results', () => {
     // are each rounded to two decimals before being summed.
     let checked = 0;
     for (const row of data.rows) {
-      const s = row.numbers['overall static'];
-      const d = row.numbers['overall dynamic'];
-      const e = row.numbers['endurance'];
+      const s = row.numbers['overall static'] ?? null;
+      const d = row.numbers['overall dynamic'] ?? null;
+      const e = row.numbers['endurance'] ?? null;
       const adj = row.numbers['adjustments'] ?? 0;
-      const o = row.numbers['overall'];
+      const o = row.numbers['overall'] ?? null;
       if (s === null || d === null || e === null || o === null) continue;
       expect(Math.abs(s + d + e + adj - o)).toBeLessThanOrEqual(0.02);
       checked++;

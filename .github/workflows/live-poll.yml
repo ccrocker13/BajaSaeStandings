@@ -1,0 +1,72 @@
+# Fallback live feed for race weekend.
+#
+# Insurance for the Cloudflare Worker, which is the primary and fresher path.
+# Start this manually when a competition begins; it polls for the requested
+# duration and publishes snapshots to the `live-feed` branch, which the site
+# reads if the Worker is unavailable.
+#
+# A job cannot outlive the six-hour ceiling, so run it for a few hours at a
+# time and restart it as needed rather than trying to cover a whole weekend.
+name: Live poll
+
+on:
+  workflow_dispatch:
+    inputs:
+      duration_minutes:
+        description: 'How long to poll for (max 330)'
+        default: '300'
+      interval_seconds:
+        description: 'Seconds between polls'
+        default: '30'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-poll
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - name: Poll and publish
+        env:
+          DURATION_MINUTES: ${{ inputs.duration_minutes }}
+          INTERVAL_SECONDS: ${{ inputs.interval_seconds }}
+        run: |
+          set -euo pipefail
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # An orphan branch keeps thousands of snapshot commits out of the
+          # project's history; it is force-pushed, so it never accumulates.
+          mkdir -p /tmp/feed && cd /tmp/feed
+          git init -q && git remote add origin "${{ github.server_url }}/${{ github.repository }}"
+          git -c init.defaultBranch=live-feed checkout -q -b live-feed
+
+          cd "$GITHUB_WORKSPACE"
+          OUT_FILE=/tmp/feed/live.json pnpm exec tsx tools/live-snapshot/poll.ts
+
+          cd /tmp/feed
+          if [ ! -f live.json ]; then
+            echo 'No snapshot produced; nothing to publish.'
+            exit 0
+          fi
+          git add live.json
+          git -c user.name='github-actions[bot]' \
+              -c user.email='github-actions[bot]@users.noreply.github.com' \
+              commit -q -m "Live snapshot $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push -q --force \
+            "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" \
+            live-feed
+          echo 'Published to the live-feed branch.'

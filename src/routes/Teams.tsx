@@ -1,11 +1,20 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { allTeams } from '../lib/data.js';
-import { Medal } from '../components/ui.js';
+import { useSummary } from '../lib/data.js';
+import { Empty, Medal } from '../components/ui.js';
 
 export default function Teams() {
   const [query, setQuery] = useState('');
-  const teams = useMemo(() => allTeams(), []);
+  const { data: summary, error, loading } = useSummary();
+  const teams = useMemo(
+    () =>
+      (summary?.teams ?? []).map((t) => ({
+        ...t,
+        seasonCount: t.seasons.length,
+        best: Math.min(...t.seasons.map((s) => s.rank)),
+      })),
+    [summary],
+  );
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return teams;
@@ -13,6 +22,9 @@ export default function Teams() {
       (t) => t.school.toLowerCase().includes(q) || (t.teamName ?? '').toLowerCase().includes(q),
     );
   }, [teams, query]);
+
+  if (loading) return <Empty title="Loading teams…" />;
+  if (error) return <Empty title="Could not load team data.">{error}</Empty>;
 
   return (
     <div className="space-y-5">
@@ -49,7 +61,7 @@ export default function Teams() {
                     <Link to={`/team/${t.schoolId}`} className="font-medium hover:text-accent">{t.school}</Link>
                   </td>
                   <td className="td text-ink-400">{t.teamName ?? '—'}</td>
-                  <td className="td nums text-right text-ink-400">{t.seasons}</td>
+                  <td className="td nums text-right text-ink-400">{t.seasonCount}</td>
                   <td className="td text-right"><Medal rank={t.best} /></td>
                 </tr>
               ))}

@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
-import { SEASONS, SEASON_BY_YEAR } from '../lib/data.js';
+import { useSeason, useSummary } from '../lib/data.js';
 import { useLive } from '../lib/live.js';
 import { Badge, Empty, Medal, Points, SectionTitle } from '../components/ui.js';
 
@@ -9,12 +9,21 @@ const MAX_POINTS_PER_EVENT = 1000;
 
 export default function SeasonPage() {
   const { year } = useParams();
-  const season = SEASON_BY_YEAR.get(Number(year));
+  const summary = useSummary();
+  // No year in the URL means the newest season the archive knows about.
+  const latest = summary.data?.seasons[0]?.year;
+  const requested = year ? Number(year) : latest;
+  const seasonQuery = useSeason(requested ?? 0);
   const live = useLive();
 
-  if (!season) return <Empty title={`No data for ${year}.`} />;
+  if (summary.loading || (requested && seasonQuery.loading)) return <Empty title="Loading season…" />;
+  if (summary.error) return <Empty title="Could not load season index.">{summary.error}</Empty>;
 
-  const isCurrent = season.year === SEASONS[0]?.year;
+  const season = seasonQuery.data;
+  const allYears = summary.data?.seasons.map((s) => s.year) ?? [];
+  if (!season) return <Empty title={`No data for ${requested ?? year}.`} />;
+
+  const isCurrent = season.year === latest;
   const raced = season.competitions.length;
   const remaining = Math.max(0, EVENTS_PER_SEASON - raced);
 
@@ -124,13 +133,9 @@ export default function SeasonPage() {
 
       <SectionTitle hint="Jump to another season">Other seasons</SectionTitle>
       <div className="flex flex-wrap gap-1.5">
-        {SEASONS.map((s) => (
-          <Link
-            key={s.year}
-            to={`/season/${s.year}`}
-            className={`tab ${s.year === season.year ? 'tab-active' : ''}`}
-          >
-            {s.year}
+        {allYears.map((y) => (
+          <Link key={y} to={`/season/${y}`} className={`tab ${y === season.year ? 'tab-active' : ''}`}>
+            {y}
           </Link>
         ))}
       </div>

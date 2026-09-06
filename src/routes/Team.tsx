@@ -1,13 +1,21 @@
 import { Link, useParams } from 'react-router-dom';
-import { teamHistory } from '../lib/data.js';
-import award from '/data/schmidt-award.json';
+import { teamFrom, useSummary } from '../lib/data.js';
+import award from '../../data/schmidt-award.json';
 import { Badge, Empty, Medal, Points, SectionTitle } from '../components/ui.js';
 
 const WINNERS = (award as { winners: { year: number; schoolId: string; confidence: string }[] }).winners;
 
 export default function Team() {
   const { schoolId = '' } = useParams();
-  const { school, teamName, rows } = teamHistory(schoolId);
+  const { data: summary, error, loading } = useSummary();
+
+  if (loading) return <Empty title="Loading team…" />;
+  if (error) return <Empty title="Could not load team data.">{error}</Empty>;
+
+  const team = summary ? teamFrom(summary, schoolId) : undefined;
+  const school = team?.school ?? schoolId;
+  const teamName = team?.teamName ?? null;
+  const rows = team?.seasons ?? [];
 
   if (rows.length === 0) {
     return (
@@ -98,9 +106,9 @@ export default function Team() {
                     <td className="td">
                       <div className="flex flex-wrap gap-1.5">
                         {r.results.map((res) => (
-                          <span key={res.competitionId ?? res.competitionName}
+                          <span key={res.name}
                                 className="rounded bg-ink-850 px-2 py-0.5 text-xs text-ink-300">
-                            {res.competitionName.replace('Baja SAE ', '')}
+                            {res.name.replace('Baja SAE ', '')}
                             <span className="nums ml-1.5 text-ink-500">
                               {res.points === null ? '—' : res.points.toFixed(0)}
                             </span>

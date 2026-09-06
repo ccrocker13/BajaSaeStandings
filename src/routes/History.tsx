@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { SEASONS } from '../lib/data.js';
-import award from '/data/schmidt-award.json';
-import { Badge, SectionTitle } from '../components/ui.js';
+import { useSummary } from '../lib/data.js';
+import award from '../../data/schmidt-award.json';
+import { Badge, Empty, SectionTitle } from '../components/ui.js';
 
 interface Winner {
   year: number;
@@ -16,10 +16,13 @@ const WINNERS: Winner[] = (award as { winners: Winner[] }).winners;
 const UNKNOWN: number[] = (award as { unknownYears: number[] }).unknownYears;
 
 export default function History() {
-  const byYear = new Map(WINNERS.map((w) => [w.year, w]));
-  const computedByYear = new Map(SEASONS.map((s) => [s.year, s.standings[0]]));
+  const { data: summary, error, loading } = useSummary();
 
-  const years = [...new Set([...WINNERS.map((w) => w.year), ...UNKNOWN, ...SEASONS.map((s) => s.year)])]
+  const byYear = new Map(WINNERS.map((w) => [w.year, w]));
+  const seasons = summary?.seasons ?? [];
+  const computedByYear = new Map(seasons.map((s) => [s.year, s.champion]));
+
+  const years = [...new Set([...WINNERS.map((w) => w.year), ...UNKNOWN, ...seasons.map((s) => s.year)])]
     .sort((a, b) => b - a);
 
   // Count only wins we are confident in, so the tally is not built on guesses.
@@ -31,6 +34,9 @@ export default function History() {
     tally.set(w.schoolId, t);
   }
   const leaderboard = [...tally.values()].sort((a, b) => b.n - a.n);
+
+  if (loading) return <Empty title="Loading history…" />;
+  if (error) return <Empty title="Could not load season index.">{error}</Empty>;
 
   return (
     <div className="space-y-8">
@@ -74,7 +80,7 @@ export default function History() {
                 {years.map((year) => {
                   const w = byYear.get(year);
                   const computed = computedByYear.get(year);
-                  const season = SEASONS.find((s) => s.year === year);
+                  const season = seasons.find((s) => s.year === year);
                   // Flag rather than hide a disagreement between the reported
                   // winner and what the archive actually adds up to.
                   const disagrees =

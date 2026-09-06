@@ -1,0 +1,53 @@
+# Builds the site and publishes it to GitHub Pages.
+#
+# Requires Pages to be enabled once, with "Source: GitHub Actions"
+# (Settings -> Pages). Until then this job will fail at the deploy step with a
+# permissions error; nothing else is needed.
+name: Deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never cancel a deploy in flight; let it finish and queue the next one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+      - run: pnpm run build
+        env:
+          # Empty until the Worker is deployed; the site degrades to history
+          # only and says so on the Live tab rather than breaking.
+          VITE_WORKER_URL: ${{ vars.VITE_WORKER_URL }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

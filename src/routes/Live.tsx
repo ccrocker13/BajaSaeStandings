@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useLive, WORKER_CONFIGURED, type LiveRow } from '../lib/live.js';
+import { useLive, LIVE_CONFIGURED, type LiveRow } from '../lib/live.js';
 import { Badge, Empty, Medal, Points, SectionTitle } from '../components/ui.js';
 
 const FOLLOW_KEY = 'baja.followedTeams';
@@ -59,7 +59,7 @@ function flagTone(flag: string | null | undefined) {
 }
 
 export default function Live() {
-  const { data, error, updatedAt, loading } = useLive();
+  const { data, error, updatedAt, loading, source } = useLive();
   const [tab, setTab] = useState<string>('OVR');
   const { followed, toggle } = useFollowed();
 
@@ -84,7 +84,7 @@ export default function Live() {
   const events = data?.events ?? [];
   const active = useMemo(() => events.find((e) => e.code === tab), [events, tab]);
 
-  if (!WORKER_CONFIGURED) {
+  if (!LIVE_CONFIGURED) {
     return (
       <Empty title="Live feed not connected yet">
         <p>
@@ -127,6 +127,9 @@ export default function Live() {
         <div className="flex flex-wrap items-center gap-2">
           {data.endurance?.raceFlag && (
             <Badge tone={flagTone(data.endurance.raceFlag)}>{data.endurance.raceFlag} flag</Badge>
+          )}
+          {source === 'fallback' && (
+            <Badge tone="amber" >backup feed · slower</Badge>
           )}
           <Freshness updatedAt={updatedAt} error={error} />
         </div>

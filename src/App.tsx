@@ -4,11 +4,10 @@ import SeasonPage from './routes/Season.js';
 import History from './routes/History.js';
 import Teams from './routes/Teams.js';
 import Team from './routes/Team.js';
-import { LATEST_SEASON } from './lib/data.js';
 
 const NAV = [
   { to: '/live', label: 'Live' },
-  { to: `/season/${LATEST_SEASON?.year ?? 2026}`, label: 'Season' },
+  { to: '/season', label: 'Season' },
   { to: '/history', label: 'History' },
   { to: '/teams', label: 'Teams' },
 ];
@@ -40,6 +39,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/live" replace />} />
           <Route path="/live" element={<Live />} />
+          <Route path="/season" element={<SeasonPage />} />
           <Route path="/season/:year" element={<SeasonPage />} />
           <Route path="/history" element={<History />} />
           <Route path="/teams" element={<Teams />} />

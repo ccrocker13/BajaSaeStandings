@@ -1,66 +1,88 @@
 /**
- * Season data, baked in at build time.
+ * Season data access.
  *
- * The archive is scraped by a scheduled workflow into data/seasons/*.json and
- * committed, so the published site needs no runtime access to bajasae.net for
- * anything historical. Only the in-progress competition is fetched live.
+ * Fetched rather than bundled. Inlining every season put a megabyte of JSON
+ * into the JavaScript, which is the wrong trade for people reading this at a
+ * track on poor signal — as separate files these are cacheable, compressible,
+ * and only the season actually being viewed is downloaded.
  */
+import { useEffect, useState } from 'react';
 import type { Season } from '@baja/parser';
 
-const modules = import.meta.glob<{ default: Season }>('/data/seasons/*.json', { eager: true });
-
-export const SEASONS: Season[] = Object.values(modules)
-  .map((m) => m.default)
-  .sort((a, b) => b.year - a.year);
-
-export const SEASON_BY_YEAR = new Map(SEASONS.map((s) => [s.year, s]));
-
-export const LATEST_SEASON = SEASONS[0];
-
-export interface TeamHistoryRow {
+export interface TeamSeason {
   year: number;
   rank: number;
   totalPoints: number;
   eventsAttended: number;
-  results: Season['standings'][number]['results'];
+  results: { name: string; points: number | null }[];
 }
 
-/** Every season a school has a recorded result in, newest first. */
-export function teamHistory(schoolId: string): { school: string; teamName: string | null; rows: TeamHistoryRow[] } {
-  const rows: TeamHistoryRow[] = [];
-  let school = schoolId;
-  let teamName: string | null = null;
-
-  for (const season of SEASONS) {
-    const standing = season.standings.find((s) => s.schoolId === schoolId);
-    if (!standing) continue;
-    school = standing.school;
-    teamName = standing.teamName ?? teamName;
-    rows.push({
-      year: season.year,
-      rank: standing.rank,
-      totalPoints: standing.totalPoints,
-      eventsAttended: standing.eventsAttended,
-      results: standing.results,
-    });
-  }
-  return { school, teamName, rows };
+export interface SummaryTeam {
+  schoolId: string;
+  school: string;
+  teamName: string | null;
+  seasons: TeamSeason[];
 }
 
-/** All schools that appear in any season, for the team index and search. */
-export function allTeams(): { schoolId: string; school: string; teamName: string | null; seasons: number; best: number }[] {
-  const map = new Map<string, { schoolId: string; school: string; teamName: string | null; seasons: number; best: number }>();
-  for (const season of SEASONS) {
-    for (const s of season.standings) {
-      const existing = map.get(s.schoolId);
-      if (existing) {
-        existing.seasons += 1;
-        existing.best = Math.min(existing.best, s.rank);
-        existing.teamName = existing.teamName ?? s.teamName;
-      } else {
-        map.set(s.schoolId, { schoolId: s.schoolId, school: s.school, teamName: s.teamName, seasons: 1, best: s.rank });
-      }
-    }
-  }
-  return [...map.values()].sort((a, b) => a.school.localeCompare(b.school));
+export interface Summary {
+  generatedAt: string;
+  seasons: {
+    year: number;
+    competitions: { id: string | null; name: string }[];
+    teamCount: number;
+    champion: { schoolId: string; school: string; teamName: string | null; totalPoints: number } | null;
+  }[];
+  teams: SummaryTeam[];
+}
+
+const base = import.meta.env.BASE_URL;
+
+/** Module-level caches so navigating between pages refetches nothing. */
+const cache = new Map<string, Promise<unknown>>();
+
+function loadJson<T>(path: string): Promise<T> {
+  const existing = cache.get(path);
+  if (existing) return existing as Promise<T>;
+  const promise = fetch(`${base}${path}`).then((res) => {
+    if (!res.ok) throw new Error(`could not load ${path} (${res.status})`);
+    return res.json() as Promise<T>;
+  });
+  // Do not cache a rejection: a failed load should be retried on remount
+  // rather than poisoning the page for the rest of the session.
+  promise.catch(() => cache.delete(path));
+  cache.set(path, promise);
+  return promise;
+}
+
+export const loadSummary = () => loadJson<Summary>('data/summary.json');
+export const loadSeason = (year: number) => loadJson<Season>(`data/seasons/${year}.json`);
+
+export interface AsyncState<T> {
+  data: T | null;
+  error: string | null;
+  loading: boolean;
+}
+
+function useAsync<T>(factory: () => Promise<T>, deps: unknown[]): AsyncState<T> {
+  const [state, setState] = useState<AsyncState<T>>({ data: null, error: null, loading: true });
+  useEffect(() => {
+    let cancelled = false;
+    setState({ data: null, error: null, loading: true });
+    factory().then(
+      (data) => !cancelled && setState({ data, error: null, loading: false }),
+      (err: Error) => !cancelled && setState({ data: null, error: err.message, loading: false }),
+    );
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, deps);
+  return state;
+}
+
+export const useSummary = () => useAsync(loadSummary, []);
+export const useSeason = (year: number) => useAsync(() => loadSeason(year), [year]);
+
+export function teamFrom(summary: Summary, schoolId: string): SummaryTeam | undefined {
+  return summary.teams.find((t) => t.schoolId === schoolId);
 }
