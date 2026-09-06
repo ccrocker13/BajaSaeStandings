@@ -3,7 +3,7 @@ import { teamFrom, useSummary } from '../lib/data.js';
 import award from '../../data/schmidt-award.json';
 import { Badge, Empty, Medal, Points, SectionTitle } from '../components/ui.js';
 
-const WINNERS = (award as { winners: { year: number; schoolId: string; confidence: string }[] }).winners;
+const WINNERS = (award as { winners: { year: number; schoolId: string | null; confidence: string }[] }).winners;
 
 export default function Team() {
   const { schoolId = '' } = useParams();

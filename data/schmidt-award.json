@@ -20,26 +20,223 @@
     "Corrections are welcome: open an issue or a PR against this file."
   ],
   "winners": [
-    { "year": 2001, "school": "Rochester Institute of Technology", "schoolId": "rit", "confidence": "confirmed", "source": "https://www.rit.edu/news/baja-team-wins-2018-north-american-series-championship", "note": "First year the award was given." },
-    { "year": 2002, "school": "Rochester Institute of Technology", "schoolId": "rit", "confidence": "confirmed", "source": "https://www.rit.edu/news/baja-team-wins-2018-north-american-series-championship" },
-    { "year": 2005, "school": "Ecole de Technologie Superieure", "schoolId": "ets", "confidence": "unverified", "source": "https://bajaets.com/fr/histoire" },
-    { "year": 2009, "school": "Michigan Technological University", "schoolId": "michigan-tech", "confidence": "confirmed", "source": "https://blogs.mtu.edu/engineering/2009/06/13/baja-team-wins-award-for-most-combined-points-in-all-three-baja-sae-events/", "note": "First in school history." },
-    { "year": 2010, "school": "Ecole de Technologie Superieure", "schoolId": "ets", "confidence": "unverified", "source": "https://bajaets.com/fr/histoire" },
-    { "year": 2012, "school": "Oregon State University", "schoolId": "oregon-state", "confidence": "unverified", "source": "https://beaverracing.org/competition-results" },
-    { "year": 2013, "school": "University of Michigan", "schoolId": "michigan", "confidence": "unverified", "source": "https://www.michiganbajaracing.com/history" },
-    { "year": 2014, "school": "Cornell University", "schoolId": "cornell", "confidence": "confirmed", "source": "https://baja.mae.cornell.edu/timeline", "note": "First ever for Cornell." },
-    { "year": 2015, "school": "University of Michigan", "schoolId": "michigan", "confidence": "unverified", "source": "https://www.michiganbajaracing.com/history" },
-    { "year": 2016, "school": "University of Michigan", "schoolId": "michigan", "confidence": "unverified", "source": "https://www.michiganbajaracing.com/history" },
-    { "year": 2017, "school": "University of Michigan", "schoolId": "michigan", "confidence": "confirmed", "source": "https://eecs.engin.umich.edu/stories/baja-racing-team-first-to-three-peat-national-championship", "note": "First ever three-peat, 2015-17." },
-    { "year": 2018, "school": "Rochester Institute of Technology", "schoolId": "rit", "confidence": "confirmed", "source": "https://www.rit.edu/news/baja-team-wins-2018-north-american-series-championship", "note": "RIT's third win." },
-    { "year": 2019, "school": "University of Michigan", "schoolId": "michigan", "confidence": "confirmed", "source": "https://ece.engin.umich.edu/stories/baja-racing-breaks-records-while-leaving-the-competition-in-the-dust", "note": "Broke the all-time cumulative-score record, scoring over 900 at all three events." },
-    { "year": 2020, "school": "University of Michigan", "schoolId": "michigan", "confidence": "unverified", "source": "https://www.michiganbajaracing.com/history", "note": "The 2020 series did not run normally; listed as a virtual result." },
-    { "year": 2021, "school": "University of Michigan", "schoolId": "michigan", "confidence": "unverified", "source": "https://www.michiganbajaracing.com/history", "note": "COVID-disrupted season of one virtual and two validation events." },
-    { "year": 2022, "school": "University of Michigan", "schoolId": "michigan", "confidence": "confirmed", "source": "https://news.engin.umich.edu/2022/11/video-baja-racing-focusing-on-inclusion-and-continued-success/" },
-    { "year": 2023, "school": "University of Michigan", "schoolId": "michigan", "confidence": "unverified", "source": "https://www.michiganbajaracing.com/history", "note": "Reported as a fourth consecutive win." },
-    { "year": 2024, "school": "Ecole de Technologie Superieure", "schoolId": "ets", "confidence": "unverified", "source": "https://www.etsmtl.ca/actualites/une-annee-2024-fructueuse-pour-les-clubs-etudiants-de-lets", "note": "First Canadian winner since 2010." },
-    { "year": 2025, "school": "Cornell University", "schoolId": "cornell", "confidence": "confirmed", "source": "https://news.cornell.edu/stories/2025/11/students-baja-racing-team-roars-series-victories", "note": "Won all three events outright." }
+    {
+      "year": 2001,
+      "school": "Rochester Institute of Technology",
+      "schoolId": "rit",
+      "confidence": "confirmed",
+      "source": "https://www.rit.edu/news/baja-team-wins-2018-north-american-series-championship",
+      "note": "First year the award was given."
+    },
+    {
+      "year": 2002,
+      "school": "Rochester Institute of Technology",
+      "schoolId": "rit",
+      "confidence": "confirmed",
+      "source": "https://www.rit.edu/news/baja-team-wins-2018-north-american-series-championship"
+    },
+    {
+      "year": 2003,
+      "school": null,
+      "schoolId": null,
+      "confidence": "unknown",
+      "source": "https://www.rit.edu/news/rit-mini-baja-team-wraps-spring-competition",
+      "note": "Winner not established; the runner-up is sourced.",
+      "second": {
+        "school": "Rochester Institute of Technology",
+        "schoolId": "rit",
+        "confidence": "confirmed",
+        "source": "https://www.rit.edu/news/rit-mini-baja-team-wraps-spring-competition",
+        "note": "Contemporaneous RIT report, June 2003. The winner that season is still unknown."
+      }
+    },
+    {
+      "year": 2005,
+      "school": "Ecole de Technologie Superieure",
+      "schoolId": "ets",
+      "confidence": "unverified",
+      "source": "https://bajaets.com/fr/histoire"
+    },
+    {
+      "year": 2009,
+      "school": "Michigan Technological University",
+      "schoolId": "michigan-tech",
+      "confidence": "confirmed",
+      "source": "https://blogs.mtu.edu/engineering/2009/06/13/baja-team-wins-award-for-most-combined-points-in-all-three-baja-sae-events/",
+      "note": "First in school history."
+    },
+    {
+      "year": 2010,
+      "school": "Ecole de Technologie Superieure",
+      "schoolId": "ets",
+      "confidence": "unverified",
+      "source": "https://bajaets.com/fr/histoire"
+    },
+    {
+      "year": 2012,
+      "school": "Oregon State University",
+      "schoolId": "oregon-state",
+      "confidence": "unverified",
+      "source": "https://beaverracing.org/competition-results",
+      "second": {
+        "school": "Ecole de Technologie Superieure",
+        "schoolId": "ets",
+        "confidence": "unverified",
+        "source": "https://bajaets.com/fr/histoire"
+      }
+    },
+    {
+      "year": 2013,
+      "school": "University of Michigan",
+      "schoolId": "michigan",
+      "confidence": "unverified",
+      "source": "https://www.michiganbajaracing.com/history"
+    },
+    {
+      "year": 2014,
+      "school": "Cornell University",
+      "schoolId": "cornell",
+      "confidence": "confirmed",
+      "source": "https://baja.mae.cornell.edu/timeline",
+      "note": "First ever for Cornell.",
+      "second": {
+        "school": "University of Michigan",
+        "schoolId": "michigan",
+        "confidence": "confirmed",
+        "source": "http://articles.sae.org/13392/"
+      },
+      "third": {
+        "school": "Rochester Institute of Technology",
+        "schoolId": "rit",
+        "confidence": "confirmed",
+        "source": "https://www.rit.edu/news/rit-baja-racing-takes-top-placements"
+      }
+    },
+    {
+      "year": 2015,
+      "school": "University of Michigan",
+      "schoolId": "michigan",
+      "confidence": "unverified",
+      "source": "https://www.michiganbajaracing.com/history",
+      "third": {
+        "school": "Oregon State University",
+        "schoolId": "oregon-state",
+        "confidence": "unverified",
+        "source": "https://beaverracing.org/competition-results"
+      }
+    },
+    {
+      "year": 2016,
+      "school": "University of Michigan",
+      "schoolId": "michigan",
+      "confidence": "confirmed",
+      "source": "https://ece.engin.umich.edu/stories/baja-wins-big",
+      "note": "Second consecutive overall win."
+    },
+    {
+      "year": 2017,
+      "school": "University of Michigan",
+      "schoolId": "michigan",
+      "confidence": "confirmed",
+      "source": "https://eecs.engin.umich.edu/stories/baja-racing-team-first-to-three-peat-national-championship",
+      "note": "First ever three-peat, 2015-17."
+    },
+    {
+      "year": 2018,
+      "school": "Rochester Institute of Technology",
+      "schoolId": "rit",
+      "confidence": "confirmed",
+      "source": "https://www.rit.edu/news/baja-team-wins-2018-north-american-series-championship",
+      "note": "RIT's third win.",
+      "third": {
+        "school": "University of Michigan",
+        "schoolId": "michigan",
+        "confidence": "unverified",
+        "source": "https://www.michiganbajaracing.com/history"
+      }
+    },
+    {
+      "year": 2019,
+      "school": "University of Michigan",
+      "schoolId": "michigan",
+      "confidence": "confirmed",
+      "source": "https://ece.engin.umich.edu/stories/baja-racing-breaks-records-while-leaving-the-competition-in-the-dust",
+      "note": "Broke the all-time cumulative-score record, scoring over 900 at all three events."
+    },
+    {
+      "year": 2020,
+      "school": "University of Michigan",
+      "schoolId": "michigan",
+      "confidence": "unverified",
+      "source": "https://www.michiganbajaracing.com/history",
+      "note": "The 2020 series did not run normally; listed as a virtual result."
+    },
+    {
+      "year": 2021,
+      "school": "University of Michigan",
+      "schoolId": "michigan",
+      "confidence": "unverified",
+      "source": "https://www.michiganbajaracing.com/history",
+      "note": "COVID-disrupted season of one virtual and two validation events."
+    },
+    {
+      "year": 2022,
+      "school": "University of Michigan",
+      "schoolId": "michigan",
+      "confidence": "confirmed",
+      "source": "https://news.engin.umich.edu/2022/11/video-baja-racing-focusing-on-inclusion-and-continued-success/"
+    },
+    {
+      "year": 2023,
+      "school": "University of Michigan",
+      "schoolId": "michigan",
+      "confidence": "unverified",
+      "source": "https://www.michiganbajaracing.com/history",
+      "note": "Reported as a fourth consecutive win."
+    },
+    {
+      "year": 2024,
+      "school": "Ecole de Technologie Superieure",
+      "schoolId": "ets",
+      "confidence": "unverified",
+      "source": "https://www.etsmtl.ca/actualites/une-annee-2024-fructueuse-pour-les-clubs-etudiants-de-lets",
+      "note": "First Canadian winner since 2010.",
+      "second": {
+        "school": "Cornell University",
+        "schoolId": "cornell",
+        "confidence": "confirmed",
+        "source": "https://crowdfunding.cornell.edu/project/44465"
+      }
+    },
+    {
+      "year": 2025,
+      "school": "Cornell University",
+      "schoolId": "cornell",
+      "confidence": "confirmed",
+      "source": "https://news.cornell.edu/stories/2025/11/students-baja-racing-team-roars-series-victories",
+      "note": "Won all three events outright."
+    }
   ],
-  "unknownYears": [2003, 2004, 2006, 2007, 2008, 2011],
-  "unknownYearsNote": "No third-party source found for these seasons. SAE's own award pages would settle them."
+  "unknownYears": [
+    2003,
+    2004,
+    2006,
+    2007,
+    2008,
+    2011
+  ],
+  "unknownYearsNote": "No third-party source found for these seasons. SAE's own award pages would settle them.",
+  "researchNotes": {
+    "unknownYearsInvestigated": "2003, 2004, 2006, 2007, 2008 and 2011 were searched extensively across university news, team history pages and SAE articles without finding a winner. They are deliberately left blank rather than inferred.",
+    "ruledOut": {
+      "rit": "Won exactly three times \u2014 2001, 2002, 2018 \u2014 per two RIT sources, so RIT did not win any of the unknown years.",
+      "cornell": "Iron Team only in 2014 and 2025; the team was founded in 2003 and first competed in 2005.",
+      "michigan-tech": "The 2009 win was reported as the first in school history, so Michigan Tech did not win 2003-2008."
+    },
+    "bestRemainingLeads": [
+      "bajaets.com/fr/histoire appears to list ETS's Mike Schmidt placings by year, including the 2000s, but could not be read directly and search summaries of it contradicted each other. Verify before using.",
+      "Wayback Machine snapshots of students.sae.org/competitions/bajasae/results/ and of SAE's per-competition award pages for 2003-2011.",
+      "beaverracing.org/competition-results for Oregon State's placings."
+    ]
+  }
 }

@@ -4,6 +4,7 @@ import SeasonPage from './routes/Season.js';
 import History from './routes/History.js';
 import Teams from './routes/Teams.js';
 import Team from './routes/Team.js';
+import { ErrorBoundary } from './components/ErrorBoundary.js';
 
 const NAV = [
   { to: '/live', label: 'Live' },
@@ -36,7 +37,8 @@ export default function App() {
       </header>
 
       <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-6">
-        <Routes>
+        <ErrorBoundary>
+          <Routes>
           <Route path="/" element={<Navigate to="/live" replace />} />
           <Route path="/live" element={<Live />} />
           <Route path="/season" element={<SeasonPage />} />
@@ -45,7 +47,8 @@ export default function App() {
           <Route path="/teams" element={<Teams />} />
           <Route path="/team/:schoolId" element={<Team />} />
           <Route path="*" element={<Navigate to="/live" replace />} />
-        </Routes>
+          </Routes>
+        </ErrorBoundary>
       </main>
 
       <footer className="border-t border-ink-800 px-4 py-6 text-xs leading-relaxed text-ink-500">

@@ -37,7 +37,23 @@ jobs:
           # Empty until the Worker is deployed; the site degrades to history
           # only and says so on the Live tab rather than breaking.
           VITE_WORKER_URL: ${{ vars.VITE_WORKER_URL }}
+      # Never publish a site that does not render. This runs before the
+      # artifact is uploaded, so a blank build cannot reach production.
+      - name: Browser smoke test
+        run: |
+          npx playwright install --with-deps chromium
+          npx vite preview --port 4173 --strictPort &
+          npx wait-on -t 60000 http://localhost:4173/bajasaestandings/
+          pnpm run smoke
+
+      # enablement: true turns GitHub Pages on and sets its source to this
+      # workflow, using the pages:write permission above. Without it, deploy-pages
+      # happily creates a deployment that nothing serves — which is exactly what
+      # happened: the deploy job went green while the published URL returned
+      # "There isn't a GitHub Pages site here".
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

@@ -10,7 +10,9 @@
     "dev": "pnpm run build:summary && vite",
     "build": "pnpm run build:summary && vite build",
     "preview": "vite preview",
-    "build:summary": "tsx tools/build-data/summarize.ts"
+    "build:summary": "tsx tools/build-data/summarize.ts",
+    "smoke": "node tools/smoke/browser-smoke.mjs",
+    "verify:worker": "node tools/verify/worker.mjs"
   },
   "devDependencies": {
     "@types/node": "^22.20.1",
@@ -25,7 +27,8 @@
     "tsx": "^4.23.13",
     "typescript": "^5.7.2",
     "vite": "^6.4.3",
-    "vitest": "^2.1.8"
+    "vitest": "^2.1.8",
+    "wait-on": "^8.0.5"
   },
   "dependencies": {
     "react": "^18.3.1",
