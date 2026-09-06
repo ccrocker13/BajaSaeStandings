@@ -85,10 +85,12 @@ jobs:
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
-          # Fail only when the site genuinely is not serving the built app.
+          # This job reports; it does not fail. A red X on a diagnostic is
+          # indistinguishable from a broken diagnostic, and that ambiguity has
+          # already cost real debugging time here. The verdict above is the
+          # output; deploy.yml is what gates shipping.
           if grep -q '/assets/index-' /tmp/body.html; then
             echo "PROBE OK: the built site is being served."
           else
-            echo "::error::The published URL is not serving the built site (HTTP $code)."
-            exit 1
+            echo "::warning::The published URL is not serving the built site (HTTP $code). See the verdict above."
           fi
