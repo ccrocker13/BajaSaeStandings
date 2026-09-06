@@ -10,6 +10,12 @@
  * simply have fewer contributing results, which is why `eventsAttended` is
  * surfaced alongside the total. A team on two events is not "losing" to a team
  * on three in the same sense, and the UI needs to be able to say so.
+ *
+ * A school may enter more than one car at the same competition, so only its
+ * best-scoring entry counts toward the season. Summing every car instead
+ * inflates multi-car programmes — with that bug the 2017 and 2021 seasons came
+ * out with the wrong winner, each showing four contributing results across a
+ * three-competition season.
  */
 import type { Season, SeasonEventResult, SeasonStanding } from './types.js';
 
@@ -36,8 +42,19 @@ export function buildSeasonStandings(year: number, competitions: CompetitionSumm
   const byTeam = new Map<string, SeasonStanding>();
 
   for (const comp of competitions) {
+    // Collapse multiple cars from one school at this competition down to their
+    // best result before it reaches the season total.
+    const bestPerSchool = new Map<string, CompetitionEntry>();
     for (const entry of comp.entries) {
       if (!entry.schoolId) continue;
+      const existing = bestPerSchool.get(entry.schoolId);
+      const better =
+        !existing ||
+        (entry.overallPoints ?? -Infinity) > (existing.overallPoints ?? -Infinity);
+      if (better) bestPerSchool.set(entry.schoolId, entry);
+    }
+
+    for (const entry of bestPerSchool.values()) {
 
       let standing = byTeam.get(entry.schoolId);
       if (!standing) {
