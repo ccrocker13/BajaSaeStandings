@@ -41,8 +41,6 @@ jobs:
           fi
 
       - name: Fetch the published site
-        env:
-          SITE: https://ccrocker13.github.io/bajasaestandings/
         shell: bash
         run: |
           # GitHub runs step shells as `bash -e`, so errexit is on unless it is
@@ -51,6 +49,14 @@ jobs:
           # to describe a broken site, so no single failing command may end it.
           set +e
           set +o pipefail
+
+          # Built from the repository name, which is what GitHub Pages uses for
+          # a project site and which is case-sensitive. Hardcoding a lowercase
+          # spelling here is what made an earlier probe report a 404 for a site
+          # that was actually being served one capital letter away.
+          OWNER="${GITHUB_REPOSITORY%%/*}"
+          REPO="${GITHUB_REPOSITORY#*/}"
+          SITE="https://${OWNER}.github.io/${REPO}/"
 
           # Written to a file rather than piped into head: head closing the pipe
           # early makes curl exit 23, which also took this step down once.
@@ -89,8 +95,8 @@ jobs:
             echo
             echo '### Referenced assets'
             echo '```'
-            grep -o '/bajasaestandings/[^"]*' /tmp/body.html | sort -u | while read -r path; do
-              a=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "https://ccrocker13.github.io${path}")
+            grep -o "/${REPO}/[^\"]*" /tmp/body.html | sort -u | while read -r path; do
+              a=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "https://${OWNER}.github.io${path}")
               echo "  ${a:-000}  $path"
             done
             echo '```'

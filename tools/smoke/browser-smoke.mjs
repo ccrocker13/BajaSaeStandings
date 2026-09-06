@@ -17,7 +17,7 @@
 import { existsSync } from 'node:fs';
 import { chromium } from 'playwright';
 
-const base = process.env.SMOKE_BASE ?? 'http://localhost:4173/bajasaestandings';
+const base = process.env.SMOKE_BASE ?? 'http://localhost:4173/BajaSaeStandings';
 
 /**
  * Some environments ship a pre-installed Chromium at a fixed path and block the
