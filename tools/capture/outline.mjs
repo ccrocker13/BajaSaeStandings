@@ -21,8 +21,11 @@ say(`BYTES: ${html.length}`);
 
 // robots.txt and other non-HTML land here too; just echo them.
 if (!/<html/i.test(html)) {
-  say('NOT HTML — verbatim content follows:');
-  say(html.slice(0, 4000));
+  // Binary payloads (PDFs) would otherwise dump raw bytes into the digest.
+  // eslint-disable-next-line no-control-regex
+  const binary = /[\x00-\x08\x0e-\x1f]/.test(html.slice(0, 2000));
+  say(binary ? 'BINARY — not summarised' : 'NOT HTML — verbatim content follows:');
+  say(binary ? '' : html.slice(0, 4000));
   console.log(out.join('\n'));
   process.exit(0);
 }

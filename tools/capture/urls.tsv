@@ -29,3 +29,22 @@ my-results-car69-dynamics	https://results.bajasae.net/MyResults.aspx?carnum=69&t
 results-landing	https://www.bajasae.net/res/ResultsLanding.aspx
 res-event-results	https://www.bajasae.net/res/EventResults.aspx
 upcoming-comps	https://www.bajasae.net/cdsweb/reg/Upcomingcomplist.aspx
+#
+# --- Round 2 -------------------------------------------------------------
+# The historical archive is query-string addressable (no __VIEWSTATE replay),
+# so a completed competition can be fetched directly by GUID. These three are
+# the 2026 season; comp-rochester-2019 is an older shape to check for drift.
+comp-oregon-2026	https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d
+comp-newyork-2026	https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0
+comp-ohio-upcoming	https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=0b93e7a4-d6c1-4c9e-99b5-d10d9650bf75
+comp-rochester-2019	https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6
+# The live leaderboards publish raw times and laps but NOT points for dynamic
+# events, so scoring formulas must come from the rulebook. These two pages link
+# to it; the PDF itself gets fetched once we know its URL.
+competition-resources	https://www.bajasae.net/app/CompetitionResources.aspx
+document-resources	https://www.bajasae.net/cdsweb/gen/DocumentResources.aspx
+# Legacy archive — the route to seasons older than 2016.
+legacy-results	http://students.sae.org/competitions/bajasae/results/
+# Live pages found in the site nav that we had not captured.
+black-flags	https://results.bajasae.net/BlackFlags.aspx
+tech-line-assigns	https://results.bajasae.net/TechLineAssigns.aspx

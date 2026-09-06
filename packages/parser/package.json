@@ -1,0 +1,10 @@
+{
+  "name": "@baja/parser",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": {
+    "node-html-parser": "^6.1.13"
+  }
+}
