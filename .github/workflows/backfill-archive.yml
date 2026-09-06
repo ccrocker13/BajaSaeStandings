@@ -1,0 +1,83 @@
+# Rebuilds data/seasons/*.json from the Baja SAE archive.
+#
+# Runs on a GitHub-hosted runner because the development environment has no
+# network access to bajasae.net. Weekly is ample: the archive only changes when
+# a competition finishes or a result is revised (the landing page marks those
+# "Rev 2", "Overall updated", and so on).
+name: Backfill archive
+
+on:
+  workflow_dispatch:
+  # Also runs when the backfill code changes, which is how it is triggered
+  # from a feature branch — workflow_dispatch only reaches the default branch.
+  push:
+    paths:
+      - 'tools/build-data/**'
+      - 'packages/parser/src/**'
+      - '.github/workflows/backfill-archive.yml'
+  schedule:
+    # Mondays 06:00 UTC.
+    - cron: '0 6 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: backfill-archive-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run build:data
+
+      # Validate before publishing. Because a commit pushed from here cannot
+      # trigger CI, this job is the only thing standing between a malformed
+      # scrape and the live site — so it runs the same checks CI would.
+      - name: Verify the scraped data builds and passes tests
+        run: |
+          pnpm test
+          pnpm run build
+
+      - name: Commit data
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A data
+          if git diff --cached --quiet; then
+            echo 'Archive unchanged.'
+            exit 0
+          fi
+          # The generated commits carry the CI-skip marker deliberately.
+          # GitHub does not run workflows for commits pushed with GITHUB_TOKEN
+          # (a recursion guard), so these commits cannot be CI-verified from
+          # here whatever the message says — without the marker they merely
+          # land the pull request in a permanent "action required" state.
+          # Verification therefore happens in this job, above, before the push.
+          git commit -m 'Refresh season data from archive [skip ci]'
+          # The branch can move while this job runs — a push landing mid-capture
+          # would otherwise reject this one as non-fast-forward. Rebase onto
+          # whatever arrived and retry; the commit only touches generated files,
+          # so it rebases cleanly onto unrelated work.
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push rejected, rebasing onto origin/${GITHUB_REF_NAME} (attempt $attempt)"
+            git fetch origin "${GITHUB_REF_NAME}"
+            git rebase --autostash "origin/${GITHUB_REF_NAME}" || {
+              echo "::error::rebase conflict — generated files diverged, needs a human"
+              exit 1
+            }
+          done
+          echo "::error::could not push after 3 attempts"
+          exit 1

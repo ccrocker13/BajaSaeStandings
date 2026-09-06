@@ -1,0 +1,654 @@
+
+
+<!DOCTYPE html>
+<html>
+<head id="Head1"><meta charset="utf-8" /><title>
+	Event Leaderboard
+</title><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/assets/jquery/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <link href="/assets/bootstrap-3-3-4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="/assets/bootstrap-3-3-4/js/bootstrap.min.js" type="text/javascript"></script>
+    <link href="/MainResponsive.css?2023" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <form method="post" action="./Leaderboard.aspx?Event=PRES" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTQ4OTEzNjEwOA8WBh4IQXV0b1BhZ2VoHg9QYWdlSW5kZXhTdGF0aWNmHg9QYWdlQ291bnRTdGF0aWMCARYCZg9kFggCAw9kFgQCAQ8PFgIeBFRleHQFFkJhamEgU0FFIE5ldyBZb3JrIDIwMjZkZAIDD2QWBAIDDxYEHghJbnRlcnZhbAKw6gEeB0VuYWJsZWRoZAIFD2QWAmYPZBYIAgEPEGQPFghmAgECAgIDAgQCBQIGAgcWCBAFFUJ1c2luZXNzIFByZXNlbnRhdGlvbgUkZWM1OTlhNGItYTYyMS00NzY5LTkxMDYtOGY5Mjc5NzgzOWZlZxAFCkNvc3QgRXZlbnQFJGNjZmNhODcyLWNmZjMtNDk3Yy04OTFjLTRhYzdhYjRiYmI2Y2cQBQZEZXNpZ24FJDA4NjIyYTM1LTNmNjctNDM3OS04NzEyLTI4ZTA5YzVmM2M4ZmcQBQxBY2NlbGVyYXRpb24FJGNiYTJhYTU3LTA0MzEtNGRjYi1iMWE4LWY3MTliZTBiM2Y2Y2cQBQpIaWxsIENsaW1iBSRjNjgzZTE3Yy05NDIyLTQxYzctYjU4Ny05OGYwZDA0Y2E5ZjZnEAUPTWFuZXV2ZXJhYmlsaXR5BSRlZGUzMDMwYi1hOGZiLTQ4NWItYTk0Zi05NzA2M2YzMzA3NDhnEAUVU3VzcGVuc2lvbiAmIFRyYWN0aW9uBSQzN2RjZjY4Mi1lZWRlLTQ4MmEtYjA2Mi0yYmM2YWYyOTIyMzBnEAUJRW5kdXJhbmNlBSQyZmI3ZWM0Mi1lYjA4LTQ2YjEtYmJjNi0xZDFkODYxODBiNWFnZGQCBQ8PFgIeB1Zpc2libGVnZBYEAgMPPCsAEQMADxYGHghQYWdlU2l6ZQL0Ax4LXyFEYXRhQm91bmRnHgtfIUl0ZW1Db3VudAJmZAEQFgQCBAIFAgcCCBYEPCsABQEAFgIfBmg8KwAFAQAWAh8GZzwrAAUBABYCHwZoPCsABQEAFgIfBmcWBGZmZmYMFCsAABYCZg9kFtABAgEPZBYKAgEPDxYCHwMFATNkZAICD2QWBAIBDw8WAh8DBR9FY29sZSBkZSBUZWNobm9sb2dpZSBTdXBlcmlldXJlZGQCAw8PFgIfAwUJQmFqYSDDiVRTZGQCAw8PFgIfAwUCT0tkZAIFDw8WAh8DBQU3MC4w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" />
+
+
+<script src="/ScriptResource.axd?d=Y3vj9bmOwMrcbMS62LboZUAFrwoHQjYwubJnAzohghvN8JQEK6v6CNuNFiKbSV-afQPe6lt-soDSgAN-0D0tabMcHO_hD9FQn5OLN5UiGnemobzmB-wmIyvKz6bDrn5zm86fCVbOXgylzmB9TLIsjEXw803yPYSGa4ebb2BB8xU1&amp;t=ffffffffbec1863d" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=snmW4er0ctMos7CQ5wWn2E7oUMPZkZpMMTtLEyv6Vdy5Ey-3R4adn8aN3pghhrK-fRGqm0gA-2r85fqhTbbj7Y0G4_JuUasAj3Z7n-dQn4dQmx2U_X8H1j1URg2XJThoPUlSaXwhnjB0gzOvMq22XaSOZxCADQAZVMw5R079EUE1&amp;t=ffffffffbec1863d" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="7333A271" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAApvWvpw+O2IM/a+DzxTtH6dkaSLe1zl8jffa0fTJa5ni8CJPChBvON4WIt/MnumUpxNaUYnTs9+8wQztSHL3aiJa4fHJoAWrnTBO+2DP04h0cBlPRhYVTJIWKi5StDsFsrQqMwoO/X3g+pOq2UfWRl2dkSvGMd4zuH1uzZiZeQgcTnufEEDX19GIGboULZI77B0r0FP1cq+jz0aNXy4p91rC76nWUkEYvalsFcwYMREcR/H3hcdO5TpKFawCfwRUpE=" />
+    <!-- Header -->
+    <div class="header" style="border: 0px solid green;">
+        <div style="padding-top:10px; padding-bottom:5px; border: 0px solid blue;">
+                <!--<img alt="" class="pull-left" style="padding-top: 20px;" src="/img/logo-sae-red.png" />-->
+                <a href="/"><img alt="" class="img-responsive center-block" src="/img/banner-baja.png?2023" /></a>
+                <!--<img alt="" class="pull-right" style="padding-top: 20px;" src="/img/logo-results-sponsor.png" />-->
+                <div style="font-size: 24px;"><span id="lblEventTitle">Baja SAE New York 2026</span></div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" style="margin-bottom: 5px;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span>MENU</span>
+                </button>
+                <!--<a class="navbar-brand" href="/"><img alt="Brand" src="img/DES-Brand-Img.png"></a> -->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/Leaderboard.aspx">Leaderboards</a></li>
+                <li><a href="/MyResults.aspx">Results by Car</a></li>
+                <!-- <li><a class="btn btn-info" href="/EventWaits.aspx">Event Lines</a></li> -->
+                <li><a href="/EventResults.aspx">Results by Event</a></li>
+                <li><a href="/TechLineAssigns.aspx">Tech Line Num Assignments</a></li>
+                <li><a href="/TechLineNumber.aspx">Current Tech Line Number</a></li>
+                <li><a href="/EnduranceGrid.aspx">Live Endurance Grid</a></li>
+                <li><a href="/BlackFlags.aspx">Endurance Black Flags</a></li>
+                <li><a href="/ProblemReportStatus.aspx">Check Problem Report Status</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+        
+    
+        <div style="background-color: White; padding: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px;"> 
+            
+    <div class="content">
+               
+        <span id="MainContent_ctlTimer" style="display:none;"></span>        
+        <div id="MainContent_pnlUpdate">
+	
+                <h1 class="text-center">Leaderboard</h1>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3 class="spacing-bottom">Event</h3>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <select name="ctl00$MainContent$DropDownListEvents" id="MainContent_DropDownListEvents" class="form-control" style="margin-bottom:5px">
+		<option selected="selected" value="ec599a4b-a621-4769-9106-8f92797839fe">Business Presentation</option>
+		<option value="ccfca872-cff3-497c-891c-4ac7ab4bbb6c">Cost Event</option>
+		<option value="08622a35-3f67-4379-8712-28e09c5f3c8f">Design</option>
+		<option value="cba2aa57-0431-4dcb-b1a8-f719be0b3f6c">Acceleration</option>
+		<option value="c683e17c-9422-41c7-b587-98f0d04ca9f6">Hill Climb</option>
+		<option value="ede3030b-a8fb-485b-a94f-97063f330748">Maneuverability</option>
+		<option value="37dcf682-eede-482a-b062-2bc6af292230">Suspension &amp; Traction</option>
+		<option value="2fb7ec42-eb08-46b1-bbc6-1d1d86180b5a">Endurance</option>
+
+	</select>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <input type="submit" name="ctl00$MainContent$ButtonLookupEvent" value="Show Most Recent Results" id="MainContent_ButtonLookupEvent" class="btn btn-primary" />
+                    </div>
+                </div>
+                
+                <div id="MainContent_PanelStaticResults">
+		
+
+                    <h2 class="spacing-top-bottom"></h2><br />
+
+                    <div class="table-responsive">
+                    <div>
+			<table class="table table-condensed" cellspacing="0" cellpadding="4" id="MainContent_GridViewStaticResults">
+				<tr bgcolor="#999999">
+					<th scope="col"><font color="White"><b>Car No.</b></font></th><th scope="col"><font color="White"><b>School / Team Name</b></font></th><th scope="col"><font color="White"><b>Status</b></font></th><th scope="col"><font color="White"><b>Eval. Score</b></font></th><th scope="col"><font color="White"><b>Final Score</b></font></th>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">3</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_0"><b>Ecole de Technologie Superieure</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_0"><i>Baja ÉTS</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">70.00</font></td><td><font color="#333333">70.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">4</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_1"><b>Case Western Reserve Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_1"><i>CWRU Motorsports</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">70.00</font></td><td><font color="#333333">70.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">5</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_2"><b>Purdue Univ - W Lafayette</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_2"><i>Purdue Baja Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">70.00</font></td><td><font color="#333333">70.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">7</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_3"><b>Rochester Institute of Technology</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_3"><i>RIOT RACING</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">70.00</font></td><td><font color="#333333">70.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">9</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_4"><b>Youngstown State Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_4"><i>Penguin Baja Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">70.00</font></td><td><font color="#333333">70.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">14</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_5"><b>McMaster Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_5"><i>McMaster Baja Racing </i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">70.00</font></td><td><font color="#333333">70.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">16</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_6"><b>The Ohio State University</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_6"><i>Baja Buckeyes</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">70.00</font></td><td><font color="#333333">70.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">26</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_7"><b>Univ of Calif - Los Angeles</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_7"><i>Bruin Racing Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">70.00</font></td><td><font color="#333333">70.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">39</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_8"><b>Oregon State Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_8"><i>Beaver Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">70.00</font></td><td><font color="#333333">70.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">120</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_9"><b>SUNY - Buffalo</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_9"><i>UB Motorsports</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">70.00</font></td><td><font color="#333333">70.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">105</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_10"><b>Univ of Wisconsin - Platteville</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_10"><i>Pioneer Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">64.25</font></td><td><font color="#333333">64.25</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">30</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_11"><b>Tennessee Tech Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_11"><i>Tennesse Tech Baja SAE</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">63.68</font></td><td><font color="#333333">63.68</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">72</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_12"><b>Univ of Tennessee -Chattanooga</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_12"><i>UTC Racing Mocs</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">63.58</font></td><td><font color="#333333">63.58</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">6</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_13"><b>Johns Hopkins Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_13"><i>Blue Jay Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">62.61</font></td><td><font color="#333333">62.61</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">1</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_14"><b>Cornell Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_14"><i>Cornell Baja Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">62.45</font></td><td><font color="#333333">62.45</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">13</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_15"><b>North Carolina State Univ - Raleigh</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_15"><i>Pack Motorsports Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">62.39</font></td><td><font color="#333333">62.39</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">27</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_16"><b>British Columbia Inst of Tech </b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_16"><i>BCIT Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">61.36</font></td><td><font color="#333333">61.36</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">12</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_17"><b>Univ of Nevada - Las Vegas</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_17"><i>Rebel Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">61.15</font></td><td><font color="#333333">61.15</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">31</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_18"><b>Purdue Univ - Northwest</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_18"><i>Purdue NW Baja Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">60.77</font></td><td><font color="#333333">60.77</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">8</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_19"><b>Virginia Tech</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_19"><i>VT Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">59.44</font></td><td><font color="#333333">59.44</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">86</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_20"><b>Binghamton Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_20"><i>Binghamton Motorsports</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">58.98</font></td><td><font color="#333333">58.98</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">36</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_21"><b>IPN - UPIITA</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_21"><i>Ocelot Racing </i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">58.47</font></td><td><font color="#333333">58.47</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">53</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_22"><b>Univ of Cincinnati</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_22"><i>Bearcats Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">58.18</font></td><td><font color="#333333">58.18</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">50</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_23"><b>Western New England University</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_23"><i>WNE Golden Bear Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">58.02</font></td><td><font color="#333333">58.02</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">96</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_24"><b>Bucknell Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_24"><i>Bison Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">58.02</font></td><td><font color="#333333">58.02</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">70</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_25"><b>South Dakota School of Mines & Tech </b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_25"><i>SDSM&T Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">57.75</font></td><td><font color="#333333">57.75</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">29</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_26"><b>Universite de Sherbrooke</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_26"><i>Baja UdeS</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">57.42</font></td><td><font color="#333333">57.42</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">21</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_27"><b>Univ of Central Florida</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_27"><i>Knights Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">56.70</font></td><td><font color="#333333">56.70</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">97</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_28"><b>Cleveland State Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_28"><i>Vikings Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">56.30</font></td><td><font color="#333333">56.30</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">116</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_29"><b>Eastern Michigan Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_29"><i>emu baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">55.68</font></td><td><font color="#333333">55.68</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">20</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_30"><b>Université Laval</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_30"><i>Alérion Baja Ulaval</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">54.50</font></td><td><font color="#333333">54.50</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">95</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_31"><b>Univ of Arizona</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_31"><i>Baja Wildcat Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">54.50</font></td><td><font color="#333333">54.50</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">15</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_32"><b>California Polytechnic State Univ-SLO</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_32"><i>Cal Poly Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">54.49</font></td><td><font color="#333333">54.49</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">10</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_33"><b>Univ of Maryland - Baltimore County</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_33"><i>UMBC Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">54.42</font></td><td><font color="#333333">54.42</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">49</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_34"><b>Western University</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_34"><i>Western Baja Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">54.05</font></td><td><font color="#333333">54.05</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">28</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_35"><b>Univ of Rochester</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_35"><i>Yellowjacket Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">53.84</font></td><td><font color="#333333">53.84</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">25</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_36"><b>Michigan State University</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_36"><i>Michigan State University Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">53.66</font></td><td><font color="#333333">53.66</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">2</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_37"><b>Univ of Michigan - Ann Arbor</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_37"><i>Michigan Baja Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">53.01</font></td><td><font color="#333333">53.01</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">22</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_38"><b>Univ of Illinois - Urbana Champaign</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_38"><i>Off-Road Illini</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">52.97</font></td><td><font color="#333333">52.97</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">33</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_39"><b>Univ of Wisconsin - Madison</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_39"><i>Badger Racing </i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">52.76</font></td><td><font color="#333333">52.76</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">57</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_40"><b>McGill Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_40"><i>McGill Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">52.75</font></td><td><font color="#333333">52.75</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">34</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_41"><b>Queen's Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_41"><i>Queen's Baja </i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">52.52</font></td><td><font color="#333333">52.52</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">114</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_42"><b>Univ of Iowa</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_42"><i>Iowa Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">52.48</font></td><td><font color="#333333">52.48</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">100</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_43"><b>Clarkson University</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_43"><i>Golden Knights Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">51.72</font></td><td><font color="#333333">51.72</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">40</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_44"><b>Georgia Southern Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_44"><i>Eagle Motorsports</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">51.35</font></td><td><font color="#333333">51.35</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">37</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_45"><b>Universidade Federal De Minas Gerais</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_45"><i>Baja UFMG</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">50.90</font></td><td><font color="#333333">50.90</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">41</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_46"><b>Univ of Missouri - Kansas City</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_46"><i>Roo Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">50.58</font></td><td><font color="#333333">50.58</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">75</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_47"><b>Union College</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_47"><i>Union College BAJA Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">49.83</font></td><td><font color="#333333">49.83</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">54</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_48"><b>Univ of Calgary</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_48"><i>UCalgary Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">49.52</font></td><td><font color="#333333">49.52</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">87</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_49"><b>College of New Jersey</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_49"><i>TCNJ Motorsports</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">49.19</font></td><td><font color="#333333">49.19</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">210</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_50"><b>Univ of Guelph</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_50"><i>Gryhon AgRacers</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">48.87</font></td><td><font color="#333333">48.87</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">202</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_51"><b>Univ of Windsor</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_51"><i>Lancer Motorsports</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">48.58</font></td><td><font color="#333333">48.58</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">58</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_52"><b>Rowan Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_52"><i>Rowan Motorsports</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">46.96</font></td><td><font color="#333333">46.96</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">208</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_53"><b>Fairfield Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_53"><i>Fairfield Off Road Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">46.10</font></td><td><font color="#333333">46.10</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">122</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_54"><b>Manhattan College</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_54"><i>Jasper Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">41.30</font></td><td><font color="#333333">41.30</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">11</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_55"><b>Georgia Institute of Technology</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_55"><i>GT Off Road</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">19</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_56"><b>Pennsylvania College of Technology</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_56"><i>PCT Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">43</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_57"><b>North Carolina A & T State Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_57"><i>Aggie Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">44</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_58"><b>Univ of Akron</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_58"><i>Zips Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">52</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_59"><b>New Jersey Institute of Technology</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_59"><i>Highlander racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">56</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_60"><b>Univ of Manitoba</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_60"><i>Red Lion Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">66</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_61"><b>Oklahoma State Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_61"><i>Cowboy Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">80</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_62"><b>Clemson Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_62"><i>Tiger Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">89</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_63"><b>Stevens Institute of Technology</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_63"><i>Stevens Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">99</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_64"><b>SUNY - Stony Brook</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_64"><i>Stony Brook Motorsports</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">101</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_65"><b>California State Poly Univ - Pomona</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_65"><i>Bronco Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">123</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_66"><b>New York University</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_66"><i>NYU Motorsports</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">129</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_67"><b>Shippensburg University</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_67"><i>SHIP BAJA</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">131</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_68"><b>St Clair County Community College</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_68"><i>SC4 Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">139</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_69"><b>Univ of Waterloo</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_69"><i>University of Waterloo Baja SAE</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">140</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_70"><b>University of Mount Union</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_70"><i>Raider Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">151</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_71"><b>West Virginia Univ Inst of Tech</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_71"><i>Golden Bear Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">157</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_72"><b>Univ of West Florida</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_72"><i>Argo Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">177</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_73"><b>Stephen F. Austin State University</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_73"><i>SFASU</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">197</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_74"><b>Montana Tech</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_74"><i>Mud Diggers</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">214</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_75"><b>University of Massachusetts - Dartmouth</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_75"><i>Corsair Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">15.00</font></td><td><font color="#333333">15.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">18</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_76"><b>Northeastern Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_76"><i>Northeastern Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">32</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_77"><b>Ohio Northern Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_77"><i>Polar Bear Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">47</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_78"><b>Grove City College</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_78"><i>Grove City Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">48</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_79"><b>Univ of Maryland - College Park</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_79"><i>Terps Racing Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">62</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_80"><b>Liberty Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_80"><i>Liberty Univ</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">82</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_81"><b>Kettering Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_81"><i>Kettering Baja </i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">102</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_82"><b>LeTourneau Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_82"><i>Letourneau Renegade Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">106</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_83"><b>Lawrence Technological Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_83"><i>Lawrence Technological University Baja SAE</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">108</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_84"><b>California State Univ - Chico</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_84"><i>Wildcat racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">113</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_85"><b>Embry-Riddle Aero Univ - Daytona Beach</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_85"><i>ERAU Women's Baja SAE</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">124</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_86"><b>Lehigh Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_86"><i>Mountain Hawk Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">154</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_87"><b>Lipscomb Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_87"><i>Bison Motorsports</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">156</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_88"><b>Central Michigan Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_88"><i>Chippewa Performance</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">162</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_89"><b>Davidson College</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_89"><i>Wildcat Motorsports</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">194</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_90"><b>Alfred State College</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_90"><i>A-State Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">200</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_91"><b>Wentworth Inst of Tech </b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_91"><i>Leopard Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">201</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_92"><b>Old Dominion Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_92"><i>Whiskey Throttle Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">212</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_93"><b>Villanova Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_93"><i>NovaBaja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">215</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_94"><b>Western Michigan Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_94"><i>Bronco Baja Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">230</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_95"><b>Univ of Ottawa</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_95"><i>Rough Riders Racing</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">10.00</font></td><td><font color="#333333">10.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">35</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_96"><b>SUNY- Farmingdale</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_96"><i>RAM Motorsports</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">5.00</font></td><td><font color="#333333">5.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">92</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_97"><b>Montana State Univ - Bozeman</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_97"><i>Bobcat Motorsports</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">5.00</font></td><td><font color="#333333">5.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">144</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_98"><b>Univ of New Hampshire</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_98"><i>UNH Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">5.00</font></td><td><font color="#333333">5.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">193</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_99"><b>Northern Kentucky Univ</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_99"><i>Norse Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">5.00</font></td><td><font color="#333333">5.00</font></td>
+				</tr><tr bgcolor="#EFF3FB">
+					<td><font color="#333333">211</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_100"><b>Ecole Nationale D'Aerotechnique</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_100"><i>Baja ENA</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">5.00</font></td><td><font color="#333333">5.00</font></td>
+				</tr><tr bgcolor="White">
+					<td><font color="#333333">91</font></td><td><font color="#333333">
+                                <span id="MainContent_GridViewStaticResults_Label1_101"><b>Cincinnati State Technical Comm College</b></span>
+                                <span id="MainContent_GridViewStaticResults_Label2_101"><i>Cincy Baja</i></span>
+                            </font></td><td><font color="#333333">OK</font></td><td><font color="#333333">0.00</font></td><td><font color="#333333">0.00</font></td>
+				</tr>
+			</table>
+		</div>
+                    </div>
+
+                    
+                
+	</div>
+                
+                
+            
+</div> 
+    </div>
+
+        </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":false,"interval":30000,"uniqueID":"ctl00$MainContent$ctlTimer"}, null, null, $get("MainContent_ctlTimer"));
+});
+//]]>
+</script>
+</form>
+
+    <div id="footer">
+        <div class="SiteLocation">
+            <span id="lblSiteLocation">Connected to Internet site http://results.bajasae.net</span>
+        </div>
+        <div class="SiteLocationUpdate">
+            Last Data Update: <span id="lblSiteLocationUpdate">6/15/2026 4:41:00 PM</span>
+        </div>
+        <div class="Version">
+            BajaSAE Mobile build <span id="lblVersion">2.2.25.5040</span>
+        </div>
+    </div>
+</body>
+</html>

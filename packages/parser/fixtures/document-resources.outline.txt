@@ -1,0 +1,39 @@
+SOURCE: https://www.bajasae.net/cdsweb/gen/DocumentResources.aspx
+BYTES: 74415
+TITLE: Baja SAE
+META REFRESH: none
+__VIEWSTATE: present (16000 chars)
+__EVENTTARGET: absent
+__doPostBack refs: 0
+FORM: id=aspnetForm method=post action=./DocumentResources.aspx
+
+TABLES: 1
+
+--- table[0] id=document-resources class=tree-table table table-responsive table-hover rows=1
+    col counts (first 20 rows): 3
+    row[0]: ["Publisher / Title","Version","Actions"]
+
+ELEMENT IDS (15): ctl00_Head1, dateTimePopup, header, logo, ctl00_aHome, header-sae, aspnetForm, navbar, content-wrapper, content, dismissableAlert, errorDetails, AlertCloseButon, document-resources, footer
+
+CLASSES (31): hidden-xs, pull-right, navbar-toggle, btn, btn-default, btn-lg, sr-only, icon-bar, navbar, navbar-collapse, collapse, nav, navbar-nav, dropdown, hidden, dropdown-toggle, caret, dropdown-menu, container, min-height, alert, alert-danger, btn-danger, btn-secondary, row, col-xs-12, tree-table, table, table-responsive, table-hover, sae-privacy-policy
+
+LINKS (15):
+   -> /
+   -> http://www.sae.org/
+  Home -> /
+  Jump To Activity -> #
+  News -> /cdsweb/app/news.aspx
+  Competitions & Workshops -> /cdsweb/reg/UpcomingCompList.aspx
+  Deadlines -> /Deadlines.aspx?seriesCode=BAJA
+  Competition Resources -> /app/CompetitionResources.aspx
+  Series Resources -> /cdsweb/gen/DocumentResources.aspx
+  Results -> /res/ResultsLanding.aspx
+  Membership -> /Page.aspx?pageid=02d6642f-e37d-4f69-9b1e-c60ea76dcc41
+  Media -> /Page.aspx?pageid=4d4e29a9-e7fc-4394-bae2-51080f4adf04
+  Create an Account -> /go/signup
+  Login -> https://www.bajasae.net/Login.aspx
+  SAE International Privacy Policy -> https://www.sae.org/privacy
+
+SCRIPT SRCS: https://www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js, /cdsweb/SharedComponents/public_assets/jquery-1.11.2.min.js, /cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.js, /cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/js/bootstrap.min.js, /cdsweb/SharedComponents/public_assets/data-tables/src/dataTables.js, /cdsweb/SharedComponents/public_assets/moment/moment.min.js, /cdsweb/SharedComponents/public_assets/moment/datetime-moment.js, /cdsweb/SharedComponents/public_assets/CdsWeb.js, /cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.js, /cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.js, /cdsweb/sharedcomponents/gen/assets/DocumentResourcesTree.js
+ENDPOINT HINTS: none
+AJAX/REFRESH HINTS: none

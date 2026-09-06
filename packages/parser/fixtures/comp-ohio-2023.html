@@ -1,0 +1,548 @@
+
+
+<!DOCTYPE html>
+<html>
+<head id="ctl00_Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	Baja SAE
+</title>
+        <!-- ## DATADOG ## -->
+        <script 
+            type="text/javascript" 
+            src="https://www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js">
+        </script>
+        <script>
+            window.DD_LOGS && window.DD_LOGS.init({
+                clientToken: 'pub2b998a9408da81e2b93d28713ea65e93',
+                site: 'datadoghq.com',
+                forwardErrorsToLogs: true,
+                forwardConsoleLogs: 'all', // ['log', 'debug', 'info', 'warn', 'error']
+                sessionSampleRate: 100,
+                silentMultipleInit: false,
+                trackingConsent: 'granted', // 'not-granted'
+                telemetrySampleRate: 0,
+                storeContextsAcrossPages: false,
+                allowUntrustedEvents: false,
+                service: 'bajasae_north_america',
+                env: 'production',
+                version: '2.1.26.8121',
+                beforeSend: (log) => {
+                    // discard 404 network errors
+                    if (log.http && log.http.status_code === 404) {
+                        return false;
+                    }
+
+                    // remove email from view url
+                    log.view.url = log.view.url.replace(/email=[^&]*/, "email=REDACTED");
+                }
+            });
+
+            //window.DD_LOGS && window.DD_LOGS.setContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.logger.setLevel('error');
+            window.DD_LOGS && window.DD_LOGS.logger.setHandler(['http', 'console']); //'http' | 'console' | 'silent'
+            //window.DD_LOGS && window.DD_LOGS.logger.setHandler('silent');
+            //window.DD_LOGS && window.DD_LOGS.setTrackingConsent('granted');
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#global-context
+            //window.DD_LOGS && window.DD_LOGS.getInternalContext();
+            //window.DD_LOGS && window.DD_LOGS.setGlobalContext({ env: 'staging' });
+            window.DD_LOGS && window.DD_LOGS.setGlobalContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging', referrer: ...}
+            //window.DD_LOGS && window.DD_LOGS.removeGlobalContextProperty('referrer');
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging'}
+            //window.DD_LOGS && window.DD_LOGS.clearGlobalContext();
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {}
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#user-context
+            //window.DD_LOGS && window.DD_LOGS.setUserProperty('type', 'customer');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com', type: 'customer'}
+            //window.DD_LOGS && window.DD_LOGS.removeUserProperty('type');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com'}
+            //window.DD_LOGS && window.DD_LOGS.clearUser();
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {}
+
+            window.DD_LOGS && window.DD_LOGS.setUser({
+                id: '',
+                un: ''
+            });
+        </script>
+        <!-- ## DATADOG ## -->
+    
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/jquery-1.11.2.min.js"></script>
+    <script src="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+
+    
+        <!-- New DataTables -->
+        <link rel="stylesheet" type="text/css" href="/cdsweb/SharedComponents/public_assets/data-tables/src/datatables.min.css" />
+        <script src="/cdsweb/SharedComponents/public_assets/data-tables/src/dataTables.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/moment.min.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/datetime-moment.js" type="text/javascript"></script>
+    <link href="/Main_Responsive.css" rel="stylesheet" type="text/css" /><link href="/panels.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" /><link href="/cdsweb/SharedComponents/public_assets/CdsWeb.css" rel="stylesheet" type="text/css" /><link href="/Overrides.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/CdsWeb.js"></script>
+
+    
+</head>
+
+<body>
+    
+    <link href="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.css" rel="stylesheet" />
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.js"></script>
+    <div id="dateTimePopup"></div>
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.js"></script>
+    
+
+    <div id="header">
+        <div id="logo">
+            <a id="ctl00_aHome" href="/">
+                <img src="/cdsweb/SharedComponents/bajasae.net/img/CdsWeb-BAJA-Header-Logo-Max65pxH.png" />
+            </a>
+        </div>
+        <div id="header-sae" class="hidden-xs pull-right">
+            <a href="http://www.sae.org/">
+                <img src="/cdsweb/SharedComponents/public_assets/img/sae_vrt_blk_rgb_pos_l.png"" style="width:120px" />
+            </a>
+        </div>
+
+        <button type="button" class="pull-right navbar-toggle btn btn-default btn-lg" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+
+<style>
+    #testVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, #f4d308 0 8px, black 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #testVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+
+    #prodVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, red 0 8px, white 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #prodVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+</style>
+
+
+    <form name="aspnetForm" method="post" action="./CompetitionResults.aspx?competitionid=0b93e7a4-d6c1-4c9e-99b5-d10d9650bf75" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="247AF102" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="QGv7Tn7JD6BYbZ1pwijEfjgtqyL4QK6DpBeAvf3XqbcU243CGkwsjFDYdvIIsXxHH9hn1Q6kysQr/bFIzIxMs9XJ+59AbcSztI0+6p5FdIoGnTmsiHgyRkK2aNKMjyX2QS1sZsOK6YF2uO0MKoApwWBSbs1h0Z+730dwHkjO5BABbsUQsXvrOP/QxqU1QIyGgZH0kAiiIVkAsqn3NcTa5Q6glSEaR1IgMna6+vNAyaD1qeLw5BPLyC+2z4IyCZUlurncJ3XeR6yEq1c+sryV/c2r9KM1ThUkr9uJhz0n0clvWwPNv/tcJJJcuB9GZ7KS5zod7Txjal/K+gFQozX4hg==" />
+        <nav class="navbar" role="navigation">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    
+                    
+
+                    
+                    <li><a href="/">Home</a></li>
+
+                    
+                    
+
+                    
+                    <li class="dropdown hidden">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jump To Activity&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            
+                        </ul>
+                    </li>
+
+                    
+                    <li><a href="/cdsweb/app/news.aspx">News</a></li>
+
+                    
+                    <li><a href="/cdsweb/reg/UpcomingCompList.aspx">Competitions & Workshops</a></li>
+
+                    
+                    <li><a href="/Deadlines.aspx?seriesCode=BAJA">Deadlines</a></li>
+
+                    
+                    <li><a href="/app/CompetitionResources.aspx" target="_blank">Competition Resources</a></li>
+
+                    
+                    <li><a href="/cdsweb/gen/DocumentResources.aspx">Series Resources</a></li>
+
+                    
+                    <li><a href="/res/ResultsLanding.aspx">Results</a></li>
+
+                    
+                    <li><a href="/Page.aspx?pageid=02d6642f-e37d-4f69-9b1e-c60ea76dcc41">Membership</a></li>
+                    
+                    
+                    <li><a href="/Page.aspx?pageid=4d4e29a9-e7fc-4394-bae2-51080f4adf04">Media</a></li>
+
+                    
+                    <li><a href="/go/signup">Create an Account</a></li>
+
+                    
+                    
+
+                    
+                    <li><a href="https://www.bajasae.net/Login.aspx">Login</a></li>
+
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content-wrapper">
+            <div id="content" class='container min-height'>
+                
+
+                
+<div id="dismissableAlert" style="display: none;" class="alert alert-danger">
+    <div id="errorDetails"></div>
+
+    <p>Click the button to view more details of the error.</p>
+    <button type="button" class="btn btn-danger" onclick="ShowTheError()">Click here to see what went wrong</button>
+    <button type="button" class="btn btn-secondary" id="AlertCloseButon">Dismiss</button>
+</div>
+
+<script>
+    var htmlResponse = "";
+    var errorPopupDetails = "";
+
+    function ShowTheError() {
+        window.open('').document.body.innerHTML = htmlResponse;
+        $("#dismissableAlert").hide();
+    }
+
+    $(document).ready(function () {
+        $("#AlertCloseButon").click(function () {
+            $("#dismissableAlert").hide();
+        });
+    });
+
+    function PopulateErrorMessage(messageHtml){
+        htmlResponse = messageHtml;
+        //htmlResponse = htmlResponse.replace("<b>Source Error:</b>", "<b>Source Error:</b>" + , window.location.href)
+        var beginIndex = htmlResponse.indexOf("<h2> <i>");
+        var endIndex = htmlResponse.indexOf("<b>Stack Trace:</b>");
+        errorPopupDetails = htmlResponse.substring(beginIndex, endIndex);
+
+        $("#dismissableAlert").show();
+        document.getElementById("errorDetails").innerHTML = errorPopupDetails;
+
+        window.scrollTo(0, 0); // values are x,y-offset
+    }
+</script>
+
+                
+    
+
+<style>
+    h3 { margin-top: 25px; }
+    .list-group-item > img { width: 80px; float: right; }
+    .table-top10 { margin-bottom: 4px; }
+    .awards-list { padding-left: 20px; }
+    .awards-list .name { font-weight: bold; padding-left: 3px; }
+    .list-group h4 { margin-top: 0; }
+</style>
+
+<h2>Competition Results – Baja SAE Ohio</h2>
+<h4><span class='nowrap'>Wed, Sep 6, 2023</h4>
+
+<div class="row">
+<div class="col-sm-6">
+    <div>
+        <h3>Results By Event</h3>
+        <div class="input-group">
+            <select name="ctl00$main$CompetitionResults1$ddlJumpToEvent" id="ctl00_main_CompetitionResults1_ddlJumpToEvent" class="form-control">
+	<option selected="selected" value="">Jump To Event...</option>
+	<option value="OVR">OVERALL</option>
+	<option value="PRES">Business Presentation</option>
+	<option value="COST">Cost Event</option>
+	<option value="DESN">Design</option>
+	<option value="ACCEL">Acceleration</option>
+	<option value="MANU">Maneuverability</option>
+	<option value="TRAC">Pilot Pull</option>
+	<option value="SPEC">Suspension</option>
+	<option value="ENDUR">Endurance</option>
+
+</select>
+            <div class="input-group-btn">
+                <input type="submit" name="ctl00$main$CompetitionResults1$btnJumpToEvent" value="GO" id="ctl00_main_CompetitionResults1_btnJumpToEvent" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+
+    <div>
+    <h3>Top 10</h3>
+    <table class="table-top10 table table-striped table-hover">
+        <thead><tr>
+            <th>Rank</th>
+            <th>Car</th>
+            <th>School / Team</th>
+            <th>Points</th>
+        </tr></thead>
+        <tbody>
+            
+                    <tr>
+                    <td>1</td>
+                    <td>62</td>
+                    <td><strong>Case Western Reserve Univ</strong> <em>CWRU Motorsports</em></td>
+                    <td>885.48</td>
+                    </tr>
+                
+                    <tr>
+                    <td>2</td>
+                    <td>54</td>
+                    <td><strong>Univ of Michigan - Ann Arbor</strong> <em>Michigan Baja Racing</em></td>
+                    <td>853.19</td>
+                    </tr>
+                
+                    <tr>
+                    <td>3</td>
+                    <td>55</td>
+                    <td><strong>Virginia Tech</strong> <em>VT Baja</em></td>
+                    <td>827.21</td>
+                    </tr>
+                
+                    <tr>
+                    <td>4</td>
+                    <td>68</td>
+                    <td><strong>Rochester Institute of Technology</strong> <em>RIOT RACING</em></td>
+                    <td>820.55</td>
+                    </tr>
+                
+                    <tr>
+                    <td>5</td>
+                    <td>64</td>
+                    <td><strong>Ecole de Technologie Superieure</strong> <em>Baja ETS</em></td>
+                    <td>782.34</td>
+                    </tr>
+                
+                    <tr>
+                    <td>6</td>
+                    <td>61</td>
+                    <td><strong>Cornell Univ</strong> <em>Cornell Baja Racing</em></td>
+                    <td>773.33</td>
+                    </tr>
+                
+                    <tr>
+                    <td>7</td>
+                    <td>96</td>
+                    <td><strong>Univ of Nevada - Las Vegas</strong> <em>Rebel Racing</em></td>
+                    <td>725.13</td>
+                    </tr>
+                
+                    <tr>
+                    <td>8</td>
+                    <td>59</td>
+                    <td><strong>McGill Univ</strong> <em>McGill Baja Racing</em></td>
+                    <td>710.58</td>
+                    </tr>
+                
+                    <tr>
+                    <td>9</td>
+                    <td>66</td>
+                    <td><strong>Youngstown State Univ</strong> <em>Penguin Baja Racing</em></td>
+                    <td>698.81</td>
+                    </tr>
+                
+                    <tr>
+                    <td>10</td>
+                    <td>51</td>
+                    <td><strong>Univ of Maryland - College Park</strong> <em>Terps Racing Baja</em></td>
+                    <td>695.09</td>
+                    </tr>
+                
+        </tbody>
+    </table>
+    <a href="/res/EventResults.aspx?competitionid=0b93e7a4-d6c1-4c9e-99b5-d10d9650bf75&eventkey=OVR">View All Results...</a>
+    </div>
+</div>
+<div class="col-sm-6">
+
+    <h3>Award Winners</h3>
+    
+    <div class="list-group">
+        
+            <div class="list-group-item">
+                
+                <h4>Business Presentation</h4>
+                <ol class="awards-list">
+                    
+                            <li value='1'><span class="name">#54 Univ of Michigan - Ann Arbor</span> <em>Michigan Baja Racing</em></li>
+                        
+                            <li value='2'><span class="name">#62 Case Western Reserve Univ</span> <em>CWRU Motorsports</em></li>
+                        
+                            <li value='3'><span class="name">#61 Cornell Univ</span> <em>Cornell Baja Racing</em></li>
+                        
+                </ol>
+            </div>
+        
+            <div class="list-group-item">
+                
+                <h4>Cost Event</h4>
+                <ol class="awards-list">
+                    
+                            <li value='1'><span class="name">#51 Univ of Maryland - College Park</span> <em>Terps Racing Baja</em></li>
+                        
+                            <li value='2'><span class="name">#68 Rochester Institute of Technology</span> <em>RIOT RACING</em></li>
+                        
+                            <li value='3'><span class="name">#64 Ecole de Technologie Superieure</span> <em>Baja ETS</em></li>
+                        
+                </ol>
+            </div>
+        
+            <div class="list-group-item">
+                
+                <h4>Design</h4>
+                <ol class="awards-list">
+                    
+                            <li value='1'><span class="name">#64 Ecole de Technologie Superieure</span> <em>Baja ETS</em></li>
+                        
+                            <li value='2'><span class="name">#68 Rochester Institute of Technology</span> <em>RIOT RACING</em></li>
+                        
+                            <li value='3'><span class="name">#54 Univ of Michigan - Ann Arbor</span> <em>Michigan Baja Racing</em></li>
+                        
+                </ol>
+            </div>
+        
+            <div class="list-group-item">
+                
+                <h4>Acceleration</h4>
+                <ol class="awards-list">
+                    
+                            <li value='1'><span class="name">#64 Ecole de Technologie Superieure</span> <em>Baja ETS</em></li>
+                        
+                            <li value='2'><span class="name">#54 Univ of Michigan - Ann Arbor</span> <em>Michigan Baja Racing</em></li>
+                        
+                            <li value='3'><span class="name">#62 Case Western Reserve Univ</span> <em>CWRU Motorsports</em></li>
+                        
+                </ol>
+            </div>
+        
+            <div class="list-group-item">
+                
+                <h4>Maneuverability</h4>
+                <ol class="awards-list">
+                    
+                            <li value='1'><span class="name">#61 Cornell Univ</span> <em>Cornell Baja Racing</em></li>
+                        
+                            <li value='2'><span class="name">#62 Case Western Reserve Univ</span> <em>CWRU Motorsports</em></li>
+                        
+                            <li value='3'><span class="name">#55 Virginia Tech</span> <em>VT Baja</em></li>
+                        
+                </ol>
+            </div>
+        
+            <div class="list-group-item">
+                
+                <h4>Pilot Pull</h4>
+                <ol class="awards-list">
+                    
+                            <li value='1'><span class="name">#98 Cincinnati State Technical Comm College</span> <em>Cincy Baja</em></li>
+                        
+                            <li value='2'><span class="name">#106 Ohio Univ</span> <em>Bobcat Baja</em></li>
+                        
+                            <li value='3'><span class="name">#55 Virginia Tech</span> <em>VT Baja</em></li>
+                        
+                </ol>
+            </div>
+        
+            <div class="list-group-item">
+                
+                <h4>Suspension</h4>
+                <ol class="awards-list">
+                    
+                            <li value='1'><span class="name">#62 Case Western Reserve Univ</span> <em>CWRU Motorsports</em></li>
+                        
+                            <li value='2'><span class="name">#55 Virginia Tech</span> <em>VT Baja</em></li>
+                        
+                            <li value='3'><span class="name">#64 Ecole de Technologie Superieure</span> <em>Baja ETS</em></li>
+                        
+                </ol>
+            </div>
+        
+            <div class="list-group-item">
+                
+                <h4>Endurance</h4>
+                <ol class="awards-list">
+                    
+                            <li value='1'><span class="name">#96 Univ of Nevada - Las Vegas</span> <em>Rebel Racing</em></li>
+                        
+                            <li value='2'><span class="name">#62 Case Western Reserve Univ</span> <em>CWRU Motorsports</em></li>
+                        
+                            <li value='3'><span class="name">#104 Michigan State University</span> <em>MSU Baja Racing </em></li>
+                        
+                </ol>
+            </div>
+        
+            <div class="list-group-item">
+                
+                <h4>Overall Dynamic</h4>
+                <ol class="awards-list">
+                    
+                            <li value='1'><span class="name">#55 Virginia Tech</span> <em>VT Baja</em></li>
+                        
+                            <li value='2'><span class="name">#62 Case Western Reserve Univ</span> <em>CWRU Motorsports</em></li>
+                        
+                            <li value='3'><span class="name">#61 Cornell Univ</span> <em>Cornell Baja Racing</em></li>
+                        
+                            <li value='4'><span class="name">#57 Johns Hopkins Univ</span> <em>Blue Jay Racing</em></li>
+                        
+                </ol>
+            </div>
+        
+            <div class="list-group-item">
+                
+                <h4>Overall Static</h4>
+                <ol class="awards-list">
+                    
+                            <li value='1'><span class="name">#64 Ecole de Technologie Superieure</span> <em>Baja ETS</em></li>
+                        
+                            <li value='2'><span class="name">#54 Univ of Michigan - Ann Arbor</span> <em>Michigan Baja Racing</em></li>
+                        
+                            <li value='3'><span class="name">#68 Rochester Institute of Technology</span> <em>RIOT RACING</em></li>
+                        
+                            <li value='4'><span class="name">#61 Cornell Univ</span> <em>Cornell Baja Racing</em></li>
+                        
+                </ol>
+            </div>
+        
+    </div>
+</div>
+</div>
+
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                
+
+            </div>
+
+
+            <a class="sae-privacy-policy" href="https://www.sae.org/privacy" target="_blank">SAE International Privacy Policy</a>
+        </div>
+    </form>
+</body>
+</html>

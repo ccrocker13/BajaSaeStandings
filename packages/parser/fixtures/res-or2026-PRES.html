@@ -1,0 +1,522 @@
+
+
+<!DOCTYPE html>
+<html>
+<head id="ctl00_Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	Baja SAE
+</title>
+        <!-- ## DATADOG ## -->
+        <script 
+            type="text/javascript" 
+            src="https://www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js">
+        </script>
+        <script>
+            window.DD_LOGS && window.DD_LOGS.init({
+                clientToken: 'pub2b998a9408da81e2b93d28713ea65e93',
+                site: 'datadoghq.com',
+                forwardErrorsToLogs: true,
+                forwardConsoleLogs: 'all', // ['log', 'debug', 'info', 'warn', 'error']
+                sessionSampleRate: 100,
+                silentMultipleInit: false,
+                trackingConsent: 'granted', // 'not-granted'
+                telemetrySampleRate: 0,
+                storeContextsAcrossPages: false,
+                allowUntrustedEvents: false,
+                service: 'bajasae_north_america',
+                env: 'production',
+                version: '2.1.26.8121',
+                beforeSend: (log) => {
+                    // discard 404 network errors
+                    if (log.http && log.http.status_code === 404) {
+                        return false;
+                    }
+
+                    // remove email from view url
+                    log.view.url = log.view.url.replace(/email=[^&]*/, "email=REDACTED");
+                }
+            });
+
+            //window.DD_LOGS && window.DD_LOGS.setContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.logger.setLevel('error');
+            window.DD_LOGS && window.DD_LOGS.logger.setHandler(['http', 'console']); //'http' | 'console' | 'silent'
+            //window.DD_LOGS && window.DD_LOGS.logger.setHandler('silent');
+            //window.DD_LOGS && window.DD_LOGS.setTrackingConsent('granted');
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#global-context
+            //window.DD_LOGS && window.DD_LOGS.getInternalContext();
+            //window.DD_LOGS && window.DD_LOGS.setGlobalContext({ env: 'staging' });
+            window.DD_LOGS && window.DD_LOGS.setGlobalContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging', referrer: ...}
+            //window.DD_LOGS && window.DD_LOGS.removeGlobalContextProperty('referrer');
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging'}
+            //window.DD_LOGS && window.DD_LOGS.clearGlobalContext();
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {}
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#user-context
+            //window.DD_LOGS && window.DD_LOGS.setUserProperty('type', 'customer');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com', type: 'customer'}
+            //window.DD_LOGS && window.DD_LOGS.removeUserProperty('type');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com'}
+            //window.DD_LOGS && window.DD_LOGS.clearUser();
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {}
+
+            window.DD_LOGS && window.DD_LOGS.setUser({
+                id: '',
+                un: ''
+            });
+        </script>
+        <!-- ## DATADOG ## -->
+    
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/jquery-1.11.2.min.js"></script>
+    <script src="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+
+    
+        <!-- New DataTables -->
+        <link rel="stylesheet" type="text/css" href="/cdsweb/SharedComponents/public_assets/data-tables/src/datatables.min.css" />
+        <script src="/cdsweb/SharedComponents/public_assets/data-tables/src/dataTables.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/moment.min.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/datetime-moment.js" type="text/javascript"></script>
+    <link href="/Main_Responsive.css" rel="stylesheet" type="text/css" /><link href="/panels.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" /><link href="/cdsweb/SharedComponents/public_assets/CdsWeb.css" rel="stylesheet" type="text/css" /><link href="/Overrides.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/CdsWeb.js"></script>
+
+    
+</head>
+
+<body>
+    
+    <link href="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.css" rel="stylesheet" />
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.js"></script>
+    <div id="dateTimePopup"></div>
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.js"></script>
+    
+
+    <div id="header">
+        <div id="logo">
+            <a id="ctl00_aHome" href="/">
+                <img src="/cdsweb/SharedComponents/bajasae.net/img/CdsWeb-BAJA-Header-Logo-Max65pxH.png" />
+            </a>
+        </div>
+        <div id="header-sae" class="hidden-xs pull-right">
+            <a href="http://www.sae.org/">
+                <img src="/cdsweb/SharedComponents/public_assets/img/sae_vrt_blk_rgb_pos_l.png"" style="width:120px" />
+            </a>
+        </div>
+
+        <button type="button" class="pull-right navbar-toggle btn btn-default btn-lg" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+
+<style>
+    #testVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, #f4d308 0 8px, black 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #testVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+
+    #prodVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, red 0 8px, white 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #prodVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+</style>
+
+
+    <form name="aspnetForm" method="post" action="./EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&amp;eventkey=PRES" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6E3EFC2B" />
+        <nav class="navbar" role="navigation">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    
+                    
+
+                    
+                    <li><a href="/">Home</a></li>
+
+                    
+                    
+
+                    
+                    <li class="dropdown hidden">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jump To Activity&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            
+                        </ul>
+                    </li>
+
+                    
+                    <li><a href="/cdsweb/app/news.aspx">News</a></li>
+
+                    
+                    <li><a href="/cdsweb/reg/UpcomingCompList.aspx">Competitions & Workshops</a></li>
+
+                    
+                    <li><a href="/Deadlines.aspx?seriesCode=BAJA">Deadlines</a></li>
+
+                    
+                    <li><a href="/app/CompetitionResources.aspx" target="_blank">Competition Resources</a></li>
+
+                    
+                    <li><a href="/cdsweb/gen/DocumentResources.aspx">Series Resources</a></li>
+
+                    
+                    <li><a href="/res/ResultsLanding.aspx">Results</a></li>
+
+                    
+                    <li><a href="/Page.aspx?pageid=02d6642f-e37d-4f69-9b1e-c60ea76dcc41">Membership</a></li>
+                    
+                    
+                    <li><a href="/Page.aspx?pageid=4d4e29a9-e7fc-4394-bae2-51080f4adf04">Media</a></li>
+
+                    
+                    <li><a href="/go/signup">Create an Account</a></li>
+
+                    
+                    
+
+                    
+                    <li><a href="https://www.bajasae.net/Login.aspx">Login</a></li>
+
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content-wrapper">
+            <div id="content" class='container-fluid min-height'>
+                
+
+                
+<div id="dismissableAlert" style="display: none;" class="alert alert-danger">
+    <div id="errorDetails"></div>
+
+    <p>Click the button to view more details of the error.</p>
+    <button type="button" class="btn btn-danger" onclick="ShowTheError()">Click here to see what went wrong</button>
+    <button type="button" class="btn btn-secondary" id="AlertCloseButon">Dismiss</button>
+</div>
+
+<script>
+    var htmlResponse = "";
+    var errorPopupDetails = "";
+
+    function ShowTheError() {
+        window.open('').document.body.innerHTML = htmlResponse;
+        $("#dismissableAlert").hide();
+    }
+
+    $(document).ready(function () {
+        $("#AlertCloseButon").click(function () {
+            $("#dismissableAlert").hide();
+        });
+    });
+
+    function PopulateErrorMessage(messageHtml){
+        htmlResponse = messageHtml;
+        //htmlResponse = htmlResponse.replace("<b>Source Error:</b>", "<b>Source Error:</b>" + , window.location.href)
+        var beginIndex = htmlResponse.indexOf("<h2> <i>");
+        var endIndex = htmlResponse.indexOf("<b>Stack Trace:</b>");
+        errorPopupDetails = htmlResponse.substring(beginIndex, endIndex);
+
+        $("#dismissableAlert").show();
+        document.getElementById("errorDetails").innerHTML = errorPopupDetails;
+
+        window.scrollTo(0, 0); // values are x,y-offset
+    }
+</script>
+
+                
+    
+
+<script type="text/javascript">
+    var rankToNum = function (rank) {
+        rank = parseFloat(rank);
+        return rank ? rank : 99999999;
+    };
+
+    jQuery.fn.dataTableExt.oSort['rank-asc'] = function (x, y) {
+        x = rankToNum(x);
+        y = rankToNum(y);
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    };
+
+    jQuery.fn.dataTableExt.oSort['rank-desc'] = function (x, y) {
+        x = rankToNum(x);
+        y = rankToNum(y);
+        return ((x < y) ? 1 : ((x > y) ? -1 : 0));
+    };
+</script>
+
+<style>
+    .nav-pills > li { margin-top: 2px; }
+    .results-table { background: #fff; }
+    .results-table th, .results-table td { font-size: 12px; }
+    .results-table tr.even { background: #f6f6f6; }
+    .filter-box { width: 60px; margin-left: 4px; font-size: 12px; }
+</style>
+
+<a href="/res/CompetitionResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d">Back To Competition Results</a>
+
+<h2>Event Results – Baja SAE Oregon</h2>
+<ul class="nav nav-pills spacing-bottom">
+    <li class=""><a href="?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=OVR">Overall</a></li>
+    
+            <li class=' active'><a href="?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=PRES">Business Presentation</a></li>
+        
+            <li class=''><a href="?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=COST">Cost Event</a></li>
+        
+            <li class=''><a href="?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=DESN">Design</a></li>
+        
+            <li class=''><a href="?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ACCEL">Acceleration</a></li>
+        
+            <li class=''><a href="?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=TRAC">Hill Climb</a></li>
+        
+            <li class=''><a href="?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=MANU">Maneuverability</a></li>
+        
+            <li class=''><a href="?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=SPEC">Rock Crawl</a></li>
+        
+            <li class=''><a href="?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ENDUR">Endurance</a></li>
+        
+</ul>
+<div id="ctl00_main_EventResults1_PanelStaticResults">
+	
+    <div>
+		<table class="results-table" cellspacing="0" border="0" id="ctl00_main_EventResults1_GridViewStaticResults">
+			<thead>
+				<tr>
+					<th scope="col">Rank</th><th class="filterable exact" scope="col">Car #</th><th class="filterable" scope="col">School</th><th class="filterable" scope="col">Team</th><th scope="col">Eval. Score</th><th scope="col">Final Score</th><th scope="col">Message For Team</th>
+				</tr>
+			</thead><tbody>
+				<tr>
+					<td>1</td><td>26</td><td>Univ of Calif - Los Angeles</td><td>Bruin Racing Baja</td><td>70.00</td><td>77.00</td><td>Finals</td>
+				</tr><tr>
+					<td>2</td><td>39</td><td>Oregon State Univ</td><td>Beaver Racing</td><td>70.00</td><td>75.00</td><td>Finals</td>
+				</tr><tr>
+					<td>3</td><td>5</td><td>Purdue Univ - W Lafayette</td><td>Purdue Baja Racing</td><td>70.00</td><td>73.00</td><td>Finals</td>
+				</tr><tr>
+					<td>4</td><td>3</td><td>Ecole de Technologie Superieure</td><td>Baja &#201;TS</td><td>70.00</td><td>70.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>4</td><td>4</td><td>Case Western Reserve Univ</td><td>CWRU Motorsports</td><td>70.00</td><td>70.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>4</td><td>7</td><td>Rochester Institute of Technology</td><td>RIOT RACING</td><td>70.00</td><td>70.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>4</td><td>9</td><td>Youngstown State Univ</td><td>Penguin Baja Racing</td><td>70.00</td><td>70.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>4</td><td>14</td><td>McMaster Univ</td><td>McMaster Baja Racing </td><td>70.00</td><td>70.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>4</td><td>118</td><td>San Jose State University</td><td>Baja Spartan Racing </td><td>70.00</td><td>70.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>10</td><td>16</td><td>The Ohio State University</td><td>Baja Buckeyes</td><td>65.78</td><td>65.78</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>11</td><td>120</td><td>SUNY - Buffalo</td><td>UB Motorsports</td><td>64.83</td><td>64.83</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>12</td><td>59</td><td>ITESM - Queretaro</td><td>Exergia Racing Team</td><td>64.50</td><td>64.50</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>13</td><td>85</td><td>Univ of Calif - Irvine</td><td>Anteater Baja Racing</td><td>64.06</td><td>64.06</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>14</td><td>6</td><td>Johns Hopkins Univ</td><td>Blue Jay Racing</td><td>62.61</td><td>62.61</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>15</td><td>1</td><td>Cornell Univ</td><td>Cornell Baja Racing</td><td>62.45</td><td>62.45</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>16</td><td>27</td><td>British Columbia Inst of Tech </td><td>BCIT Racing</td><td>61.36</td><td>61.36</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>17</td><td>12</td><td>Univ of Nevada - Las Vegas</td><td>Rebel Racing</td><td>61.15</td><td>61.15</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>18</td><td>109</td><td>Gonzaga University</td><td>Holy Rollers</td><td>60.40</td><td>60.40</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>19</td><td>8</td><td>Virginia Tech</td><td>VT Baja</td><td>59.44</td><td>59.44</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>20</td><td>51</td><td>Texas A&amp;M Univ</td><td>Fightin Texas Aggie Motorsports</td><td>58.12</td><td>58.12</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>21</td><td>182</td><td>Univ of Idaho</td><td>Vandal Motorsports</td><td>58.04</td><td>58.04</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>22</td><td>110</td><td>Cetys Universidad</td><td>CMB Racing</td><td>57.77</td><td>57.77</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>23</td><td>29</td><td>Universite de Sherbrooke</td><td>Baja UdeS</td><td>57.42</td><td>57.42</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>24</td><td>21</td><td>Univ of Central Florida</td><td>Knights Racing</td><td>56.70</td><td>56.70</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>24</td><td>77</td><td>Univ of Alabama - Tuscaloosa</td><td>Bama Racing</td><td>56.70</td><td>56.70</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>26</td><td>69</td><td>ITESM - Campus Guadalajara</td><td>Mad Rams</td><td>55.02</td><td>55.02</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>27</td><td>20</td><td>Universit&#233; Laval</td><td>Al&#233;rion Baja Ulaval</td><td>54.50</td><td>54.50</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>28</td><td>15</td><td>California Polytechnic State Univ-SLO</td><td>Cal Poly Racing</td><td>54.49</td><td>54.49</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>29</td><td>10</td><td>Univ of Maryland - Baltimore County</td><td>UMBC Racing</td><td>54.42</td><td>54.42</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>30</td><td>25</td><td>Michigan State University</td><td>Michigan State University Baja</td><td>53.66</td><td>53.66</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>31</td><td>2</td><td>Univ of Michigan - Ann Arbor</td><td>Michigan Baja Racing</td><td>53.01</td><td>53.01</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>31</td><td>65</td><td>Baylor Univ</td><td>Baylor Baja</td><td>53.01</td><td>53.01</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>33</td><td>22</td><td>Univ of Illinois - Urbana Champaign</td><td>Off-Road Illini</td><td>52.97</td><td>52.97</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>34</td><td>178</td><td>Univ of British Columbia</td><td>UBC Baja</td><td>52.81</td><td>52.81</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>35</td><td>34</td><td>Queen&#39;s Univ</td><td>Queen&#39;s Baja </td><td>52.52</td><td>52.52</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>36</td><td>114</td><td>Univ of Iowa</td><td>Iowa Baja</td><td>52.48</td><td>52.48</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>37</td><td>74</td><td>West Virginia Univ</td><td>Mountaineers</td><td>52.28</td><td>52.28</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>38</td><td>41</td><td>Univ of Missouri - Kansas City</td><td>Roo Racing</td><td>50.58</td><td>50.58</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>39</td><td>63</td><td>Utah State University</td><td>USU Mini Baja</td><td>50.37</td><td>50.37</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>40</td><td>54</td><td>Univ of Calgary</td><td>UCalgary Baja</td><td>49.52</td><td>49.52</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>41</td><td>187</td><td>Univ of Calif - San Diego</td><td>Triton Baja</td><td>48.39</td><td>48.39</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>42</td><td>128</td><td>California State Univ - Los Angeles</td><td>Rugged Eagle Motorsport</td><td>46.11</td><td>46.11</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>43</td><td>88</td><td>Univ of Colorado - Boulder</td><td>CU Boulder Baja</td><td>42.25</td><td>42.25</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>44</td><td>23</td><td>San Diego State Univ</td><td>Aztec Baja Racing</td><td>42.04</td><td>42.04</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>45</td><td>183</td><td>Univ of Texas - El Paso</td><td>Mad Pete Motorsports</td><td>40.86</td><td>40.86</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>46</td><td>133</td><td>Boise State Univ</td><td>Bleed Blue Racing</td><td>36.20</td><td>36.20</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>47</td><td>153</td><td>Colorado State University</td><td>Aggies Offroad Racing and Development</td><td>20.00</td><td>20.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>48</td><td>46</td><td>Kansas State Univ</td><td>Wildcat Offroad</td><td>15.00</td><td>15.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>48</td><td>52</td><td>New Jersey Institute of Technology</td><td>Highlander racing</td><td>15.00</td><td>15.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>48</td><td>101</td><td>California State Poly Univ - Pomona</td><td>Bronco Racing</td><td>15.00</td><td>15.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>48</td><td>143</td><td>Univ of Calif - Davis</td><td>Davis Baja Racing</td><td>15.00</td><td>15.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>48</td><td>159</td><td>Southwestern College</td><td>Jag Racing</td><td>15.00</td><td>15.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>48</td><td>171</td><td>Sacramento State Univ</td><td>Desert Swarm</td><td>15.00</td><td>15.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>48</td><td>174</td><td>Univ of Oklahoma</td><td>Sooner Off-Road</td><td>15.00</td><td>15.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>48</td><td>176</td><td>Northern Arizona - Yuma</td><td>CR Motorsports</td><td>15.00</td><td>15.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>48</td><td>181</td><td>Univ of Regina</td><td>Cougar Racing </td><td>15.00</td><td>15.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>17</td><td>Iowa State Univ</td><td>Cyclone Off-Road Racing</td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>24</td><td>Oregon Inst of Tech</td><td>Oregon Tech Racing</td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>84</td><td>Northern Arizona Univ</td><td>Lumberjack Motorsports Baja</td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>90</td><td>New Mexico Inst of Mining &amp; Tech</td><td>Dirty Miners</td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>93</td><td>Seattle Pacific Univ</td><td>Falcon Racing</td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>94</td><td>Northwestern Univ</td><td>Northwestern MotorCats</td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>111</td><td>Southern Utah Univ</td><td>SUU Baja Racing</td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>130</td><td>California State Univ - Long Beach</td><td>Elbee Racing</td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>137</td><td>California State Univ - Fullerton</td><td>Titan Racing Baja </td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>148</td><td>Auburn Univ</td><td>Auburn Off-Road</td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>149</td><td>Harding Univ</td><td>Bison Baja</td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>167</td><td>California State Univ - Fresno</td><td>Fresno State Racing</td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>179</td><td>Portland State Univ</td><td>Viking Motorsports Baja</td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>190</td><td>American River College</td><td>ARC MESA Racing</td><td>10.00</td><td>10.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>71</td><td>64</td><td>Univ of San Diego</td><td>Torero Racing</td><td>5.00</td><td>5.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>71</td><td>76</td><td>Univ of Pittsburgh - Johnstown</td><td>Steel Panther Racing</td><td>5.00</td><td>5.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>71</td><td>104</td><td>Univ of Utah</td><td>Team Swoop</td><td>5.00</td><td>5.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>71</td><td>115</td><td>Tarleton State Univ - Central Texas</td><td>Texan Baja</td><td>5.00</td><td>5.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>71</td><td>125</td><td>Univ of Nebraska - Lincoln</td><td>Husker Racing</td><td>5.00</td><td>5.00</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>71</td><td>172</td><td>Oklahoma Christian Univ</td><td>OC Baja</td><td>5.00</td><td>5.00</td><td>&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.results-table th.filterable').each(function () {
+            $(this).html($(this).html() + '<input type="text" class="filter-box" placeholder="Filter" />');
+        });
+
+        var table = $('.results-table').DataTable({
+            paging: false, info: false, dom: '',
+            columnDefs: [{ targets: 0, type: 'rank'}] // special sort logic for "rank" col
+        });
+
+        // Column filtering
+        table.columns().eq(0).each(function (index) {
+            var col = table.column(index);
+
+            $('input', col.header()).on('keyup change', function () {
+                if (col.search() !== this.value) {
+                    if ($(this).parent().hasClass('exact') && this.value.length > 0) {
+                        col.search('^' + this.value + '$', true, false).draw();
+                    } else {
+                        col.search(this.value, false, true).draw();
+                    }
+                }
+            }).on('click', function (e) { e.stopPropagation(); });
+        });
+    });
+</script>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                
+
+            </div>
+
+
+            <a class="sae-privacy-policy" href="https://www.sae.org/privacy" target="_blank">SAE International Privacy Policy</a>
+        </div>
+    </form>
+</body>
+</html>

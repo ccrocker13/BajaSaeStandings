@@ -1,0 +1,37 @@
+SOURCE: https://results.bajasae.net/TechLineAssigns.aspx
+BYTES: 106059
+TITLE: 
+META REFRESH: none
+__VIEWSTATE: present (28316 chars)
+__EVENTTARGET: absent
+__doPostBack refs: 0
+FORM: id=Form1 method=post action=./TechLineAssigns.aspx
+
+TABLES: 1
+
+--- table[0] id=MainContent_GridViewCarActs class=- rows=240
+    col counts (first 20 rows): 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+    row[0]: ["Line Number","Car Number","School / Team"]
+    row[1]: ["1","11","Georgia Institute of Technology- GT Off Road"]
+    row[2]: ["2","20","Université Laval- Alérion Baja Ulaval"]
+    row[3]: ["3","22","Univ of Illinois - Urbana Champaign- Off-Road Illini"]
+
+ELEMENT IDS (9): Head1, Form1, lblEventTitle, bs-example-navbar-collapse-1, MainContent_GridViewCarActs, footer, lblSiteLocation, lblSiteLocationUpdate, lblVersion
+
+CLASSES (16): header, img-responsive, center-block, navbar, container, navbar-header, navbar-toggle, sr-only, collapse, navbar-collapse, nav, navbar-nav, content, SiteLocation, SiteLocationUpdate, Version
+
+LINKS (10):
+   -> /
+  Home -> /
+  Leaderboards -> /Leaderboard.aspx
+  Results by Car -> /MyResults.aspx
+  Results by Event -> /EventResults.aspx
+  Tech Line Num Assignments -> /TechLineAssigns.aspx
+  Current Tech Line Number -> /TechLineNumber.aspx
+  Live Endurance Grid -> /EnduranceGrid.aspx
+  Endurance Black Flags -> /BlackFlags.aspx
+  Check Problem Report Status -> /ProblemReportStatus.aspx
+
+SCRIPT SRCS: /assets/jquery/jquery-1.11.2.min.js, /assets/bootstrap-3-3-4/js/bootstrap.min.js
+ENDPOINT HINTS: none
+AJAX/REFRESH HINTS: none

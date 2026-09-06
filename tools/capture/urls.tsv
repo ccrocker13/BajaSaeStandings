@@ -1,0 +1,79 @@
+# name<TAB>url   — lines starting with # are ignored.
+# Edit this file and push to re-run the capture workflow.
+#
+# Event codes below are the ones that appear as live indexed URLs, so the code
+# strings themselves are real. Their meanings are inferred and must be confirmed
+# against the captured page titles. Hill climb, sled pull, suspension & traction
+# and rock crawl codes are NOT known — the parser discovers codes from the page's
+# own nav rather than trusting this list.
+results-robots	https://results.bajasae.net/robots.txt
+bajasae-robots	https://www.bajasae.net/robots.txt
+results-root	https://results.bajasae.net/
+leaderboard-default	https://results.bajasae.net/Leaderboard.aspx
+leaderboard-OVR	https://results.bajasae.net/Leaderboard.aspx?Event=OVR
+leaderboard-DESN	https://results.bajasae.net/Leaderboard.aspx?Event=DESN
+leaderboard-PRES	https://results.bajasae.net/Leaderboard.aspx?Event=PRES
+leaderboard-COST	https://results.bajasae.net/Leaderboard.aspx?Event=COST
+leaderboard-ACCEL	https://results.bajasae.net/Leaderboard.aspx?Event=ACCEL
+leaderboard-MANU	https://results.bajasae.net/Leaderboard.aspx?Event=MANU
+leaderboard-ENDUR	https://results.bajasae.net/Leaderboard.aspx?Event=ENDUR
+leaderboard-SPEC	https://results.bajasae.net/Leaderboard.aspx?Event=SPEC
+endurance-grid	https://results.bajasae.net/EnduranceGrid.aspx
+tech-line-number	https://results.bajasae.net/TechLineNumber.aspx
+event-results	https://results.bajasae.net/EventResults.aspx
+my-results	https://results.bajasae.net/MyResults.aspx
+my-results-car69-endurance	https://results.bajasae.net/MyResults.aspx?carnum=69&tab=endurance
+my-results-car69-dynamics	https://results.bajasae.net/MyResults.aspx?carnum=69&tab=dynamics
+# Historical archive. If these are query-string driven rather than __VIEWSTATE
+# postback driven, the all-seasons backfill gets dramatically easier.
+results-landing	https://www.bajasae.net/res/ResultsLanding.aspx
+res-event-results	https://www.bajasae.net/res/EventResults.aspx
+upcoming-comps	https://www.bajasae.net/cdsweb/reg/Upcomingcomplist.aspx
+#
+# --- Round 2 -------------------------------------------------------------
+# The historical archive is query-string addressable (no __VIEWSTATE replay),
+# so a completed competition can be fetched directly by GUID. These three are
+# the 2026 season; comp-rochester-2019 is an older shape to check for drift.
+comp-oregon-2026	https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d
+comp-newyork-2026	https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0
+comp-ohio-2023	https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=0b93e7a4-d6c1-4c9e-99b5-d10d9650bf75
+comp-rochester-2019	https://www.bajasae.net/res/CompetitionResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6
+# NB: 0b93e7a4 is Baja SAE Ohio *2023*, not the upcoming 2026 event — the
+# archive groups by year and 2026 Ohio has not happened yet, so it has no
+# archive entry. Kept as an older-shape sample.
+# The live leaderboards publish raw times and laps but NOT points for dynamic
+# events, so scoring formulas must come from the rulebook. These two pages link
+# to it; the PDF itself gets fetched once we know its URL.
+competition-resources	https://www.bajasae.net/app/CompetitionResources.aspx
+document-resources	https://www.bajasae.net/cdsweb/gen/DocumentResources.aspx
+# Legacy archive — the route to seasons older than 2016.
+legacy-results	http://students.sae.org/competitions/bajasae/results/
+# Live pages found in the site nav that we had not captured.
+black-flags	https://results.bajasae.net/BlackFlags.aspx
+tech-line-assigns	https://results.bajasae.net/TechLineAssigns.aspx
+#
+# --- Round 3 -------------------------------------------------------------
+# Full official results per event for the two completed 2026 competitions.
+# These are the season-standings source, and — paired with the live pages,
+# which still show New York — the validation set for deriving how raw times
+# convert into points. The live pages publish times but never points.
+res-ny2026-OVR	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=OVR
+res-ny2026-PRES	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=PRES
+res-ny2026-COST	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=COST
+res-ny2026-DESN	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=DESN
+res-ny2026-ACCEL	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=ACCEL
+res-ny2026-TRAC	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=TRAC
+res-ny2026-MANU	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=MANU
+res-ny2026-SPEC	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=SPEC
+res-ny2026-ENDUR	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=ENDUR
+res-or2026-OVR	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=OVR
+res-or2026-PRES	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=PRES
+res-or2026-COST	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=COST
+res-or2026-DESN	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=DESN
+res-or2026-ACCEL	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ACCEL
+res-or2026-TRAC	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=TRAC
+res-or2026-MANU	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=MANU
+res-or2026-SPEC	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=SPEC
+res-or2026-ENDUR	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ENDUR
+res-rochester2019-OVR	https://www.bajasae.net/res/EventResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=OVR
+previous-years	https://www.bajasae.net/page.aspx?pageid=2d2a2ef4-55fe-40e3-a67b-91dd0ca1a6ec

@@ -1,0 +1,8 @@
+name = "baja-standings-api"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+# No routes or custom domain: the generated *.workers.dev hostname is enough,
+# and keeping it there means deploying needs nothing but a free account.
+workers_dev = true

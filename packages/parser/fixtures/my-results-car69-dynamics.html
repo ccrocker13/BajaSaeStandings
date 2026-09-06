@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html>
+<head id="Head1"><meta charset="utf-8" /><title>
+	Results By Car
+</title><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/assets/jquery/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <link href="/assets/bootstrap-3-3-4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="/assets/bootstrap-3-3-4/js/bootstrap.min.js" type="text/javascript"></script>
+    <link href="/MainResponsive.css?2023" rel="stylesheet" type="text/css" />
+    <style>
+       .section-result { white-space: nowrap; }
+   </style>
+</head>
+<body>
+    <form method="post" action="./MyResults.aspx?carnum=69&amp;tab=dynamics" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTY0NDc2NzgxMg9kFgJmD2QWCAIDD2QWBAIBDw8WAh4EVGV4dAUWQmFqYSBTQUUgTmV3IFlvcmsgMjAyNmRkAgMPZBYCAgkPZBYIZg8PFgIfAAUCNjlkZAIDD2QWAgIBD2QWAgIBDzwrABECARAWABYAFgAMFCsAAGQCBQ9kFgICAQ88KwARAgEQFgAWABYADBQrAABkAgYPZBYCAgUPZBYCAgEPEGRkFgBkAgUPDxYCHwAFNUNvbm5lY3RlZCB0byBJbnRlcm5ldCBzaXRlIGh0dHA6Ly9yZXN1bHRzLmJhamFzYWUubmV0ZGQCBw8PFgIfAAUUNi8xNS8yMDI2IDQ6NDE6MDAgUE1kZAIJDw8WAh8ABQsyLjIuMjUuNTA0MGRkGAIFKGN0bDAwJE1haW5Db250ZW50JEdyaWRWaWV3RHluYW1pY1Jlc3VsdHMPZ2QFIWN0bDAwJE1haW5Db250ZW50JEdyaWRWaWV3Q2FyQWN0cw9nZF6/umWYBDxKimAmBg6XPCoKjFUStrXLeSGpM3We+PrL" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EF87DEBB" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAARqkqnjvbEF31kFW5ZyXXlK3weF09/EQgxSLo2AFm/tbR0epfQflGvxgbo00utbZPZ5QU/JZwNhr8j6a5YjmqzN1vsbhCl//lQH7AIHrAIxKaL+p+GZ/T6xW2ypVokZjlU=" />
+    <!-- Header -->
+    <div class="header" style="border: 0px solid green;">
+        <div style="padding-top:10px; padding-bottom:5px; border: 0px solid blue;">
+                <!--<img alt="" class="pull-left" style="padding-top: 20px;" src="/img/logo-sae-red.png" />-->
+                <a href="/"><img alt="" class="img-responsive center-block" src="/img/banner-baja.png?2023" /></a>
+                <!--<img alt="" class="pull-right" style="padding-top: 20px;" src="/img/logo-results-sponsor.png" />-->
+                <div style="font-size: 24px;"><span id="lblEventTitle">Baja SAE New York 2026</span></div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" style="margin-bottom: 5px;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span>MENU</span>
+                </button>
+                <!--<a class="navbar-brand" href="/"><img alt="Brand" src="img/DES-Brand-Img.png"></a> -->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/Leaderboard.aspx">Leaderboards</a></li>
+                <li><a href="/MyResults.aspx">Results by Car</a></li>
+                <!-- <li><a class="btn btn-info" href="/EventWaits.aspx">Event Lines</a></li> -->
+                <li><a href="/EventResults.aspx">Results by Event</a></li>
+                <li><a href="/TechLineAssigns.aspx">Tech Line Num Assignments</a></li>
+                <li><a href="/TechLineNumber.aspx">Current Tech Line Number</a></li>
+                <li><a href="/EnduranceGrid.aspx">Live Endurance Grid</a></li>
+                <li><a href="/BlackFlags.aspx">Endurance Black Flags</a></li>
+                <li><a href="/ProblemReportStatus.aspx">Check Problem Report Status</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+        
+    
+        <div style="background-color: White; padding: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px;"> 
+            
+
+    <style>
+        h1 { margin-bottom: 15px; }
+        .spacing-top-bottom-lg { margin-top: 20px; margin-bottom: 40px; }
+        .panel-heading { font-size: 18px; }
+        .subtitle { font-size: smaller; }
+    </style>
+
+    <div class="content">
+        <div class="row">
+            <div class="col-sm-7 col-md-6 col-lg-4" style="padding-top:7px">
+                <label>Enter a Car Number to view the preliminary results:</label>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                <div class="input-group">
+                    <input name="ctl00$MainContent$txtCarNumber" type="text" value="69" maxlength="3" id="MainContent_txtCarNumber" class="form-control" placeholder="Car Number" />
+                    <div class="input-group-btn">
+                        <input type="submit" name="ctl00$MainContent$btnSubmitResultRequest" value="GO" id="MainContent_btnSubmitResultRequest" class="btn btn-primary" />
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-xs-6 col-sm-2 col-md-2">
+                <a id="MainContent_LinkButton0" class="btn btn-success pull-right" href="javascript:__doPostBack(&#39;ctl00$MainContent$LinkButton0&#39;,&#39;&#39;)">
+                    Refresh
+                </a>
+            </div>
+        </div>
+    </div>
+        <div class="content">
+
+            <div id="MainContent_pnlError">
+	
+                <strong>The Car Number specified is not valid for this competition!</strong><br />
+            
+</div>
+
+            
+            
+        </div>
+    
+
+        </div>
+    </form>
+
+    <div id="footer">
+        <div class="SiteLocation">
+            <span id="lblSiteLocation">Connected to Internet site http://results.bajasae.net</span>
+        </div>
+        <div class="SiteLocationUpdate">
+            Last Data Update: <span id="lblSiteLocationUpdate">6/15/2026 4:41:00 PM</span>
+        </div>
+        <div class="Version">
+            BajaSAE Mobile build <span id="lblVersion">2.2.25.5040</span>
+        </div>
+    </div>
+</body>
+</html>

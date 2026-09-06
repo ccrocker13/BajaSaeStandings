@@ -1,0 +1,274 @@
+
+
+<!DOCTYPE html>
+<html>
+<head id="Head1"><meta charset="utf-8" /><title>
+	Endurance Grid
+</title><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/assets/jquery/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <link href="/assets/bootstrap-3-3-4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="/assets/bootstrap-3-3-4/js/bootstrap.min.js" type="text/javascript"></script>
+    <link href="/MainResponsive.css?2023" rel="stylesheet" type="text/css" />
+
+    <style>
+        .lb-sm {
+            font-size: 12px;
+        }
+
+        .lb-md {
+            font-size: 16px;
+        }
+
+        .lb-lg {
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <form method="post" action="./EnduranceGrid.aspx" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FF77F370" />
+    <!-- Header -->
+    <div class="header" style="border: 0px solid green;">
+        <div style="padding-top:10px; padding-bottom:5px; border: 0px solid blue;">
+                <!--<img alt="" class="pull-left" style="padding-top: 20px;" src="/img/logo-sae-red.png" />-->
+                <a href="/"><img alt="" class="img-responsive center-block" src="/img/banner-baja.png?2023" /></a>
+                <!--<img alt="" class="pull-right" style="padding-top: 20px;" src="/img/logo-results-sponsor.png" />-->
+                <div style="font-size: 24px;"><span id="lblEventTitle">Baja SAE New York 2026</span></div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" style="margin-bottom: 5px;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span>MENU</span>
+                </button>
+                <!--<a class="navbar-brand" href="/"><img alt="Brand" src="img/DES-Brand-Img.png"></a> -->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/Leaderboard.aspx">Leaderboards</a></li>
+                <li><a href="/MyResults.aspx">Results by Car</a></li>
+                <!-- <li><a class="btn btn-info" href="/EventWaits.aspx">Event Lines</a></li> -->
+                <li><a href="/EventResults.aspx">Results by Event</a></li>
+                <li><a href="/TechLineAssigns.aspx">Tech Line Num Assignments</a></li>
+                <li><a href="/TechLineNumber.aspx">Current Tech Line Number</a></li>
+                <li><a href="/EnduranceGrid.aspx">Live Endurance Grid</a></li>
+                <li><a href="/BlackFlags.aspx">Endurance Black Flags</a></li>
+                <li><a href="/ProblemReportStatus.aspx">Check Problem Report Status</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+        
+    
+        <div style="background-color: White; padding: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px;"> 
+            
+    <div class="content">
+        <h1>Endurance Grid</h1>
+        <br />
+        
+        <div id="MainContent_pnlPublishedResults">
+	
+            <span class="label label-success lb-md">Final as of 6/13/2026 5:21:00 PM</span>
+            <br />
+            <div>
+		<table class="table table-striped" cellspacing="0" id="MainContent_gvPublishedData">
+			<thead>
+				<tr>
+					<th scope="col">Position</th><th scope="col">Car #</th><th scope="col">School</th><th scope="col">Team</th><th scope="col">Comments</th>
+				</tr>
+			</thead><tbody>
+				<tr>
+					<td>1</td><td>15</td><td>California Polytechnic State Univ-SLO</td><td>Cal Poly Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>2</td><td>6</td><td>Johns Hopkins Univ</td><td>Blue Jay Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>3</td><td>3</td><td>Ecole de Technologie Superieure</td><td>Baja &#201;TS</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>4</td><td>16</td><td>The Ohio State University</td><td>Baja Buckeyes</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>5</td><td>2</td><td>Univ of Michigan - Ann Arbor</td><td>Michigan Baja Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>6</td><td>25</td><td>Michigan State University</td><td>Michigan State University Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>7</td><td>4</td><td>Case Western Reserve Univ</td><td>CWRU Motorsports</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>8</td><td>1</td><td>Cornell Univ</td><td>Cornell Baja Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>9</td><td>5</td><td>Purdue Univ - W Lafayette</td><td>Purdue Baja Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>10</td><td>8</td><td>Virginia Tech</td><td>VT Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>11</td><td>13</td><td>North Carolina State Univ - Raleigh</td><td>Pack Motorsports Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>12</td><td>11</td><td>Georgia Institute of Technology</td><td>GT Off Road</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>13</td><td>7</td><td>Rochester Institute of Technology</td><td>RIOT RACING</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>14</td><td>19</td><td>Pennsylvania College of Technology</td><td>PCT Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>15</td><td>39</td><td>Oregon State Univ</td><td>Beaver Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>16</td><td>48</td><td>Univ of Maryland - College Park</td><td>Terps Racing Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>17</td><td>14</td><td>McMaster Univ</td><td>McMaster Baja Racing </td><td>&nbsp;</td>
+				</tr><tr>
+					<td>18</td><td>99</td><td>SUNY - Stony Brook</td><td>Stony Brook Motorsports</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>19</td><td>10</td><td>Univ of Maryland - Baltimore County</td><td>UMBC Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>20</td><td>29</td><td>Universite de Sherbrooke</td><td>Baja UdeS</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>21</td><td>37</td><td>Universidade Federal De Minas Gerais</td><td>Baja UFMG</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>22</td><td>43</td><td>North Carolina A &amp; T State Univ</td><td>Aggie Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>23</td><td>18</td><td>Northeastern Univ</td><td>Northeastern Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>24</td><td>20</td><td>Universit&#233; Laval</td><td>Al&#233;rion Baja Ulaval</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>25</td><td>36</td><td>IPN - UPIITA</td><td>Ocelot Racing </td><td>&nbsp;</td>
+				</tr><tr>
+					<td>26</td><td>47</td><td>Grove City College</td><td>Grove City Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>27</td><td>66</td><td>Oklahoma State Univ</td><td>Cowboy Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>28</td><td>52</td><td>New Jersey Institute of Technology</td><td>Highlander racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>29</td><td>30</td><td>Tennessee Tech Univ</td><td>Tennesse Tech Baja SAE</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>30</td><td>54</td><td>Univ of Calgary</td><td>UCalgary Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>31</td><td>108</td><td>California State Univ - Chico</td><td>Wildcat racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>32</td><td>34</td><td>Queen&#39;s Univ</td><td>Queen&#39;s Baja </td><td>&nbsp;</td>
+				</tr><tr>
+					<td>33</td><td>89</td><td>Stevens Institute of Technology</td><td>Stevens Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>34</td><td>101</td><td>California State Poly Univ - Pomona</td><td>Bronco Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>35</td><td>32</td><td>Ohio Northern Univ</td><td>Polar Bear Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>36</td><td>9</td><td>Youngstown State Univ</td><td>Penguin Baja Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>37</td><td>21</td><td>Univ of Central Florida</td><td>Knights Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>38</td><td>140</td><td>University of Mount Union</td><td>Raider Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>39</td><td>28</td><td>Univ of Rochester</td><td>Yellowjacket Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>40</td><td>33</td><td>Univ of Wisconsin - Madison</td><td>Badger Racing </td><td>&nbsp;</td>
+				</tr><tr>
+					<td>41</td><td>26</td><td>Univ of Calif - Los Angeles</td><td>Bruin Racing Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>42</td><td>100</td><td>Clarkson University</td><td>Golden Knights Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>43</td><td>95</td><td>Univ of Arizona</td><td>Baja Wildcat Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>44</td><td>49</td><td>Western University</td><td>Western Baja Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>45</td><td>124</td><td>Lehigh Univ</td><td>Mountain Hawk Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>46</td><td>22</td><td>Univ of Illinois - Urbana Champaign</td><td>Off-Road Illini</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>47</td><td>40</td><td>Georgia Southern Univ</td><td>Eagle Motorsports</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>48</td><td>12</td><td>Univ of Nevada - Las Vegas</td><td>Rebel Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>49</td><td>70</td><td>South Dakota School of Mines &amp; Tech </td><td>SDSM&amp;T Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>50</td><td>56</td><td>Univ of Manitoba</td><td>Red Lion Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>51</td><td>114</td><td>Univ of Iowa</td><td>Iowa Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>52</td><td>57</td><td>McGill Univ</td><td>McGill Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>53</td><td>102</td><td>LeTourneau Univ</td><td>Letourneau Renegade Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>54</td><td>92</td><td>Montana State Univ - Bozeman</td><td>Bobcat Motorsports</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>55</td><td>44</td><td>Univ of Akron</td><td>Zips Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>56</td><td>80</td><td>Clemson Univ</td><td>Tiger Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>57</td><td>105</td><td>Univ of Wisconsin - Platteville</td><td>Pioneer Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>58</td><td>50</td><td>Western New England University</td><td>WNE Golden Bear Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>59</td><td>120</td><td>SUNY - Buffalo</td><td>UB Motorsports</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>60</td><td>27</td><td>British Columbia Inst of Tech </td><td>BCIT Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>61</td><td>123</td><td>New York University</td><td>NYU Motorsports</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>62</td><td>122</td><td>Manhattan College</td><td>Jasper Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>63</td><td>202</td><td>Univ of Windsor</td><td>Lancer Motorsports</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>64</td><td>53</td><td>Univ of Cincinnati</td><td>Bearcats Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>65</td><td>91</td><td>Cincinnati State Technical Comm College</td><td>Cincy Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>66</td><td>154</td><td>Lipscomb Univ</td><td>Bison Motorsports</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>67</td><td>86</td><td>Binghamton Univ</td><td>Binghamton Motorsports</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>68</td><td>97</td><td>Cleveland State Univ</td><td>Vikings Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>69</td><td>116</td><td>Eastern Michigan Univ</td><td>emu baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>70</td><td>35</td><td>SUNY- Farmingdale</td><td>RAM Motorsports</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>71</td><td>87</td><td>College of New Jersey</td><td>TCNJ Motorsports</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>72</td><td>113</td><td>Embry-Riddle Aero Univ - Daytona Beach</td><td>ERAU Women&#39;s Baja SAE</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>73</td><td>131</td><td>St Clair County Community College</td><td>SC4 Baja</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>74</td><td>82</td><td>Kettering Univ</td><td>Kettering Baja </td><td>&nbsp;</td>
+				</tr><tr>
+					<td>75</td><td>96</td><td>Bucknell Univ</td><td>Bison Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>76</td><td>31</td><td>Purdue Univ - Northwest</td><td>Purdue NW Baja Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>77</td><td>72</td><td>Univ of Tennessee -Chattanooga</td><td>UTC Racing Mocs</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>78</td><td>41</td><td>Univ of Missouri - Kansas City</td><td>Roo Racing</td><td>&nbsp;</td>
+				</tr><tr>
+					<td>79</td><td>215</td><td>Western Michigan Univ</td><td>Bronco Baja Racing</td><td>&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+        
+</div>
+    </div>
+
+        </div>
+    </form>
+
+    <div id="footer">
+        <div class="SiteLocation">
+            <span id="lblSiteLocation">Connected to Internet site http://results.bajasae.net</span>
+        </div>
+        <div class="SiteLocationUpdate">
+            Last Data Update: <span id="lblSiteLocationUpdate">6/15/2026 4:41:00 PM</span>
+        </div>
+        <div class="Version">
+            BajaSAE Mobile build <span id="lblVersion">2.2.25.5040</span>
+        </div>
+    </div>
+</body>
+</html>

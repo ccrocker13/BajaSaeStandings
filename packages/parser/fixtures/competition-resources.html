@@ -1,0 +1,788 @@
+
+
+<!DOCTYPE html>
+<html>
+<head id="ctl00_Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	CompetitionResources
+</title>
+        <!-- ## DATADOG ## -->
+        <script 
+            type="text/javascript" 
+            src="https://www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js">
+        </script>
+        <script>
+            window.DD_LOGS && window.DD_LOGS.init({
+                clientToken: 'pub2b998a9408da81e2b93d28713ea65e93',
+                site: 'datadoghq.com',
+                forwardErrorsToLogs: true,
+                forwardConsoleLogs: 'all', // ['log', 'debug', 'info', 'warn', 'error']
+                sessionSampleRate: 100,
+                silentMultipleInit: false,
+                trackingConsent: 'granted', // 'not-granted'
+                telemetrySampleRate: 0,
+                storeContextsAcrossPages: false,
+                allowUntrustedEvents: false,
+                service: 'bajasae_north_america',
+                env: 'production',
+                version: '2.1.26.8121',
+                beforeSend: (log) => {
+                    // discard 404 network errors
+                    if (log.http && log.http.status_code === 404) {
+                        return false;
+                    }
+
+                    // remove email from view url
+                    log.view.url = log.view.url.replace(/email=[^&]*/, "email=REDACTED");
+                }
+            });
+
+            //window.DD_LOGS && window.DD_LOGS.setContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.logger.setLevel('error');
+            window.DD_LOGS && window.DD_LOGS.logger.setHandler(['http', 'console']); //'http' | 'console' | 'silent'
+            //window.DD_LOGS && window.DD_LOGS.logger.setHandler('silent');
+            //window.DD_LOGS && window.DD_LOGS.setTrackingConsent('granted');
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#global-context
+            //window.DD_LOGS && window.DD_LOGS.getInternalContext();
+            //window.DD_LOGS && window.DD_LOGS.setGlobalContext({ env: 'staging' });
+            window.DD_LOGS && window.DD_LOGS.setGlobalContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging', referrer: ...}
+            //window.DD_LOGS && window.DD_LOGS.removeGlobalContextProperty('referrer');
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging'}
+            //window.DD_LOGS && window.DD_LOGS.clearGlobalContext();
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {}
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#user-context
+            //window.DD_LOGS && window.DD_LOGS.setUserProperty('type', 'customer');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com', type: 'customer'}
+            //window.DD_LOGS && window.DD_LOGS.removeUserProperty('type');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com'}
+            //window.DD_LOGS && window.DD_LOGS.clearUser();
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {}
+
+            window.DD_LOGS && window.DD_LOGS.setUser({
+                id: '',
+                un: ''
+            });
+        </script>
+        <!-- ## DATADOG ## -->
+    
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/jquery-1.11.2.min.js"></script>
+    <script src="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+
+    
+        <!-- New DataTables -->
+        <link rel="stylesheet" type="text/css" href="/cdsweb/SharedComponents/public_assets/data-tables/src/datatables.min.css" />
+        <script src="/cdsweb/SharedComponents/public_assets/data-tables/src/dataTables.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/moment.min.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/datetime-moment.js" type="text/javascript"></script>
+    <link href="/Main_Responsive.css" rel="stylesheet" type="text/css" /><link href="/panels.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" /><link href="/cdsweb/SharedComponents/public_assets/CdsWeb.css" rel="stylesheet" type="text/css" /><link href="/Overrides.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/CdsWeb.js"></script>
+
+    
+</head>
+
+<body>
+    
+    <link href="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.css" rel="stylesheet" />
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.js"></script>
+    <div id="dateTimePopup"></div>
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.js"></script>
+    
+
+    <div id="header">
+        <div id="logo">
+            <a id="ctl00_aHome" href="/">
+                <img src="/cdsweb/SharedComponents/bajasae.net/img/CdsWeb-BAJA-Header-Logo-Max65pxH.png" />
+            </a>
+        </div>
+        <div id="header-sae" class="hidden-xs pull-right">
+            <a href="http://www.sae.org/">
+                <img src="/cdsweb/SharedComponents/public_assets/img/sae_vrt_blk_rgb_pos_l.png"" style="width:120px" />
+            </a>
+        </div>
+
+        <button type="button" class="pull-right navbar-toggle btn btn-default btn-lg" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+
+<style>
+    #testVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, #f4d308 0 8px, black 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #testVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+
+    #prodVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, red 0 8px, white 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #prodVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+</style>
+
+
+    <form name="aspnetForm" method="post" action="./CompetitionResources.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="HtJj0ugL1oF+nO4jNvBNMQiqdIp7nkwpTRPw3k5E4UxzYtfU0vqjFpUHlaalDCYY1AdaXmuUKu7dgyYGK+JwaKKuzvfPzWKY9SeRutyQugPo4zVVVuK0VYXL/UoyoPYaiZ2ehVr+a5KNvU8ljFoUsa3sXskK7xz0MDwd54L+3FZ/295T8nDGbVdPUYKBEYGEEY7gqpPVvfrPlnOWNmAVdHG4tMpmiQWQpDAV/QkJSiHKqnaDcpI/AnM+xd72sZrZtvrhXBppfhiGhkifWfy+bKBItTdT+gvIL+n/jNnZ+PBjMcR221DSMF/8aqWIN9EiVDkLIPNiOvWaCZ82r/1eS9u2AxugUaU48W/BIC1eU/32eQNSwBFvsqE19du2Ekdq2sSP+qkEjYQybxTM0LyPttxMETueqqktPeWsYypEWS+br/3WiweRG/pCepqV6cLs2XCU3zxvJ2OasxYAxcn1t4ost31n20iIBFCEFiDnDvmNeuCIWI/Ts6V4Sq3tplDp0zZodGprrdwuGqXoNWsXgJMwsOZ+LQTBPpRq2M+TYJvw3Z4OZDxnWeCq2XC0UMzYOPWm0FirEXTZnVEvk6yww9IycHMZ+YupI71Ci+oO4p0/PduaWv95SPLadxmjhKZrizsG1j5sgDBcYpp8vZE4ap+x/olJv+lAJsHQZetLRIyqSrs54Dr/DhF8qHIxWye6IelmuTfxjD75W1C/fa6VNEdzKMSxSzDlFOKATjLDyaMjtESOQLSxoe27PSvOtSBn4rD458ae7y/PQGAYa62tev9V7qOtIcMHY0qQLuxYwJ5uOO4ZRbn1FCZOHYo5PpsuX8YCGySzGCd0viW6Ia3d7h4sx5CmWA3nt2tkglWkPRtMBI2HqGW06124zSYc51hWx/qnD1VWdE2FsJMGmf6Szvow8YnyZO8OUcxM6MGIUHpLqbU39aFl27GzcJvfOfWOYLvp2KStai/fHcTjlbGkcJER5lX+TiYDGr/ygakGw3q+o/egzW1mtxmv8cBqgXgGPT9+NXXW6CXbt7aPYkos2iYcuQlMMaGxu4HXu0aHo1q4V7vRXQKqP6pPOWcqWThrgZ7o62Y91koVMrGnuVPKTRYmXdK/y8wHIw4Wn2NFoIa19DZqXUBnDbX4nE1kZeXRShXE1tfOgMA2kbVN09Dqd0IKQ6//tUXbHXAJ+26Z9gSISu0tfLY6HAwwcjKID77ClL2hNFw5O5ENovhyttlhPipmOs8lDcawdpMo/Zii6sQn4Lum22Qc9XhsdA3bkGEKlnGlZOAXsaZIS3ntEE/hfcvvqqSC2xFwNcYLm0wVibQablGPaamE+9149MDHkPZ0XoieqwLuiR+HIEths20zexLh7qQqHfacl5n/ko2e4FJORoNm2i9GP/IPk0QCZaPNUc8Z4kNER98vjkoO35DL4BzwYGw25OV39CnAjxoj2pl/GtHYpFJn0bT+6USHwhiPSdHhgGnWZ8mqWXI23/ZoXbWD47c9uQjdUiclNsNR5t3T9SDAMn3g/Q8UybVj9I1O2smfdTkUuDCollPm5dvPEUT9EU0BKqWgq3w9+31HvMcFNq/Eb+kc4zDCxiNiEuKCGhrDuQVgju8NHezv8PZdH+cLu5TZuk6HLbfY3dpYR5ocWZGwYw4dWbdzWtvtEI2OdXu2sVFLu18R6iSQpVUvl/mt53bP7ihQbnKWql65xjJfTAYKz6244NaHF6+9dwHDaWfDAIkYh74SmHyrC1S+33GFQNb+IL+GVAYNPz3XbA5wq0YHV6I2x7bfnwIhlmP23q1RkxgafXMV47SWO27Tc1c0kAt/yZkw/NQCIZcRaDwu+NyaNdOwYaoWz1sTKtcq3MfGCs4D/Z3MHDeN2R2mdBS1iBpFnFAY3+au5/lyvMWUsftL2klrQBJziSSP5fjycK2NZ6PvGs2SwGlUcltC5+iAhrzJAsgVgmVmGJRrxblxCmLFgahX1ghjWVAuuvYG3QzBaWKpDsRaWM9nFOR7z1t4oFAt3CxP60hwzTAuGX8VNBDCw8jh1HxxhK1FjYOAWH69NsnlhRUTktsQ7S/V8j/8vRVKAvxgltoK5Gqsg5pA3+xAk/X/yyhOfLBtvRTLuGqLP2N98WQnIyW1Sir/gZA5TL+Xgg+fdOssRRBqwtui0wgbo9sVQLHBUwgnSo4I7+G/tAAJMOzeaVzvxzhAtWKCHChIUxdb003vm9Pa6sz4nKTFFjLeJ5WhZXj9ev7dMVCLCYExukuc1yYdNPo52j8cd0/RTO95T333Ibw2hMohlN4RprAEseHIttfAo9iXrSqiH9aWtFnCv8Qiafcuj+obo0Kmi52iBpmdOQOhMGYK1HOUMZ4EdMJXMViFNksLL2JDMz/r2ISYwpVPx2d6Ck/0KOA8o4gCVUnyc+QSAfRioE0O/ykcdOD519xRBGrwnxPety0bIBCQfx916TXGPzwzXwv4Np19fGVLfi3q29Hotf2K8ksvE93iCvB6q+9MARWPKqWfeur7NblcyUhwhFUFZNIcqE1PaiCxJAIMQFn8fHNBcxnkFBw/8U65hhaF1OEQ6KDC86ecVj6MaFSw9+gMlr9scm97NlJaAie3USD4pkk30lQ2C1Vtzg95f2f4J4SPzaxIQR4MBsfH/d/Mi3rXxEtVXF16yej1KwsAQcSHsVpAjEbUKlP2CRTWaapL4NvKj/HaqRjtWo2n2jsH4bAV3cRPh6bLE9so2626crns1aCdekXW++uuZ6m+J2poW5aS6vAjUWt+z/QMBS21BDqKVzRrg6iII2oQa7iHDwmAD62m297/eLMe5WEuA1Ta8kK8BQXIKWUAqa3GETIRjK0raR/YxIFRcSCzNzXviQhPULwblMYaGk39htxt5/mmyxdHuzlwWVFM+QOQ1Emu/FrpXZ3anqXwPFv81vrk9Xj3SYqjxTPoJINwyaR1LCMvRBVXM/QwfMz7rX5Gzn9IjqYu+ke6DGUxK6rsR9lGZH9dFbREpemwTeC2B5ix85Po8/w0ig6l9Rj4KfmeqP5fcO5wDnPeWlHTpSnxHGaI1QXW+yL95YbTdS0ZVF1TJHDBMv1ym21coQ0pJB11DuciL8O93+BXjtB7t1sQQP182YoCMmaH4At4J4VZZoINfI/vI4O6NNOkSC5DHPoZkuSnWr8uV4Pc1Xey4eE8pWCXQ8f/mabhcPnRzd+FZnWEgOeBaP9POqc43FTSM3aAkP7GDhq2F0HRgpFp4aOl2oWGeR8SyNtxJvwwilf1mJO3TMmCHxm6dL6NlJERgPXJNxPMEakCifO41E3elIPAH550vKtn9phuDXEdC6RZEx24CnZBbIpXcoJSh+wkZlkWG4vwAg1QQRwfLeL+DGxeWhc1YQslu+BjnMjK9ACoqdlwuhiRS2mnSyRFOBn+bBMXan3q/AdttqKPzYnsJ/yRTc7zdxvJ+wV2QokYKH/LTUOXD87Lcu24+R2jpPa2QVzIYOKXvRpoeLMG6+MFON+4WZkBshJImIj5GbHI9Q8NgXK6tQ/7tcuRex57Tm6NCLD88/WtQ5wBBKRoiOj0BItIPWmmwdIDLhnNB1exgO48j+kRiPLesFVpVmluGAI+8fSRHhyW+YDJx59GnyXpTwZCx6nVDHbhot7tPsqoRyB71IFjuUFbvZeJjed7QtHDYYLacZ0XlEONp6NyHKEpO6eYUYLFhWCcE2U/8XbWSBI3nQyOrRfSEyyEHgZjaApDDckwJ4QweMkK3zdJHuTw5JTZNJjcu502wphym7OICqNdXKb+8UZT7YXSGS0JHJGkzbw+CxDVh7azGEO7+cNqtMuG5fx5p3t0i1RSkWFjIn5i5YlhfjM8QBIpXvVP6OYlOhomUh2ydl4yWv1/toWQ3n5rcwqXTULgRln4jGP5GCGubIGPxN3/UJggkuEdSG8GO9L348lKvdY6jdsce9yEv9+zvlUSG3Mt4UBgQvaTdvqqPQACBOJBA7n2mrs+yDrkOWk81OQx0VdWrMifeCN7+B6uRFW3NrU/f9QsaWRtQMWrdwboNDW0M44mI22tKA4vD5JZ97E62CxYoJOziYLRusr860/yNlCkaDYVzTx5zT+sw9eYjPCklWOA5VtWCW8GDpj9Cv++7l11DviJ5/TUFReXSRDlsCHb4358qGo6z/pICulQVD1bEYw/7kkq4WCuP9oTA6qmXjcEaGIiGRRmdvTkxenjjt33OcHEUKgP5vjCz177Z8BRAQ8Gn+LpkNwS38FJmrCtSqKO+dRtynjrBCzhGCj15hULfQ+MLPSTQc/S5i8v4IC10MYwmbp4zcQaKhktfkcOYa/HVRljUZSN0jnKUAMR52E4iyXPYo67UG4KtWoEv++6AnaAe5XL512nY4CpogHpY5leEH9mZ3uo7ojxV4BQx3SX5SRn61cnSvJyX1pUjV3vnU07aoT2XBjM4mVGVj42FmzLfuIaMR0jOHI2a28xXKANWBOgPTvd3Hs05vPiLwZUOaUPtw7CUH61OYSOue9467puj6KBtzael8SFAHYftOf8PbnpKGp0GcHrC303WgtDSAXyVgrC7oicX3aqJoO9S49s55ePxqYSTX56oKVkPPjHTZUUEYW0kGgaZs6D8NnPrXceKMbr5ltCW5RmUovGtrfiLkje4MBGn9W5JPwxf26hO8LKyCdw4fcNz+iCDYGQoaSV6WIgEjCqKjipTASlkYE7G+RJ7pX5iGEaz2teTkY5DgKetqzxH82kuYEEWxDhoQ+8CQKHPFl0QHEaaxyRrnCwcglZj/x2HVKl9zOYgSy6J8sJYP7GOWDrrPEueQTIgmq5Q/C9SZt6hUWFZkBn5SZJZTpyYL1h+ipp09jZxhdKOjSjEoC929+rkwTM7VhiRC12O82MMiN6hY7SeuVpNQUhjqDEZ57b93zLfTpehGm36NX3g7/Z9JnBq0F+gu3pPesoEJ/8Xubib8lMevK+hy46rv18vwiPDkogaQi3BCOb/J2jwFAe2nF2PFBx+uH9k3Wj7Lgp/E50pJJ2OfO526bmFynem0s+SD3/ULGG47PXL/Gd6eECFBSy7Aus3g2CeOhuGqYNs3CcVDwc3fLUOoAFazKRuSnIErjBySO0rRlLgPmWYH1xY1++9RdH7OAywUniRQ19W99hFohgjcHAKg5YqoRdf/lUZV+LWRyf9v7yHO1N6Uv3s5PW2drpe5ju" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2786BA86" />
+        <nav class="navbar" role="navigation">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    
+                    
+
+                    
+                    <li><a href="/">Home</a></li>
+
+                    
+                    
+
+                    
+                    <li class="dropdown hidden">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jump To Activity&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            
+                        </ul>
+                    </li>
+
+                    
+                    <li><a href="/cdsweb/app/news.aspx">News</a></li>
+
+                    
+                    <li><a href="/cdsweb/reg/UpcomingCompList.aspx">Competitions & Workshops</a></li>
+
+                    
+                    <li><a href="/Deadlines.aspx?seriesCode=BAJA">Deadlines</a></li>
+
+                    
+                    <li><a href="/app/CompetitionResources.aspx" target="_blank">Competition Resources</a></li>
+
+                    
+                    <li><a href="/cdsweb/gen/DocumentResources.aspx">Series Resources</a></li>
+
+                    
+                    <li><a href="/res/ResultsLanding.aspx">Results</a></li>
+
+                    
+                    <li><a href="/Page.aspx?pageid=02d6642f-e37d-4f69-9b1e-c60ea76dcc41">Membership</a></li>
+                    
+                    
+                    <li><a href="/Page.aspx?pageid=4d4e29a9-e7fc-4394-bae2-51080f4adf04">Media</a></li>
+
+                    
+                    <li><a href="/go/signup">Create an Account</a></li>
+
+                    
+                    
+
+                    
+                    <li><a href="https://www.bajasae.net/Login.aspx">Login</a></li>
+
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content-wrapper">
+            <div id="content" class='container min-height'>
+                
+
+                
+<div id="dismissableAlert" style="display: none;" class="alert alert-danger">
+    <div id="errorDetails"></div>
+
+    <p>Click the button to view more details of the error.</p>
+    <button type="button" class="btn btn-danger" onclick="ShowTheError()">Click here to see what went wrong</button>
+    <button type="button" class="btn btn-secondary" id="AlertCloseButon">Dismiss</button>
+</div>
+
+<script>
+    var htmlResponse = "";
+    var errorPopupDetails = "";
+
+    function ShowTheError() {
+        window.open('').document.body.innerHTML = htmlResponse;
+        $("#dismissableAlert").hide();
+    }
+
+    $(document).ready(function () {
+        $("#AlertCloseButon").click(function () {
+            $("#dismissableAlert").hide();
+        });
+    });
+
+    function PopulateErrorMessage(messageHtml){
+        htmlResponse = messageHtml;
+        //htmlResponse = htmlResponse.replace("<b>Source Error:</b>", "<b>Source Error:</b>" + , window.location.href)
+        var beginIndex = htmlResponse.indexOf("<h2> <i>");
+        var endIndex = htmlResponse.indexOf("<b>Stack Trace:</b>");
+        errorPopupDetails = htmlResponse.substring(beginIndex, endIndex);
+
+        $("#dismissableAlert").show();
+        document.getElementById("errorDetails").innerHTML = errorPopupDetails;
+
+        window.scrollTo(0, 0); // values are x,y-offset
+    }
+</script>
+
+                
+    
+
+<link href="/cdsweb/sharedcomponents/app/assets/CompetitionResourcesTree.css" rel="stylesheet" />
+
+<div class="row">    
+    <div class="col-xs-12">
+        <div class="page-header">
+            <h2>BajaSAE North America</h2>
+            <h2>Competition Resources</h2>
+            <h3>2027 Season</h3>        
+        </div>
+    </div>
+    
+</div>
+
+<script src="/cdsweb/SharedComponents/app/assets/CompetitionResourcesTree.js"></script>
+
+<script type="text/javascript">
+    // this part defines the guts of each item row
+    var RenderDocumentColumns = function (document) {           
+        var linkPath;
+
+        if (document.resourceType == 'Schedules')
+        {
+            if (document.folder == 'PDF')
+            {
+                linkPath = '/app/SimpleScheduleViewer.aspx?scheduleid=' + document.id;
+            }
+            else
+            {
+                linkPath = '/app/SmartScheduleViewer.aspx?scheduleid=' + document.id;
+            }
+        }
+            
+        if (document.resourceType == 'Maps')
+        {
+            // this logic only covers simple maps- another conditional will need to be added here once smart maps are added - BSW
+            linkPath = '/app/MapViewer.aspx?mapid=' + document.id;
+        }
+
+        if (document.resourceType == 'Paddock Assignments')
+        {
+            linkPath = '/app/PaddockLocationsViewer.aspx?competitionid=' + document.id;
+        }
+
+        if (document.resourceType == 'Additional Information')
+        {
+            linkPath = '/app/InfoPageViewer.aspx?pageid=' + document.id;
+        }
+
+        if (document.resourceType == 'Files') {
+            linkPath = document.url;
+        }
+
+        var downloadBtn = '<a target="_blank" class="btn btn-info" href="' + linkPath + '">Launch</a>';
+            
+        return [
+            document.title,
+            downloadBtn
+        ];
+    };
+</script>
+
+        
+
+<link href="/cdsweb/sharedcomponents/gen/assets/DocumentResourcesTree.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="panel-heading">
+            <h3><strong>Baja SAE Ohio</strong></h3>
+        </div>
+        <div class="panel-body">
+            <table id="7e9bea4a_f652_4732_ae8d_6d1c654ffdae" class="tree-table table table-responsive table-hover">
+                <thead>
+                    <tr>
+                        <th>ResourceType / Title</th>
+                        <th>Actions</th>
+                    </tr>                                                
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>            
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var resources = [];
+
+        
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Schedules', 
+                    publisher: 'Schedules', 
+                    title: '2026 Baja SAE® Ohio Event Schedule ', 
+                    lastActionDate: '8/17/2026 12:25:34 PM ET',
+                    typeSortOrder: '10',
+                    sortOrder: '0',
+                    idType: 'ScheduleID',
+                    id: 'e85d9f78-8583-44f5-9b76-c79a7766b36c',
+                    advancedType: 'Smart',
+                    folder: 'Smart',
+                    subfolder: '',
+                    url: ''
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Additional Information', 
+                    publisher: 'Additional Information', 
+                    title: '2026 Hotel Information', 
+                    lastActionDate: '4/28/2026 9:23:27 AM ET',
+                    typeSortOrder: '40',
+                    sortOrder: '0',
+                    idType: 'InfoPageID',
+                    id: '61086252-81e3-4442-b2dc-8af1b35bfc24',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: ''
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Additional Information', 
+                    publisher: 'Additional Information', 
+                    title: 'WiFi Setup', 
+                    lastActionDate: '4/14/2018 12:50:18 AM ET',
+                    typeSortOrder: '40',
+                    sortOrder: '0',
+                    idType: 'InfoPageID',
+                    id: '06bca304-c8f0-475c-a3b9-947ecb805eb5',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: ''
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Additional Information', 
+                    publisher: 'Additional Information', 
+                    title: 'COVID-19 Info', 
+                    lastActionDate: '11/11/2022 1:30:34 PM ET',
+                    typeSortOrder: '40',
+                    sortOrder: '0',
+                    idType: 'InfoPageID',
+                    id: '879ad2c0-c39a-483e-ba41-d2ada0f55ff9',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: ''
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Additional Information', 
+                    publisher: 'Additional Information', 
+                    title: 'Live Stream', 
+                    lastActionDate: '9/1/2026 9:37:14 AM ET',
+                    typeSortOrder: '40',
+                    sortOrder: '0',
+                    idType: 'InfoPageID',
+                    id: 'e8a5ee9e-1308-4768-a8cb-f3cc069d5d9c',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: ''
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Files', 
+                    publisher: 'Files', 
+                    title: '2026 September CDS Calendar - Dates to Know - PNG', 
+                    lastActionDate: '8/7/2026 4:03:24 PM ET',
+                    typeSortOrder: '50',
+                    sortOrder: '10',
+                    idType: 'ResourceID',
+                    id: '0b6c2cdf-d3f3-44e6-83a9-2574b0a13b57',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: 'https://www.bajasae.net/CompResources/2026/7e9bea4a-f652-4732-ae8d-6d1c654ffdae/September-UP-Calendar-2026.png'
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Files', 
+                    publisher: 'Files', 
+                    title: '2026 September CDS Calendar - Dates to Know - PDF', 
+                    lastActionDate: '8/7/2026 4:02:57 PM ET',
+                    typeSortOrder: '50',
+                    sortOrder: '10',
+                    idType: 'ResourceID',
+                    id: 'f6a866e1-04d3-416b-8c74-4a742d1694dd',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: 'https://www.bajasae.net/CompResources/2026/7e9bea4a-f652-4732-ae8d-6d1c654ffdae/September-UP-Calendar-2026.pdf'
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Files', 
+                    publisher: 'Files', 
+                    title: 'Xometry - LaunchPad Live Partner for 2027 Career & Season Prep', 
+                    lastActionDate: '8/7/2026 4:22:00 PM ET',
+                    typeSortOrder: '50',
+                    sortOrder: '10',
+                    idType: 'ResourceID',
+                    id: '856d130b-7a6e-42cc-a460-5e03f47ee910',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: 'https://www.bajasae.net/CompResources/2026/7e9bea4a-f652-4732-ae8d-6d1c654ffdae/Xometry_Blue_Registered.png'
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Files', 
+                    publisher: 'Files', 
+                    title: 'Baja SAE® Ohio Team Welcome Packet', 
+                    lastActionDate: '7/8/2026 10:29:01 AM ET',
+                    typeSortOrder: '50',
+                    sortOrder: '10',
+                    idType: 'ResourceID',
+                    id: 'cd5108f3-af8e-49d9-8824-9ad8f47bffcb',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: 'https://www.bajasae.net/CompResources/2026/7e9bea4a-f652-4732-ae8d-6d1c654ffdae/Welcome-Leter-BAJA-SAE-Ohio-2026.pdf'
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Files', 
+                    publisher: 'Files', 
+                    title: 'Baja SAE® Ohio Event Appendix ', 
+                    lastActionDate: '7/27/2026 9:00:57 AM ET',
+                    typeSortOrder: '50',
+                    sortOrder: '10',
+                    idType: 'ResourceID',
+                    id: '44309b79-1603-4103-b375-b8e8e8318f87',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: 'https://www.bajasae.net/CompResources/2026/7e9bea4a-f652-4732-ae8d-6d1c654ffdae/Appendix_Ohio_2026r2.pdf'
+                });
+            
+        
+        if (resources.length > 0)
+        {
+            CompetitionResourcesTreeInit(resources, RenderDocumentColumns, false, '7e9bea4a_f652_4732_ae8d_6d1c654ffdae');
+        } 
+    });
+</script> 
+    
+        
+
+<link href="/cdsweb/sharedcomponents/gen/assets/DocumentResourcesTree.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="panel-heading">
+            <h3><strong>Baja SAE Arizona</strong></h3>
+        </div>
+        <div class="panel-body">
+            <table id="69cb610a_a962_42e1_b942_17e7594760b6" class="tree-table table table-responsive table-hover">
+                <thead>
+                    <tr>
+                        <th>ResourceType / Title</th>
+                        <th>Actions</th>
+                    </tr>                                                
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>            
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var resources = [];
+
+        
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Additional Information', 
+                    publisher: 'Additional Information', 
+                    title: 'WiFi Setup', 
+                    lastActionDate: '4/14/2018 12:50:18 AM ET',
+                    typeSortOrder: '40',
+                    sortOrder: '0',
+                    idType: 'InfoPageID',
+                    id: '06bca304-c8f0-475c-a3b9-947ecb805eb5',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: ''
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Additional Information', 
+                    publisher: 'Additional Information', 
+                    title: 'COVID-19 Info', 
+                    lastActionDate: '11/11/2022 1:30:34 PM ET',
+                    typeSortOrder: '40',
+                    sortOrder: '0',
+                    idType: 'InfoPageID',
+                    id: '879ad2c0-c39a-483e-ba41-d2ada0f55ff9',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: ''
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Additional Information', 
+                    publisher: 'Additional Information', 
+                    title: 'Live Stream', 
+                    lastActionDate: '9/1/2026 9:37:14 AM ET',
+                    typeSortOrder: '40',
+                    sortOrder: '0',
+                    idType: 'InfoPageID',
+                    id: 'e8a5ee9e-1308-4768-a8cb-f3cc069d5d9c',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: ''
+                });
+            
+        
+        if (resources.length > 0)
+        {
+            CompetitionResourcesTreeInit(resources, RenderDocumentColumns, false, '69cb610a_a962_42e1_b942_17e7594760b6');
+        } 
+    });
+</script> 
+    
+        
+
+<link href="/cdsweb/sharedcomponents/gen/assets/DocumentResourcesTree.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="panel-heading">
+            <h3><strong>BAJA SAE Williamsport</strong></h3>
+        </div>
+        <div class="panel-body">
+            <table id="1799473b_3ba6_44e4_bc4f_420bdd3031c0" class="tree-table table table-responsive table-hover">
+                <thead>
+                    <tr>
+                        <th>ResourceType / Title</th>
+                        <th>Actions</th>
+                    </tr>                                                
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>            
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var resources = [];
+
+        
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Additional Information', 
+                    publisher: 'Additional Information', 
+                    title: 'WiFi Setup', 
+                    lastActionDate: '4/14/2018 12:50:18 AM ET',
+                    typeSortOrder: '40',
+                    sortOrder: '0',
+                    idType: 'InfoPageID',
+                    id: '06bca304-c8f0-475c-a3b9-947ecb805eb5',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: ''
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Additional Information', 
+                    publisher: 'Additional Information', 
+                    title: 'COVID-19 Info', 
+                    lastActionDate: '11/11/2022 1:30:34 PM ET',
+                    typeSortOrder: '40',
+                    sortOrder: '0',
+                    idType: 'InfoPageID',
+                    id: '879ad2c0-c39a-483e-ba41-d2ada0f55ff9',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: ''
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Additional Information', 
+                    publisher: 'Additional Information', 
+                    title: 'Live Stream', 
+                    lastActionDate: '9/1/2026 9:37:14 AM ET',
+                    typeSortOrder: '40',
+                    sortOrder: '0',
+                    idType: 'InfoPageID',
+                    id: 'e8a5ee9e-1308-4768-a8cb-f3cc069d5d9c',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: ''
+                });
+            
+        
+        if (resources.length > 0)
+        {
+            CompetitionResourcesTreeInit(resources, RenderDocumentColumns, false, '1799473b_3ba6_44e4_bc4f_420bdd3031c0');
+        } 
+    });
+</script> 
+    
+        
+
+<link href="/cdsweb/sharedcomponents/gen/assets/DocumentResourcesTree.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="panel-heading">
+            <h3><strong>Baja SAE Michigan</strong></h3>
+        </div>
+        <div class="panel-body">
+            <table id="28e53ae9_4171_4056_bc9e_e277893c6e0d" class="tree-table table table-responsive table-hover">
+                <thead>
+                    <tr>
+                        <th>ResourceType / Title</th>
+                        <th>Actions</th>
+                    </tr>                                                
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>            
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var resources = [];
+
+        
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Additional Information', 
+                    publisher: 'Additional Information', 
+                    title: 'WiFi Setup', 
+                    lastActionDate: '4/14/2018 12:50:18 AM ET',
+                    typeSortOrder: '40',
+                    sortOrder: '0',
+                    idType: 'InfoPageID',
+                    id: '06bca304-c8f0-475c-a3b9-947ecb805eb5',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: ''
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Additional Information', 
+                    publisher: 'Additional Information', 
+                    title: 'COVID-19 Info', 
+                    lastActionDate: '11/11/2022 1:30:34 PM ET',
+                    typeSortOrder: '40',
+                    sortOrder: '0',
+                    idType: 'InfoPageID',
+                    id: '879ad2c0-c39a-483e-ba41-d2ada0f55ff9',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: ''
+                });
+            
+                resources.push({
+                    type: 'document',
+                    resourceType: 'Additional Information', 
+                    publisher: 'Additional Information', 
+                    title: 'Live Stream', 
+                    lastActionDate: '9/1/2026 9:37:14 AM ET',
+                    typeSortOrder: '40',
+                    sortOrder: '0',
+                    idType: 'InfoPageID',
+                    id: 'e8a5ee9e-1308-4768-a8cb-f3cc069d5d9c',
+                    advancedType: '',
+                    folder: '',
+                    subfolder: '',
+                    url: ''
+                });
+            
+        
+        if (resources.length > 0)
+        {
+            CompetitionResourcesTreeInit(resources, RenderDocumentColumns, false, '28e53ae9_4171_4056_bc9e_e277893c6e0d');
+        } 
+    });
+</script> 
+    
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                
+
+            </div>
+
+
+            <a class="sae-privacy-policy" href="https://www.sae.org/privacy" target="_blank">SAE International Privacy Policy</a>
+        </div>
+    </form>
+</body>
+</html>

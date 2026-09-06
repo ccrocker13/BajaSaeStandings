@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<html>
+<head id="ctl00_Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	Results
+</title>
+        <!-- ## DATADOG ## -->
+        <script 
+            type="text/javascript" 
+            src="https://www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js">
+        </script>
+        <script>
+            window.DD_LOGS && window.DD_LOGS.init({
+                clientToken: 'pub2b998a9408da81e2b93d28713ea65e93',
+                site: 'datadoghq.com',
+                forwardErrorsToLogs: true,
+                forwardConsoleLogs: 'all', // ['log', 'debug', 'info', 'warn', 'error']
+                sessionSampleRate: 100,
+                silentMultipleInit: false,
+                trackingConsent: 'granted', // 'not-granted'
+                telemetrySampleRate: 0,
+                storeContextsAcrossPages: false,
+                allowUntrustedEvents: false,
+                service: 'bajasae_north_america',
+                env: 'production',
+                version: '2.1.26.8121',
+                beforeSend: (log) => {
+                    // discard 404 network errors
+                    if (log.http && log.http.status_code === 404) {
+                        return false;
+                    }
+
+                    // remove email from view url
+                    log.view.url = log.view.url.replace(/email=[^&]*/, "email=REDACTED");
+                }
+            });
+
+            //window.DD_LOGS && window.DD_LOGS.setContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.logger.setLevel('error');
+            window.DD_LOGS && window.DD_LOGS.logger.setHandler(['http', 'console']); //'http' | 'console' | 'silent'
+            //window.DD_LOGS && window.DD_LOGS.logger.setHandler('silent');
+            //window.DD_LOGS && window.DD_LOGS.setTrackingConsent('granted');
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#global-context
+            //window.DD_LOGS && window.DD_LOGS.getInternalContext();
+            //window.DD_LOGS && window.DD_LOGS.setGlobalContext({ env: 'staging' });
+            window.DD_LOGS && window.DD_LOGS.setGlobalContextProperty('referrer', document.referrer);
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging', referrer: ...}
+            //window.DD_LOGS && window.DD_LOGS.removeGlobalContextProperty('referrer');
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {env: 'staging'}
+            //window.DD_LOGS && window.DD_LOGS.clearGlobalContext();
+            //window.DD_LOGS && window.DD_LOGS.getGlobalContext(); // => {}
+
+            //https://docs.datadoghq.com/logs/log_collection/javascript/#user-context
+            //window.DD_LOGS && window.DD_LOGS.setUserProperty('type', 'customer');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com', type: 'customer'}
+            //window.DD_LOGS && window.DD_LOGS.removeUserProperty('type');
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {id: '1234', name: 'John Doe', email: 'john@doe.com'}
+            //window.DD_LOGS && window.DD_LOGS.clearUser();
+            //window.DD_LOGS && window.DD_LOGS.getUser(); // => {}
+
+            window.DD_LOGS && window.DD_LOGS.setUser({
+                id: '',
+                un: ''
+            });
+        </script>
+        <!-- ## DATADOG ## -->
+    
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/jquery-1.11.2.min.js"></script>
+    <script src="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="/cdsweb/SharedComponents/public_assets/jqueryui-1-11-2-full/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+
+    
+        <!-- New DataTables -->
+        <link rel="stylesheet" type="text/css" href="/cdsweb/SharedComponents/public_assets/data-tables/src/datatables.min.css" />
+        <script src="/cdsweb/SharedComponents/public_assets/data-tables/src/dataTables.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/moment.min.js" type="text/javascript"></script>
+        <script src="/cdsweb/SharedComponents/public_assets/moment/datetime-moment.js" type="text/javascript"></script>
+    <link href="/Main_Responsive.css" rel="stylesheet" type="text/css" /><link href="/panels.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/bootstrap-3.2.0/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" /><link href="/cdsweb/SharedComponents/public_assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" /><link href="/cdsweb/SharedComponents/public_assets/CdsWeb.css" rel="stylesheet" type="text/css" /><link href="/Overrides.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/cdsweb/SharedComponents/public_assets/CdsWeb.js"></script>
+
+    
+    </head>
+
+<body>
+    
+    <link href="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.css" rel="stylesheet" />
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.min.js"></script>
+    <div id="dateTimePopup"></div>
+    <script src="/cdsweb/SharedComponents/public_assets/datetimepicker/DateTimePicker.js"></script>
+    
+
+    <div id="header">
+        <div id="logo">
+            <a id="ctl00_aHome" href="/">
+                <img src="/cdsweb/SharedComponents/bajasae.net/img/CdsWeb-BAJA-Header-Logo-Max65pxH.png" />
+            </a>
+        </div>
+        <div id="header-sae" class="hidden-xs pull-right">
+            <a href="http://www.sae.org/">
+                <img src="/cdsweb/SharedComponents/public_assets/img/sae_vrt_blk_rgb_pos_l.png"" style="width:120px" />
+            </a>
+        </div>
+
+        <button type="button" class="pull-right navbar-toggle btn btn-default btn-lg" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+
+<style>
+    #testVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, #f4d308 0 8px, black 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #testVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+
+    #prodVisualIndicator {
+        background-image: repeating-linear-gradient(-45deg, red 0 8px, white 8px 16px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #prodVisualIndicator > span {
+        color: white;
+        background-color: black;
+        font-size: x-small;
+        padding: 0 5px;
+    }
+</style>
+
+
+    <form name="aspnetForm" method="post" action="./page.aspx?pageid=2d2a2ef4-55fe-40e3-a67b-91dd0ca1a6ec" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3989C74E" />
+        <nav class="navbar" role="navigation">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    
+                    
+
+                    
+                    <li><a href="/">Home</a></li>
+
+                    
+                    
+
+                    
+                    <li class="dropdown hidden">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jump To Activity&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            
+                        </ul>
+                    </li>
+
+                    
+                    <li><a href="/cdsweb/app/news.aspx">News</a></li>
+
+                    
+                    <li><a href="/cdsweb/reg/UpcomingCompList.aspx">Competitions & Workshops</a></li>
+
+                    
+                    <li><a href="/Deadlines.aspx?seriesCode=BAJA">Deadlines</a></li>
+
+                    
+                    <li><a href="/app/CompetitionResources.aspx" target="_blank">Competition Resources</a></li>
+
+                    
+                    <li><a href="/cdsweb/gen/DocumentResources.aspx">Series Resources</a></li>
+
+                    
+                    <li><a href="/res/ResultsLanding.aspx">Results</a></li>
+
+                    
+                    <li><a href="/Page.aspx?pageid=02d6642f-e37d-4f69-9b1e-c60ea76dcc41">Membership</a></li>
+                    
+                    
+                    <li><a href="/Page.aspx?pageid=4d4e29a9-e7fc-4394-bae2-51080f4adf04">Media</a></li>
+
+                    
+                    <li><a href="/go/signup">Create an Account</a></li>
+
+                    
+                    
+
+                    
+                    <li><a href="https://www.bajasae.net/Login.aspx">Login</a></li>
+
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content-wrapper">
+            <div id="content" class='container min-height'>
+                
+
+                
+<div id="dismissableAlert" style="display: none;" class="alert alert-danger">
+    <div id="errorDetails"></div>
+
+    <p>Click the button to view more details of the error.</p>
+    <button type="button" class="btn btn-danger" onclick="ShowTheError()">Click here to see what went wrong</button>
+    <button type="button" class="btn btn-secondary" id="AlertCloseButon">Dismiss</button>
+</div>
+
+<script>
+    var htmlResponse = "";
+    var errorPopupDetails = "";
+
+    function ShowTheError() {
+        window.open('').document.body.innerHTML = htmlResponse;
+        $("#dismissableAlert").hide();
+    }
+
+    $(document).ready(function () {
+        $("#AlertCloseButon").click(function () {
+            $("#dismissableAlert").hide();
+        });
+    });
+
+    function PopulateErrorMessage(messageHtml){
+        htmlResponse = messageHtml;
+        //htmlResponse = htmlResponse.replace("<b>Source Error:</b>", "<b>Source Error:</b>" + , window.location.href)
+        var beginIndex = htmlResponse.indexOf("<h2> <i>");
+        var endIndex = htmlResponse.indexOf("<b>Stack Trace:</b>");
+        errorPopupDetails = htmlResponse.substring(beginIndex, endIndex);
+
+        $("#dismissableAlert").show();
+        document.getElementById("errorDetails").innerHTML = errorPopupDetails;
+
+        window.scrollTo(0, 0); // values are x,y-offset
+    }
+</script>
+
+                
+<div class="ContentBlock">
+    <br />
+    <br />
+    <div class="Head1">Competition Scores &amp; Results<br />
+&nbsp;</div>
+<div class="Head1"><img width="600" height="400" alt="" src="https://www.bajasae.net/content/SAE2016_Raffix-7472.jpg" /></div>
+<div class="Head1">
+<div class="Head1">
+<p>2016 Competitions</p>
+<ul>
+    <li>
+    <div class="Head3"><a href="https://www.bajasae.net/content/2016-Tennessee-final.xlsx">Baja SAE Tennessee Tech </a>(04/14/2016)</div>
+    </li>
+    <li>
+    <div class="Head3"><a href="https://www.bajasae.net/content/2016-California-final.xlsx">Baja SAE California </a>(05/19/2016)</div>
+    </li>
+    <li>
+    <div class="Head3"><a href="https://www.bajasae.net/content/2016-Rochester-final.xlsx">Baja&nbsp;SAE Rochester </a>(06/09/2016)</div>
+    </li>
+</ul>
+<p>2015 Competitions</p>
+<ul>
+    <li>
+    <div class="Head3"><a href="/content/2015_Auburn_Scores3.xlsx">Baja SAE Auburn</a>&nbsp; (04/15/2015 - Design Report Scores Updated)</div>
+    </li>
+    <li>
+    <div class="Head3"><a target="_blank" href="/content/2015_Maryland_Scores2.xlsx">Baja SAE Maryland</a> (05/26/2015 - Updated)</div>
+    </li>
+    <li>
+    <div class="Head3"><a target="_blank" href="/content/2015_Oregon_Scores1.xlsx">Baja&nbsp;SAE Oregon</a> (06/04/2015)<br />
+    &nbsp;</div>
+    </li>
+</ul>
+</div>
+<p>2014 Competitions</p>
+<ul>
+    <li>
+    <div class="Head3"><a target="_blank" href="/content/2014_BajaUTEP_Final.xlsx">BajaSAE UTEP</a>&nbsp; (04/27/2014)</div>
+    </li>
+    <li>
+    <div class="Head3"><a target="_blank" href="/content/2014_Kansas_Scores3.xlsx">BajaSAE Kansas</a> (06/12/2014)</div>
+    </li>
+    <li>
+    <div class="Head3"><a target="_blank" href="/content/2014_Illinois_Scores2.xlsx">BajaSAE Illinois</a> (07/07/2014)</div>
+    </li>
+</ul>
+</div>
+<div class="Head1">&nbsp;</div>
+<div class="Head1">&nbsp;2013 Competitions</div>
+<ul>
+    <li>
+    <div class="Head3"><a target="_blank" href="/content/2013_Tennessee_Scores3.xlsx">BajaSAE Tennessee Tech</a>&nbsp; (04/24/2013)</div>
+    </li>
+    <li>
+    <div class="Head3"><a target="_blank" href="/content/2013_Washington_Scores_Final2.xlsx">BajaSAE Washington</a> (05/28/2013)</div>
+    </li>
+    <li>
+    <div class="Head3"><a target="_blank" href="/content/2013_Rochester_Scores1.xlsx">BajaSAE&nbsp;Rochester</a> (06/10/2013)</div>
+    </li>
+</ul>
+<div class="Head1">&nbsp;</div>
+<div class="Head1">&nbsp;</div>
+<div class="Head1">&nbsp;</div>
+<div class="Head1">Previous Years</div>
+<p style="margin-left: 40px"><a target="_blank" href="http://students.sae.org/competitions/bajasae/results/">Results Archives</a> can be found here</p>
+</div>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                
+            </div>
+
+
+            <a class="sae-privacy-policy" href="https://www.sae.org/privacy" target="_blank">SAE International Privacy Policy</a>
+        </div>
+    </form>
+</body>
+</html>

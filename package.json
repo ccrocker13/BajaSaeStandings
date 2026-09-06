@@ -1,0 +1,35 @@
+{
+  "name": "baja-sae-standings",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -b",
+    "build:data": "tsx tools/build-data/build.ts",
+    "dev": "pnpm run build:summary && vite",
+    "build": "pnpm run build:summary && vite build",
+    "preview": "vite preview",
+    "build:summary": "tsx tools/build-data/summarize.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.5.5",
+    "node-html-parser": "^6.1.13",
+    "playwright": "^1.63.0",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^3.4.19",
+    "tsx": "^4.23.13",
+    "typescript": "^5.7.2",
+    "vite": "^6.4.3",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6"
+  }
+}

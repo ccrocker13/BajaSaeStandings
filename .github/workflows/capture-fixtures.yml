@@ -1,0 +1,169 @@
+# Captures the upstream Baja SAE results HTML from a GitHub-hosted runner.
+#
+# Why this exists: the development environment cannot reach bajasae.net at all
+# (egress policy returns 403), so parsers cannot be written by inspection. This
+# workflow fetches the pages from a runner that does have open internet, commits
+# the raw HTML as a test corpus, and emits a compact structural digest of each
+# page so the markup can be reviewed without wading through VIEWSTATE blobs.
+#
+# Re-run it by editing tools/capture/urls.tsv and pushing.
+name: Capture fixtures
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/capture/urls.tsv'
+      - 'tools/capture/outline.mjs'
+      - '.github/workflows/capture-fixtures.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: capture-fixtures-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+
+      # Installs node-html-parser for the digest script and the parser's own
+      # test dependencies for the drift check further down.
+      - run: pnpm install --frozen-lockfile
+
+      - name: Fetch pages
+        env:
+          # Identify ourselves honestly. If SAE ever wants us to stop, they need
+          # a way to see who is asking and where to complain.
+          UA: 'BajaSaeStandings/0.1 (+https://github.com/ccrocker13/BajaSaeStandings) fixture-capture'
+        run: |
+          set -uo pipefail
+          mkdir -p packages/parser/fixtures
+          : > packages/parser/fixtures/MANIFEST.md
+          {
+            echo "# Capture manifest"
+            echo
+            echo "Captured: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+            echo
+            echo "| name | status | type | bytes | url |"
+            echo "|---|---|---|---|---|"
+          } >> packages/parser/fixtures/MANIFEST.md
+
+          # Read name<TAB>url, skipping comments and blank lines.
+          grep -v '^\s*#' tools/capture/urls.tsv | grep -v '^\s*$' | while IFS=$'\t' read -r name url; do
+            [ -z "${name:-}" ] && continue
+            echo "::group::$name  $url"
+            # --fail-with-body keeps error pages (a 500 page still tells us something).
+            # Retries cover transient upstream hiccups without hammering.
+            code=$(curl -sS --location \
+                        --retry 3 --retry-delay 2 --retry-connrefused \
+                        --max-time 60 \
+                        --compressed \
+                        -A "$UA" \
+                        -w '%{http_code}' \
+                        -o "packages/parser/fixtures/${name}.raw" \
+                        "$url" || echo "000")
+            ctype=$(file -b --mime-type "packages/parser/fixtures/${name}.raw" 2>/dev/null || echo unknown)
+            bytes=$(wc -c < "packages/parser/fixtures/${name}.raw" | tr -d ' ')
+
+            # Give HTML an .html extension so editors and the parser tests behave.
+            if head -c 2000 "packages/parser/fixtures/${name}.raw" | grep -qi '<html'; then
+              mv "packages/parser/fixtures/${name}.raw" "packages/parser/fixtures/${name}.html"
+              target="packages/parser/fixtures/${name}.html"
+            else
+              mv "packages/parser/fixtures/${name}.raw" "packages/parser/fixtures/${name}.txt"
+              target="packages/parser/fixtures/${name}.txt"
+            fi
+
+            echo "| ${name} | ${code} | ${ctype} | ${bytes} | ${url} |" >> packages/parser/fixtures/MANIFEST.md
+
+            node tools/capture/outline.mjs "$target" "$url" \
+              > "packages/parser/fixtures/${name}.outline.txt" 2>&1 || \
+              echo "digest failed for ${name}" > "packages/parser/fixtures/${name}.outline.txt"
+
+            echo "status=$code bytes=$bytes -> $target"
+            echo "::endgroup::"
+          done
+
+      - name: Surface robots.txt and digests in the run summary
+        run: |
+          {
+            echo '## robots.txt'
+            for f in packages/parser/fixtures/*robots*; do
+              [ -e "$f" ] || continue
+              echo "### $f"
+              echo '```'
+              head -c 2000 "$f"
+              echo
+              echo '```'
+            done
+            echo '## Manifest'
+            cat packages/parser/fixtures/MANIFEST.md
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bajasae-fixtures
+          path: packages/parser/fixtures/
+          retention-days: 30
+
+      # Run the parser against what was just captured. The fixtures are the
+      # parser's test corpus, so this turns every capture into an upstream-drift
+      # detector: if SAE changes the markup, this job goes red immediately
+      # instead of the site quietly rendering empty tables weeks later.
+      - name: Check the parser still understands the captured markup
+        id: verify
+        continue-on-error: true
+        run: pnpm test
+
+      - name: Commit fixtures
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A packages/parser/fixtures
+          if git diff --cached --quiet; then
+            echo 'No fixture changes.'
+            exit 0
+          fi
+          # The generated commits carry the CI-skip marker deliberately.
+          # GitHub does not run workflows for commits pushed with GITHUB_TOKEN
+          # (a recursion guard), so these commits cannot be CI-verified from
+          # here whatever the message says — without the marker they merely
+          # land the pull request in a permanent "action required" state.
+          # Verification therefore happens in this job, above, before the push.
+          git commit -m 'Capture upstream results fixtures [skip ci]'
+          # The branch can move while this job runs — a push landing mid-capture
+          # would otherwise reject this one as non-fast-forward. Rebase onto
+          # whatever arrived and retry; the commit only touches generated files,
+          # so it rebases cleanly onto unrelated work.
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push rejected, rebasing onto origin/${GITHUB_REF_NAME} (attempt $attempt)"
+            git fetch origin "${GITHUB_REF_NAME}"
+            git rebase --autostash "origin/${GITHUB_REF_NAME}" || {
+              echo "::error::rebase conflict — generated files diverged, needs a human"
+              exit 1
+            }
+          done
+          echo "::error::could not push after 3 attempts"
+          exit 1
+
+      # Fail the job *after* publishing, so drifted fixtures are committed and
+      # reviewable rather than discarded along with the failure.
+      - name: Fail if the parser no longer matches upstream
+        if: steps.verify.outcome == 'failure'
+        run: |
+          echo "::error::Parser tests failed against freshly captured markup — upstream has probably changed. The new fixtures have been committed; inspect the diff."
+          exit 1
