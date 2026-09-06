@@ -7,7 +7,7 @@
     "test": "vitest run",
     "typecheck": "tsc -b",
     "build:data": "tsx tools/build-data/build.ts",
-    "dev": "vite",
+    "dev": "pnpm run build:summary && vite",
     "build": "pnpm run build:summary && vite build",
     "preview": "vite preview",
     "build:summary": "tsx tools/build-data/summarize.ts"

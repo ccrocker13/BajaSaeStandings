@@ -152,7 +152,7 @@ jobs:
             fi
             echo "push rejected, rebasing onto origin/${GITHUB_REF_NAME} (attempt $attempt)"
             git fetch origin "${GITHUB_REF_NAME}"
-            git rebase "origin/${GITHUB_REF_NAME}" || {
+            git rebase --autostash "origin/${GITHUB_REF_NAME}" || {
               echo "::error::rebase conflict — generated files diverged, needs a human"
               exit 1
             }

@@ -5,3 +5,8 @@ dist/
 *.log
 .DS_Store
 .wrangler/
+
+# Generated from data/ by tools/build-data/summarize.ts at build time.
+# Committing it caused every build to dirty the tree — summary.json carries a
+# generatedAt timestamp — which broke the publishing jobs' rebase.
+public/data/
