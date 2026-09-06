@@ -3,13 +3,24 @@ import { useSummary } from '../lib/data.js';
 import award from '../../data/schmidt-award.json';
 import { Badge, Empty, SectionTitle } from '../components/ui.js';
 
-interface Winner {
-  year: number;
+interface Placing {
   school: string;
   schoolId: string;
-  confidence: 'confirmed' | 'unverified';
+  confidence: string;
   source: string;
   note?: string;
+}
+
+interface Winner {
+  year: number;
+  /** Null for a season whose winner is not established but whose podium is partly known. */
+  school: string | null;
+  schoolId: string | null;
+  confidence: string;
+  source: string;
+  note?: string;
+  second?: Placing;
+  third?: Placing;
 }
 
 const WINNERS: Winner[] = (award as { winners: Winner[] }).winners;
@@ -28,7 +39,7 @@ export default function History() {
   // Count only wins we are confident in, so the tally is not built on guesses.
   const tally = new Map<string, { school: string; schoolId: string; n: number }>();
   for (const w of WINNERS) {
-    if (w.confidence !== 'confirmed') continue;
+    if (w.confidence !== 'confirmed' || !w.schoolId || !w.school) continue;
     const t = tally.get(w.schoolId) ?? { school: w.school, schoolId: w.schoolId, n: 0 };
     t.n += 1;
     tally.set(w.schoolId, t);
@@ -84,7 +95,7 @@ export default function History() {
                   // Flag rather than hide a disagreement between the reported
                   // winner and what the archive actually adds up to.
                   const disagrees =
-                    w && computed && w.schoolId !== computed.schoolId;
+                    w?.schoolId && computed && w.schoolId !== computed.schoolId;
 
                   return (
                     <tr key={year} className="row">
@@ -96,7 +107,7 @@ export default function History() {
                         )}
                       </td>
                       <td className="td">
-                        {w ? (
+                        {w?.school && w.schoolId ? (
                           <span className="flex flex-wrap items-center gap-2">
                             <Link to={`/team/${w.schoolId}`} className="font-medium hover:text-accent">{w.school}</Link>
                             {w.confidence === 'unverified' && <Badge tone="amber">unverified</Badge>}
@@ -104,6 +115,25 @@ export default function History() {
                           </span>
                         ) : (
                           <span className="text-ink-600">not recorded</span>
+                        )}
+                        {/* Runner-up and third where sourced. Shown even when the
+                            winner is unknown, since a partial podium is still
+                            real information. */}
+                        {(w?.second || w?.third) && (
+                          <div className="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-xs text-ink-500">
+                            {w.second && (
+                              <span>
+                                2nd <Link to={`/team/${w.second.schoolId}`} className="text-ink-400 hover:text-accent">{w.second.school}</Link>
+                                {w.second.confidence !== 'confirmed' && <span className="ml-1 text-flag-amber">?</span>}
+                              </span>
+                            )}
+                            {w.third && (
+                              <span>
+                                3rd <Link to={`/team/${w.third.schoolId}`} className="text-ink-400 hover:text-accent">{w.third.school}</Link>
+                                {w.third.confidence !== 'confirmed' && <span className="ml-1 text-flag-amber">?</span>}
+                              </span>
+                            )}
+                          </div>
                         )}
                       </td>
                       <td className="td">
