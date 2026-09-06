@@ -48,3 +48,28 @@ legacy-results	http://students.sae.org/competitions/bajasae/results/
 # Live pages found in the site nav that we had not captured.
 black-flags	https://results.bajasae.net/BlackFlags.aspx
 tech-line-assigns	https://results.bajasae.net/TechLineAssigns.aspx
+#
+# --- Round 3 -------------------------------------------------------------
+# Full official results per event for the two completed 2026 competitions.
+# These are the season-standings source, and — paired with the live pages,
+# which still show New York — the validation set for deriving how raw times
+# convert into points. The live pages publish times but never points.
+res-ny2026-OVR	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=OVR
+res-ny2026-PRES	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=PRES
+res-ny2026-COST	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=COST
+res-ny2026-DESN	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=DESN
+res-ny2026-ACCEL	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=ACCEL
+res-ny2026-TRAC	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=TRAC
+res-ny2026-MANU	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=MANU
+res-ny2026-SPEC	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=SPEC
+res-ny2026-ENDUR	https://www.bajasae.net/res/EventResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0&eventkey=ENDUR
+res-or2026-OVR	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=OVR
+res-or2026-PRES	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=PRES
+res-or2026-COST	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=COST
+res-or2026-DESN	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=DESN
+res-or2026-ACCEL	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ACCEL
+res-or2026-TRAC	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=TRAC
+res-or2026-MANU	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=MANU
+res-or2026-SPEC	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=SPEC
+res-or2026-ENDUR	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ENDUR
+res-rochester2019-OVR	https://www.bajasae.net/res/EventResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=OVR
