@@ -14,10 +14,20 @@
  *
  * Usage: pnpm run smoke   (expects `vite preview` on :4173)
  */
+import { existsSync } from 'node:fs';
 import { chromium } from 'playwright';
 
 const base = process.env.SMOKE_BASE ?? 'http://localhost:4173/bajasaestandings';
-const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+
+/**
+ * Some environments ship a pre-installed Chromium at a fixed path and block the
+ * download Playwright would otherwise do; CI installs it in Playwright's own
+ * default location. Point at the former only when it is actually there, so the
+ * same script runs in both.
+ */
+const preinstalled = process.env.PLAYWRIGHT_CHROMIUM_PATH ?? '/opt/pw-browsers/chromium';
+const launchOptions = existsSync(preinstalled) ? { executablePath: preinstalled } : {};
+const browser = await chromium.launch(launchOptions);
 let failures = 0;
 
 // 1. Every route renders real content with no page errors.
