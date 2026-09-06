@@ -1,7 +1,7 @@
 # Capture manifest
 
-Captured: 2026-09-06T19:13:59Z
-Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34054223111
+Captured: 2026-09-06T20:18:50Z
+Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34057587338
 
 | name | status | type | bytes | url |
 |---|---|---|---|---|
@@ -55,3 +55,12 @@ Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34054223111
 | res-or2026-ENDUR | 200 | text/html | 47361 | https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ENDUR |
 | res-rochester2019-OVR | 200 | text/html | 97635 | https://www.bajasae.net/res/EventResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=OVR |
 | previous-years | 200 | text/html | 18130 | https://www.bajasae.net/page.aspx?pageid=2d2a2ef4-55fe-40e3-a67b-91dd0ca1a6ec |
+| scores-2015-auburn | 200 | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | 86656 | https://www.bajasae.net/content/2015_Auburn_Scores3.xlsx |
+| scores-2015-maryland | 200 | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | 92443 | https://www.bajasae.net/content/2015_Maryland_Scores2.xlsx |
+| scores-2015-oregon | 200 | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | 89889 | https://www.bajasae.net/content/2015_Oregon_Scores1.xlsx |
+| scores-2014-utep | 200 | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | 98741 | https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx |
+| scores-2014-kansas | 200 | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | 99201 | https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx |
+| scores-2014-illinois | 200 | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | 101638 | https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx |
+| scores-2013-tennessee | 200 | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | 90990 | https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx |
+| scores-2013-washington | 200 | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | 86036 | https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx |
+| scores-2013-rochester | 200 | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | 85417 | https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx |

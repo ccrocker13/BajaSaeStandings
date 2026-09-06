@@ -62,14 +62,16 @@ async function main() {
       year: s.year,
       competitions: s.competitions.map((c) => ({ id: c.id, name: c.name })),
       teamCount: s.standings.length,
-      champion: s.standings[0]
-        ? {
-            schoolId: s.standings[0].schoolId,
-            school: s.standings[0].school,
-            teamName: s.standings[0].teamName,
-            totalPoints: s.standings[0].totalPoints,
-          }
-        : null,
+      // The Mike Schmidt Award recognises the top three by cumulative points,
+      // so the podium — not a lone champion — is what a season summary needs.
+      podium: s.standings.slice(0, 3).map((p) => ({
+        rank: p.rank,
+        schoolId: p.schoolId,
+        school: p.school,
+        teamName: p.teamName,
+        totalPoints: p.totalPoints,
+        eventsAttended: p.eventsAttended,
+      })),
     })),
     teams: [...teams.values()].sort((a, b) => a.school.localeCompare(b.school)),
   };

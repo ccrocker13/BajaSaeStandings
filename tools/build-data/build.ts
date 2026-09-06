@@ -9,11 +9,20 @@
  * identifying User-Agent. A backfill of every season is roughly 35 requests, so
  * there is no reason to go faster.
  */
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseArchiveTable } from '../../packages/parser/src/archive.js';
 import { parseResultsLanding, type ArchivedCompetition } from '../../packages/parser/src/landing.js';
 import { buildSeasonStandings, type CompetitionSummary } from '../../packages/parser/src/season.js';
+import type { Season } from '../../packages/parser/src/types.js';
+import { SCORE_BOOKS, scoreBookToCompetition } from './scorebooks.js';
+
+/**
+ * Seasons before this are not carried. The archive's competition pages reach
+ * back to 2016 and the score books cover 2013-2015; anything earlier exists
+ * only as scattered third-party reporting, which is not a basis for standings.
+ */
+const EARLIEST_SEASON = 2013;
 
 const LANDING = 'https://www.bajasae.net/res/ResultsLanding.aspx';
 const UA = 'BajaSaeStandings/0.1 (+https://github.com/ccrocker13/BajaSaeStandings) archive-backfill';
@@ -46,14 +55,23 @@ async function main() {
   const warnings: string[] = [];
 
   console.log(`Fetching ${LANDING}`);
-  const landing = parseResultsLanding(await get(LANDING), LANDING);
-  warnings.push(...landing.warnings);
-  const competitions = landing.data;
-  console.log(`Found ${competitions.length} competitions across ${new Set(competitions.map((c) => c.year)).size} seasons`);
+  let competitions: ArchivedCompetition[] = [];
+  try {
+    const landing = parseResultsLanding(await get(LANDING), LANDING);
+    warnings.push(...landing.warnings);
+    competitions = landing.data;
+    console.log(`Found ${competitions.length} competitions across ${new Set(competitions.map((c) => c.year)).size} seasons`);
+  } catch (err) {
+    // The score books below do not depend on the landing page, so a failure
+    // here degrades the run rather than ending it.
+    warnings.push(`landing page unavailable — ${(err as Error).message}; archive seasons were not refreshed`);
+    console.log(`  landing page unavailable: ${(err as Error).message}`);
+  }
 
   const byYear = new Map<number, CompetitionSummary[]>();
 
   for (const comp of competitions) {
+    if (comp.year < EARLIEST_SEASON) continue;
     const url = overallUrl(comp);
     console.log(`  ${comp.year} ${comp.name}`);
     await sleep(DELAY_MS);
@@ -86,14 +104,50 @@ async function main() {
     byYear.set(comp.year, list);
   }
 
+  // 2013-2015 come from .xlsx score books rather than archive pages.
+  for (const book of SCORE_BOOKS) {
+    if (book.year < EARLIEST_SEASON) continue;
+    console.log(`  ${book.year} ${book.name} (score book)`);
+    await sleep(DELAY_MS);
+    let buffer: Buffer | null = null;
+    try {
+      const res = await fetch(book.url, { headers: { 'User-Agent': UA } });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      buffer = Buffer.from(await res.arrayBuffer());
+    } catch (err) {
+      // Fall back to the committed capture, so a rebuild still works when the
+      // score book is temporarily unreachable.
+      const fixture = join(process.cwd(), 'packages', 'parser', 'fixtures',
+        `scores-${book.year}-${book.name.replace(/^Baja SAE /, '').split(' ')[0]!.toLowerCase()}.xlsx`);
+      try {
+        buffer = await readFile(fixture);
+        warnings.push(`${book.year} ${book.name}: fetch failed (${(err as Error).message}), used the committed capture`);
+      } catch {
+        warnings.push(`${book.year} ${book.name}: unavailable — ${(err as Error).message}`);
+      }
+    }
+    if (!buffer) continue;
+    const { summary, warnings: w } = await scoreBookToCompetition(book, buffer);
+    warnings.push(...w);
+    const list = byYear.get(book.year) ?? [];
+    list.push(summary);
+    byYear.set(book.year, list);
+  }
+
   await mkdir(join(OUT, 'seasons'), { recursive: true });
-  const index: { year: number; competitions: number; teams: number }[] = [];
 
   for (const [year, comps] of [...byYear].sort((a, b) => b[0] - a[0])) {
     const season = buildSeasonStandings(year, comps);
     await writeFile(join(OUT, 'seasons', `${year}.json`), JSON.stringify(season, null, 2) + '\n');
-    index.push({ year, competitions: comps.length, teams: season.standings.length });
     console.log(`  wrote ${year}: ${comps.length} competitions, ${season.standings.length} teams`);
+  }
+
+  // Index every season file present, not just the ones written this run — a
+  // partial run must not drop seasons it did not touch.
+  const index: { year: number; competitions: number; teams: number }[] = [];
+  for (const file of (await readdir(join(OUT, 'seasons'))).filter((f) => f.endsWith('.json')).sort().reverse()) {
+    const season = JSON.parse(await readFile(join(OUT, 'seasons', file), 'utf8')) as Season;
+    index.push({ year: season.year, competitions: season.competitions.length, teams: season.standings.length });
   }
 
   await writeFile(

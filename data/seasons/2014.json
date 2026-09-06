@@ -1,0 +1,5048 @@
+{
+  "year": 2014,
+  "competitions": [
+    {
+      "id": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+      "name": "Baja SAE UTEP",
+      "startDate": null,
+      "endDate": null,
+      "location": null
+    },
+    {
+      "id": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+      "name": "Baja SAE Kansas",
+      "startDate": null,
+      "endDate": null,
+      "location": null
+    },
+    {
+      "id": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+      "name": "Baja SAE Illinois",
+      "startDate": null,
+      "endDate": null,
+      "location": null
+    }
+  ],
+  "standings": [
+    {
+      "schoolId": "cornell",
+      "school": "Cornell Univ",
+      "teamName": "BIG RED RACING",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 866.49,
+          "overallRank": 3,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 833.83,
+          "overallRank": 4,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 930.03,
+          "overallRank": 1,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2630.3500000000004,
+      "eventsAttended": 3,
+      "rank": 1,
+      "provisional": false
+    },
+    {
+      "schoolId": "michigan",
+      "school": "Univ of Michigan - Ann Arbor",
+      "teamName": "Maize",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 834.04,
+          "overallRank": 4,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 885.32,
+          "overallRank": 2,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 884.38,
+          "overallRank": 4,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2603.7400000000002,
+      "eventsAttended": 3,
+      "rank": 2,
+      "provisional": false
+    },
+    {
+      "schoolId": "rit",
+      "school": "Rochester Institute of Technology",
+      "teamName": "RIOT RACING",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 879.64,
+          "overallRank": 2,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 823.74,
+          "overallRank": 5,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 868.17,
+          "overallRank": 5,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2571.55,
+      "eventsAttended": 3,
+      "rank": 3,
+      "provisional": false
+    },
+    {
+      "schoolId": "mcgill-university",
+      "school": "McGill Univ",
+      "teamName": "McGill Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 815.32,
+          "overallRank": 6,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 697.09,
+          "overallRank": 15,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 900.58,
+          "overallRank": 3,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2412.9900000000002,
+      "eventsAttended": 3,
+      "rank": 4,
+      "provisional": false
+    },
+    {
+      "schoolId": "ets",
+      "school": "Ecole De Technologie Superieure",
+      "teamName": "ETS Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 771.22,
+          "overallRank": 8,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 817.21,
+          "overallRank": 6,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 786.04,
+          "overallRank": 7,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2374.4700000000003,
+      "eventsAttended": 3,
+      "rank": 5,
+      "provisional": false
+    },
+    {
+      "schoolId": "iowa-state-university",
+      "school": "Iowa State Univ",
+      "teamName": "Cyclone Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 810.24,
+          "overallRank": 7,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 839.95,
+          "overallRank": 3,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 619.67,
+          "overallRank": 20,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2269.86,
+      "eventsAttended": 3,
+      "rank": 6,
+      "provisional": false
+    },
+    {
+      "schoolId": "northeastern-university",
+      "school": "Northeastern Univ",
+      "teamName": "Skunkworks",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 720.39,
+          "overallRank": 14,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 582.67,
+          "overallRank": 24,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 752.4,
+          "overallRank": 8,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2055.46,
+      "eventsAttended": 3,
+      "rank": 7,
+      "provisional": false
+    },
+    {
+      "schoolId": "universite-laval",
+      "school": "Universite Laval",
+      "teamName": "Alerion",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 684.05,
+          "overallRank": 16,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 477.38,
+          "overallRank": 39,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 793.3,
+          "overallRank": 6,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1954.7299999999998,
+      "eventsAttended": 3,
+      "rank": 8,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-louisville",
+      "school": "Univ of Louisville",
+      "teamName": "Speed Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 653.55,
+          "overallRank": 19,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 603.16,
+          "overallRank": 22,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 665.75,
+          "overallRank": 13,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1922.46,
+      "eventsAttended": 3,
+      "rank": 9,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-maryland-baltimore-county",
+      "school": "Univ of Maryland - Baltimore County",
+      "teamName": "Retriever Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 641.53,
+          "overallRank": 21,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 616.28,
+          "overallRank": 19,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 659.93,
+          "overallRank": 14,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1917.7399999999998,
+      "eventsAttended": 3,
+      "rank": 10,
+      "provisional": false
+    },
+    {
+      "schoolId": "oregon-state",
+      "school": "Oregon State Univ",
+      "teamName": "Beaver Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 906.42,
+          "overallRank": 1,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 918.08,
+          "overallRank": 2,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1824.5,
+      "eventsAttended": 2,
+      "rank": 11,
+      "provisional": false
+    },
+    {
+      "schoolId": "suny-buffalo",
+      "school": "SUNY - Buffalo",
+      "teamName": "UB Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 659.7,
+          "overallRank": 17,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 560.52,
+          "overallRank": 29,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 558.85,
+          "overallRank": 27,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1779.0700000000002,
+      "eventsAttended": 3,
+      "rank": 12,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-calif-los-angeles",
+      "school": "Univ of Calif - Los Angeles",
+      "teamName": "UCLA Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 826.82,
+          "overallRank": 5,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 735.46,
+          "overallRank": 11,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1562.2800000000002,
+      "eventsAttended": 2,
+      "rank": 13,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-missouri-kansas-city",
+      "school": "Univ of Missouri - Kansas City",
+      "teamName": "UMKC Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 477.06,
+          "overallRank": 38,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 476.64,
+          "overallRank": 41,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 601.77,
+          "overallRank": 21,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1555.47,
+      "eventsAttended": 3,
+      "rank": 14,
+      "provisional": false
+    },
+    {
+      "schoolId": "north-carolina-a-and-t-state-university",
+      "school": "North Carolina A & T State Univ",
+      "teamName": "Aggie Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 545.26,
+          "overallRank": 30,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 570.42,
+          "overallRank": 26,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 423.54,
+          "overallRank": 48,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1539.2199999999998,
+      "eventsAttended": 3,
+      "rank": 15,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-nebraska-lincoln",
+      "school": "Univ of Nebraska - Lincoln",
+      "teamName": "Husker Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 271.36,
+          "overallRank": 58,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 701.5,
+          "overallRank": 14,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 523.34,
+          "overallRank": 32,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1496.2,
+      "eventsAttended": 3,
+      "rank": 16,
+      "provisional": false
+    },
+    {
+      "schoolId": "kansas-state-university",
+      "school": "Kansas State Univ",
+      "teamName": "Wildcat Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 734.09,
+          "overallRank": 12,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 662.3,
+          "overallRank": 16,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1396.3899999999999,
+      "eventsAttended": 2,
+      "rank": 17,
+      "provisional": false
+    },
+    {
+      "schoolId": "ecole-polytechnique-de-montreal",
+      "school": "Ecole Polytechnique De Montreal",
+      "teamName": "poly mud bees",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 737.3,
+          "overallRank": 10,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 637.29,
+          "overallRank": 17,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1374.59,
+      "eventsAttended": 2,
+      "rank": 18,
+      "provisional": false
+    },
+    {
+      "schoolId": "clemson-university",
+      "school": "Clemson Univ",
+      "teamName": "CUBaja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 641.67,
+          "overallRank": 18,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 720.36,
+          "overallRank": 10,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1362.03,
+      "eventsAttended": 2,
+      "rank": 19,
+      "provisional": false
+    },
+    {
+      "schoolId": "ohio-northern-university",
+      "school": "Ohio Northern Univ",
+      "teamName": "Polar Bear Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 653.55,
+          "overallRank": 17,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 684.28,
+          "overallRank": 11,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1337.83,
+      "eventsAttended": 2,
+      "rank": 20,
+      "provisional": false
+    },
+    {
+      "schoolId": "north-carolina-state-university-raleigh",
+      "school": "North Carolina State Univ - Raleigh",
+      "teamName": "Wolfpack Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 707.07,
+          "overallRank": 13,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 627.41,
+          "overallRank": 19,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1334.48,
+      "eventsAttended": 2,
+      "rank": 21,
+      "provisional": false
+    },
+    {
+      "schoolId": "arizona-state-university-polytechnic",
+      "school": "Arizona State Univ Polytechnic",
+      "teamName": "SunDevil Racing Development",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 413.44,
+          "overallRank": 44,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 498.74,
+          "overallRank": 36,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 419.39,
+          "overallRank": 49,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1331.5700000000002,
+      "eventsAttended": 3,
+      "rank": 22,
+      "provisional": false
+    },
+    {
+      "schoolId": "georgia-southern-university",
+      "school": "Georgia Southern Univ",
+      "teamName": "Eagle Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 763.37,
+          "overallRank": 8,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 559.53,
+          "overallRank": 26,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1322.9,
+      "eventsAttended": 2,
+      "rank": 23,
+      "provisional": false
+    },
+    {
+      "schoolId": "queens-university-ontario-canada",
+      "school": "Queen's Univ - Ontario Canada",
+      "teamName": "Queen's University Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 592.22,
+          "overallRank": 25,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 11,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 678.29,
+          "overallRank": 12,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1281.51,
+      "eventsAttended": 3,
+      "rank": 24,
+      "provisional": false
+    },
+    {
+      "schoolId": "south-dakota-sch-of-mines-and-tech",
+      "school": "South Dakota Sch of Mines & Tech",
+      "teamName": "Hardrocker Racing Gold",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 459.76,
+          "overallRank": 45,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 731.87,
+          "overallRank": 9,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1191.63,
+      "eventsAttended": 2,
+      "rank": 25,
+      "provisional": false
+    },
+    {
+      "schoolId": "central-michigan-university",
+      "school": "Central Michigan Univ",
+      "teamName": "Chippewa Performance",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 546.72,
+          "overallRank": 30,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 630.25,
+          "overallRank": 18,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1176.97,
+      "eventsAttended": 2,
+      "rank": 26,
+      "provisional": false
+    },
+    {
+      "schoolId": "tennessee-tech-university",
+      "school": "Tennessee Tech Univ",
+      "teamName": "TTU Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 532.2,
+          "overallRank": 32,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 643.9,
+          "overallRank": 15,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1176.1,
+      "eventsAttended": 2,
+      "rank": 27,
+      "provisional": false
+    },
+    {
+      "schoolId": "san-diego-state-university",
+      "school": "San Diego State Univ",
+      "teamName": "SDSU Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 655.42,
+          "overallRank": 18,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 474.97,
+          "overallRank": 41,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1130.3899999999999,
+      "eventsAttended": 2,
+      "rank": 28,
+      "provisional": false
+    },
+    {
+      "schoolId": "new-mexico-state-university",
+      "school": "New Mexico State Univ",
+      "teamName": "NMSU Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 503.81,
+          "overallRank": 34,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 606.42,
+          "overallRank": 21,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1110.23,
+      "eventsAttended": 2,
+      "rank": 29,
+      "provisional": false
+    },
+    {
+      "schoolId": "auburn-university",
+      "school": "Auburn Univ",
+      "teamName": "War Eagle Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 546.13,
+          "overallRank": 29,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 505.68,
+          "overallRank": 34,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1051.81,
+      "eventsAttended": 3,
+      "rank": 30,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-wisconsin-madison",
+      "school": "Univ of Wisconsin - Madison",
+      "teamName": "UW Madison Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 568.04,
+          "overallRank": 27,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 464.91,
+          "overallRank": 43,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1032.95,
+      "eventsAttended": 2,
+      "rank": 31,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-illinois-urbana-champaign",
+      "school": "Univ of Illinois - Urbana Champaign",
+      "teamName": "Off Road Illini",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 541.43,
+          "overallRank": 31,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 484.11,
+          "overallRank": 40,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1025.54,
+      "eventsAttended": 2,
+      "rank": 32,
+      "provisional": false
+    },
+    {
+      "schoolId": "michigan-state-university",
+      "school": "Michigan State Univ",
+      "teamName": "Michigan State Baja Racing SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 500.05,
+          "overallRank": 35,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 498.92,
+          "overallRank": 36,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 998.97,
+      "eventsAttended": 2,
+      "rank": 33,
+      "provisional": false
+    },
+    {
+      "schoolId": "lipscomb-university",
+      "school": "Lipscomb Univ",
+      "teamName": "Lipscomb Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 425.52,
+          "overallRank": 48,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 536.24,
+          "overallRank": 28,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 961.76,
+      "eventsAttended": 2,
+      "rank": 34,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-central-florida",
+      "school": "Univ of Central Florida",
+      "teamName": "The Knights who say Ni",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 531.8,
+          "overallRank": 33,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 370.07,
+          "overallRank": 53,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 901.8699999999999,
+      "eventsAttended": 2,
+      "rank": 35,
+      "provisional": false
+    },
+    {
+      "schoolId": "case-western",
+      "school": "Case Western Reserve Univ",
+      "teamName": "BBB Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 424.39,
+          "overallRank": 49,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 474.86,
+          "overallRank": 42,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 899.25,
+      "eventsAttended": 2,
+      "rank": 36,
+      "provisional": false
+    },
+    {
+      "schoolId": "centro-universitario-da-fei",
+      "school": "Centro Universitario Da FEI",
+      "teamName": "FEI BAJA SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 885.68,
+          "overallRank": 1,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 885.68,
+      "eventsAttended": 1,
+      "rank": 37,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-akron",
+      "school": "Univ of Akron",
+      "teamName": "Zips Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 305.94,
+          "overallRank": 61,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 572.35,
+          "overallRank": 22,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 878.29,
+      "eventsAttended": 2,
+      "rank": 38,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-virginia",
+      "school": "Univ of Virginia",
+      "teamName": "Virginia Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 298.33,
+          "overallRank": 63,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 571.4,
+          "overallRank": 23,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 869.73,
+      "eventsAttended": 2,
+      "rank": 39,
+      "provisional": false
+    },
+    {
+      "schoolId": "san-jose-state-university",
+      "school": "San Jose State University",
+      "teamName": "Spartan Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 340.92,
+          "overallRank": 50,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 518.2,
+          "overallRank": 33,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 859.1200000000001,
+      "eventsAttended": 2,
+      "rank": 40,
+      "provisional": false
+    },
+    {
+      "schoolId": "johns-hopkins-university",
+      "school": "Johns Hopkins Univ",
+      "teamName": "Hopkins Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 331.32,
+          "overallRank": 58,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 507.33,
+          "overallRank": 35,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 838.65,
+      "eventsAttended": 2,
+      "rank": 41,
+      "provisional": false
+    },
+    {
+      "schoolId": "universite-de-sherbrooke",
+      "school": "Universite de Sherbrooke",
+      "teamName": "Sherbrooke Racing Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 422.67,
+          "overallRank": 42,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 404.12,
+          "overallRank": 51,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 826.79,
+      "eventsAttended": 2,
+      "rank": 42,
+      "provisional": false
+    },
+    {
+      "schoolId": "escola-politecnica-da-universidade-de-sao-paulo",
+      "school": "Escola Politécnica da Universidade de São Paulo",
+      "teamName": "POLI AUDAX",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 790.83,
+          "overallRank": 7,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 790.83,
+      "eventsAttended": 1,
+      "rank": 43,
+      "provisional": false
+    },
+    {
+      "schoolId": "cal-poly-slo",
+      "school": "California Polytechnic State Univ-SLO",
+      "teamName": "Cal Poly Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 766.86,
+          "overallRank": 9,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 12,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 778.86,
+      "eventsAttended": 2,
+      "rank": 44,
+      "provisional": false
+    },
+    {
+      "schoolId": "purdue-university-w-lafayette",
+      "school": "Purdue Univ - W Lafayette",
+      "teamName": "Titan",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 748.95,
+          "overallRank": 10,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 12,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 760.95,
+      "eventsAttended": 2,
+      "rank": 45,
+      "provisional": false
+    },
+    {
+      "schoolId": "missouri-university-of-science-and-tech",
+      "school": "Missouri University of Science and Tech",
+      "teamName": "Miner Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 349.78,
+          "overallRank": 55,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 408.4,
+          "overallRank": 50,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 758.18,
+      "eventsAttended": 2,
+      "rank": 46,
+      "provisional": false
+    },
+    {
+      "schoolId": "virginia-tech",
+      "school": "Virginia Tech",
+      "teamName": "VT Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 746.79,
+          "overallRank": 11,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 11,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 757.79,
+      "eventsAttended": 2,
+      "rank": 47,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidade-federal-de-pernambuco",
+      "school": "Universidade Federal de Pernambuco",
+      "teamName": "Mangue Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 752.51,
+          "overallRank": 9,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 752.51,
+      "eventsAttended": 1,
+      "rank": 48,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-arkansas-fayetteville",
+      "school": "Univ of Arkansas - Fayetteville",
+      "teamName": "Racing Razorbacks",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 405.79,
+          "overallRank": 45,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 330.71,
+          "overallRank": 59,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 736.5,
+      "eventsAttended": 2,
+      "rank": 49,
+      "provisional": false
+    },
+    {
+      "schoolId": "west-virginia-university",
+      "school": "West Virginia Univ",
+      "teamName": "Mountaineers",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 723.53,
+          "overallRank": 13,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 2,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 725.53,
+      "eventsAttended": 2,
+      "rank": 50,
+      "provisional": false
+    },
+    {
+      "schoolId": "virginia-western-comm-college",
+      "school": "Virginia Western Comm Coll",
+      "teamName": "VWCC Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 709.24,
+          "overallRank": 12,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 709.24,
+      "eventsAttended": 1,
+      "rank": 51,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-wisconsin-milwaukee",
+      "school": "Univ of Wisconsin - Milwaukee",
+      "teamName": "UWM BAJA",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 693.71,
+          "overallRank": 15,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 693.71,
+      "eventsAttended": 1,
+      "rank": 52,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-tennessee-chattanooga",
+      "school": "Univ of Tennessee -Chattanooga",
+      "teamName": "UTC Racing Mocs",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 111.33,
+          "overallRank": 79,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 563.24,
+          "overallRank": 28,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 13,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 687.57,
+      "eventsAttended": 3,
+      "rank": 53,
+      "provisional": false
+    },
+    {
+      "schoolId": "pittsburg-state-university",
+      "school": "Pittsburg State University",
+      "teamName": "Gorilla II (Toto)",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 182.43,
+          "overallRank": 80,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 487.59,
+          "overallRank": 39,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 670.02,
+      "eventsAttended": 2,
+      "rank": 54,
+      "provisional": false
+    },
+    {
+      "schoolId": "franklin-w-olin-college-of-engineering",
+      "school": "Franklin W Olin College of Engineering",
+      "teamName": "Phoenix Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 389.31,
+          "overallRank": 47,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 255.47,
+          "overallRank": 71,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 644.78,
+      "eventsAttended": 2,
+      "rank": 55,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-pretoria",
+      "school": "Univ of Pretoria",
+      "teamName": "TuksBaja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 643.81,
+          "overallRank": 20,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 643.81,
+      "eventsAttended": 1,
+      "rank": 56,
+      "provisional": false
+    },
+    {
+      "schoolId": "suny-stony-brook",
+      "school": "SUNY - Stony Brook",
+      "teamName": "Stony Brook Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 642.47,
+          "overallRank": 16,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 642.47,
+      "eventsAttended": 1,
+      "rank": 57,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-nevada-las-vegas",
+      "school": "Univ of Nevada - Las Vegas",
+      "teamName": "Rebel Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 308.55,
+          "overallRank": 53,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 333.58,
+          "overallRank": 63,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 642.13,
+      "eventsAttended": 2,
+      "rank": 58,
+      "provisional": false
+    },
+    {
+      "schoolId": "itesm-campus-qro",
+      "school": "ITESM - Campus QRO",
+      "teamName": "Exergia Racing Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 640.5,
+          "overallRank": 22,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 640.5,
+      "eventsAttended": 1,
+      "rank": 59,
+      "provisional": false
+    },
+    {
+      "schoolId": "kettering-university",
+      "school": "Kettering Univ",
+      "teamName": "Bulldog Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 270.27,
+          "overallRank": 69,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 360.53,
+          "overallRank": 56,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 630.8,
+      "eventsAttended": 2,
+      "rank": 60,
+      "provisional": false
+    },
+    {
+      "schoolId": "southern-illinois-university-at-carbondale",
+      "school": "Southern Illinois Univ at Carbondale",
+      "teamName": "SAE Saluki Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 612.53,
+          "overallRank": 20,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 612.53,
+      "eventsAttended": 1,
+      "rank": 61,
+      "provisional": false
+    },
+    {
+      "schoolId": "conestoga-college",
+      "school": "Conestoga College",
+      "teamName": "Conestoga Off-road Baja Racing Association",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 295.88,
+          "overallRank": 65,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 313.19,
+          "overallRank": 64,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 609.0699999999999,
+      "eventsAttended": 2,
+      "rank": 62,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-de-la-salle-bajio",
+      "school": "Universidad De La Salle Bajio",
+      "teamName": "Bajio 1",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 607.27,
+          "overallRank": 23,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 607.27,
+      "eventsAttended": 1,
+      "rank": 63,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-la-salle",
+      "school": "Universidad La Salle",
+      "teamName": "Aguilas La Salle",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 603.75,
+          "overallRank": 24,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 603.75,
+      "eventsAttended": 1,
+      "rank": 64,
+      "provisional": false
+    },
+    {
+      "schoolId": "oklahoma-state-university",
+      "school": "Oklahoma State Univ",
+      "teamName": "OSU Cowboy Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 599.8,
+          "overallRank": 23,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 599.8,
+      "eventsAttended": 1,
+      "rank": 65,
+      "provisional": false
+    },
+    {
+      "schoolId": "north-dakota-state-university",
+      "school": "North Dakota State Univ",
+      "teamName": "Bison Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 574.01,
+          "overallRank": 26,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 13,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 587.01,
+      "eventsAttended": 2,
+      "rank": 66,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-cincinnati",
+      "school": "Univ of Cincinnati",
+      "teamName": "University of Cincinnati",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 12,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 569.61,
+          "overallRank": 24,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 581.61,
+      "eventsAttended": 2,
+      "rank": 67,
+      "provisional": false
+    },
+    {
+      "schoolId": "pennsylvania-college-of-technology",
+      "school": "Pennsylvania College of Technology",
+      "teamName": "Wildcats",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 573.01,
+          "overallRank": 25,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 573.01,
+      "eventsAttended": 1,
+      "rank": 68,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-wyoming",
+      "school": "Univ of Wyoming",
+      "teamName": "Happy Jack Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 572.8,
+          "overallRank": 27,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 572.8,
+      "eventsAttended": 1,
+      "rank": 69,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-wisconsin-platteville",
+      "school": "Univ of Wisconsin - Platteville",
+      "teamName": "Pioneer Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 569.01,
+          "overallRank": 25,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 569.01,
+      "eventsAttended": 1,
+      "rank": 70,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-university-los-angeles",
+      "school": "California State Univ - Los Angeles",
+      "teamName": "Golden Eagle Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 554.54,
+          "overallRank": 28,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 554.54,
+      "eventsAttended": 1,
+      "rank": 71,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-puerto-rico",
+      "school": "Univ of Puerto Rico",
+      "teamName": "RUM Racing Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 328.92,
+          "overallRank": 52,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 223.23,
+          "overallRank": 75,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 552.15,
+      "eventsAttended": 2,
+      "rank": 72,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-autonoma-de-ciudad-juarez",
+      "school": "Universidad Autonoma de Ciudad Juarez",
+      "teamName": "Indios Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 544.68,
+          "overallRank": 31,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 544.68,
+      "eventsAttended": 1,
+      "rank": 73,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-waterloo",
+      "school": "Univ of Waterloo",
+      "teamName": "UWaterloo Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 544.46,
+          "overallRank": 32,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 544.46,
+      "eventsAttended": 1,
+      "rank": 74,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-mount-union",
+      "school": "University of Mount Union",
+      "teamName": "UMU Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 532.45,
+          "overallRank": 29,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 532.45,
+      "eventsAttended": 1,
+      "rank": 75,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-calgary",
+      "school": "Univ of Calgary",
+      "teamName": "Calgary Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 529.14,
+          "overallRank": 30,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 529.14,
+      "eventsAttended": 1,
+      "rank": 76,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-manitoba",
+      "school": "Univ of Manitoba",
+      "teamName": "Polar Bear Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 525.31,
+          "overallRank": 31,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 525.31,
+      "eventsAttended": 1,
+      "rank": 77,
+      "provisional": false
+    },
+    {
+      "schoolId": "lawrence-technological-university",
+      "school": "Lawrence Technological Univ",
+      "teamName": "Blue Devil Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 523.74,
+          "overallRank": 33,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 523.74,
+      "eventsAttended": 1,
+      "rank": 78,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-iowa",
+      "school": "Univ of Iowa",
+      "teamName": "Hawkeye Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 509.67,
+          "overallRank": 34,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 509.67,
+      "eventsAttended": 1,
+      "rank": 79,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-university-fresno",
+      "school": "California State Univ - Fresno",
+      "teamName": "Fresno State Bulldog Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 495.15,
+          "overallRank": 35,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 495.15,
+      "eventsAttended": 1,
+      "rank": 80,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-calif-santa-barbara",
+      "school": "Univ of Calif - Santa Barbara",
+      "teamName": "UCSB Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 494.83,
+          "overallRank": 37,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 494.83,
+      "eventsAttended": 1,
+      "rank": 81,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-british-columbia",
+      "school": "Univ of British Columbia",
+      "teamName": "UBC Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 493.8,
+          "overallRank": 37,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 493.8,
+      "eventsAttended": 1,
+      "rank": 82,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-maryland-college-park",
+      "school": "Univ of Maryland - College Park",
+      "teamName": "Red Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 478.86,
+          "overallRank": 38,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 12,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 490.86,
+      "eventsAttended": 2,
+      "rank": 83,
+      "provisional": false
+    },
+    {
+      "schoolId": "suny-institute-of-tech-utica",
+      "school": "SUNY Inst of Tech - Utica",
+      "teamName": "Wildcat Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 488.69,
+          "overallRank": 38,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 488.69,
+      "eventsAttended": 1,
+      "rank": 84,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-north-carolina-charlotte",
+      "school": "Univ of North Carolina - Charlotte",
+      "teamName": "49er Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 477.17,
+          "overallRank": 40,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 11,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 488.17,
+      "eventsAttended": 2,
+      "rank": 85,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-rhode-island",
+      "school": "Univ of Rhode Island",
+      "teamName": "URI Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 487.41,
+          "overallRank": 36,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 487.41,
+      "eventsAttended": 1,
+      "rank": 86,
+      "provisional": false
+    },
+    {
+      "schoolId": "lamar-university",
+      "school": "Lamar Univ",
+      "teamName": "Cardinal Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 480.37,
+          "overallRank": 37,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 480.37,
+      "eventsAttended": 1,
+      "rank": 87,
+      "provisional": false
+    },
+    {
+      "schoolId": "kansas-state-university-salina",
+      "school": "Kansas State Univ - Salina",
+      "teamName": "KSU Salina Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 471.9,
+          "overallRank": 42,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 471.9,
+      "eventsAttended": 1,
+      "rank": 88,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-rochester",
+      "school": "Univ of Rochester",
+      "teamName": "Yellowjackets",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 470.87,
+          "overallRank": 43,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 470.87,
+      "eventsAttended": 1,
+      "rank": 89,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-evansville",
+      "school": "Univ of Evansville",
+      "teamName": "UE 2014",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 459.97,
+          "overallRank": 44,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 459.97,
+      "eventsAttended": 1,
+      "rank": 90,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-notre-dame",
+      "school": "Univ of Notre Dame",
+      "teamName": "University of Notre Dame Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 459.72,
+          "overallRank": 44,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 459.72,
+      "eventsAttended": 1,
+      "rank": 91,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-tennessee-martin",
+      "school": "Univ of Tennessee - Martin",
+      "teamName": "Skyhawk Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 457.52,
+          "overallRank": 39,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 457.52,
+      "eventsAttended": 1,
+      "rank": 92,
+      "provisional": false
+    },
+    {
+      "schoolId": "keimyung-university",
+      "school": "Keimyung University",
+      "teamName": "Speed Limit",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 443.64,
+          "overallRank": 40,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 443.64,
+      "eventsAttended": 1,
+      "rank": 93,
+      "provisional": false
+    },
+    {
+      "schoolId": "penn-state-university-altoona",
+      "school": "Penn State Univ - Altoona",
+      "teamName": "Penn State Altoona Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 139.61,
+          "overallRank": 83,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 302.08,
+          "overallRank": 68,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 441.69,
+      "eventsAttended": 2,
+      "rank": 94,
+      "provisional": false
+    },
+    {
+      "schoolId": "letourneau-university",
+      "school": "LeTourneau Univ",
+      "teamName": "Renegade Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 439.32,
+          "overallRank": 46,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 439.32,
+      "eventsAttended": 1,
+      "rank": 95,
+      "provisional": false
+    },
+    {
+      "schoolId": "brigham-young-university",
+      "school": "Brigham Young Univ",
+      "teamName": "BYU Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 9,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 428.48,
+          "overallRank": 47,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 437.48,
+      "eventsAttended": 2,
+      "rank": 96,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-new-hampshire",
+      "school": "Univ of New Hampshire",
+      "teamName": "Wildcat Off-Road Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 435.92,
+          "overallRank": 45,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 435.92,
+      "eventsAttended": 1,
+      "rank": 97,
+      "provisional": false
+    },
+    {
+      "schoolId": "florida-a-and-m-university-florida-state-university",
+      "school": "Florida A&M Univ/Florida State Univ",
+      "teamName": "F-Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 435.01,
+          "overallRank": 46,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 435.01,
+      "eventsAttended": 1,
+      "rank": 98,
+      "provisional": false
+    },
+    {
+      "schoolId": "southern-alberta-institute-of-tech",
+      "school": "Southern Alberta Inst of Tech",
+      "teamName": "Statically Indeterminate Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 432.68,
+          "overallRank": 47,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 432.68,
+      "eventsAttended": 1,
+      "rank": 99,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-de-carabobo",
+      "school": "Universidad de Carabobo",
+      "teamName": "Organizacion SAE UC Venezuela",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 432.66,
+          "overallRank": 41,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 432.66,
+      "eventsAttended": 1,
+      "rank": 100,
+      "provisional": false
+    },
+    {
+      "schoolId": "instituto-technolgico-de-buenos-aires",
+      "school": "Instituto Technolgico de Buenos Aires",
+      "teamName": "ITBA Competition",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 422.91,
+          "overallRank": 50,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 422.91,
+      "eventsAttended": 1,
+      "rank": 101,
+      "provisional": false
+    },
+    {
+      "schoolId": "instituto-tecnologico-de-chihuahua",
+      "school": "Instituto Tecnologico de Chihuahua",
+      "teamName": "Zarape Racing Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 421.15,
+          "overallRank": 43,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 421.15,
+      "eventsAttended": 1,
+      "rank": 102,
+      "provisional": false
+    },
+    {
+      "schoolId": "wichita-state-university",
+      "school": "Wichita State Univ",
+      "teamName": "Shocker Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 217.7,
+          "overallRank": 68,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 202.65,
+          "overallRank": 78,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 420.35,
+      "eventsAttended": 3,
+      "rank": 103,
+      "provisional": false
+    },
+    {
+      "schoolId": "colorado-school-of-mines",
+      "school": "Colorado School of Mines",
+      "teamName": "Mines Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 404.04,
+          "overallRank": 51,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 404.04,
+      "eventsAttended": 1,
+      "rank": 104,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-regina",
+      "school": "Univ of Regina",
+      "teamName": "Cougar Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 397.56,
+          "overallRank": 52,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 397.56,
+      "eventsAttended": 2,
+      "rank": 105,
+      "provisional": false
+    },
+    {
+      "schoolId": "new-mexico-institute-of-mining-and-tech",
+      "school": "New Mexico Inst of Mining & Tech",
+      "teamName": "Dirty Miners",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 395.65,
+          "overallRank": 46,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 395.65,
+      "eventsAttended": 1,
+      "rank": 106,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-kansas-lawrence",
+      "school": "Univ of Kansas - Lawrence",
+      "teamName": "KU SAE Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 376.05,
+          "overallRank": 48,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 376.05,
+      "eventsAttended": 1,
+      "rank": 107,
+      "provisional": false
+    },
+    {
+      "schoolId": "memorial-university-of-newfoundland",
+      "school": "Memorial Univ of Newfoundland",
+      "teamName": "Memorial Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 373.74,
+          "overallRank": 52,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 373.74,
+      "eventsAttended": 1,
+      "rank": 108,
+      "provisional": false
+    },
+    {
+      "schoolId": "northern-michigan-university",
+      "school": "Northern Michigan Univ",
+      "teamName": "Wildcat Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 365.98,
+          "overallRank": 54,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 365.98,
+      "eventsAttended": 1,
+      "rank": 109,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-toronto",
+      "school": "Univ of Toronto",
+      "teamName": "UofT BAJA Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 363.35,
+          "overallRank": 53,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 363.35,
+      "eventsAttended": 2,
+      "rank": 110,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-autonoma-estado-mexico",
+      "school": "Universidad Autonoma Estado Mexico",
+      "teamName": "Sara Juana",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 361.94,
+          "overallRank": 49,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 361.94,
+      "eventsAttended": 1,
+      "rank": 111,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-windsor",
+      "school": "Univ of Windsor",
+      "teamName": "Lancers Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 361.38,
+          "overallRank": 55,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 361.38,
+      "eventsAttended": 1,
+      "rank": 112,
+      "provisional": false
+    },
+    {
+      "schoolId": "west-virginia-university-institute-of-tech",
+      "school": "West Virginia Univ Inst of Tech",
+      "teamName": "WVU Tech SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 353.63,
+          "overallRank": 54,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 353.63,
+      "eventsAttended": 1,
+      "rank": 113,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-simon-bolivar",
+      "school": "Universidad Simon Bolivar",
+      "teamName": "BAJA SAE Universidad Simon Bolivar",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 353.22,
+          "overallRank": 57,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 353.22,
+      "eventsAttended": 1,
+      "rank": 114,
+      "provisional": false
+    },
+    {
+      "schoolId": "northern-kentucky-university",
+      "school": "Northern Kentucky Univ",
+      "teamName": "Norse Motor Sports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 350.05,
+          "overallRank": 58,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 350.05,
+      "eventsAttended": 1,
+      "rank": 115,
+      "provisional": false
+    },
+    {
+      "schoolId": "southern-illinois-university-edwardville",
+      "school": "Southern Illinois Univ - Edwardville",
+      "teamName": "Cougar Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 349.36,
+          "overallRank": 59,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 349.36,
+      "eventsAttended": 1,
+      "rank": 116,
+      "provisional": false
+    },
+    {
+      "schoolId": "baylor-university",
+      "school": "Baylor Univ",
+      "teamName": "Baylor Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 342.84,
+          "overallRank": 56,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 342.84,
+      "eventsAttended": 1,
+      "rank": 117,
+      "provisional": false
+    },
+    {
+      "schoolId": "clarkson-university",
+      "school": "Clarkson University",
+      "teamName": "Clarkson University Knights",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 341.31,
+          "overallRank": 60,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 341.31,
+      "eventsAttended": 1,
+      "rank": 118,
+      "provisional": false
+    },
+    {
+      "schoolId": "northern-arizona-university",
+      "school": "Northern Arizona Univ",
+      "teamName": "NAU",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 340.43,
+          "overallRank": 51,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 340.43,
+      "eventsAttended": 1,
+      "rank": 119,
+      "provisional": false
+    },
+    {
+      "schoolId": "college-of-new-jersey",
+      "school": "College of New Jersey",
+      "teamName": "Motorlions",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 338.84,
+          "overallRank": 57,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 338.84,
+      "eventsAttended": 1,
+      "rank": 120,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-university-long-beach",
+      "school": "California State Univ - Long Beach",
+      "teamName": "CSULB RACING",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 335.92,
+          "overallRank": 61,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 335.92,
+      "eventsAttended": 1,
+      "rank": 121,
+      "provisional": false
+    },
+    {
+      "schoolId": "york-college-of-pa",
+      "school": "York College of Pa",
+      "teamName": "Spartan Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 334.75,
+          "overallRank": 62,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 334.75,
+      "eventsAttended": 1,
+      "rank": 122,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-oklahoma",
+      "school": "Univ of Oklahoma",
+      "teamName": "Sooner Off-Road",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 328.63,
+          "overallRank": 60,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 328.63,
+      "eventsAttended": 1,
+      "rank": 123,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-university-chico",
+      "school": "California State Univ- Chico",
+      "teamName": "Chico State Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 310.7,
+          "overallRank": 65,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 310.7,
+      "eventsAttended": 1,
+      "rank": 124,
+      "provisional": false
+    },
+    {
+      "schoolId": "buffalo-state-college",
+      "school": "Buffalo State College",
+      "teamName": "Buffalo State Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 310.51,
+          "overallRank": 66,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 310.51,
+      "eventsAttended": 1,
+      "rank": 125,
+      "provisional": false
+    },
+    {
+      "schoolId": "miami-university",
+      "school": "Miami Univ",
+      "teamName": "Redhawk Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 309.22,
+          "overallRank": 67,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 309.22,
+      "eventsAttended": 1,
+      "rank": 126,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-catolica-andres-bello",
+      "school": "Universidad Catolica Andres Bello",
+      "teamName": "BajaUCAB",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 304.66,
+          "overallRank": 62,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 304.66,
+      "eventsAttended": 1,
+      "rank": 127,
+      "provisional": false
+    },
+    {
+      "schoolId": "florida-institute-of-tech",
+      "school": "Florida Inst of Tech",
+      "teamName": "FIt Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 298.1,
+          "overallRank": 64,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 298.1,
+      "eventsAttended": 1,
+      "rank": 128,
+      "provisional": false
+    },
+    {
+      "schoolId": "grove-city-college",
+      "school": "Grove City College",
+      "teamName": "Grove City College Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 298.03,
+          "overallRank": 69,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 298.03,
+      "eventsAttended": 1,
+      "rank": 129,
+      "provisional": false
+    },
+    {
+      "schoolId": "mcmaster-university",
+      "school": "McMaster Univ",
+      "teamName": "McMaster Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 5,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 290.81,
+          "overallRank": 70,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 295.81,
+      "eventsAttended": 2,
+      "rank": 130,
+      "provisional": false
+    },
+    {
+      "schoolId": "harding-university",
+      "school": "Harding Univ",
+      "teamName": "Bison Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 284.93,
+          "overallRank": 54,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 284.93,
+      "eventsAttended": 1,
+      "rank": 131,
+      "provisional": false
+    },
+    {
+      "schoolId": "montana-state-university-bozeman",
+      "school": "Montana State Univ - Bozeman",
+      "teamName": "Bobcat Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 281.84,
+          "overallRank": 66,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 281.84,
+      "eventsAttended": 1,
+      "rank": 132,
+      "provisional": false
+    },
+    {
+      "schoolId": "yeungnam-college-of-science-and-tech",
+      "school": "Yeungnam College of Science & Tech",
+      "teamName": "YNC Baja SAE Expedition",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 269.66,
+          "overallRank": 59,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 12,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 281.66,
+      "eventsAttended": 2,
+      "rank": 133,
+      "provisional": false
+    },
+    {
+      "schoolId": "union-college",
+      "school": "Union College",
+      "teamName": "Union College Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 281.01,
+          "overallRank": 67,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 281.01,
+      "eventsAttended": 1,
+      "rank": 134,
+      "provisional": false
+    },
+    {
+      "schoolId": "sanilac-career-center",
+      "school": "Sanilac Career Center",
+      "teamName": "ADD racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 280.04,
+          "overallRank": 71,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 280.04,
+      "eventsAttended": 2,
+      "rank": 135,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-kentucky-paducah",
+      "school": "Univ of Kentucky - Paducah",
+      "teamName": "UK Paducah Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 278.77,
+          "overallRank": 68,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 278.77,
+      "eventsAttended": 1,
+      "rank": 136,
+      "provisional": false
+    },
+    {
+      "schoolId": "esia-tlalnepantla",
+      "school": "ESIA Tlalnepantla",
+      "teamName": "Leones Blancos",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 277.72,
+          "overallRank": 55,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 277.72,
+      "eventsAttended": 1,
+      "rank": 137,
+      "provisional": false
+    },
+    {
+      "schoolId": "embry-riddle-aero-university-daytona-beach",
+      "school": "Embry-Riddle Aero Univ - Daytona Beach",
+      "teamName": "Lady Eagles",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 275.26,
+          "overallRank": 56,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 275.26,
+      "eventsAttended": 1,
+      "rank": 138,
+      "provisional": false
+    },
+    {
+      "schoolId": "manhattan-college",
+      "school": "Manhattan College",
+      "teamName": "Jasper Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 272.27,
+          "overallRank": 57,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 272.27,
+      "eventsAttended": 2,
+      "rank": 139,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-alaska-anchorage",
+      "school": "Univ of Alaska - Anchorage",
+      "teamName": "Midnight Sun Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 267.13,
+          "overallRank": 60,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 4,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 271.13,
+      "eventsAttended": 2,
+      "rank": 140,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-western-ontario",
+      "school": "Univ of Western Ontario",
+      "teamName": "Western Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 97.17,
+          "overallRank": 86,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 170.49,
+          "overallRank": 83,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 267.66,
+      "eventsAttended": 2,
+      "rank": 141,
+      "provisional": false
+    },
+    {
+      "schoolId": "gyeongsang-national-university",
+      "school": "Gyeongsang National Univ",
+      "teamName": "Car-Tech",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 263.29,
+          "overallRank": 70,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 263.29,
+      "eventsAttended": 1,
+      "rank": 142,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-texas-pan-american",
+      "school": "Univ of Texas - Pan American",
+      "teamName": "UTPA Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 251.25,
+          "overallRank": 62,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 251.25,
+      "eventsAttended": 1,
+      "rank": 143,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-illinois-chicago",
+      "school": "Univ of Illinois - Chicago",
+      "teamName": "UIC Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 250.27,
+          "overallRank": 72,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 250.27,
+      "eventsAttended": 1,
+      "rank": 144,
+      "provisional": false
+    },
+    {
+      "schoolId": "fairmont-state-university",
+      "school": "Fairmont State Univ",
+      "teamName": "Falcon Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 249.49,
+          "overallRank": 72,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 249.49,
+      "eventsAttended": 1,
+      "rank": 145,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-memphis",
+      "school": "Univ of Memphis",
+      "teamName": "Tiger Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 249.23,
+          "overallRank": 73,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 249.23,
+      "eventsAttended": 1,
+      "rank": 146,
+      "provisional": false
+    },
+    {
+      "schoolId": "itesm-campus-toluca",
+      "school": "ITESM - Campus Toluca",
+      "teamName": "BORREGOS TOLUCA",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 245.53,
+          "overallRank": 63,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 245.53,
+      "eventsAttended": 1,
+      "rank": 147,
+      "provisional": false
+    },
+    {
+      "schoolId": "us-military-academy",
+      "school": "US Military Academy",
+      "teamName": "West Point Mini Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 245.14,
+          "overallRank": 64,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 245.14,
+      "eventsAttended": 1,
+      "rank": 148,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-tulsa",
+      "school": "Univ of Tulsa",
+      "teamName": "Tulsa Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 240.73,
+          "overallRank": 65,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 240.73,
+      "eventsAttended": 1,
+      "rank": 149,
+      "provisional": false
+    },
+    {
+      "schoolId": "ferris-state-university",
+      "school": "Ferris State University",
+      "teamName": "Brutus",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 240.72,
+          "overallRank": 73,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 240.72,
+      "eventsAttended": 1,
+      "rank": 150,
+      "provisional": false
+    },
+    {
+      "schoolId": "universite-du-quebec-at-rimouski",
+      "school": "Universite Du Quebec at Rimouski",
+      "teamName": "Nordic Wolf",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 239.24,
+          "overallRank": 74,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 239.24,
+      "eventsAttended": 1,
+      "rank": 151,
+      "provisional": false
+    },
+    {
+      "schoolId": "oregon-institute-of-tech",
+      "school": "Oregon Inst of Tech",
+      "teamName": "Oregon Tech Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 234.46,
+          "overallRank": 66,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 234.46,
+      "eventsAttended": 1,
+      "rank": 152,
+      "provisional": false
+    },
+    {
+      "schoolId": "marquette-university",
+      "school": "Marquette Univ",
+      "teamName": "Eagle Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 229.19,
+          "overallRank": 74,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 229.19,
+      "eventsAttended": 1,
+      "rank": 153,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-calif-davis",
+      "school": "Univ of Calif - Davis",
+      "teamName": "Davis Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 224.87,
+          "overallRank": 67,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 224.87,
+      "eventsAttended": 1,
+      "rank": 154,
+      "provisional": false
+    },
+    {
+      "schoolId": "itasca-community-college",
+      "school": "Itasca Community College",
+      "teamName": "Itasca Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 221.55,
+          "overallRank": 75,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 221.55,
+      "eventsAttended": 1,
+      "rank": 155,
+      "provisional": false
+    },
+    {
+      "schoolId": "purdue-university-calumet",
+      "school": "Purdue Univ - Calumet",
+      "teamName": "PUC Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 4,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 214.79,
+          "overallRank": 76,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 218.79,
+      "eventsAttended": 2,
+      "rank": 156,
+      "provisional": false
+    },
+    {
+      "schoolId": "cetys-universidad",
+      "school": "Cetys Universidad",
+      "teamName": "Z7",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 216.17,
+          "overallRank": 69,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 216.17,
+      "eventsAttended": 1,
+      "rank": 157,
+      "provisional": false
+    },
+    {
+      "schoolId": "alfred-state-college",
+      "school": "Alfred State College",
+      "teamName": "Pioneer Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 211.69,
+          "overallRank": 70,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 211.69,
+      "eventsAttended": 1,
+      "rank": 158,
+      "provisional": false
+    },
+    {
+      "schoolId": "old-dominion-university",
+      "school": "Old Dominion Univ",
+      "teamName": "ODU Baja SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 211,
+          "overallRank": 77,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 211,
+      "eventsAttended": 1,
+      "rank": 159,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-alabama-tuscaloosa",
+      "school": "Univ of Alabama - Tuscaloosa",
+      "teamName": "Bama Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 208.58,
+          "overallRank": 76,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 208.58,
+      "eventsAttended": 1,
+      "rank": 160,
+      "provisional": false
+    },
+    {
+      "schoolId": "rayat-bahra-institute-of-eng",
+      "school": "Rayat Bahra Inst Of Eng",
+      "teamName": "Indus Pride",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 207.96,
+          "overallRank": 71,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 207.96,
+      "eventsAttended": 1,
+      "rank": 161,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-arizona",
+      "school": "Univ of Arizona",
+      "teamName": "University of Arizona Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 205.04,
+          "overallRank": 77,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 205.04,
+      "eventsAttended": 1,
+      "rank": 162,
+      "provisional": false
+    },
+    {
+      "schoolId": "suny-farmingdale",
+      "school": "SUNY- Farmingdale",
+      "teamName": "RAM Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 199.13,
+          "overallRank": 78,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 199.13,
+      "eventsAttended": 1,
+      "rank": 163,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-colorado-denver",
+      "school": "Univ of Colorado - Denver",
+      "teamName": "The Missing Lynx",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 197.56,
+          "overallRank": 79,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 197.56,
+      "eventsAttended": 1,
+      "rank": 164,
+      "provisional": false
+    },
+    {
+      "schoolId": "western-michigan-university",
+      "school": "Western Michigan Univ",
+      "teamName": "WMU Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 195.28,
+          "overallRank": 79,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 195.28,
+      "eventsAttended": 1,
+      "rank": 165,
+      "provisional": false
+    },
+    {
+      "schoolId": "laurentian-university",
+      "school": "Laurentian Univ",
+      "teamName": "Big Stack Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 182.98,
+          "overallRank": 80,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 182.98,
+      "eventsAttended": 1,
+      "rank": 166,
+      "provisional": false
+    },
+    {
+      "schoolId": "binghamton-university",
+      "school": "Binghamton Univ",
+      "teamName": "Binghamton University SAE",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 180.45,
+          "overallRank": 81,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 180.45,
+      "eventsAttended": 1,
+      "rank": 167,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-pittsburgh-johnstown",
+      "school": "Univ of Pittsburgh - Johnstown",
+      "teamName": "Johnstown Flood Rescue",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 177.62,
+          "overallRank": 82,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 177.62,
+      "eventsAttended": 1,
+      "rank": 168,
+      "provisional": false
+    },
+    {
+      "schoolId": "northwestern-university",
+      "school": "Northwestern Univ",
+      "teamName": "Northwestern Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 172.07,
+          "overallRank": 81,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 172.07,
+      "eventsAttended": 1,
+      "rank": 169,
+      "provisional": false
+    },
+    {
+      "schoolId": "louisiana-state-university",
+      "school": "Louisiana State Univ",
+      "teamName": "LSU Tiger Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 170.62,
+          "overallRank": 72,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 170.62,
+      "eventsAttended": 1,
+      "rank": 170,
+      "provisional": false
+    },
+    {
+      "schoolId": "louisiana-tech-university",
+      "school": "Louisiana Tech Univ",
+      "teamName": "Mud Dawg Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 166.54,
+          "overallRank": 73,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 166.54,
+      "eventsAttended": 1,
+      "rank": 171,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-new-orleans",
+      "school": "Univ of New Orleans",
+      "teamName": "UNO",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 164.23,
+          "overallRank": 82,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 164.23,
+      "eventsAttended": 1,
+      "rank": 172,
+      "provisional": false
+    },
+    {
+      "schoolId": "youngstown-state-university",
+      "school": "Youngstown State Univ",
+      "teamName": "Penguin Powersports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 157.81,
+          "overallRank": 84,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 157.81,
+      "eventsAttended": 1,
+      "rank": 173,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-south-carolina",
+      "school": "Univ of South Carolina",
+      "teamName": "Gamecock Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 152.78,
+          "overallRank": 85,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 152.78,
+      "eventsAttended": 1,
+      "rank": 174,
+      "provisional": false
+    },
+    {
+      "schoolId": "instituto-tecnologico-de-queretaro",
+      "school": "Instituto Tecnologico de Queretaro",
+      "teamName": "Baja SAE ITQ",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 138.34,
+          "overallRank": 84,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 138.34,
+      "eventsAttended": 1,
+      "rank": 175,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-wisconsin-stout",
+      "school": "Univ of Wisconsin - Stout",
+      "teamName": "Blue Devil Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 124.81,
+          "overallRank": 86,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 124.81,
+      "eventsAttended": 1,
+      "rank": 176,
+      "provisional": false
+    },
+    {
+      "schoolId": "christian-brothers-university",
+      "school": "Christian Brothers Univ",
+      "teamName": "Bucs",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 120.3,
+          "overallRank": 76,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 4,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 124.3,
+      "eventsAttended": 2,
+      "rank": 177,
+      "provisional": false
+    },
+    {
+      "schoolId": "cairo-university",
+      "school": "Cairo University",
+      "teamName": "BCURT",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 70,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 53.67,
+          "overallRank": 88,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 123.67,
+      "eventsAttended": 2,
+      "rank": 178,
+      "provisional": false
+    },
+    {
+      "schoolId": "idaho-state-university",
+      "school": "Idaho State University",
+      "teamName": "Bengals Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 123.64,
+          "overallRank": 75,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 123.64,
+      "eventsAttended": 1,
+      "rank": 179,
+      "provisional": false
+    },
+    {
+      "schoolId": "vellore-institute-of-technology",
+      "school": "Vellore Institute of Technology",
+      "teamName": "KI",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 104.27,
+          "overallRank": 80,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 13,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 117.27,
+      "eventsAttended": 2,
+      "rank": 180,
+      "provisional": false
+    },
+    {
+      "schoolId": "escuela-sup-de-ing-automotriz-ecatepec",
+      "school": "Escuela Sup de Ing Automotriz Ecatepec",
+      "teamName": "CEDVA ECATEPEC",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 116.78,
+          "overallRank": 85,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 116.78,
+      "eventsAttended": 1,
+      "rank": 181,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-helwan",
+      "school": "Univ of Helwan",
+      "teamName": "BHU",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 115.33,
+          "overallRank": 77,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 115.33,
+      "eventsAttended": 1,
+      "rank": 182,
+      "provisional": false
+    },
+    {
+      "schoolId": "milwaukee-school-of-engrg",
+      "school": "Milwaukee School of Engrg",
+      "teamName": "Nuclear Fallout",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 94.27,
+          "overallRank": 81,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 94.27,
+      "eventsAttended": 1,
+      "rank": 183,
+      "provisional": false
+    },
+    {
+      "schoolId": "boise-state-university",
+      "school": "Boise State Univ",
+      "teamName": "Boise State Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 88.68,
+          "overallRank": 82,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 88.68,
+      "eventsAttended": 1,
+      "rank": 184,
+      "provisional": false
+    },
+    {
+      "schoolId": "montana-tech",
+      "school": "Montana Tech",
+      "teamName": "Oredigger Baja '14",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 82.29,
+          "overallRank": 87,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 82.29,
+      "eventsAttended": 1,
+      "rank": 185,
+      "provisional": false
+    },
+    {
+      "schoolId": "vellore-institute-of-technology-chenna",
+      "school": "Vellore Institute of Technology Chenna",
+      "teamName": "TEAM SAKSHAM INTERNATIONAL",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 80.67,
+          "overallRank": 87,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 80.67,
+      "eventsAttended": 1,
+      "rank": 186,
+      "provisional": false
+    },
+    {
+      "schoolId": "gonzaga-universtity",
+      "school": "Gonzaga Universtity",
+      "teamName": "Gonzaga",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 68.27,
+          "overallRank": 83,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 68.27,
+      "eventsAttended": 1,
+      "rank": 187,
+      "provisional": false
+    },
+    {
+      "schoolId": "olympic-college",
+      "school": "Olympic College",
+      "teamName": "Olympic College Baja Extreme",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 66.33,
+          "overallRank": 84,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 66.33,
+      "eventsAttended": 2,
+      "rank": 188,
+      "provisional": false
+    },
+    {
+      "schoolId": "northern-illinois-university",
+      "school": "Northern Illinois Univ",
+      "teamName": "NIU MotorSports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 57.61,
+          "overallRank": 88,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 57.61,
+      "eventsAttended": 1,
+      "rank": 189,
+      "provisional": false
+    },
+    {
+      "schoolId": "intituto-tecnologico-de-cd-cuauhtemoc",
+      "school": "Intituto Tecnologico de CD Cuauhtemoc",
+      "teamName": "Daram",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 54.33,
+          "overallRank": 85,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 54.33,
+      "eventsAttended": 1,
+      "rank": 190,
+      "provisional": false
+    },
+    {
+      "schoolId": "california-state-poly-university-pomona",
+      "school": "California State Poly Univ - Pomona",
+      "teamName": "Bronco Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 52,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 52,
+      "eventsAttended": 1,
+      "rank": 191,
+      "provisional": false
+    },
+    {
+      "schoolId": "government-college-of-engrg-pune",
+      "school": "Government College of Engrg Pune",
+      "teamName": "Team Nemesis Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 40,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 40,
+      "eventsAttended": 1,
+      "rank": 192,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-la-salle-pachuca",
+      "school": "Universidad La Salle Pachuca",
+      "teamName": "Halcones",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 37.75,
+          "overallRank": 86,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 37.75,
+      "eventsAttended": 1,
+      "rank": 193,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-texas-el-paso",
+      "school": "Univ of Texas - El Paso",
+      "teamName": "Mad Pete Motorsports II",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 30,
+          "overallRank": 87,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 30,
+      "eventsAttended": 1,
+      "rank": 194,
+      "provisional": false
+    },
+    {
+      "schoolId": "michigan-tech-university",
+      "school": "Michigan Tech Univ",
+      "teamName": "Blizzard Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 14,
+          "overallRank": 89,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 14,
+      "eventsAttended": 1,
+      "rank": 195,
+      "provisional": false
+    },
+    {
+      "schoolId": "arizona-state-university-tempe",
+      "school": "Arizona State Univ - Tempe",
+      "teamName": "ASU Tempe Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 13,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 13,
+      "eventsAttended": 1,
+      "rank": 196,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-technologica-de-ciudad-juarez",
+      "school": "Universidad Technologica de Ciudad Juarez",
+      "teamName": "TOROS BRAVOS",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 13,
+          "overallRank": 89,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 13,
+      "eventsAttended": 1,
+      "rank": 196,
+      "provisional": false
+    },
+    {
+      "schoolId": "george-washington-university",
+      "school": "George Washington Univ",
+      "teamName": "Geoff",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 6,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 6,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 12,
+      "eventsAttended": 2,
+      "rank": 198,
+      "provisional": false
+    },
+    {
+      "schoolId": "rowan-university",
+      "school": "Rowan Univ",
+      "teamName": "Rowan Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 11,
+          "overallRank": 89,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 11,
+      "eventsAttended": 1,
+      "rank": 199,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-colorado-colorado-springs",
+      "school": "Univ of Colorado - Colorado Springs",
+      "teamName": "Rocky Mountain Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 10,
+          "overallRank": 90,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 10,
+      "eventsAttended": 1,
+      "rank": 200,
+      "provisional": false
+    },
+    {
+      "schoolId": "ohio-state-university",
+      "school": "Ohio State Univ",
+      "teamName": "Buckeye Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 8,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 8,
+      "eventsAttended": 2,
+      "rank": 201,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-missouri",
+      "school": "Univ of Missouri",
+      "teamName": "Mizzou Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 3,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 3,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 6,
+      "eventsAttended": 2,
+      "rank": 202,
+      "provisional": false
+    },
+    {
+      "schoolId": "middle-tennessee-state-university",
+      "school": "Middle Tennessee State Univ",
+      "teamName": "MTSU Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 5,
+          "overallRank": 90,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 5,
+      "eventsAttended": 1,
+      "rank": 203,
+      "provisional": false
+    },
+    {
+      "schoolId": "rustamji-institute-of-technology",
+      "school": "Rustamji Institute of Technology",
+      "teamName": "BENIGN BEADERS",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 3,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 3,
+      "eventsAttended": 1,
+      "rank": 204,
+      "provisional": false
+    },
+    {
+      "schoolId": "boston-university",
+      "school": "Boston Univ",
+      "teamName": "Boston University Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "british-columbia-institute-of-tech",
+      "school": "British Columbia Inst of Tech",
+      "teamName": "BCIT BAJA",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "cleveland-state-university",
+      "school": "Cleveland State Univ",
+      "teamName": "Fenn Foxes",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "delhi-technological-university",
+      "school": "Delhi Technological Univ",
+      "teamName": "Deltech Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "gautam-buddha-university",
+      "school": "Gautam Buddha University",
+      "teamName": "VAJRAYANA",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "georgia-institute-of-technology",
+      "school": "Georgia Institute of Technology",
+      "teamName": "GT Offroad",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "illinois-institute-of-technology",
+      "school": "Illinois Institute of Technology",
+      "teamName": "IIT Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "khalifa-university",
+      "school": "Khalifa University",
+      "teamName": "KU Racers",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "lehigh-university",
+      "school": "Lehigh Univ",
+      "teamName": "Mountain Hawk Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "lovely-professional-university",
+      "school": "Lovely Professional University",
+      "teamName": "Illuminati Racers",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": 90,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "manipal-institute-of-tech",
+      "school": "Manipal Institute of Tech",
+      "teamName": "Team Manipal Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "military-institute-of-science-and-technology",
+      "school": "Military Inst of Science & Technology",
+      "teamName": "Baja Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "murray-state-university",
+      "school": "Murray State Univ",
+      "teamName": "Racers Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "new-jersey-institute-tech-newark-college",
+      "school": "New Jersey Inst\\Tech(Newark Coll)",
+      "teamName": "Dirt Devils",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "new-york-institute-of-tech",
+      "school": "New York Inst of Tech",
+      "teamName": "BNB Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "royal-military-college-of-canada",
+      "school": "Royal Military College of Canada",
+      "teamName": "RMCC Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "ryerson-university",
+      "school": "Ryerson Univ",
+      "teamName": "Ryerson Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "texas-a-and-m-kingsville",
+      "school": "Texas A&M - Kingsville",
+      "teamName": "Javelina Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": 90,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "unexpo-barquisimeto",
+      "school": "UNEXPO Barquisimeto",
+      "teamName": "SAE UNEXPO BARQUISIMETO",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-arkansas-fort-smith",
+      "school": "Univ of Arkansas- Fort Smith",
+      "teamName": "UAFS",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-houston-college-of-tech",
+      "school": "Univ of Houston - College of Tech",
+      "teamName": "LEVEL",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-science-and-tech-of-iran",
+      "school": "Univ of Science & Tech of Iran",
+      "teamName": "sorena",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": 90,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-southern-indiana",
+      "school": "Univ of Southern Indiana",
+      "teamName": "Mud Eagles",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-southern-maine",
+      "school": "Univ of Southern Maine",
+      "teamName": "University of Southern Maine Baja Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-tennessee-knoxville",
+      "school": "Univ of Tennessee - Knoxville",
+      "teamName": "Team Tennessee",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-central-de-venezuela",
+      "school": "Universidad Central de Venezuela",
+      "teamName": "Ultimate Competition Vehicle",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-la-salle-cuernavaca",
+      "school": "Universidad La Salle Cuernavaca",
+      "teamName": "Gallos ULSAC",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "universidad-nacional-autonoma-de-mexico",
+      "school": "Universidad Nacional Autónoma de México",
+      "teamName": "Puma Off-Road Team",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 0,
+          "overallRank": 91,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "universite-du-quebec-a-trois-rivieres",
+      "school": "Universite Du Quebec a Trois-Rivieres",
+      "teamName": "mini-baja UQTR",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-vermont",
+      "school": "University of Vermont",
+      "teamName": "Vermontsters",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "wentworth-institute-of-tech",
+      "school": "Wentworth Inst of Tech",
+      "teamName": "Leopard",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "western-washington-university",
+      "school": "Western Washington Univ",
+      "teamName": "WWU Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": 90,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "alfred-university",
+      "school": "Alfred Univ",
+      "teamName": "Saxon Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 2,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "cegep-de-sherbrooke",
+      "school": "Cegep de Sherbrooke",
+      "teamName": "Baja Cegep de Sherbrooke",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 2,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "concordia-university",
+      "school": "Concordia University",
+      "teamName": "Concordia Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 2,
+      "rank": 205,
+      "provisional": false
+    },
+    {
+      "schoolId": "psg-college-of-technology",
+      "school": "PSG College of Technology",
+      "teamName": "baja bhais",
+      "results": [
+        {
+          "competitionName": "Baja SAE UTEP",
+          "competitionId": "https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx",
+          "points": 0,
+          "overallRank": null,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 2,
+      "rank": 205,
+      "provisional": false
+    }
+  ]
+}

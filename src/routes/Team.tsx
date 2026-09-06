@@ -1,9 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { teamFrom, useSummary } from '../lib/data.js';
-import award from '../../data/schmidt-award.json';
-import { Badge, Empty, Medal, Points, SectionTitle } from '../components/ui.js';
 
-const WINNERS = (award as { winners: { year: number; schoolId: string | null; confidence: string }[] }).winners;
+import { Badge, Empty, Medal, Points, SectionTitle } from '../components/ui.js';
 
 export default function Team() {
   const { schoolId = '' } = useParams();
@@ -25,7 +23,10 @@ export default function Team() {
     );
   }
 
-  const titles = WINNERS.filter((w) => w.schoolId === schoolId);
+  // Counted from the computed standings: a season finished first is a title,
+  // and the award's top-three means a podium is worth showing separately.
+  const titleYears = rows.filter((r) => r.rank === 1).map((r) => r.year).sort();
+  const podiumYears = rows.filter((r) => r.rank <= 3).map((r) => r.year).sort();
   const bestRank = Math.min(...rows.map((r) => r.rank));
   const bestSeason = rows.find((r) => r.rank === bestRank);
   // A season-best trend line, drawn from ranks so lower is better.
@@ -37,21 +38,25 @@ export default function Team() {
         <h1 className="text-2xl font-bold tracking-tight">{school}</h1>
         {teamName && <p className="mt-1 text-sm text-ink-400">{teamName}</p>}
         <div className="mt-3 flex flex-wrap gap-2">
-          {titles.length > 0 && (
+          {titleYears.length > 0 && (
             <Badge tone="accent">
-              {titles.length} Iron Team title{titles.length > 1 ? 's' : ''} ·{' '}
-              {titles.map((t) => t.year).sort().join(', ')}
+              {titleYears.length} Iron Team title{titleYears.length > 1 ? 's' : ''} · {titleYears.join(', ')}
+            </Badge>
+          )}
+          {podiumYears.length > titleYears.length && (
+            <Badge>
+              {podiumYears.length} Iron Team podium{podiumYears.length > 1 ? 's' : ''} · {podiumYears.join(', ')}
             </Badge>
           )}
           <Badge>Best season finish: {bestRank}{bestSeason ? ` (${bestSeason.year})` : ''}</Badge>
           <Badge>{rows.length} seasons on record</Badge>
         </div>
-        {titles.some((t) => t.confidence !== 'confirmed') && (
-          <p className="mt-2 text-xs text-ink-500">
-            Some titles listed here come from a single third-party source and are marked unverified on the{' '}
-            <Link to="/history" className="underline underline-offset-2 hover:text-ink-300">history page</Link>.
-          </p>
-        )}
+        <p className="mt-2 text-xs text-ink-500">
+          Titles and podiums are computed from cumulative season points, which is how the Mike Schmidt
+          Memorial Iron Team Award is decided — it recognises the{' '}
+          <Link to="/history" className="underline underline-offset-2 hover:text-ink-300">top three teams</Link>,
+          so a podium finish earned the award without winning it.
+        </p>
       </div>
 
       <div>

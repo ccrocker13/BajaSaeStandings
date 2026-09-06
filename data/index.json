@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T19:14:46.273Z",
+  "generatedAt": "2026-09-06T20:27:46.318Z",
   "seasons": [
     {
       "year": 2026,
@@ -55,6 +55,21 @@
       "year": 2016,
       "competitions": 3,
       "teams": 212
+    },
+    {
+      "year": 2015,
+      "competitions": 3,
+      "teams": 214
+    },
+    {
+      "year": 2014,
+      "competitions": 3,
+      "teams": 240
+    },
+    {
+      "year": 2013,
+      "competitions": 3,
+      "teams": 224
     }
   ],
   "warnings": []

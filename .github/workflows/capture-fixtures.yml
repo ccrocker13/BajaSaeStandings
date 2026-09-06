@@ -75,14 +75,22 @@ jobs:
             ctype=$(file -b --mime-type "packages/parser/fixtures/${name}.raw" 2>/dev/null || echo unknown)
             bytes=$(wc -c < "packages/parser/fixtures/${name}.raw" | tr -d ' ')
 
-            # Give HTML an .html extension so editors and the parser tests behave.
-            if head -c 2000 "packages/parser/fixtures/${name}.raw" | grep -qi '<html'; then
-              mv "packages/parser/fixtures/${name}.raw" "packages/parser/fixtures/${name}.html"
-              target="packages/parser/fixtures/${name}.html"
-            else
-              mv "packages/parser/fixtures/${name}.raw" "packages/parser/fixtures/${name}.txt"
-              target="packages/parser/fixtures/${name}.txt"
-            fi
+            # Preserve a real file extension from the URL when it has one, so
+            # binary downloads (the .xlsx score books) survive intact. Renaming
+            # those to .txt would corrupt them.
+            urlext="${url##*.}"
+            case "$urlext" in
+              xlsx|xls|pdf|csv|zip) ext="$urlext" ;;
+              *)
+                if head -c 2000 "packages/parser/fixtures/${name}.raw" | grep -qi '<html'; then
+                  ext=html
+                else
+                  ext=txt
+                fi
+                ;;
+            esac
+            mv "packages/parser/fixtures/${name}.raw" "packages/parser/fixtures/${name}.${ext}"
+            target="packages/parser/fixtures/${name}.${ext}"
 
             echo "| ${name} | ${code} | ${ctype} | ${bytes} | ${url} |" >> packages/parser/fixtures/MANIFEST.md
 

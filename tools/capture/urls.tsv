@@ -77,3 +77,17 @@ res-or2026-SPEC	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91
 res-or2026-ENDUR	https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=ENDUR
 res-rochester2019-OVR	https://www.bajasae.net/res/EventResults.aspx?competitionid=541a6d54-f13a-4169-b35d-553ab2e116f6&eventkey=OVR
 previous-years	https://www.bajasae.net/page.aspx?pageid=2d2a2ef4-55fe-40e3-a67b-91dd0ca1a6ec
+#
+# --- Round 4 -------------------------------------------------------------
+# Final score books for 2013-2015, linked from the "previous years" results
+# page. The archive's HTML competition pages only go back to 2016, so these
+# spreadsheets are the only route to those three seasons.
+scores-2015-auburn	https://www.bajasae.net/content/2015_Auburn_Scores3.xlsx
+scores-2015-maryland	https://www.bajasae.net/content/2015_Maryland_Scores2.xlsx
+scores-2015-oregon	https://www.bajasae.net/content/2015_Oregon_Scores1.xlsx
+scores-2014-utep	https://www.bajasae.net/content/2014_BajaUTEP_Final.xlsx
+scores-2014-kansas	https://www.bajasae.net/content/2014_Kansas_Scores3.xlsx
+scores-2014-illinois	https://www.bajasae.net/content/2014_Illinois_Scores2.xlsx
+scores-2013-tennessee	https://www.bajasae.net/content/2013_Tennessee_Scores3.xlsx
+scores-2013-washington	https://www.bajasae.net/content/2013_Washington_Scores_Final2.xlsx
+scores-2013-rochester	https://www.bajasae.net/content/2013_Rochester_Scores1.xlsx
