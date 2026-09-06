@@ -1,7 +1,7 @@
 # Capture manifest
 
-Captured: 2026-09-06T18:43:33Z
-Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34052614764
+Captured: 2026-09-06T19:00:05Z
+Run: https://github.com/ccrocker13/BajaSaeStandings/actions/runs/34053422330
 
 | name | status | type | bytes | url |
 |---|---|---|---|---|
