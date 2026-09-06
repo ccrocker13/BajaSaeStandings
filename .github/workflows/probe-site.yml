@@ -23,35 +23,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Read the repository's Pages configuration
+        shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set +e
-          echo "=== GET /repos/${GITHUB_REPOSITORY}/pages ==="
           code=$(curl -sS -o /tmp/pages.json -w '%{http_code}' \
             -H "Authorization: Bearer $GH_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages")
-          echo "HTTP $code"
+          echo "=== Pages configuration (HTTP $code) ==="
           if [ "$code" = "404" ]; then
             echo "VERDICT: GitHub Pages is NOT ENABLED for this repository."
-            echo "         Settings -> Pages -> Build and deployment -> Source: GitHub Actions"
+            echo "         Fix: Settings -> Pages -> Build and deployment -> Source: GitHub Actions"
           else
-            echo "--- config ---"
-            cat /tmp/pages.json
-            echo
-            echo "--- key fields ---"
-            for k in status url html_url build_type source cname public; do
-              printf '  %-12s %s\n' "$k" "$(python3 -c "
-import json,sys
-try:
-    d=json.load(open('/tmp/pages.json'))
-    v=d.get('$k')
-    print(json.dumps(v) if v is not None else '(absent)')
-except Exception as e:
-    print('(unreadable)')
-")"
-            done
+            jq -r '"  status:     \(.status)\n  build_type: \(.build_type)\n  url:        \(.url)\n  html_url:   \(.html_url)\n  source:     \(.source)\n  public:     \(.public)"' /tmp/pages.json 2>/dev/null || cat /tmp/pages.json
           fi
 
       - name: Fetch the published site
