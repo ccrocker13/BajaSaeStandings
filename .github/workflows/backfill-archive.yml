@@ -48,4 +48,21 @@ jobs:
             exit 0
           fi
           git commit -m 'Refresh season data from archive [skip ci]'
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          # The branch can move while this job runs — a push landing mid-capture
+          # would otherwise reject this one as non-fast-forward. Rebase onto
+          # whatever arrived and retry; the commit only touches generated files,
+          # so it rebases cleanly onto unrelated work.
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push rejected, rebasing onto origin/${GITHUB_REF_NAME} (attempt $attempt)"
+            git fetch origin "${GITHUB_REF_NAME}"
+            git rebase "origin/${GITHUB_REF_NAME}" || {
+              echo "::error::rebase conflict — generated files diverged, needs a human"
+              exit 1
+            }
+          done
+          echo "::error::could not push after 3 attempts"
+          exit 1
