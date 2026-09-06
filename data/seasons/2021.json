@@ -153,45 +153,6 @@
       "provisional": false
     },
     {
-      "schoolId": "harding-university",
-      "school": "Harding Univ",
-      "teamName": "Bison Baja 2",
-      "results": [
-        {
-          "competitionName": "Baja SAE Knowledge",
-          "competitionId": "02d6e1cf-d291-4a4e-993f-512abc95d340",
-          "points": 178.06,
-          "overallRank": 63,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Knowledge",
-          "competitionId": "02d6e1cf-d291-4a4e-993f-512abc95d340",
-          "points": 140.53,
-          "overallRank": 91,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja Validation Event AZ",
-          "competitionId": "59471865-e02d-48af-b42b-896bf1af94c8",
-          "points": 643.09,
-          "overallRank": 4,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja Validation Event AZ",
-          "competitionId": "59471865-e02d-48af-b42b-896bf1af94c8",
-          "points": 272.1,
-          "overallRank": 19,
-          "provisional": false
-        }
-      ],
-      "totalPoints": 1233.7800000000002,
-      "eventsAttended": 4,
-      "rank": 5,
-      "provisional": false
-    },
-    {
       "schoolId": "clarkson-university",
       "school": "Clarkson University",
       "teamName": "Golden Knights Racing",
@@ -220,7 +181,7 @@
       ],
       "totalPoints": 1194.21,
       "eventsAttended": 3,
-      "rank": 6,
+      "rank": 5,
       "provisional": false
     },
     {
@@ -245,7 +206,7 @@
       ],
       "totalPoints": 984.9499999999999,
       "eventsAttended": 2,
-      "rank": 7,
+      "rank": 6,
       "provisional": false
     },
     {
@@ -270,39 +231,7 @@
       ],
       "totalPoints": 939.3199999999999,
       "eventsAttended": 2,
-      "rank": 8,
-      "provisional": false
-    },
-    {
-      "schoolId": "rowan-university",
-      "school": "Rowan Univ",
-      "teamName": "Rowan Motorsports",
-      "results": [
-        {
-          "competitionName": "Baja SAE Knowledge",
-          "competitionId": "02d6e1cf-d291-4a4e-993f-512abc95d340",
-          "points": 210.72,
-          "overallRank": 38,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Knowledge",
-          "competitionId": "02d6e1cf-d291-4a4e-993f-512abc95d340",
-          "points": 185.27,
-          "overallRank": 57,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja Louisville - Validation Event",
-          "competitionId": "78097d49-c603-449b-a117-37a8e5026dfd",
-          "points": 483.09,
-          "overallRank": 19,
-          "provisional": false
-        }
-      ],
-      "totalPoints": 879.0799999999999,
-      "eventsAttended": 3,
-      "rank": 9,
+      "rank": 7,
       "provisional": false
     },
     {
@@ -327,7 +256,7 @@
       ],
       "totalPoints": 870.3800000000001,
       "eventsAttended": 2,
-      "rank": 10,
+      "rank": 8,
       "provisional": false
     },
     {
@@ -359,7 +288,7 @@
       ],
       "totalPoints": 853.4100000000001,
       "eventsAttended": 3,
-      "rank": 11,
+      "rank": 9,
       "provisional": false
     },
     {
@@ -384,7 +313,32 @@
       ],
       "totalPoints": 849.87,
       "eventsAttended": 2,
-      "rank": 12,
+      "rank": 10,
+      "provisional": false
+    },
+    {
+      "schoolId": "harding-university",
+      "school": "Harding Univ",
+      "teamName": "Bison Baja",
+      "results": [
+        {
+          "competitionName": "Baja SAE Knowledge",
+          "competitionId": "02d6e1cf-d291-4a4e-993f-512abc95d340",
+          "points": 178.06,
+          "overallRank": 63,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja Validation Event AZ",
+          "competitionId": "59471865-e02d-48af-b42b-896bf1af94c8",
+          "points": 643.09,
+          "overallRank": 4,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 821.1500000000001,
+      "eventsAttended": 2,
+      "rank": 11,
       "provisional": false
     },
     {
@@ -409,7 +363,7 @@
       ],
       "totalPoints": 807.59,
       "eventsAttended": 2,
-      "rank": 13,
+      "rank": 12,
       "provisional": false
     },
     {
@@ -434,7 +388,7 @@
       ],
       "totalPoints": 751.43,
       "eventsAttended": 2,
-      "rank": 14,
+      "rank": 13,
       "provisional": false
     },
     {
@@ -459,7 +413,7 @@
       ],
       "totalPoints": 731.37,
       "eventsAttended": 2,
-      "rank": 15,
+      "rank": 14,
       "provisional": false
     },
     {
@@ -484,7 +438,7 @@
       ],
       "totalPoints": 714.4,
       "eventsAttended": 2,
-      "rank": 16,
+      "rank": 15,
       "provisional": false
     },
     {
@@ -509,7 +463,7 @@
       ],
       "totalPoints": 710.4599999999999,
       "eventsAttended": 2,
-      "rank": 17,
+      "rank": 16,
       "provisional": false
     },
     {
@@ -534,7 +488,7 @@
       ],
       "totalPoints": 696.29,
       "eventsAttended": 2,
-      "rank": 18,
+      "rank": 17,
       "provisional": false
     },
     {
@@ -559,7 +513,7 @@
       ],
       "totalPoints": 695.14,
       "eventsAttended": 2,
-      "rank": 19,
+      "rank": 18,
       "provisional": false
     },
     {
@@ -583,6 +537,31 @@
         }
       ],
       "totalPoints": 694.42,
+      "eventsAttended": 2,
+      "rank": 19,
+      "provisional": false
+    },
+    {
+      "schoolId": "rowan-university",
+      "school": "Rowan Univ",
+      "teamName": "Rowan Motorsports",
+      "results": [
+        {
+          "competitionName": "Baja SAE Knowledge",
+          "competitionId": "02d6e1cf-d291-4a4e-993f-512abc95d340",
+          "points": 210.72,
+          "overallRank": 38,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja Louisville - Validation Event",
+          "competitionId": "78097d49-c603-449b-a117-37a8e5026dfd",
+          "points": 483.09,
+          "overallRank": 19,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 693.81,
       "eventsAttended": 2,
       "rank": 20,
       "provisional": false

@@ -27,7 +27,7 @@
     {
       "schoolId": "michigan",
       "school": "Univ of Michigan - Ann Arbor",
-      "teamName": "Engine Tester #003",
+      "teamName": "Michigan Baja Racing",
       "results": [
         {
           "competitionName": "Baja SAE Tennessee Tech",
@@ -49,24 +49,17 @@
           "points": 1009.21,
           "overallRank": 1,
           "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Arizona",
-          "competitionId": "8d2dd1e0-a0e8-49c5-8aad-832a52154c23",
-          "points": 0,
-          "overallRank": 45,
-          "provisional": false
         }
       ],
       "totalPoints": 2945.73,
-      "eventsAttended": 4,
+      "eventsAttended": 3,
       "rank": 1,
       "provisional": false
     },
     {
       "schoolId": "ets",
       "school": "Ecole de Technologie Superieure",
-      "teamName": "Engine Tester #001",
+      "teamName": "Baja ETS",
       "results": [
         {
           "competitionName": "Baja SAE Tennessee Tech",
@@ -88,24 +81,17 @@
           "points": 969.71,
           "overallRank": 2,
           "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Arizona",
-          "competitionId": "8d2dd1e0-a0e8-49c5-8aad-832a52154c23",
-          "points": 0,
-          "overallRank": 45,
-          "provisional": false
         }
       ],
       "totalPoints": 2862.16,
-      "eventsAttended": 4,
+      "eventsAttended": 3,
       "rank": 2,
       "provisional": false
     },
     {
       "schoolId": "rit",
       "school": "Rochester Institute of Technology",
-      "teamName": "Engine Tester #002",
+      "teamName": "RIOT RACING",
       "results": [
         {
           "competitionName": "Baja SAE Tennessee Tech",
@@ -127,17 +113,10 @@
           "points": 945.8,
           "overallRank": 3,
           "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Arizona",
-          "competitionId": "8d2dd1e0-a0e8-49c5-8aad-832a52154c23",
-          "points": 0,
-          "overallRank": 45,
-          "provisional": false
         }
       ],
       "totalPoints": 2853.6499999999996,
-      "eventsAttended": 4,
+      "eventsAttended": 3,
       "rank": 3,
       "provisional": false
     },
@@ -368,7 +347,7 @@
     {
       "schoolId": "oregon-state",
       "school": "Oregon State Univ",
-      "teamName": "Engine Tester #006",
+      "teamName": "Beaver Racing",
       "results": [
         {
           "competitionName": "Baja SAE Tennessee Tech",
@@ -383,17 +362,10 @@
           "points": 923.85,
           "overallRank": 4,
           "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Arizona",
-          "competitionId": "8d2dd1e0-a0e8-49c5-8aad-832a52154c23",
-          "points": 0,
-          "overallRank": 45,
-          "provisional": false
         }
       ],
       "totalPoints": 1791.72,
-      "eventsAttended": 3,
+      "eventsAttended": 2,
       "rank": 11,
       "provisional": false
     },
@@ -921,7 +893,7 @@
     {
       "schoolId": "oklahoma-christian-university",
       "school": "Oklahoma Christian Univ",
-      "teamName": "Engine Tester #004",
+      "teamName": "OC Baja Racing",
       "results": [
         {
           "competitionName": "Baja SAE Tennessee Tech",
@@ -936,17 +908,10 @@
           "points": 493.22,
           "overallRank": 21,
           "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Arizona",
-          "competitionId": "8d2dd1e0-a0e8-49c5-8aad-832a52154c23",
-          "points": 0,
-          "overallRank": 45,
-          "provisional": false
         }
       ],
       "totalPoints": 1022.24,
-      "eventsAttended": 3,
+      "eventsAttended": 2,
       "rank": 32,
       "provisional": false
     },

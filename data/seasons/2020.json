@@ -3811,6 +3811,24 @@
       "provisional": false
     },
     {
+      "schoolId": "sae-brasil",
+      "school": "SAE Brasil",
+      "teamName": "SAE Brasil 1",
+      "results": [
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "ff9dc5e4-8f1a-4ffa-a9a0-aa96a57b9616",
+          "points": 0,
+          "overallRank": 70,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 0,
+      "eventsAttended": 1,
+      "rank": 145,
+      "provisional": false
+    },
+    {
       "schoolId": "saint-ambrose-university",
       "school": "Saint Ambrose Univ",
       "teamName": "Sting Motorsports",
@@ -4806,38 +4824,6 @@
       ],
       "totalPoints": 0,
       "eventsAttended": 2,
-      "rank": 145,
-      "provisional": false
-    },
-    {
-      "schoolId": "sae-brasil",
-      "school": "SAE Brasil",
-      "teamName": "SAE Brasil 3",
-      "results": [
-        {
-          "competitionName": "Baja SAE Illinois",
-          "competitionId": "ff9dc5e4-8f1a-4ffa-a9a0-aa96a57b9616",
-          "points": 0,
-          "overallRank": 70,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Illinois",
-          "competitionId": "ff9dc5e4-8f1a-4ffa-a9a0-aa96a57b9616",
-          "points": 0,
-          "overallRank": 70,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Illinois",
-          "competitionId": "ff9dc5e4-8f1a-4ffa-a9a0-aa96a57b9616",
-          "points": 0,
-          "overallRank": 70,
-          "provisional": false
-        }
-      ],
-      "totalPoints": 0,
-      "eventsAttended": 3,
       "rank": 145,
       "provisional": false
     }

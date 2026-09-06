@@ -25,45 +25,6 @@
   ],
   "standings": [
     {
-      "schoolId": "rit",
-      "school": "Rochester Institute of Technology",
-      "teamName": "RIOT RACING",
-      "results": [
-        {
-          "competitionName": "Baja SAE California",
-          "competitionId": "a59bd740-f7f4-46ee-b3a2-6b7d672ccf1e",
-          "points": 851.23,
-          "overallRank": 3,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE California",
-          "competitionId": "a59bd740-f7f4-46ee-b3a2-6b7d672ccf1e",
-          "points": 604.23,
-          "overallRank": 23,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Kansas",
-          "competitionId": "47889761-684f-4fa2-b057-7abb55c8bbde",
-          "points": 543.18,
-          "overallRank": 28,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Illinois",
-          "competitionId": "6548e906-200b-4e58-91ad-1bcda47091eb",
-          "points": 853.4,
-          "overallRank": 4,
-          "provisional": false
-        }
-      ],
-      "totalPoints": 2852.04,
-      "eventsAttended": 4,
-      "rank": 1,
-      "provisional": false
-    },
-    {
       "schoolId": "michigan",
       "school": "Univ of Michigan - Ann Arbor",
       "teamName": "Michigan Baja Racing",
@@ -92,7 +53,7 @@
       ],
       "totalPoints": 2638.85,
       "eventsAttended": 3,
-      "rank": 2,
+      "rank": 1,
       "provisional": false
     },
     {
@@ -123,6 +84,38 @@
         }
       ],
       "totalPoints": 2409.39,
+      "eventsAttended": 3,
+      "rank": 2,
+      "provisional": false
+    },
+    {
+      "schoolId": "rit",
+      "school": "Rochester Institute of Technology",
+      "teamName": "RIOT RACING",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "a59bd740-f7f4-46ee-b3a2-6b7d672ccf1e",
+          "points": 851.23,
+          "overallRank": 3,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Kansas",
+          "competitionId": "47889761-684f-4fa2-b057-7abb55c8bbde",
+          "points": 543.18,
+          "overallRank": 28,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Illinois",
+          "competitionId": "6548e906-200b-4e58-91ad-1bcda47091eb",
+          "points": 853.4,
+          "overallRank": 4,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2247.81,
       "eventsAttended": 3,
       "rank": 3,
       "provisional": false

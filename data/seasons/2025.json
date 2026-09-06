@@ -1350,31 +1350,6 @@
       "provisional": false
     },
     {
-      "schoolId": "university-of-san-diego",
-      "school": "Univ of San Diego",
-      "teamName": "Torero Racing Club",
-      "results": [
-        {
-          "competitionName": "Baja SAE Arizona",
-          "competitionId": "831723b7-8cdc-47d6-ab26-886f8b0d7a9f",
-          "points": 459.49,
-          "overallRank": 26,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Arizona",
-          "competitionId": "831723b7-8cdc-47d6-ab26-886f8b0d7a9f",
-          "points": 84.5,
-          "overallRank": 60,
-          "provisional": false
-        }
-      ],
-      "totalPoints": 543.99,
-      "eventsAttended": 2,
-      "rank": 54,
-      "provisional": false
-    },
-    {
       "schoolId": "university-of-calgary",
       "school": "Univ of Calgary",
       "teamName": "UCalgary Baja",
@@ -1396,7 +1371,7 @@
       ],
       "totalPoints": 542.38,
       "eventsAttended": 2,
-      "rank": 55,
+      "rank": 54,
       "provisional": false
     },
     {
@@ -1421,7 +1396,7 @@
       ],
       "totalPoints": 528.62,
       "eventsAttended": 2,
-      "rank": 56,
+      "rank": 55,
       "provisional": false
     },
     {
@@ -1439,7 +1414,7 @@
       ],
       "totalPoints": 525.89,
       "eventsAttended": 1,
-      "rank": 57,
+      "rank": 56,
       "provisional": false
     },
     {
@@ -1457,7 +1432,7 @@
       ],
       "totalPoints": 520.82,
       "eventsAttended": 1,
-      "rank": 58,
+      "rank": 57,
       "provisional": false
     },
     {
@@ -1475,7 +1450,7 @@
       ],
       "totalPoints": 512.94,
       "eventsAttended": 1,
-      "rank": 59,
+      "rank": 58,
       "provisional": false
     },
     {
@@ -1493,7 +1468,7 @@
       ],
       "totalPoints": 511.63,
       "eventsAttended": 1,
-      "rank": 60,
+      "rank": 59,
       "provisional": false
     },
     {
@@ -1511,7 +1486,7 @@
       ],
       "totalPoints": 479.84,
       "eventsAttended": 1,
-      "rank": 61,
+      "rank": 60,
       "provisional": false
     },
     {
@@ -1529,7 +1504,7 @@
       ],
       "totalPoints": 475.7,
       "eventsAttended": 1,
-      "rank": 62,
+      "rank": 61,
       "provisional": false
     },
     {
@@ -1547,7 +1522,7 @@
       ],
       "totalPoints": 467.56,
       "eventsAttended": 1,
-      "rank": 63,
+      "rank": 62,
       "provisional": false
     },
     {
@@ -1564,6 +1539,24 @@
         }
       ],
       "totalPoints": 460.37,
+      "eventsAttended": 1,
+      "rank": 63,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-san-diego",
+      "school": "Univ of San Diego",
+      "teamName": "Torero Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Arizona",
+          "competitionId": "831723b7-8cdc-47d6-ab26-886f8b0d7a9f",
+          "points": 459.49,
+          "overallRank": 26,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 459.49,
       "eventsAttended": 1,
       "rank": 64,
       "provisional": false

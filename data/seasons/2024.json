@@ -121,45 +121,6 @@
       "provisional": false
     },
     {
-      "schoolId": "johns-hopkins-university",
-      "school": "Johns Hopkins Univ",
-      "teamName": "Blue Jay Racing",
-      "results": [
-        {
-          "competitionName": "Baja SAE California",
-          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
-          "points": 788.81,
-          "overallRank": 6,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE California",
-          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
-          "points": 76,
-          "overallRank": 53,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Williamsport",
-          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
-          "points": 808.43,
-          "overallRank": 5,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE Michigan",
-          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
-          "points": 818.15,
-          "overallRank": 9,
-          "provisional": false
-        }
-      ],
-      "totalPoints": 2491.39,
-      "eventsAttended": 4,
-      "rank": 4,
-      "provisional": false
-    },
-    {
       "schoolId": "michigan",
       "school": "Univ of Michigan - Ann Arbor",
       "teamName": "Michigan Baja Racing",
@@ -187,6 +148,38 @@
         }
       ],
       "totalPoints": 2444.22,
+      "eventsAttended": 3,
+      "rank": 4,
+      "provisional": false
+    },
+    {
+      "schoolId": "johns-hopkins-university",
+      "school": "Johns Hopkins Univ",
+      "teamName": "Blue Jay Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 788.81,
+          "overallRank": 6,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Williamsport",
+          "competitionId": "dae00323-484b-417d-b48f-7cd15a235820",
+          "points": 808.43,
+          "overallRank": 5,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE Michigan",
+          "competitionId": "d699778a-2071-460d-971e-a88d0a49cc50",
+          "points": 818.15,
+          "overallRank": 9,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 2415.39,
       "eventsAttended": 3,
       "rank": 5,
       "provisional": false
@@ -1363,31 +1356,6 @@
       "provisional": false
     },
     {
-      "schoolId": "university-of-san-diego",
-      "school": "Univ of San Diego",
-      "teamName": "Torero Club Racing",
-      "results": [
-        {
-          "competitionName": "Baja SAE California",
-          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
-          "points": 391.76,
-          "overallRank": 24,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE California",
-          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
-          "points": 221.12,
-          "overallRank": 35,
-          "provisional": false
-        }
-      ],
-      "totalPoints": 612.88,
-      "eventsAttended": 2,
-      "rank": 52,
-      "provisional": false
-    },
-    {
       "schoolId": "southern-illinois-university-edwardville",
       "school": "Southern Illinois Univ - Edwardville",
       "teamName": "Cougar Baja",
@@ -1409,7 +1377,7 @@
       ],
       "totalPoints": 611.23,
       "eventsAttended": 2,
-      "rank": 53,
+      "rank": 52,
       "provisional": false
     },
     {
@@ -1434,7 +1402,7 @@
       ],
       "totalPoints": 610.65,
       "eventsAttended": 2,
-      "rank": 54,
+      "rank": 53,
       "provisional": false
     },
     {
@@ -1452,7 +1420,7 @@
       ],
       "totalPoints": 599.33,
       "eventsAttended": 1,
-      "rank": 55,
+      "rank": 54,
       "provisional": false
     },
     {
@@ -1470,7 +1438,7 @@
       ],
       "totalPoints": 596.72,
       "eventsAttended": 1,
-      "rank": 56,
+      "rank": 55,
       "provisional": false
     },
     {
@@ -1488,7 +1456,7 @@
       ],
       "totalPoints": 565.35,
       "eventsAttended": 1,
-      "rank": 57,
+      "rank": 56,
       "provisional": false
     },
     {
@@ -1506,7 +1474,7 @@
       ],
       "totalPoints": 557.71,
       "eventsAttended": 1,
-      "rank": 58,
+      "rank": 57,
       "provisional": false
     },
     {
@@ -1531,7 +1499,7 @@
       ],
       "totalPoints": 537.24,
       "eventsAttended": 2,
-      "rank": 59,
+      "rank": 58,
       "provisional": false
     },
     {
@@ -1549,7 +1517,7 @@
       ],
       "totalPoints": 505.45,
       "eventsAttended": 1,
-      "rank": 60,
+      "rank": 59,
       "provisional": false
     },
     {
@@ -1574,7 +1542,7 @@
       ],
       "totalPoints": 504.9,
       "eventsAttended": 2,
-      "rank": 61,
+      "rank": 60,
       "provisional": false
     },
     {
@@ -1599,7 +1567,7 @@
       ],
       "totalPoints": 503.79999999999995,
       "eventsAttended": 2,
-      "rank": 62,
+      "rank": 61,
       "provisional": false
     },
     {
@@ -1617,7 +1585,7 @@
       ],
       "totalPoints": 498.32,
       "eventsAttended": 1,
-      "rank": 63,
+      "rank": 62,
       "provisional": false
     },
     {
@@ -1635,7 +1603,7 @@
       ],
       "totalPoints": 496.82,
       "eventsAttended": 1,
-      "rank": 64,
+      "rank": 63,
       "provisional": false
     },
     {
@@ -1653,7 +1621,7 @@
       ],
       "totalPoints": 485.66,
       "eventsAttended": 1,
-      "rank": 65,
+      "rank": 64,
       "provisional": false
     },
     {
@@ -1678,7 +1646,7 @@
       ],
       "totalPoints": 483.05,
       "eventsAttended": 2,
-      "rank": 66,
+      "rank": 65,
       "provisional": false
     },
     {
@@ -1696,7 +1664,7 @@
       ],
       "totalPoints": 477.64,
       "eventsAttended": 1,
-      "rank": 67,
+      "rank": 66,
       "provisional": false
     },
     {
@@ -1714,7 +1682,7 @@
       ],
       "totalPoints": 476.66,
       "eventsAttended": 1,
-      "rank": 68,
+      "rank": 67,
       "provisional": false
     },
     {
@@ -1732,7 +1700,7 @@
       ],
       "totalPoints": 455.22,
       "eventsAttended": 1,
-      "rank": 69,
+      "rank": 68,
       "provisional": false
     },
     {
@@ -1757,7 +1725,7 @@
       ],
       "totalPoints": 449.62,
       "eventsAttended": 2,
-      "rank": 70,
+      "rank": 69,
       "provisional": false
     },
     {
@@ -1775,7 +1743,7 @@
       ],
       "totalPoints": 449.58,
       "eventsAttended": 1,
-      "rank": 71,
+      "rank": 70,
       "provisional": false
     },
     {
@@ -1793,7 +1761,7 @@
       ],
       "totalPoints": 446.13,
       "eventsAttended": 1,
-      "rank": 72,
+      "rank": 71,
       "provisional": false
     },
     {
@@ -1811,7 +1779,7 @@
       ],
       "totalPoints": 432.94,
       "eventsAttended": 1,
-      "rank": 73,
+      "rank": 72,
       "provisional": false
     },
     {
@@ -1829,7 +1797,7 @@
       ],
       "totalPoints": 428.35,
       "eventsAttended": 1,
-      "rank": 74,
+      "rank": 73,
       "provisional": false
     },
     {
@@ -1847,7 +1815,7 @@
       ],
       "totalPoints": 415.01,
       "eventsAttended": 1,
-      "rank": 75,
+      "rank": 74,
       "provisional": false
     },
     {
@@ -1872,6 +1840,24 @@
       ],
       "totalPoints": 392.15999999999997,
       "eventsAttended": 2,
+      "rank": 75,
+      "provisional": false
+    },
+    {
+      "schoolId": "university-of-san-diego",
+      "school": "Univ of San Diego",
+      "teamName": "Torero Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE California",
+          "competitionId": "5344befe-f95c-4017-95d7-45836822794c",
+          "points": 391.76,
+          "overallRank": 24,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 391.76,
+      "eventsAttended": 1,
       "rank": 76,
       "provisional": false
     },
