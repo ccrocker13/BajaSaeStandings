@@ -1,0 +1,31 @@
+# name<TAB>url   — lines starting with # are ignored.
+# Edit this file and push to re-run the capture workflow.
+#
+# Event codes below are the ones that appear as live indexed URLs, so the code
+# strings themselves are real. Their meanings are inferred and must be confirmed
+# against the captured page titles. Hill climb, sled pull, suspension & traction
+# and rock crawl codes are NOT known — the parser discovers codes from the page's
+# own nav rather than trusting this list.
+results-robots	https://results.bajasae.net/robots.txt
+bajasae-robots	https://www.bajasae.net/robots.txt
+results-root	https://results.bajasae.net/
+leaderboard-default	https://results.bajasae.net/Leaderboard.aspx
+leaderboard-OVR	https://results.bajasae.net/Leaderboard.aspx?Event=OVR
+leaderboard-DESN	https://results.bajasae.net/Leaderboard.aspx?Event=DESN
+leaderboard-PRES	https://results.bajasae.net/Leaderboard.aspx?Event=PRES
+leaderboard-COST	https://results.bajasae.net/Leaderboard.aspx?Event=COST
+leaderboard-ACCEL	https://results.bajasae.net/Leaderboard.aspx?Event=ACCEL
+leaderboard-MANU	https://results.bajasae.net/Leaderboard.aspx?Event=MANU
+leaderboard-ENDUR	https://results.bajasae.net/Leaderboard.aspx?Event=ENDUR
+leaderboard-SPEC	https://results.bajasae.net/Leaderboard.aspx?Event=SPEC
+endurance-grid	https://results.bajasae.net/EnduranceGrid.aspx
+tech-line-number	https://results.bajasae.net/TechLineNumber.aspx
+event-results	https://results.bajasae.net/EventResults.aspx
+my-results	https://results.bajasae.net/MyResults.aspx
+my-results-car69-endurance	https://results.bajasae.net/MyResults.aspx?carnum=69&tab=endurance
+my-results-car69-dynamics	https://results.bajasae.net/MyResults.aspx?carnum=69&tab=dynamics
+# Historical archive. If these are query-string driven rather than __VIEWSTATE
+# postback driven, the all-seasons backfill gets dramatically easier.
+results-landing	https://www.bajasae.net/res/ResultsLanding.aspx
+res-event-results	https://www.bajasae.net/res/EventResults.aspx
+upcoming-comps	https://www.bajasae.net/cdsweb/reg/Upcomingcomplist.aspx
