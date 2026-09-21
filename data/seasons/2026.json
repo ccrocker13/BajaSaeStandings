@@ -25,7 +25,7 @@
         {
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
-          "points": 928.95,
+          "points": 937.95,
           "overallRank": 1,
           "provisional": false
         },
@@ -37,7 +37,7 @@
           "provisional": false
         }
       ],
-      "totalPoints": 1824.43,
+      "totalPoints": 1833.43,
       "eventsAttended": 2,
       "rank": 1,
       "provisional": false
@@ -75,8 +75,8 @@
         {
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
-          "points": 850.88,
-          "overallRank": 6,
+          "points": 855.88,
+          "overallRank": 7,
           "provisional": false
         },
         {
@@ -87,9 +87,34 @@
           "provisional": false
         }
       ],
-      "totalPoints": 1751.31,
+      "totalPoints": 1756.31,
       "eventsAttended": 2,
       "rank": 3,
+      "provisional": false
+    },
+    {
+      "schoolId": "michigan",
+      "school": "Univ of Michigan - Ann Arbor",
+      "teamName": "Michigan Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Oregon",
+          "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
+          "points": 859.39,
+          "overallRank": 6,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE New York",
+          "competitionId": "8611ae04-0629-44e3-9b0e-05ef2e2807f0",
+          "points": 871.43,
+          "overallRank": 6,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1730.82,
+      "eventsAttended": 2,
+      "rank": 4,
       "provisional": false
     },
     {
@@ -113,31 +138,6 @@
         }
       ],
       "totalPoints": 1725.51,
-      "eventsAttended": 2,
-      "rank": 4,
-      "provisional": false
-    },
-    {
-      "schoolId": "michigan",
-      "school": "Univ of Michigan - Ann Arbor",
-      "teamName": "Michigan Baja Racing",
-      "results": [
-        {
-          "competitionName": "Baja SAE Oregon",
-          "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
-          "points": 844.39,
-          "overallRank": 7,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE New York",
-          "competitionId": "8611ae04-0629-44e3-9b0e-05ef2e2807f0",
-          "points": 871.43,
-          "overallRank": 6,
-          "provisional": false
-        }
-      ],
-      "totalPoints": 1715.82,
       "eventsAttended": 2,
       "rank": 5,
       "provisional": false
@@ -201,7 +201,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 743.96,
-          "overallRank": 10,
+          "overallRank": 9,
           "provisional": false
         },
         {
@@ -225,7 +225,7 @@
         {
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
-          "points": 839.66,
+          "points": 847.66,
           "overallRank": 8,
           "provisional": false
         },
@@ -237,34 +237,9 @@
           "provisional": false
         }
       ],
-      "totalPoints": 1653.54,
+      "totalPoints": 1661.54,
       "eventsAttended": 2,
       "rank": 9,
-      "provisional": false
-    },
-    {
-      "schoolId": "universite-laval",
-      "school": "Université Laval",
-      "teamName": "Alérion Baja Ulaval",
-      "results": [
-        {
-          "competitionName": "Baja SAE Oregon",
-          "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
-          "points": 762.14,
-          "overallRank": 9,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE New York",
-          "competitionId": "8611ae04-0629-44e3-9b0e-05ef2e2807f0",
-          "points": 774.89,
-          "overallRank": 14,
-          "provisional": false
-        }
-      ],
-      "totalPoints": 1537.03,
-      "eventsAttended": 2,
-      "rank": 10,
       "provisional": false
     },
     {
@@ -276,7 +251,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 722.57,
-          "overallRank": 12,
+          "overallRank": 11,
           "provisional": false
         },
         {
@@ -289,7 +264,7 @@
       ],
       "totalPoints": 1523.77,
       "eventsAttended": 2,
-      "rank": 11,
+      "rank": 10,
       "provisional": false
     },
     {
@@ -314,7 +289,7 @@
       ],
       "totalPoints": 1492.3600000000001,
       "eventsAttended": 2,
-      "rank": 12,
+      "rank": 11,
       "provisional": false
     },
     {
@@ -326,7 +301,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 743.18,
-          "overallRank": 11,
+          "overallRank": 10,
           "provisional": false
         },
         {
@@ -338,6 +313,31 @@
         }
       ],
       "totalPoints": 1467.52,
+      "eventsAttended": 2,
+      "rank": 12,
+      "provisional": false
+    },
+    {
+      "schoolId": "universite-laval",
+      "school": "Université Laval",
+      "teamName": "Alérion Baja Ulaval",
+      "results": [
+        {
+          "competitionName": "Baja SAE Oregon",
+          "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
+          "points": 687.14,
+          "overallRank": 13,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE New York",
+          "competitionId": "8611ae04-0629-44e3-9b0e-05ef2e2807f0",
+          "points": 774.89,
+          "overallRank": 14,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1462.03,
       "eventsAttended": 2,
       "rank": 13,
       "provisional": false
@@ -351,7 +351,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 710.1,
-          "overallRank": 13,
+          "overallRank": 12,
           "provisional": false
         },
         {
@@ -365,6 +365,31 @@
       "totalPoints": 1393.37,
       "eventsAttended": 2,
       "rank": 14,
+      "provisional": false
+    },
+    {
+      "schoolId": "mcmaster-university",
+      "school": "McMaster Univ",
+      "teamName": "McMaster Baja Racing",
+      "results": [
+        {
+          "competitionName": "Baja SAE Oregon",
+          "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
+          "points": 598.8,
+          "overallRank": 16,
+          "provisional": false
+        },
+        {
+          "competitionName": "Baja SAE New York",
+          "competitionId": "8611ae04-0629-44e3-9b0e-05ef2e2807f0",
+          "points": 777.48,
+          "overallRank": 13,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 1376.28,
+      "eventsAttended": 2,
+      "rank": 15,
       "provisional": false
     },
     {
@@ -388,31 +413,6 @@
         }
       ],
       "totalPoints": 1372.23,
-      "eventsAttended": 2,
-      "rank": 15,
-      "provisional": false
-    },
-    {
-      "schoolId": "mcmaster-university",
-      "school": "McMaster Univ",
-      "teamName": "McMaster Baja Racing",
-      "results": [
-        {
-          "competitionName": "Baja SAE Oregon",
-          "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
-          "points": 593.8,
-          "overallRank": 16,
-          "provisional": false
-        },
-        {
-          "competitionName": "Baja SAE New York",
-          "competitionId": "8611ae04-0629-44e3-9b0e-05ef2e2807f0",
-          "points": 777.48,
-          "overallRank": 13,
-          "provisional": false
-        }
-      ],
-      "totalPoints": 1371.28,
       "eventsAttended": 2,
       "rank": 16,
       "provisional": false
@@ -451,7 +451,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 507.97,
-          "overallRank": 23,
+          "overallRank": 22,
           "provisional": false
         },
         {
@@ -476,7 +476,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 431.28,
-          "overallRank": 29,
+          "overallRank": 28,
           "provisional": false
         },
         {
@@ -501,7 +501,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 353.35,
-          "overallRank": 36,
+          "overallRank": 35,
           "provisional": false
         },
         {
@@ -525,8 +525,8 @@
         {
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
-          "points": 583.55,
-          "overallRank": 20,
+          "points": 590.55,
+          "overallRank": 17,
           "provisional": false
         },
         {
@@ -537,7 +537,7 @@
           "provisional": false
         }
       ],
-      "totalPoints": 874.52,
+      "totalPoints": 881.52,
       "eventsAttended": 2,
       "rank": 21,
       "provisional": false
@@ -551,7 +551,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 368.04,
-          "overallRank": 33,
+          "overallRank": 32,
           "provisional": false
         },
         {
@@ -576,7 +576,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 365.09,
-          "overallRank": 34,
+          "overallRank": 33,
           "provisional": false
         },
         {
@@ -601,7 +601,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 266.26,
-          "overallRank": 42,
+          "overallRank": 41,
           "provisional": false
         },
         {
@@ -644,7 +644,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 305.27,
-          "overallRank": 38,
+          "overallRank": 37,
           "provisional": false
         },
         {
@@ -705,7 +705,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 246.8,
-          "overallRank": 47,
+          "overallRank": 46,
           "provisional": false
         },
         {
@@ -730,7 +730,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 267.44,
-          "overallRank": 41,
+          "overallRank": 40,
           "provisional": false
         },
         {
@@ -755,7 +755,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 216.26,
-          "overallRank": 50,
+          "overallRank": 49,
           "provisional": false
         },
         {
@@ -960,7 +960,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 553.08,
-          "overallRank": 21,
+          "overallRank": 20,
           "provisional": false
         }
       ],
@@ -1032,7 +1032,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 541.89,
-          "overallRank": 22,
+          "overallRank": 21,
           "provisional": false
         }
       ],
@@ -1140,7 +1140,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 503.17,
-          "overallRank": 24,
+          "overallRank": 23,
           "provisional": false
         }
       ],
@@ -1176,7 +1176,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 476.29,
-          "overallRank": 25,
+          "overallRank": 24,
           "provisional": false
         }
       ],
@@ -1212,7 +1212,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 471.82,
-          "overallRank": 26,
+          "overallRank": 25,
           "provisional": false
         }
       ],
@@ -1248,7 +1248,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 143.28,
-          "overallRank": 62,
+          "overallRank": 61,
           "provisional": false
         },
         {
@@ -1273,7 +1273,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 453.25,
-          "overallRank": 27,
+          "overallRank": 26,
           "provisional": false
         }
       ],
@@ -1309,7 +1309,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 439.81,
-          "overallRank": 28,
+          "overallRank": 27,
           "provisional": false
         }
       ],
@@ -1381,7 +1381,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 406.41,
-          "overallRank": 30,
+          "overallRank": 29,
           "provisional": false
         }
       ],
@@ -1471,7 +1471,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 369.47,
-          "overallRank": 31,
+          "overallRank": 30,
           "provisional": false
         }
       ],
@@ -1489,7 +1489,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 368.1,
-          "overallRank": 32,
+          "overallRank": 31,
           "provisional": false
         }
       ],
@@ -1525,7 +1525,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 356.52,
-          "overallRank": 35,
+          "overallRank": 34,
           "provisional": false
         }
       ],
@@ -1633,7 +1633,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 316.37,
-          "overallRank": 37,
+          "overallRank": 36,
           "provisional": false
         }
       ],
@@ -1687,7 +1687,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 287.79,
-          "overallRank": 39,
+          "overallRank": 38,
           "provisional": false
         }
       ],
@@ -1705,7 +1705,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 280.29,
-          "overallRank": 40,
+          "overallRank": 39,
           "provisional": false
         }
       ],
@@ -1741,7 +1741,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 260.92,
-          "overallRank": 43,
+          "overallRank": 42,
           "provisional": false
         }
       ],
@@ -1759,7 +1759,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 256.05,
-          "overallRank": 44,
+          "overallRank": 43,
           "provisional": false
         }
       ],
@@ -1795,7 +1795,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 253.02,
-          "overallRank": 45,
+          "overallRank": 44,
           "provisional": false
         }
       ],
@@ -1813,7 +1813,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 250.07,
-          "overallRank": 46,
+          "overallRank": 45,
           "provisional": false
         }
       ],
@@ -1867,7 +1867,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 227.17,
-          "overallRank": 48,
+          "overallRank": 47,
           "provisional": false
         }
       ],
@@ -1885,7 +1885,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 220.62,
-          "overallRank": 49,
+          "overallRank": 48,
           "provisional": false
         }
       ],
@@ -1939,7 +1939,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 208.93,
-          "overallRank": 51,
+          "overallRank": 50,
           "provisional": false
         }
       ],
@@ -1957,7 +1957,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 203.74,
-          "overallRank": 52,
+          "overallRank": 51,
           "provisional": false
         }
       ],
@@ -1975,7 +1975,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 197.53,
-          "overallRank": 53,
+          "overallRank": 52,
           "provisional": false
         }
       ],
@@ -1993,7 +1993,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 186.92,
-          "overallRank": 54,
+          "overallRank": 53,
           "provisional": false
         }
       ],
@@ -2011,7 +2011,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 185.78,
-          "overallRank": 55,
+          "overallRank": 54,
           "provisional": false
         }
       ],
@@ -2029,7 +2029,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 180.05,
-          "overallRank": 56,
+          "overallRank": 55,
           "provisional": false
         }
       ],
@@ -2065,7 +2065,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 174.66,
-          "overallRank": 57,
+          "overallRank": 56,
           "provisional": false
         }
       ],
@@ -2119,7 +2119,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 161.37,
-          "overallRank": 58,
+          "overallRank": 57,
           "provisional": false
         }
       ],
@@ -2137,7 +2137,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 154.67,
-          "overallRank": 59,
+          "overallRank": 58,
           "provisional": false
         }
       ],
@@ -2155,7 +2155,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 151.43,
-          "overallRank": 60,
+          "overallRank": 59,
           "provisional": false
         }
       ],
@@ -2173,7 +2173,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 146.35,
-          "overallRank": 61,
+          "overallRank": 60,
           "provisional": false
         }
       ],
@@ -2209,7 +2209,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 136.65,
-          "overallRank": 63,
+          "overallRank": 62,
           "provisional": false
         }
       ],
@@ -2245,7 +2245,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 123.5,
-          "overallRank": 64,
+          "overallRank": 63,
           "provisional": false
         }
       ],
@@ -2281,7 +2281,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 117.7,
-          "overallRank": 65,
+          "overallRank": 64,
           "provisional": false
         }
       ],
@@ -2345,6 +2345,24 @@
       "provisional": false
     },
     {
+      "schoolId": "california-state-university-los-angeles",
+      "school": "California State Univ - Los Angeles",
+      "teamName": "Rugged Eagle Motorsport",
+      "results": [
+        {
+          "competitionName": "Baja SAE Oregon",
+          "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
+          "points": 94.8,
+          "overallRank": 65,
+          "provisional": false
+        }
+      ],
+      "totalPoints": 94.8,
+      "eventsAttended": 1,
+      "rank": 119,
+      "provisional": false
+    },
+    {
       "schoolId": "liberty-university",
       "school": "Liberty Univ",
       "teamName": "Liberty Univ",
@@ -2359,7 +2377,7 @@
       ],
       "totalPoints": 86.77,
       "eventsAttended": 1,
-      "rank": 119,
+      "rank": 120,
       "provisional": false
     },
     {
@@ -2377,7 +2395,7 @@
       ],
       "totalPoints": 86.64,
       "eventsAttended": 1,
-      "rank": 120,
+      "rank": 121,
       "provisional": false
     },
     {
@@ -2395,7 +2413,7 @@
       ],
       "totalPoints": 86.51,
       "eventsAttended": 1,
-      "rank": 121,
+      "rank": 122,
       "provisional": false
     },
     {
@@ -2413,7 +2431,7 @@
       ],
       "totalPoints": 85.87,
       "eventsAttended": 1,
-      "rank": 122,
+      "rank": 123,
       "provisional": false
     },
     {
@@ -2431,7 +2449,7 @@
       ],
       "totalPoints": 79.83,
       "eventsAttended": 1,
-      "rank": 123,
+      "rank": 124,
       "provisional": false
     },
     {
@@ -2449,7 +2467,7 @@
       ],
       "totalPoints": 79,
       "eventsAttended": 1,
-      "rank": 124,
+      "rank": 125,
       "provisional": false
     },
     {
@@ -2467,7 +2485,7 @@
       ],
       "totalPoints": 78.1,
       "eventsAttended": 1,
-      "rank": 125,
+      "rank": 126,
       "provisional": false
     },
     {
@@ -2485,7 +2503,7 @@
       ],
       "totalPoints": 77.17,
       "eventsAttended": 1,
-      "rank": 126,
+      "rank": 127,
       "provisional": false
     },
     {
@@ -2503,7 +2521,7 @@
       ],
       "totalPoints": 71.86,
       "eventsAttended": 1,
-      "rank": 127,
+      "rank": 128,
       "provisional": false
     },
     {
@@ -2521,7 +2539,7 @@
       ],
       "totalPoints": 65.41,
       "eventsAttended": 1,
-      "rank": 128,
+      "rank": 129,
       "provisional": false
     },
     {
@@ -2539,7 +2557,7 @@
       ],
       "totalPoints": 57,
       "eventsAttended": 1,
-      "rank": 129,
+      "rank": 130,
       "provisional": false
     },
     {
@@ -2557,7 +2575,7 @@
       ],
       "totalPoints": 57,
       "eventsAttended": 1,
-      "rank": 129,
+      "rank": 130,
       "provisional": false
     },
     {
@@ -2575,7 +2593,7 @@
       ],
       "totalPoints": 57,
       "eventsAttended": 1,
-      "rank": 129,
+      "rank": 130,
       "provisional": false
     },
     {
@@ -2593,7 +2611,7 @@
       ],
       "totalPoints": 57,
       "eventsAttended": 1,
-      "rank": 129,
+      "rank": 130,
       "provisional": false
     },
     {
@@ -2611,24 +2629,6 @@
       ],
       "totalPoints": 56.48,
       "eventsAttended": 1,
-      "rank": 133,
-      "provisional": false
-    },
-    {
-      "schoolId": "california-state-university-los-angeles",
-      "school": "California State Univ - Los Angeles",
-      "teamName": "Rugged Eagle Motorsport",
-      "results": [
-        {
-          "competitionName": "Baja SAE Oregon",
-          "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
-          "points": 48.69,
-          "overallRank": 70,
-          "provisional": false
-        }
-      ],
-      "totalPoints": 48.69,
-      "eventsAttended": 1,
       "rank": 134,
       "provisional": false
     },
@@ -2641,7 +2641,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 45,
-          "overallRank": 71,
+          "overallRank": 70,
           "provisional": false
         }
       ],
@@ -2731,7 +2731,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 29,
-          "overallRank": 72,
+          "overallRank": 71,
           "provisional": false
         }
       ],
@@ -2749,7 +2749,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 26,
-          "overallRank": 73,
+          "overallRank": 72,
           "provisional": false
         }
       ],
@@ -2767,7 +2767,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 23,
-          "overallRank": 74,
+          "overallRank": 73,
           "provisional": false
         }
       ],
@@ -2785,7 +2785,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 22,
-          "overallRank": 75,
+          "overallRank": 74,
           "provisional": false
         }
       ],
@@ -2821,7 +2821,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 18,
-          "overallRank": 76,
+          "overallRank": 75,
           "provisional": false
         }
       ],
@@ -2839,7 +2839,7 @@
           "competitionName": "Baja SAE Oregon",
           "competitionId": "6b91e195-df0f-4baf-a4d6-116c03aa704d",
           "points": 15,
-          "overallRank": 77,
+          "overallRank": 76,
           "provisional": false
         }
       ],
