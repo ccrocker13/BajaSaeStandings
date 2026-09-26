@@ -1,19 +1,19 @@
 SOURCE: https://www.bajasae.net/cdsweb/reg/Upcomingcomplist.aspx
-BYTES: 21241
+BYTES: 21653
 TITLE: Baja SAE
 META REFRESH: none
-__VIEWSTATE: present (2732 chars)
+__VIEWSTATE: present (2796 chars)
 __EVENTTARGET: absent
 __doPostBack refs: 0
 FORM: id=aspnetForm method=post action=./Upcomingcomplist.aspx
 
 TABLES: 0
 
-ELEMENT IDS (21): ctl00_Head1, dateTimePopup, header, logo, ctl00_aHome, header-sae, aspnetForm, navbar, content-wrapper, content, dismissableAlert, errorDetails, AlertCloseButon, ctl00_main_ctl00_competitionPanels_ctl00_learnMore, ctl00_main_ctl00_competitionPanels_ctl00_teamList, ctl00_main_ctl00_competitionPanels_ctl01_learnMore, ctl00_main_ctl00_competitionPanels_ctl01_teamList, ctl00_main_ctl00_competitionPanels_ctl02_learnMore, ctl00_main_ctl00_competitionPanels_ctl03_learnMore, ctl00_main_ctl00_competitionPanels_ctl04_learnMore, footer
+ELEMENT IDS (24): ctl00_Head1, dateTimePopup, header, logo, ctl00_aHome, header-sae, aspnetForm, navbar, content-wrapper, content, dismissableAlert, errorDetails, AlertCloseButon, ctl00_main_ctl00_competitionPanels_ctl00_learnMore, ctl00_main_ctl00_competitionPanels_ctl00_teamList, ctl00_main_ctl00_competitionPanels_ctl01_learnMore, ctl00_main_ctl00_competitionPanels_ctl01_teamList, ctl00_main_ctl00_competitionPanels_ctl02_learnMore, ctl00_main_ctl00_competitionPanels_ctl02_register, ctl00_main_ctl00_competitionPanels_ctl03_learnMore, ctl00_main_ctl00_competitionPanels_ctl03_register, ctl00_main_ctl00_competitionPanels_ctl04_learnMore, ctl00_main_ctl00_competitionPanels_ctl04_register, footer
 
 CLASSES (33): hidden-xs, pull-right, navbar-toggle, btn, btn-default, btn-lg, sr-only, icon-bar, navbar, navbar-collapse, collapse, nav, navbar-nav, dropdown, hidden, dropdown-toggle, caret, dropdown-menu, container, min-height, alert, alert-danger, btn-danger, btn-secondary, panel, card, panel-heading, card-header, competition-title, panel-body, card-body, btn-primary, sae-privacy-policy
 
-LINKS (22):
+LINKS (23):
    -> /
    -> http://www.sae.org/
   Home -> /
@@ -33,6 +33,7 @@ LINKS (22):
   Learn More -> CompInfo.aspx?CompetitionID=13d6efab-2ae8-40e2-9eaa-d3469e9d6173
   Team list -> CompAttendance.aspx?CompetitionID=13d6efab-2ae8-40e2-9eaa-d3469e9d6173
   Learn More -> CompInfo.aspx?CompetitionID=69cb610a-a962-42e1-b942-17e7594760b6
+  Sign Up -> TeamSelect.aspx
   Learn More -> CompInfo.aspx?CompetitionID=1799473b-3ba6-44e4-bc4f-420bdd3031c0
   Learn More -> CompInfo.aspx?CompetitionID=28e53ae9-4171-4056-bc9e-e277893c6e0d
   SAE International Privacy Policy -> https://www.sae.org/privacy

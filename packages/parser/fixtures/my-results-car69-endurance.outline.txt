@@ -1,8 +1,8 @@
 SOURCE: https://results.bajasae.net/MyResults.aspx?carnum=69&tab=endurance
-BYTES: 6424
+BYTES: 6416
 TITLE: Results By Car
 META REFRESH: none
-__VIEWSTATE: present (552 chars)
+__VIEWSTATE: present (548 chars)
 __EVENTTARGET: absent
 __doPostBack refs: 1
 FORM: id=Form1 method=post action=./MyResults.aspx?carnum=69&tab=endurance

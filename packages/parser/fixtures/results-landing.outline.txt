@@ -1,19 +1,19 @@
 SOURCE: https://www.bajasae.net/res/ResultsLanding.aspx
-BYTES: 25434
+BYTES: 25952
 TITLE: Baja SAE
 META REFRESH: none
-__VIEWSTATE: present (4440 chars)
+__VIEWSTATE: present (4504 chars)
 __EVENTTARGET: absent
 __doPostBack refs: 0
 FORM: id=aspnetForm method=post action=./ResultsLanding.aspx
 
 TABLES: 0
 
-ELEMENT IDS (15): ctl00_Head1, dateTimePopup, header, logo, ctl00_aHome, header-sae, aspnetForm, navbar, content-wrapper, content, dismissableAlert, errorDetails, AlertCloseButon, ctl00_main_ibBottom, footer
+ELEMENT IDS (16): ctl00_Head1, dateTimePopup, header, logo, ctl00_aHome, header-sae, aspnetForm, navbar, content-wrapper, content, dismissableAlert, errorDetails, AlertCloseButon, ctl00_main_ResultsLanding1_imgCurrentComp, ctl00_main_ibBottom, footer
 
-CLASSES (31): hidden-xs, pull-right, navbar-toggle, btn, btn-default, btn-lg, sr-only, icon-bar, navbar, navbar-collapse, collapse, nav, navbar-nav, dropdown, hidden, dropdown-toggle, caret, dropdown-menu, container, min-height, alert, alert-danger, btn-danger, btn-secondary, banner, img-responsive, results-history, label, label-success, InfoBlock, sae-privacy-policy
+CLASSES (36): hidden-xs, pull-right, navbar-toggle, btn, btn-default, btn-lg, sr-only, icon-bar, navbar, navbar-collapse, collapse, nav, navbar-nav, dropdown, hidden, dropdown-toggle, caret, dropdown-menu, container, min-height, alert, alert-danger, btn-danger, btn-secondary, banner, alert-info, row, col-md-7, img-responsive, col-md-5, btn-primary, results-history, label, label-success, InfoBlock, sae-privacy-policy
 
-LINKS (49):
+LINKS (50):
    -> /
    -> http://www.sae.org/
   Home -> /
@@ -28,6 +28,7 @@ LINKS (49):
   Media -> /Page.aspx?pageid=4d4e29a9-e7fc-4394-bae2-51080f4adf04
   Create an Account -> /go/signup
   Login -> https://www.bajasae.net/Login.aspx
+  View Live Results -> http://results.bajasae.net/
   Baja SAE Oregon -> /res/CompetitionResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d
   Baja SAE New York -> /res/CompetitionResults.aspx?competitionid=8611ae04-0629-44e3-9b0e-05ef2e2807f0
   Baja SAE Arizona -> /res/CompetitionResults.aspx?competitionid=831723b7-8cdc-47d6-ab26-886f8b0d7a9f
