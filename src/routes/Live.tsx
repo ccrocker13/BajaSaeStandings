@@ -177,7 +177,7 @@ export default function Live() {
 
       {tab === 'OVR' ? (
         <>
-          <SectionTitle hint="Static events use published points; everything else is computed here">
+          <SectionTitle hint="Events shows results settled, +N still to come. Static events use published points; everything else is computed here">
             Overall standings
           </SectionTitle>
           <div className="card overflow-hidden">
@@ -188,7 +188,7 @@ export default function Live() {
                     <th className="th w-14">#</th>
                     <th className="th w-16">Car</th>
                     <th className="th">Team</th>
-                    <th className="th w-24 text-right">Events</th>
+                    <th className="th w-28 text-right">Events</th>
                     <th className="th w-32 text-right">Points</th>
                     <th className="th w-12" />
                   </tr>
@@ -210,7 +210,20 @@ export default function Live() {
                             {row.teamName && <span className="ml-2 text-xs text-ink-400">{row.teamName}</span>}
                           </Link>
                         </td>
-                        <td className="td nums text-right text-ink-400">{row.scored}</td>
+                        <td className="td nums text-right text-ink-400">
+                          {/*
+                            Mid-competition the totals are not comparable on
+                            their own: a team on five events and a team on three
+                            are not in the same race. Showing both counts is the
+                            difference between a standing and a misleading one.
+                          */}
+                          <span title={`${row.scored} settled, ${row.pending} still to come`}>
+                            {row.scored}
+                            {row.pending > 0 && (
+                              <span className="text-ink-600">{` +${row.pending}`}</span>
+                            )}
+                          </span>
+                        </td>
                         <td className="td text-right font-semibold"><Points value={row.points} estimated /></td>
                         <td className="td text-right">
                           <button
@@ -265,9 +278,26 @@ export default function Live() {
                           {row.teamName && <span className="ml-2 text-xs text-ink-400">{row.teamName}</span>}
                         </Link>
                       </td>
-                      <td className="td text-xs text-ink-400">{row.status ?? '—'}</td>
+                      <td className="td text-xs text-ink-400">
+                        {/*
+                          The site's own status cell reads "OK" for an entry
+                          that has not run yet, so state is what actually says
+                          whether this line is a result or a blank.
+                        */}
+                        {row.state === 'pending'
+                          ? 'To run'
+                          : row.state === 'zero'
+                            ? (row.status ?? 'No score')
+                            : (row.status ?? '—')}
+                      </td>
                       <td className="td nums text-right text-ink-300">{row.raw ?? '—'}</td>
-                      <td className="td text-right"><Points value={row.points} estimated={row.estimated} /></td>
+                      <td className="td text-right">
+                        {row.state === 'pending' ? (
+                          <span className="text-ink-600">—</span>
+                        ) : (
+                          <Points value={row.points} estimated={row.estimated} />
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
