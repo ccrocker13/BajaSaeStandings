@@ -1,8 +1,8 @@
 SOURCE: https://results.bajasae.net/TechLineNumber.aspx
-BYTES: 6073
+BYTES: 6065
 TITLE: Tech Line Number
 META REFRESH: none
-__VIEWSTATE: present (380 chars)
+__VIEWSTATE: present (376 chars)
 __EVENTTARGET: absent
 __doPostBack refs: 1
 FORM: id=Form1 method=post action=./TechLineNumber.aspx

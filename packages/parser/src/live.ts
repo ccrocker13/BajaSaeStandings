@@ -29,6 +29,39 @@ export function ttlFor(code: string | null): number {
   return TTL.dynamic;
 }
 
+/**
+ * What a row's result means for the standings.
+ *
+ * `scored`  — a real result, worth the points shown.
+ * `zero`    — the entry ran and came away with nothing (DNF, DQ, black flag).
+ *             It counts as an attempt worth 0, not as an absence: a team that
+ *             failed Suspension & Traction has settled that event, and hiding
+ *             that makes its total look like a team that simply has not run.
+ * `pending` — no result yet. Genuinely unknown, so it stays out of the total.
+ */
+export type ResultState = 'scored' | 'zero' | 'pending';
+
+/**
+ * Statuses that mean the attempt is over and scoreless.
+ *
+ * Deliberately a closed list: an unrecognised status is treated as pending,
+ * because inventing a zero for a team is worse than admitting we do not know.
+ * "N/A" is not here — it reads as "nothing to show", not as a verdict.
+ */
+const ZERO_STATUS =
+  /\b(?:dnf|dns|dq|dsq|disqualified|did\s*not\s*(?:finish|start|attempt|run)|no\s*time|black\s*flag(?:ged)?|retired|withdrew|withdrawn|failed)\b/i;
+
+/**
+ * Decide a row's state from its result and its status cell.
+ *
+ * `value` is whatever the event measures — points, a time, laps — and is null
+ * when the cell was blank or non-numeric.
+ */
+export function classifyResult(value: number | null, status: string | null): ResultState {
+  if (value !== null) return 'scored';
+  return status && ZERO_STATUS.test(status) ? 'zero' : 'pending';
+}
+
 export interface LiveRow {
   position: number | null;
   carNumber: number | null;
@@ -39,6 +72,7 @@ export interface LiveRow {
   raw: string | null;
   points: number | null;
   estimated: boolean;
+  state: ResultState;
 }
 
 export interface LiveEvent {
@@ -55,7 +89,12 @@ export interface LiveOverall {
   teamName: string | null;
   carNumber: number | null;
   points: number;
+  /** Events with a settled result, scoring or not — i.e. events completed. */
   scored: number;
+  /** Settled events the entry came away from with nothing. */
+  zeroed: number;
+  /** Events still to run, or run but not yet posted. */
+  pending: number;
   rank: number;
 }
 
@@ -91,12 +130,16 @@ function buildEvent(code: string, label: string, page: LeaderboardPage): LiveEve
   if (kind === 'static') {
     return {
       code, label, kind, officialPoints: true,
-      rows: page.rows.map((r) => ({
-        ...common(r),
-        raw: r.finalScore === null ? null : String(r.finalScore),
-        points: r.finalScore,
-        estimated: false,
-      })),
+      rows: page.rows.map((r) => {
+        const state = classifyResult(r.finalScore, r.status);
+        return {
+          ...common(r),
+          raw: r.finalScore === null ? null : String(r.finalScore),
+          points: state === 'pending' ? null : (r.finalScore ?? 0),
+          estimated: false,
+          state,
+        };
+      }),
     };
   }
 
@@ -104,12 +147,21 @@ function buildEvent(code: string, label: string, page: LeaderboardPage): LiveEve
     const leaderLaps = Math.max(0, ...page.rows.map((r) => r.laps ?? 0));
     return {
       code, label, kind, officialPoints: false,
-      rows: page.rows.map((r) => ({
-        ...common(r),
-        raw: r.laps === null ? null : `${r.laps} laps`,
-        points: r.laps === null ? null : scoreEndurance(r.laps, leaderLaps),
-        estimated: true,
-      })),
+      rows: page.rows.map((r) => {
+        // Zero laps is the pre-race value for the whole field, so it reads as
+        // "not started" rather than as a settled zero. An entry that really
+        // completes no laps scores nothing anyway; calling that pending while
+        // the race runs is the conservative error.
+        const laps = r.laps !== null && r.laps > 0 ? r.laps : null;
+        const state = classifyResult(laps, r.status);
+        return {
+          ...common(r),
+          raw: laps === null ? null : `${laps} laps`,
+          points: state === 'pending' ? null : laps === null ? 0 : scoreEndurance(laps, leaderLaps),
+          estimated: true,
+          state,
+        };
+      }),
     };
   }
 
@@ -119,12 +171,23 @@ function buildEvent(code: string, label: string, page: LeaderboardPage): LiveEve
   const scores = DYNAMIC_MODELS[code] ? scoreDynamicEvent(code, times) : new Map<number, number>();
   return {
     code, label, kind, officialPoints: false,
-    rows: page.rows.map((r) => ({
-      ...common(r),
-      raw: r.resultRaw,
-      points: r.resultValue === null ? null : (scores.get(r.resultValue) ?? null),
-      estimated: true,
-    })),
+    rows: page.rows.map((r) => {
+      const state = classifyResult(r.resultValue, r.status);
+      return {
+        ...common(r),
+        // A pending row's cell still holds the site's "0.000" placeholder;
+        // showing it would read as a result.
+        raw: state === 'pending' ? null : r.resultRaw,
+        points:
+          state === 'pending'
+            ? null
+            : r.resultValue === null
+              ? 0
+              : (scores.get(r.resultValue) ?? null),
+        estimated: true,
+        state,
+      };
+    }),
   };
 }
 
@@ -151,21 +214,34 @@ export async function buildLivePayload(fetcher: Fetcher): Promise<LivePayload | 
     if (page.data.endurance) endurance = page.data.endurance;
   }
 
+  // Preliminary standings. An entry appears as soon as it is on any grid, so a
+  // team that has run nothing yet is listed on zero rather than omitted, and a
+  // team that DNF'd an event carries that event as a settled zero. Both counts
+  // travel with the total because mid-competition the totals are not
+  // comparable on their own: a team on four events and a team on two are not
+  // in the same race, and the standing has to say so rather than imply it.
   const totals = new Map<string, LiveOverall>();
   for (const ev of events) {
     for (const row of ev.rows) {
-      if (!row.schoolId || row.points === null) continue;
+      if (!row.schoolId) continue;
       const t = totals.get(row.schoolId) ?? {
         school: row.school, schoolId: row.schoolId, teamName: row.teamName,
-        carNumber: row.carNumber, points: 0, scored: 0, rank: 0,
+        carNumber: row.carNumber, points: 0, scored: 0, zeroed: 0, pending: 0, rank: 0,
       };
-      t.points += row.points;
-      t.scored += 1;
+      if (row.state === 'pending') {
+        t.pending += 1;
+      } else {
+        t.points += row.points ?? 0;
+        t.scored += 1;
+        if (row.state === 'zero' || (row.points ?? 0) === 0) t.zeroed += 1;
+      }
       totals.set(row.schoolId, t);
     }
   }
   const overall = [...totals.values()]
-    .sort((a, b) => b.points - a.points)
+    // Points first; among equal totals the entry that got there on fewer events
+    // is ahead, since it has more still to score.
+    .sort((a, b) => b.points - a.points || a.scored - b.scored)
     .map((t, i) => ({ ...t, rank: i + 1 }));
 
   return {

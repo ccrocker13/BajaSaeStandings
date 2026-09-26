@@ -1,31 +1,39 @@
 SOURCE: https://www.bajasae.net/app/CompetitionResources.aspx
-BYTES: 36348
+BYTES: 49455
 TITLE: CompetitionResources
 META REFRESH: none
-__VIEWSTATE: present (5184 chars)
+__VIEWSTATE: present (7936 chars)
 __EVENTTARGET: absent
 __doPostBack refs: 0
 FORM: id=aspnetForm method=post action=./CompetitionResources.aspx
 
-TABLES: 4
+TABLES: 6
 
 --- table[0] id=7e9bea4a_f652_4732_ae8d_6d1c654ffdae class=tree-table table table-responsive table-hover rows=1
     col counts (first 20 rows): 2
     row[0]: ["ResourceType / Title","Actions"]
 
---- table[1] id=69cb610a_a962_42e1_b942_17e7594760b6 class=tree-table table table-responsive table-hover rows=1
+--- table[1] id=13d6efab_2ae8_40e2_9eaa_d3469e9d6173 class=tree-table table table-responsive table-hover rows=1
     col counts (first 20 rows): 2
     row[0]: ["ResourceType / Title","Actions"]
 
---- table[2] id=1799473b_3ba6_44e4_bc4f_420bdd3031c0 class=tree-table table table-responsive table-hover rows=1
+--- table[2] id=c39fddba_b035_48d3_a55a_1cb5b8efe635 class=tree-table table table-responsive table-hover rows=1
     col counts (first 20 rows): 2
     row[0]: ["ResourceType / Title","Actions"]
 
---- table[3] id=28e53ae9_4171_4056_bc9e_e277893c6e0d class=tree-table table table-responsive table-hover rows=1
+--- table[3] id=69cb610a_a962_42e1_b942_17e7594760b6 class=tree-table table table-responsive table-hover rows=1
     col counts (first 20 rows): 2
     row[0]: ["ResourceType / Title","Actions"]
 
-ELEMENT IDS (18): ctl00_Head1, dateTimePopup, header, logo, ctl00_aHome, header-sae, aspnetForm, navbar, content-wrapper, content, dismissableAlert, errorDetails, AlertCloseButon, 7e9bea4a_f652_4732_ae8d_6d1c654ffdae, 69cb610a_a962_42e1_b942_17e7594760b6, 1799473b_3ba6_44e4_bc4f_420bdd3031c0, 28e53ae9_4171_4056_bc9e_e277893c6e0d, footer
+--- table[4] id=1799473b_3ba6_44e4_bc4f_420bdd3031c0 class=tree-table table table-responsive table-hover rows=1
+    col counts (first 20 rows): 2
+    row[0]: ["ResourceType / Title","Actions"]
+
+--- table[5] id=28e53ae9_4171_4056_bc9e_e277893c6e0d class=tree-table table table-responsive table-hover rows=1
+    col counts (first 20 rows): 2
+    row[0]: ["ResourceType / Title","Actions"]
+
+ELEMENT IDS (20): ctl00_Head1, dateTimePopup, header, logo, ctl00_aHome, header-sae, aspnetForm, navbar, content-wrapper, content, dismissableAlert, errorDetails, AlertCloseButon, 7e9bea4a_f652_4732_ae8d_6d1c654ffdae, 13d6efab_2ae8_40e2_9eaa_d3469e9d6173, c39fddba_b035_48d3_a55a_1cb5b8efe635, 69cb610a_a962_42e1_b942_17e7594760b6, 1799473b_3ba6_44e4_bc4f_420bdd3031c0, 28e53ae9_4171_4056_bc9e_e277893c6e0d, footer
 
 CLASSES (34): hidden-xs, pull-right, navbar-toggle, btn, btn-default, btn-lg, sr-only, icon-bar, navbar, navbar-collapse, collapse, nav, navbar-nav, dropdown, hidden, dropdown-toggle, caret, dropdown-menu, container, min-height, alert, alert-danger, btn-danger, btn-secondary, row, col-xs-12, page-header, panel-heading, panel-body, tree-table, table, table-responsive, table-hover, sae-privacy-policy
 

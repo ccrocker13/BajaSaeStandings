@@ -29,16 +29,33 @@ function useFollowed() {
   return { followed, toggle };
 }
 
-/** "updated 12s ago", going amber then red as the feed ages. */
-function Freshness({ updatedAt, error }: { updatedAt: number | null; error: string | null }) {
+/**
+ * "updated 12s ago", going amber then red as the data ages.
+ *
+ * Ages from when the feed last read the results site, not from when we last
+ * downloaded the feed. Those are the same number only while the feed is being
+ * written. If the poller stops, the browser goes on fetching the last file it
+ * published, every download succeeds, and a badge counting downloads would sit
+ * at "3s ago" over standings that stopped hours earlier — the one failure this
+ * badge exists to make visible.
+ */
+function Freshness({
+  fetchedAt,
+  error,
+}: {
+  fetchedAt: string | null;
+  error: string | null;
+}) {
   const [, force] = useState(0);
   useEffect(() => {
     const id = window.setInterval(() => force((n) => n + 1), 1000);
     return () => window.clearInterval(id);
   }, []);
 
-  if (updatedAt === null) return <Badge tone="neutral">connecting…</Badge>;
-  const age = Math.round((Date.now() - updatedAt) / 1000);
+  const at = fetchedAt ? Date.parse(fetchedAt) : NaN;
+  if (!Number.isFinite(at)) return <Badge tone="neutral">connecting…</Badge>;
+  // A viewer's clock can sit ahead of the runner's; never report a negative age.
+  const age = Math.max(0, Math.round((Date.now() - at) / 1000));
   const tone = error || age > 120 ? 'red' : age > 45 ? 'amber' : 'green';
   const label = age < 60 ? `${age}s ago` : `${Math.floor(age / 60)}m ago`;
   return (
@@ -59,7 +76,7 @@ function flagTone(flag: string | null | undefined) {
 }
 
 export default function Live() {
-  const { data, error, updatedAt, loading, source } = useLive();
+  const { data, error, loading, source } = useLive();
   const [tab, setTab] = useState<string>('OVR');
   const { followed, toggle } = useFollowed();
 
@@ -131,7 +148,7 @@ export default function Live() {
           {source === 'fallback' && (
             <Badge tone="amber" >backup feed · slower</Badge>
           )}
-          <Freshness updatedAt={updatedAt} error={error} />
+          <Freshness fetchedAt={data.fetchedAt} error={error} />
         </div>
       </div>
 
@@ -177,7 +194,7 @@ export default function Live() {
 
       {tab === 'OVR' ? (
         <>
-          <SectionTitle hint="Static events use published points; everything else is computed here">
+          <SectionTitle hint="Events shows results settled, +N still to come. Static events use published points; everything else is computed here">
             Overall standings
           </SectionTitle>
           <div className="card overflow-hidden">
@@ -188,7 +205,7 @@ export default function Live() {
                     <th className="th w-14">#</th>
                     <th className="th w-16">Car</th>
                     <th className="th">Team</th>
-                    <th className="th w-24 text-right">Events</th>
+                    <th className="th w-28 text-right">Events</th>
                     <th className="th w-32 text-right">Points</th>
                     <th className="th w-12" />
                   </tr>
@@ -210,7 +227,20 @@ export default function Live() {
                             {row.teamName && <span className="ml-2 text-xs text-ink-400">{row.teamName}</span>}
                           </Link>
                         </td>
-                        <td className="td nums text-right text-ink-400">{row.scored}</td>
+                        <td className="td nums text-right text-ink-400">
+                          {/*
+                            Mid-competition the totals are not comparable on
+                            their own: a team on five events and a team on three
+                            are not in the same race. Showing both counts is the
+                            difference between a standing and a misleading one.
+                          */}
+                          <span title={`${row.scored} settled, ${row.pending} still to come`}>
+                            {row.scored}
+                            {row.pending > 0 && (
+                              <span className="text-ink-600">{` +${row.pending}`}</span>
+                            )}
+                          </span>
+                        </td>
                         <td className="td text-right font-semibold"><Points value={row.points} estimated /></td>
                         <td className="td text-right">
                           <button
@@ -265,9 +295,26 @@ export default function Live() {
                           {row.teamName && <span className="ml-2 text-xs text-ink-400">{row.teamName}</span>}
                         </Link>
                       </td>
-                      <td className="td text-xs text-ink-400">{row.status ?? '—'}</td>
+                      <td className="td text-xs text-ink-400">
+                        {/*
+                          The site's own status cell reads "OK" for an entry
+                          that has not run yet, so state is what actually says
+                          whether this line is a result or a blank.
+                        */}
+                        {row.state === 'pending'
+                          ? 'To run'
+                          : row.state === 'zero'
+                            ? (row.status ?? 'No score')
+                            : (row.status ?? '—')}
+                      </td>
                       <td className="td nums text-right text-ink-300">{row.raw ?? '—'}</td>
-                      <td className="td text-right"><Points value={row.points} estimated={row.estimated} /></td>
+                      <td className="td text-right">
+                        {row.state === 'pending' ? (
+                          <span className="text-ink-600">—</span>
+                        ) : (
+                          <Points value={row.points} estimated={row.estimated} />
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>

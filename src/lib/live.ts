@@ -23,6 +23,8 @@ export interface LiveRow {
   raw: string | null;
   points: number | null;
   estimated: boolean;
+  /** 'scored' = a real result, 'zero' = ran and got nothing, 'pending' = no result yet. */
+  state: 'scored' | 'zero' | 'pending';
 }
 
 export interface LiveEvent {
@@ -39,7 +41,12 @@ export interface LiveOverall {
   teamName: string | null;
   carNumber: number | null;
   points: number;
+  /** Events with a settled result, scoring or not — i.e. events completed. */
   scored: number;
+  /** Settled events the entry came away from with nothing. */
+  zeroed: number;
+  /** Events still to run, or run but not yet posted. */
+  pending: number;
   rank: number;
 }
 
