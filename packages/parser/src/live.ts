@@ -7,7 +7,13 @@
  * its edge cache and the Actions script wants a plain sequential fetch.
  */
 import { parseLeaderboard, type LeaderboardPage } from './parse.js';
-import { DYNAMIC_MODELS, scoreDynamicEvent, scoreEndurance } from './scoring.js';
+import {
+  DYNAMIC_MAX,
+  DYNAMIC_MODELS,
+  ENDURANCE_MAX,
+  scoreDynamicEvent,
+  scoreEndurance,
+} from './scoring.js';
 
 export const RESULTS_ORIGIN = 'https://results.bajasae.net';
 
@@ -95,6 +101,25 @@ export interface LiveOverall {
   zeroed: number;
   /** Events still to run, or run but not yet posted. */
   pending: number;
+  /** Codes of those unsettled events, so the UI can name what is missing. */
+  pendingCodes: string[];
+  /**
+   * Most this entry could still add from its unsettled events.
+   *
+   * Without it the table invites a false comparison. At Ohio 2026 only four of
+   * fifty-five entries had a published Suspension & Traction result, and those
+   * four sat artificially high: the leader's total included 69 points for an
+   * event most of the field had no score for. Banked points are the honest
+   * primary figure, but they are only comparable alongside what each entry
+   * still has to come.
+   */
+  maxRemaining: number;
+  /**
+   * False when some unsettled event's maximum is unknown, so maxRemaining is a
+   * floor rather than the true ceiling. The live pages do not publish a static
+   * event's maximum, and guessing one would be inventing a number.
+   */
+  maxRemainingKnown: boolean;
   rank: number;
 }
 
@@ -220,16 +245,25 @@ export async function buildLivePayload(fetcher: Fetcher): Promise<LivePayload | 
   // travel with the total because mid-competition the totals are not
   // comparable on their own: a team on four events and a team on two are not
   // in the same race, and the standing has to say so rather than imply it.
+  /** Most an event can still be worth, where that is known. */
+  const eventCeiling = (kind: LeaderboardPage['kind']): number | null =>
+    kind === 'endurance' ? ENDURANCE_MAX : kind === 'dynamic' ? DYNAMIC_MAX : null;
+
   const totals = new Map<string, LiveOverall>();
   for (const ev of events) {
+    const ceiling = eventCeiling(ev.kind);
     for (const row of ev.rows) {
       if (!row.schoolId) continue;
       const t = totals.get(row.schoolId) ?? {
         school: row.school, schoolId: row.schoolId, teamName: row.teamName,
-        carNumber: row.carNumber, points: 0, scored: 0, zeroed: 0, pending: 0, rank: 0,
+        carNumber: row.carNumber, points: 0, scored: 0, zeroed: 0, pending: 0,
+        pendingCodes: [], maxRemaining: 0, maxRemainingKnown: true, rank: 0,
       };
       if (row.state === 'pending') {
         t.pending += 1;
+        t.pendingCodes.push(ev.code);
+        if (ceiling === null) t.maxRemainingKnown = false;
+        else t.maxRemaining += ceiling;
       } else {
         t.points += row.points ?? 0;
         t.scored += 1;

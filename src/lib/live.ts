@@ -47,6 +47,12 @@ export interface LiveOverall {
   zeroed: number;
   /** Events still to run, or run but not yet posted. */
   pending: number;
+  /** Codes of those unsettled events, so the UI can name what is missing. */
+  pendingCodes: string[];
+  /** Most this entry could still add from its unsettled events. */
+  maxRemaining: number;
+  /** False when an unsettled event's maximum is unknown, so the figure is a floor. */
+  maxRemainingKnown: boolean;
   rank: number;
 }
 

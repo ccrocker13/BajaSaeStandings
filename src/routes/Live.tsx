@@ -199,7 +199,7 @@ export default function Live() {
           </SectionTitle>
           <div className="card overflow-hidden">
             <div className="overflow-x-auto">
-              <table className="w-full min-w-[36rem]">
+              <table className="w-full min-w-[44rem]">
                 <thead>
                   <tr>
                     <th className="th w-14">#</th>
@@ -207,6 +207,7 @@ export default function Live() {
                     <th className="th">Team</th>
                     <th className="th w-28 text-right">Events</th>
                     <th className="th w-32 text-right">Points</th>
+                    <th className="th w-28 text-right">Still to come</th>
                     <th className="th w-12" />
                   </tr>
                 </thead>
@@ -242,6 +243,25 @@ export default function Live() {
                           </span>
                         </td>
                         <td className="td text-right font-semibold"><Points value={row.points} estimated /></td>
+                        <td className="td nums text-right text-ink-400">
+                          {/*
+                            Banked points alone invite a false comparison. At
+                            Ohio 2026 only four of fifty-five entries had a
+                            published Suspension & Traction result, and those
+                            four sat artificially high — the leader's total
+                            included 69 points for an event most of the field
+                            had no score for. What each entry still has to come
+                            is what makes the totals readable against each other.
+                          */}
+                          {row.pending === 0 ? (
+                            <span className="text-ink-600">—</span>
+                          ) : (
+                            <span title={`Unsettled: ${row.pendingCodes.join(', ')}`}>
+                              {row.maxRemainingKnown ? '' : '≥'}
+                              {`+${Math.round(row.maxRemaining)}`}
+                            </span>
+                          )}
+                        </td>
                         <td className="td text-right">
                           <button
                             onClick={() => toggle(row.schoolId)}
