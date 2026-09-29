@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T12:52:24.127Z",
+  "generatedAt": "2026-09-29T09:16:53.715Z",
   "seasons": [
     {
       "year": 2026,
@@ -72,5 +72,16 @@
       "teams": 224
     }
   ],
-  "warnings": []
+  "warnings": [
+    "landing page unavailable — HTTP 403; archive seasons were not refreshed",
+    "2015 Baja SAE Auburn: fetch failed (HTTP 403), used the committed capture",
+    "2015 Baja SAE Maryland: fetch failed (HTTP 403), used the committed capture",
+    "2015 Baja SAE Oregon: fetch failed (HTTP 403), used the committed capture",
+    "2014 Baja SAE UTEP: fetch failed (HTTP 403), used the committed capture",
+    "2014 Baja SAE Kansas: fetch failed (HTTP 403), used the committed capture",
+    "2014 Baja SAE Illinois: fetch failed (HTTP 403), used the committed capture",
+    "2013 Baja SAE Tennessee Tech: fetch failed (HTTP 403), used the committed capture",
+    "2013 Baja SAE Washington: fetch failed (HTTP 403), used the committed capture",
+    "2013 Baja SAE Rochester: fetch failed (HTTP 403), used the committed capture"
+  ]
 }

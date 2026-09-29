@@ -1,8 +1,8 @@
 SOURCE: https://results.bajasae.net/
-BYTES: 7531
+BYTES: 7545
 TITLE: Announcements
 META REFRESH: none
-__VIEWSTATE: present (356 chars)
+__VIEWSTATE: present (364 chars)
 __EVENTTARGET: absent
 __doPostBack refs: 0
 FORM: id=Form1 method=post action=./Default.aspx
@@ -31,9 +31,9 @@ LINKS (24):
   Assigned Tech Numbers -> /TechLineAssigns.aspx
   Current Tech Number -> /TechLineNumber.aspx
   Acceleration -> /Leaderboard.aspx?Event=ACCEL
-  Hill Climb -> /Leaderboard.aspx?Event=TRAC
+  Passport Pull -> /Leaderboard.aspx?Event=TRAC
   Manueverability -> /Leaderboard.aspx?Event=MANU
-  S&T -> /Leaderboard.aspx?Event=SPEC
+  Suspension -> /Leaderboard.aspx?Event=SPEC
   Endurance Grid -> /EnduranceGrid.aspx
   Endurance -> /Leaderboard.aspx?Event=ENDUR
   Black Flags -> /BlackFlags.aspx

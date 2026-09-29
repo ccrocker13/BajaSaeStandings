@@ -1,5 +1,5 @@
 SOURCE: https://results.bajasae.net/Leaderboard.aspx
-BYTES: 8203
+BYTES: 8202
 TITLE: Event Leaderboard
 META REFRESH: none
 __VIEWSTATE: present (1436 chars)
@@ -30,8 +30,8 @@ SELECT id=MainContent_DropDownListEvents name=ctl00$MainContent$DropDownListEven
   ccfca872-cff3-497c-891c-4ac7ab4bbb6c=Cost Event
   08622a35-3f67-4379-8712-28e09c5f3c8f=Design
   cba2aa57-0431-4dcb-b1a8-f719be0b3f6c=Acceleration
-  c683e17c-9422-41c7-b587-98f0d04ca9f6=Hill Climb
   ede3030b-a8fb-485b-a94f-97063f330748=Maneuverability
+  c683e17c-9422-41c7-b587-98f0d04ca9f6=Passport Pull
   37dcf682-eede-482a-b062-2bc6af292230=Suspension & Traction
   2fb7ec42-eb08-46b1-bbc6-1d1d86180b5a=Endurance
 

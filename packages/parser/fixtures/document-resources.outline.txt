@@ -1,8 +1,8 @@
 SOURCE: https://www.bajasae.net/cdsweb/gen/DocumentResources.aspx
-BYTES: 74415
+BYTES: 75218
 TITLE: Baja SAE
 META REFRESH: none
-__VIEWSTATE: present (16000 chars)
+__VIEWSTATE: present (16192 chars)
 __EVENTTARGET: absent
 __doPostBack refs: 0
 FORM: id=aspnetForm method=post action=./DocumentResources.aspx

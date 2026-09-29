@@ -1,20 +1,20 @@
 SOURCE: https://results.bajasae.net/TechLineAssigns.aspx
-BYTES: 106059
+BYTES: 76551
 TITLE: 
 META REFRESH: none
-__VIEWSTATE: present (28316 chars)
+__VIEWSTATE: present (19964 chars)
 __EVENTTARGET: absent
 __doPostBack refs: 0
 FORM: id=Form1 method=post action=./TechLineAssigns.aspx
 
 TABLES: 1
 
---- table[0] id=MainContent_GridViewCarActs class=- rows=240
+--- table[0] id=MainContent_GridViewCarActs class=- rows=172
     col counts (first 20 rows): 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
     row[0]: ["Line Number","Car Number","School / Team"]
-    row[1]: ["1","11","Georgia Institute of Technology- GT Off Road"]
-    row[2]: ["2","20","Université Laval- Alérion Baja Ulaval"]
-    row[3]: ["3","22","Univ of Illinois - Urbana Champaign- Off-Road Illini"]
+    row[1]: ["1","29","Universite de Sherbrooke- Baja UdeS"]
+    row[2]: ["2","3","Ecole de Technologie Superieure- Baja ÉTS"]
+    row[3]: ["3","23","San Diego State Univ- Aztec Baja Racing"]
 
 ELEMENT IDS (9): Head1, Form1, lblEventTitle, bs-example-navbar-collapse-1, MainContent_GridViewCarActs, footer, lblSiteLocation, lblSiteLocationUpdate, lblVersion
 
