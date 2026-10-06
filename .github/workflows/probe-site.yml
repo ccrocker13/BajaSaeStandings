@@ -80,9 +80,37 @@ jobs:
             echo "VERDICT: unrecognised content"
           fi
           echo "BOOT FALLBACK: $(grep -q 'Loading Baja SAE Standings' /tmp/body.html && echo present || echo absent)"
-          echo '--- first 1200 bytes ---'
-          head -c 1200 /tmp/body.html
-          echo
+          # Asset statuses on stdout, not only in the step summary: a summary
+          # is not readable through the API, so a check that only lands there
+          # cannot actually be used to verify anything remotely.
+          echo '--- referenced assets ---'
+          # Match only src/href values that are root-relative, so an external
+          # link whose URL happens to contain the repository name — the GitHub
+          # issues link in the boot fallback, for instance — is not stripped of
+          # its host and then reported as a 404 on our own site.
+          grep -oE '(src|href)="/'"${REPO}"'/[^"]*"' /tmp/body.html \
+            | sed -E 's/^(src|href)="//; s/"$//' | sort -u | while read -r path; do
+            a=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "https://${OWNER}.github.io${path}")
+            echo "  ${a:-000}  $path"
+          done
+          echo '--- data payload ---'
+          dcode=$(curl -sS --max-time 30 -o /tmp/summary.json -w '%{http_code}' "${SITE}data/summary.json")
+          dsize=$(wc -c < /tmp/summary.json | tr -d ' ')
+          echo "  ${dcode}  ${dsize} bytes  data/summary.json"
+          # Check the shape, not just that a file arrived. A deploy can serve a
+          # perfectly valid page over stale or wrong data, and the browser smoke
+          # test would not notice because the page still renders.
+          if [ "$dcode" = "200" ]; then
+            seasons=$(grep -o '"year":' /tmp/summary.json | wc -l | tr -d ' ')
+            podium=$(grep -c '"podium"' /tmp/summary.json || true)
+            teams=$(grep -o '"schoolId":' /tmp/summary.json | wc -l | tr -d ' ')
+            echo "  seasons: ${seasons}  podium blocks: ${podium}  team/podium refs: ${teams}"
+            if [ "$podium" -gt 0 ]; then
+              echo "  data shape: podium present"
+            else
+              echo "  data shape: NO podium field — the deployed data predates the podium rework"
+            fi
+          fi
           echo '--- end ---'
 
           size=$(wc -c < /tmp/body.html | tr -d ' ')
@@ -95,7 +123,8 @@ jobs:
             echo
             echo '### Referenced assets'
             echo '```'
-            grep -o "/${REPO}/[^\"]*" /tmp/body.html | sort -u | while read -r path; do
+            grep -oE '(src|href)="/'"${REPO}"'/[^"]*"' /tmp/body.html \
+              | sed -E 's/^(src|href)="//; s/"$//' | sort -u | while read -r path; do
               a=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "https://${OWNER}.github.io${path}")
               echo "  ${a:-000}  $path"
             done
