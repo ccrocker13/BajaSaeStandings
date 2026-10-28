@@ -9,6 +9,15 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # The data jobs commit with GITHUB_TOKEN, and GitHub deliberately does not
+  # start workflows for those pushes (a recursion guard). So every "Refresh
+  # season data" commit landed on main without publishing: between 2026-09-06
+  # and 2026-10-03 the archive was refreshed repeatedly — including the whole
+  # Ohio result — while the live site went on serving the September build.
+  # Running off their completion is what actually closes that loop.
+  workflow_run:
+    workflows: ['Backfill archive', 'Capture fixtures']
+    types: [completed]
 
 permissions:
   contents: read
@@ -22,6 +31,11 @@ concurrency:
 
 jobs:
   build:
+    # workflow_run fires on completion whatever the outcome, so a failed
+    # backfill must not publish. Every other trigger passes this.
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

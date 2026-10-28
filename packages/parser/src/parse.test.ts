@@ -39,9 +39,14 @@ describe('static event grid (Design)', () => {
     expect(data.kind).toBe('static');
   });
 
-  it('reads every entry', () => {
-    // 103 table rows = 1 header + 102 teams, matching the reported NY field.
-    expect(data.rows).toHaveLength(102);
+  it('reads every entry in the grid', () => {
+    // The leaderboard fixtures are re-captured from the live site, so the
+    // field size is whatever the current competition has. Asserting a count
+    // from one competition just breaks at the next capture; what must hold is
+    // that we read every row the grid contains and drop none.
+    const bodyRows = (fixture('leaderboard-DESN').match(/<tr/g) ?? []).length;
+    expect(data.rows.length).toBeGreaterThan(0);
+    expect(data.rows.length).toBe(bodyRows - 1); // less the header row
   });
 
   it('splits school from team name via the separate labels', () => {
@@ -63,12 +68,12 @@ describe('event code discovery', () => {
   it('reads codes from the site root nav', () => {
     const { data } = parseLeaderboard(fixture('results-root'), 'test://root');
     const byCode = Object.fromEntries(data.events.map((e) => [e.code, e.label]));
-    // TRAC is Hill Climb and SPEC is Suspension & Traction. Inferring meaning
-    // from the code string gets both backwards.
-    expect(byCode['TRAC']).toBe('Hill Climb');
-    expect(byCode['SPEC']).toBe('S&T');
-    expect(byCode['DESN']).toBe('Design');
-    expect(byCode['ENDUR']).toBe('Endurance');
+    // Codes are stable across competitions; labels are not. The same TRAC was
+    // "Hill Climb" at New York 2026 and "Passport Pull" at Ohio 2026, which is
+    // exactly why the code is what we key on and the label is only ever shown.
+    for (const code of ['DESN', 'COST', 'PRES', 'ACCEL', 'MANU', 'SPEC', 'TRAC', 'ENDUR']) {
+      expect(byCode[code], `missing event ${code}`).toBeTruthy();
+    }
   });
 
   it('reads better-spelled labels from an archive competition page', () => {
@@ -92,16 +97,36 @@ describe('dynamic event grid (Acceleration)', () => {
   it('reads position and raw time but no points', () => {
     const first = data.rows[0]!;
     expect(first.position).toBe(1);
-    expect(first.carNumber).toBe(15);
-    expect(first.schoolId).toBe('cal-poly-slo');
-    expect(first.resultValue).toBeCloseTo(3.814);
+    expect(first.carNumber).not.toBeNull();
+    expect(first.schoolId).toBeTruthy();
+    // The leader has necessarily run, so a positive time must be present. The
+    // value itself changes every capture; that it parses at all is the point.
+    expect(first.resultValue).toBeGreaterThan(0);
     // Upstream simply does not publish points for dynamic events.
     expect(first.finalScore).toBeNull();
+  });
+
+  it('orders the field the same way the site does', () => {
+    // The site publishes its own Pos. column. If our parsed times disagree with
+    // that ordering we have misread the column — which is how Maneuverability
+    // went unnoticed while every one of its entries parsed as no result.
+    const ranked = data.rows.filter((r) => r.position !== null && r.resultValue !== null);
+    for (let i = 1; i < ranked.length; i += 1) {
+      expect(ranked[i]!.resultValue!).toBeGreaterThanOrEqual(ranked[i - 1]!.resultValue!);
+    }
   });
 });
 
 describe('endurance grid', () => {
-  const { data, warnings } = parseLeaderboard(fixture('leaderboard-ENDUR'), 'test://ENDUR');
+  // Read from a frozen copy, not the rotating capture. The live ENDUR page has
+  // no grid at all until the race starts — at Ohio 2026 it was still empty on
+  // the Saturday — so pointing these at the captured fixture means they assert
+  // nothing for most of the year and fail outright for part of it. The capture
+  // only writes names listed in tools/capture/urls.tsv, so this one survives.
+  const { data, warnings } = parseLeaderboard(
+    fixture('frozen-endurance-populated'),
+    'test://ENDUR',
+  );
 
   it('parses without warnings', () => {
     expect(warnings).toEqual([]);

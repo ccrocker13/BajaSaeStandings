@@ -1,5 +1,5 @@
 SOURCE: https://www.bajasae.net/res/EventResults.aspx?competitionid=6b91e195-df0f-4baf-a4d6-116c03aa704d&eventkey=OVR
-BYTES: 80883
+BYTES: 80885
 TITLE: Baja SAE
 META REFRESH: none
 __VIEWSTATE: present (40344 chars)
@@ -12,7 +12,7 @@ TABLES: 1
 --- table[0] id=ctl00_main_EventResults1_GridViewOverallResults class=results-table rows=77
     col counts (first 20 rows): 20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20
     row[0]: ["Rank","Car #","School","Team","Overall (1000)","Overall Dynamic (300)","Overall Static (300)","Cost Event (100)","Design (150)","Business Presentation (50)","Acceleration (75)","Maneuverability (75)","Hill Climb (75)","Rock Crawl (75)","Endurance (400)","Adjustments","Registered","Passed Tech","Passed Tech On Time","Public Comments"]
-    row[1]: ["1","5","Purdue Univ - W Lafayette","Purdue Baja Racing","928.95","235.35","293.60","93.60","130.00","70.00","66.06","69.77","70.00","29.52","400.00","0.00","True","True","True",""]
+    row[1]: ["1","5","Purdue Univ - W Lafayette","Purdue Baja Racing","937.95","235.35","302.60","93.60","136.00","73.00","66.06","69.77","70.00","29.52","400.00","0.00","True","True","True",""]
     row[2]: ["2","8","Virginia Tech","VT Baja","881.48","253.31","258.94","89.50","110.00","59.44","61.63","70.00","69.57","52.10","369.23","0.00","True","True","True",""]
     row[3]: ["3","7","Rochester Institute of Technology","RIOT RACING","875.33","246.27","290.60","90.60","130.00","70.00","61.84","62.20","59.35","62.88","338.46","0.00","True","True","True",""]
 
