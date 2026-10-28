@@ -11,7 +11,12 @@ name: Capture fixtures
 
 on:
   workflow_dispatch:
+  # Only on the default branch. These jobs commit generated data, and running
+  # them on a feature branch adds churn to its pull request — a force-push in
+  # particular makes GitHub evaluate the paths filter against the old head, so
+  # unrelated branches were triggering a full recapture.
   push:
+    branches: [main]
     paths:
       - 'tools/capture/urls.tsv'
       - 'tools/capture/outline.mjs'
