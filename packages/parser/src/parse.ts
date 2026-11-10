@@ -103,6 +103,20 @@ export function parseDuration(raw: string | null | undefined): number | null {
   return secs;
 }
 
+/** Column names a dynamic event's scored result may appear under, best first. */
+const RESULT_COLUMNS = ['time', 'adjusted time', 'raw time', 'result', 'score'] as const;
+
+/**
+ * Drop non-positive results.
+ *
+ * The results site writes "0.000" in a dynamic event's time column for an entry
+ * that has not run it — at Ohio 2026 every Passport Pull row read 0.000 hours
+ * before the event began. A zero elapsed time is physically meaningless, so
+ * treating it as a real result would hand the whole field a settled score for
+ * an event nobody had attempted.
+ */
+const positiveOrNull = (n: number | null): number | null => (n !== null && n > 0 ? n : null);
+
 /** Normalised header key, e.g. "Laps (RFID)" -> "laps rfid". */
 const headerKey = (s: string): string => clean(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 
@@ -202,8 +216,13 @@ function readRows(table: HTMLElement, kind: GridKind, warnings: string[]): Leade
       evalScore: parseNumber(get('eval score')),
       penaltyPoints: parseNumber(get('penalty points')),
       finalScore: parseNumber(get('final score')),
-      resultRaw: kind === 'dynamic' ? get('time', 'result', 'score') : null,
-      resultValue: kind === 'dynamic' ? parseDuration(get('time', 'result', 'score')) : null,
+      // Dynamic events do not agree on a column name: Acceleration posts "Time",
+      // while Maneuverability and Suspension post "Adjusted Time" (the scored
+      // figure) alongside "Raw Time". Lookup is exact and ordered, so listing
+      // the aliases fixes the latter without changing the former.
+      resultRaw: kind === 'dynamic' ? get(...RESULT_COLUMNS) : null,
+      resultValue:
+        kind === 'dynamic' ? positiveOrNull(parseDuration(get(...RESULT_COLUMNS))) : null,
       laps: parseNumber(get('laps')),
       lapsRfid: parseNumber(get('laps rfid')),
       lastLapRaw: get('last lap time'),
